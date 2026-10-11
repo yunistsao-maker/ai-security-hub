@@ -1,0 +1,24 @@
+---
+title: Blue team
+description: The defensive controls that hold up once a model reads untrusted content.
+lastChecked: 2026-10-07
+sources:
+  - title: Design Patterns for Securing LLM Agents against Prompt Injections
+    url: https://arxiv.org/abs/2506.08837
+  - title: CoSAI, Zero Trust for AI Systems
+    url: https://www.coalitionforsecureai.org/zero-trust-for-ai-systems-why-authorization-cant-live-inside-the-model/
+  - title: Meta, Agents Rule of Two
+    url: https://ai.meta.com/blog/practical-ai-agent-security/
+---
+
+import RowsTable from '~/components/RowsTable.astro';
+
+The published consensus is architectural. Once an agent has read untrusted content, controls outside the model must bound what it can do, and filters are one layer among several.
+
+Three rules carry most of the weight:
+
+- **Authorise outside the model.** Model output is untrusted, however capable the model.
+- **Isolate with the operating system or hypervisor,** not with instructions to the agent.
+- **Limit the combination.** Without supervision, a session should combine at most two of untrusted input, access to sensitive data, and the ability to act externally.
+
+<RowsTable collection="blueTeam" labelField="topic" textField="status" labelHeader="topic" textHeader="status" />

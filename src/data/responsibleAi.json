@@ -1,0 +1,302 @@
+[
+  {
+    "id": "where-security-sits",
+    "topic": "Where security sits",
+    "status": "One named dimension in each principle set: NIST \"secure and resilient\", OECD \"robustness, security and safety\", AWS \"privacy and security\" plus \"veracity and robustness\", Taiwan \"cybersecurity and safety\"",
+    "sources": [
+      {
+        "title": "NIST",
+        "url": "https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/"
+      },
+      {
+        "title": "OECD",
+        "url": "https://oecd.ai/en/dashboards/ai-principles/P8"
+      },
+      {
+        "title": "AWS",
+        "url": "https://aws.amazon.com/ai/responsible-ai/"
+      },
+      {
+        "title": "NSTC",
+        "url": "https://law.nstc.gov.tw/EngLawContent.aspx?lan=E&id=10099"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "who-owns-ai-governance",
+    "topic": "Who owns AI governance",
+    "status": "Information security was the most common primary owner, at 21% of organisations surveyed in 2025; responsible-AI maturity averaged 2.3 on a 4-point scale, up from 2.0",
+    "sources": [
+      {
+        "title": "AI Index 2026",
+        "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_3_responsible_ai.pdf"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "policies-and-incidents",
+    "topic": "Policies and incidents",
+    "status": "Businesses with no responsible-AI policy fell from 24% to 11% in 2025; the AI Incident Database recorded 362 incidents in 2025, up from 233",
+    "sources": [
+      {
+        "title": "AI Index 2026",
+        "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report/responsible-ai"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "certified-management-systems",
+    "topic": "Certified management systems",
+    "status": "AWS, Microsoft and Google hold ISO/IEC 42001 certificates for named AI services; the AWS certificate, announced 25 November 2024, first covered Amazon Bedrock, Amazon Q Business, Amazon Textract and Amazon Transcribe",
+    "sources": [
+      {
+        "title": "AWS",
+        "url": "https://aws.amazon.com/blogs/machine-learning/aws-achieves-iso-iec-420012023-artificial-intelligence-management-system-accredited-certification/"
+      },
+      {
+        "title": "Microsoft",
+        "url": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-iso-42001"
+      },
+      {
+        "title": "Google",
+        "url": "https://cloud.google.com/security/compliance/iso-42001"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "frontier-safety-frameworks",
+    "topic": "Frontier safety frameworks",
+    "status": "Twelve developers have published one. Six revised theirs in 2026: Microsoft (February), Meta (8 April), Google DeepMind (17 April), xAI (30 June), Anthropic (version 3.4, 8 July) and Amazon (17 September)",
+    "sources": [
+      {
+        "title": "METR index",
+        "url": "https://metr.org/fsp"
+      },
+      {
+        "title": "Amazon",
+        "url": "https://www.amazon.science/publications/amazons-frontier-model-safety-framework"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "model-weight-security",
+    "topic": "Model-weight security",
+    "status": "METR's December 2025 analysis found it in 11 of 12 frameworks, usually set against RAND security levels; Anthropic's August 2026 Risk Report says no frontier developer, itself included, is yet robust against nation-state actors",
+    "sources": [
+      {
+        "title": "METR",
+        "url": "https://metr.org/common-elements.pdf"
+      },
+      {
+        "title": "Anthropic",
+        "url": "https://www.anthropic.com/aug-2026-risk-report"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "international-ai-safety-report-2026",
+    "topic": "International AI Safety Report 2026",
+    "status": "Published 3 February 2026: pre-deployment tests do not reliably predict real-world risk, and no theft of model weights had been publicly confirmed as of December 2025",
+    "sources": [
+      {
+        "title": "report",
+        "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "government-evaluation-bodies",
+    "topic": "Government evaluation bodies",
+    "status": "The UK body has been the AI Security Institute since 14 February 2025; the NIST centre, CAISI until September 2026, is now titled CAISSI; their international network was renamed NAAIMES and has ten members",
+    "sources": [
+      {
+        "title": "GOV.UK",
+        "url": "https://www.gov.uk/government/news/tackling-ai-security-risks-to-unleash-growth-and-deliver-plan-for-change"
+      },
+      {
+        "title": "NIST",
+        "url": "https://www.nist.gov/caisi"
+      },
+      {
+        "title": "UK AISI",
+        "url": "https://www.aisi.gov.uk/blog/international-evaluation-best-practice-and-open-questions-in-ai-measurement"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "us-federal-terminology",
+    "topic": "US federal terminology",
+    "status": "Executive Order 14434 of 29 September 2026 directs the executive branch to write \"Super Intelligence (SI)\" in place of \"AI\" in non-statutory documents; NIST is updating its pages, so the glossary and search need both terms",
+    "sources": [
+      {
+        "title": "NIST",
+        "url": "https://www.nist.gov/super-intelligence"
+      },
+      {
+        "title": "White House",
+        "url": "https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "developer-transparency",
+    "topic": "Developer transparency",
+    "status": "The Foundation Model Transparency Index averaged 41 of 100 in December 2025, 17 points below the year before",
+    "sources": [
+      {
+        "title": "FMTI",
+        "url": "https://crfm.stanford.edu/fmti/December-2025/index.html"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "content-provenance",
+    "topic": "Content provenance",
+    "status": "C2PA specification 2.4 is current; the conformance programme is running, with the Google Pixel 10 the first device at its highest level",
+    "sources": [
+      {
+        "title": "C2PA",
+        "url": "https://spec.c2pa.org/specifications/specifications/2.4/index.html"
+      },
+      {
+        "title": "Content Authenticity Initiative",
+        "url": "https://contentauthenticity.org/blog/raising-the-bar-for-trust-introducing-the-c2pa-conformance-program"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "eu-marking-code",
+    "topic": "EU marking code",
+    "status": "About 190 organisations had signed the code of practice on AI-generated content by the end of July 2026",
+    "sources": [
+      {
+        "title": "Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "limits-of-watermarking",
+    "topic": "Limits of watermarking",
+    "status": "NIST found most current watermarking schemes vulnerable to removal, and no technique sufficient alone",
+    "sources": [
+      {
+        "title": "NIST AI 100-4",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-4.pdf"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "open-source-toolkits-active",
+    "topic": "Open-source toolkits, active",
+    "status": "Fairlearn 0.14.0 (7 June 2026), SHAP 0.52.0 (28 May 2026), Captum 0.9.0 (17 April 2026), Opacus 1.6.0 (5 May 2026), Presidio 2.2.364 (22 July 2026)",
+    "sources": [
+      {
+        "title": "Fairlearn",
+        "url": "https://pypi.org/project/fairlearn/"
+      },
+      {
+        "title": "SHAP",
+        "url": "https://pypi.org/project/shap/"
+      },
+      {
+        "title": "Captum",
+        "url": "https://pypi.org/project/captum/"
+      },
+      {
+        "title": "Opacus",
+        "url": "https://pypi.org/project/opacus/"
+      },
+      {
+        "title": "Presidio",
+        "url": "https://pypi.org/project/presidio-analyzer/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "open-source-toolkits-stale",
+    "topic": "Open-source toolkits, stale",
+    "status": "No release in over two years: AI Fairness 360 (0.6.1, April 2024), Microsoft Responsible AI Toolbox (0.36.0, July 2024), Model Card Toolkit (April 2023), What-If Tool (October 2021)",
+    "sources": [
+      {
+        "title": "AIF360",
+        "url": "https://pypi.org/project/aif360/"
+      },
+      {
+        "title": "Responsible AI Toolbox",
+        "url": "https://pypi.org/project/raiwidgets/"
+      },
+      {
+        "title": "Model Card Toolkit",
+        "url": "https://pypi.org/project/model-card-toolkit/"
+      },
+      {
+        "title": "What-If Tool",
+        "url": "https://pypi.org/project/witwidget/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "aws",
+    "topic": "AWS",
+    "status": "Eight responsible-AI dimensions; the Well-Architected Responsible AI Lens (19 November 2025); 20 AI Service Cards, including one for Bedrock Guardrails",
+    "sources": [
+      {
+        "title": "dimensions",
+        "url": "https://aws.amazon.com/ai/responsible-ai/"
+      },
+      {
+        "title": "lens",
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html"
+      },
+      {
+        "title": "service cards",
+        "url": "https://aws.amazon.com/ai/responsible-ai/resources/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "taiwan",
+    "topic": "Taiwan",
+    "status": "The AI Product and System Evaluation Center tests products on ten items, with 資安 (security) as its own item, and posts results monthly",
+    "sources": [
+      {
+        "title": "AIEC",
+        "url": "https://www.aiec.org.tw/web/guest/background"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "singapore",
+    "topic": "Singapore",
+    "status": "AI Verify tests against 11 principles, with Security and Robustness listed separately, and publishes crosswalks to ISO/IEC 42001 and the NIST AI RMF",
+    "sources": [
+      {
+        "title": "AI Verify",
+        "url": "https://aiverifyfoundation.sg/tools/ai-verify-testing-framework/"
+      },
+      {
+        "title": "crosswalks",
+        "url": "https://aiverifyfoundation.sg/resources/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  }
+]

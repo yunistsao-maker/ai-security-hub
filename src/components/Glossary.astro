@@ -1,0 +1,15 @@
+---
+import { getCollection } from 'astro:content';
+import type { Lang } from '../lib/i18n';
+interface Props { lang?: Lang }
+const { lang = 'en' } = Astro.props;
+const terms = (await getCollection('glossary')).sort((a, b) => a.data.term.localeCompare(b.data.term));
+---
+<dl class="glossary">
+  {terms.map(({ id, data }) => (
+    <>
+      <dt id={id}>{lang === 'zh' ? `${data.termZh}（${data.term}）` : `${data.term} · ${data.termZh}`}</dt>
+      <dd>{lang === 'zh' ? data.definitionZh : data.definition}</dd>
+    </>
+  ))}
+</dl>

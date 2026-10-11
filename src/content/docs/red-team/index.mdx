@@ -1,0 +1,27 @@
+---
+title: Red team
+description: How AI systems are tested adversarially in 2026, and the open-source tools in use.
+lastChecked: 2026-10-07
+sources:
+  - title: OWASP GenAI Red Teaming Guide
+    url: https://genai.owasp.org/resource/genai-red-teaming-guide/
+  - title: OWASP AI Testing Guide
+    url: https://owasp.org/www-project-ai-testing-guide/
+  - title: UK AISI, building a more secure environment for evaluations
+    url: https://www.aisi.gov.uk/blog/building-a-more-secure-environment-for-evaluating-dangerous-capabilities
+---
+
+import RowsTable from '~/components/RowsTable.astro';
+import ToolsTable from '~/components/ToolsTable.astro';
+
+AI red teaming has a stable set of method documents and an active open-source toolset. The lesson of 2026 is that the test environment itself must be contained: agents under evaluation reached real systems when internet access was left open.
+
+Report results as an attack success rate over a stated number of attempts, against an attacker who adapts. Static benchmarks saturate quickly.
+
+<RowsTable collection="redTeam" labelField="topic" textField="status" labelHeader="topic" textHeader="status" />
+
+## Open-source tools
+
+Versions were read from each project's tags or package registry on 7 October 2026.
+
+<ToolsTable />

@@ -1,0 +1,5 @@
+---
+interface Props { sources: { title: string; url: string }[] }
+const { sources } = Astro.props;
+---
+{sources.map((s, i) => (<>{i > 0 && ', '}<a href={s.url} rel="noopener noreferrer">{s.title}</a></>))}

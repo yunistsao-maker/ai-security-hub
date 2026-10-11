@@ -1,0 +1,16 @@
+:root {
+  --sl-content-width: 52rem;
+}
+.sl-markdown-content table { font-size: var(--sl-text-sm); display: table; width: 100%; }
+.sl-markdown-content td, .sl-markdown-content th { vertical-align: top; }
+.note { font-size: var(--sl-text-sm); color: var(--sl-color-gray-3); }
+.page-sources { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--sl-color-hairline); font-size: var(--sl-text-sm); }
+.page-sources .checked { color: var(--sl-color-gray-3); }
+.licence-line { margin-top: 1.5rem; font-size: var(--sl-text-xs); color: var(--sl-color-gray-3); text-align: center; }
+.news-list { list-style: none; padding-inline-start: 0; }
+.news-list li { padding: 0.35rem 0; border-bottom: 1px solid var(--sl-color-hairline); }
+.news-date, .news-source { color: var(--sl-color-gray-3); font-size: var(--sl-text-sm); }
+.glossary dt { font-weight: 600; margin-top: 1rem; }
+.glossary dd { margin-inline-start: 0; }
+.sl-markdown-content table.dated td:nth-child(-n + 2),
+.sl-markdown-content table.dated th:nth-child(-n + 2) { white-space: nowrap; }

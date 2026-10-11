@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content';
+import SourceLinks from './SourceLinks.astro';
+import { t, type Lang } from '../lib/i18n';
+interface Props { lang?: Lang; only?: string[]; exclude?: string[] }
+const { lang = 'en', only, exclude } = Astro.props;
+const L = t(lang);
+const rows = (await getCollection('instruments'))
+  .map((e) => e.data)
+  .filter((r) => (!only || only.includes(r.jurisdiction)) && (!exclude || !exclude.includes(r.jurisdiction)));
+const allZh = rows.every((r) => r.nameZh);
+---
+{lang === 'zh' && !allZh && <p class="note">{L.englishOnly}</p>}
+<table>
+  <thead><tr><th>{L.jurisdiction}</th><th>{L.instrument}</th><th>{L.status}</th><th>{L.source}</th></tr></thead>
+  <tbody>
+    {rows.map((r) => (
+      <tr>
+        <td>{r.jurisdiction}</td>
+        <td>{lang === 'zh' && r.nameZh ? r.nameZh : r.name}</td>
+        <td>{lang === 'zh' && r.statusZh ? r.statusZh : r.status}</td>
+        <td><SourceLinks sources={r.sources} />{r.sourceTier === 'secondary' && ` (${L.secondary})`}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>

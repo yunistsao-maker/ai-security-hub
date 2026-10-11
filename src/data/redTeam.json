@@ -1,0 +1,126 @@
+[
+  {
+    "id": "method-documents",
+    "topic": "Method documents",
+    "status": "OWASP GenAI Red Teaming Guide 1.0 (January 2025), OWASP AI Testing Guide version 1 (32 test cases), and MITRE ATLAS mitigation AML.M0035 \"AI Red Team\" (July 2026)",
+    "sources": [
+      {
+        "title": "guide",
+        "url": "https://genai.owasp.org/resource/genai-red-teaming-guide/"
+      },
+      {
+        "title": "testing guide",
+        "url": "https://owasp.org/www-project-ai-testing-guide/"
+      },
+      {
+        "title": "ATLAS data",
+        "url": "https://github.com/mitre-atlas/atlas-data"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "agent-failure-modes",
+    "topic": "Agent failure modes",
+    "status": "Microsoft's taxonomy reached version 2.0 on 4 June 2026 with seven new failure modes; bypass of human approval was the most consistently exploited",
+    "sources": [
+      {
+        "title": "Microsoft",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/06/04/updating-taxonomy-failure-modes-agentic-ai-systems-year-red-teaming-taught-us/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "scoring",
+    "topic": "Scoring",
+    "status": "Results are reported as attack success rate over a stated number of attempts, against adaptive attackers; static benchmarks saturate",
+    "sources": [
+      {
+        "title": "Claude Opus 5 system card",
+        "url": "https://www.anthropic.com/claude-opus-5-system-card"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "containment",
+    "topic": "Containment",
+    "status": "After its July 2026 incident, UK AISI paused its highest-risk cyber evaluations and disabled internet access for agentic cyber tests",
+    "sources": [
+      {
+        "title": "UK AISI",
+        "url": "https://www.aisi.gov.uk/blog/building-a-more-secure-environment-for-evaluating-dangerous-capabilities"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "binding-duty",
+    "topic": "Binding duty",
+    "status": "The EU AI Act requires adversarial testing of general-purpose models with systemic risk (Article 55); elsewhere testing is expected through voluntary codes",
+    "sources": [
+      {
+        "title": "AI Act text",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "bounties",
+    "topic": "Bounties",
+    "status": "Google opened a dedicated AI vulnerability reward programme on 6 October 2025; OpenAI raised its top bounty to US$100,000 in March 2025",
+    "sources": [
+      {
+        "title": "Google",
+        "url": "https://blog.google/technology/safety-security/ai-security-frontier-strategy-tools/"
+      },
+      {
+        "title": "OpenAI",
+        "url": "https://openai.com/index/security-on-the-path-to-agi/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "contests",
+    "topic": "Contests",
+    "status": "DEF CON 34's AI Village ran an agent-versus-sandbox contest; Pwn2Own Ireland 2026 added an AI coding agents category",
+    "sources": [
+      {
+        "title": "AI Village",
+        "url": "https://aivillage.org/events/defcon-34/"
+      },
+      {
+        "title": "Zero Day Initiative",
+        "url": "https://www.zerodayinitiative.com/blog/2026/7/21/pwn2own-ireland-2026-new-targets-and-categories"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "training",
+    "topic": "Training",
+    "status": "OffSec OSAI (course launched 31 March 2026), Hack The Box COAE (2 April 2026), SANS SEC535 with GIAC GOAA, and CompTIA SecAI+ (17 February 2026)",
+    "sources": [
+      {
+        "title": "OffSec",
+        "url": "https://www.offsec.com/courses/ai-300/"
+      },
+      {
+        "title": "Hack The Box",
+        "url": "https://academy.hackthebox.com/news/the-new-htb-certified-offensive-ai-expert-htb-coae-is-officially-here"
+      },
+      {
+        "title": "SANS",
+        "url": "https://www.sans.org/cyber-security-courses/offensive-ai-attack-tools-techniques"
+      },
+      {
+        "title": "CompTIA",
+        "url": "https://www.comptia.org/en-us/certifications/secai/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  }
+]

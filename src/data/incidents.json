@@ -1,0 +1,442 @@
+[
+  {
+    "id": "2026-10-02-gitlab-ai-gateway-cve-2026-90970-cvss-9",
+    "date": "2026-10-02",
+    "dateText": "2 October 2026",
+    "title": "GitLab AI Gateway CVE-2026-90970 (CVSS 9.9): an authenticated Duo Agent Platform user could escape the prompt-template sandbox and run commands on the gateway",
+    "titleZh": "GitLab AI Gateway 漏洞 CVE-2026-90970（CVSS 9.9）：已驗證的 Duo Agent Platform 使用者可跳脫提示範本沙箱，在閘道上執行指令",
+    "kind": "vulnerability",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "CVE record",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-90970"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-10-01-microsoft-digital-defense-report-2026-th",
+    "date": "2026-10-01",
+    "dateText": "1 October 2026",
+    "title": "Microsoft Digital Defense Report 2026: threat actors use AI in reconnaissance, social engineering, malware and exploit development, and post-compromise activity",
+    "titleZh": "Microsoft 2026 數位防禦報告：威脅行為者在偵察、社交工程、惡意程式與漏洞利用開發及入侵後活動中使用 AI",
+    "kind": "report",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Microsoft",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-09-30-openai-reports-disrupting-a-coordinated",
+    "date": "2026-09-30",
+    "dateText": "30 September 2026",
+    "title": "OpenAI reports disrupting a coordinated model-distillation campaign",
+    "titleZh": "OpenAI 公布已阻斷一起協同的模型蒸餾行動",
+    "kind": "misuse",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "OpenAI",
+        "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-09-17-nist-assesses-glm-5-3-as-the-most-cyber",
+    "date": "2026-09-17",
+    "dateText": "17 September 2026",
+    "title": "NIST assesses GLM-5.3 as the most cyber-capable open-weight model released to date",
+    "titleZh": "NIST 評估 GLM-5.3 為迄今資安能力最強的開放權重模型",
+    "kind": "evaluation",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "NIST",
+        "url": "https://www.nist.gov/news-events/news/2026/09/caisis-assessment-zais-glm-53-cyber-capabilities"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-09-14-spain-s-data-protection-agency-reports-i",
+    "date": "2026-09-14",
+    "dateText": "14 September 2026",
+    "title": "Spain's data protection agency reports its first breach notification for an attack executed by an AI agent",
+    "titleZh": "西班牙資料保護機關收到首件由 AI 代理執行攻擊所造成的個資外洩通報",
+    "kind": "incident",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "AEPD",
+        "url": "https://www.aepd.es/prensa-y-comunicacion/blog/primera-notiviacion-brecha-datos-personales-causada-por-ataque-ejecutado-mediante-agente-ia"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-09-09-wiz-finds-that-9-6-of-about-3-000-intern",
+    "date": "2026-09-09",
+    "dateText": "9 September 2026",
+    "title": "Wiz finds that 9.6% of about 3,000 internet-facing LiteLLM instances accept a default master key or need no authentication, and chains two CVEs to cloud credential theft",
+    "titleZh": "Wiz 發現約 3,000 個對外開放的 LiteLLM 實例中有 9.6% 接受預設主金鑰或不需驗證，並串連兩個 CVE 竊取雲端憑證",
+    "kind": "vulnerability",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Wiz",
+        "url": "https://www.wiz.io/blog/off-guard-breaking-litellm-from-authentication-bypass-to-cloud-compromise"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-09-02-unit-42-documents-a-human-directed-ai-as",
+    "date": "2026-09-02",
+    "dateText": "2 September 2026",
+    "title": "Unit 42 documents a human-directed, AI-assisted intrusion: more than 50 ATT&CK techniques in under 10 hours, with no novel zero-day",
+    "titleZh": "Unit 42 揭露一起由人主導、AI 輔助的入侵：不到 10 小時內使用超過 50 種 ATT&CK 技術，且未使用新的零時差漏洞",
+    "kind": "incident",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Unit 42",
+        "url": "https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-08-04-uk-aisi-reports-19-unsanctioned-actions",
+    "date": "2026-08-04",
+    "dateText": "4 August 2026",
+    "title": "UK AISI reports 19 unsanctioned actions on the live internet by agents in 10 of 122 cyber-evaluation runs",
+    "titleZh": "英國 AI 安全研究所報告：在 122 次資安評測中，有 10 次出現代理在真實網路上的 19 項未經授權行為",
+    "kind": "incident",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "UK AISI",
+        "url": "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-08-03-owasp-publishes-the-top-10-for-llm-appli",
+    "date": "2026-08-03",
+    "dateText": "3 to 4 August 2026",
+    "title": "OWASP publishes the Top 10 for LLM Applications 2026",
+    "titleZh": "OWASP 發布 2026 年版 LLM 應用十大風險",
+    "kind": "standard",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "OWASP",
+        "url": "https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-07-30-anthropic-discloses-three-incidents-in-w",
+    "date": "2026-07-30",
+    "dateText": "30 July 2026",
+    "title": "Anthropic discloses three incidents in which Claude models in cyber evaluations acted against real systems; it had halted cyber evaluations on 23 July",
+    "titleZh": "Anthropic 揭露三起事件：資安評測中的 Claude 模型對真實系統採取行動；該公司已於 7 月 23 日暫停資安評測",
+    "kind": "incident",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Anthropic",
+        "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-07-28-model-context-protocol-specification-202",
+    "date": "2026-07-28",
+    "dateText": "28 July 2026",
+    "title": "Model Context Protocol specification 2026-07-28 is released, with a stateless core and tighter authorisation rules",
+    "titleZh": "Model Context Protocol 規格 2026-07-28 發布，核心改為無狀態並收緊授權規則",
+    "kind": "standard",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "MCP changelog",
+        "url": "https://modelcontextprotocol.io/specification/2026-07-28/changelog"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-07-27-the-eu-digital-omnibus-on-ai-regulation",
+    "date": "2026-07-27",
+    "dateText": "27 July 2026",
+    "title": "The EU Digital Omnibus on AI, Regulation (EU) 2026/1744, enters into force and defers the high-risk duties",
+    "titleZh": "歐盟 AI 數位綜合法案（Regulation (EU) 2026/1744）生效，延後高風險義務的適用",
+    "kind": "policy",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "EUR-Lex",
+        "url": "https://eur-lex.europa.eu/eli/reg/2026/1744/oj"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-07-21-openai-attributes-the-hugging-face-intru",
+    "date": "2026-07-21",
+    "dateText": "21 July 2026",
+    "title": "OpenAI attributes the Hugging Face intrusion to its own models under evaluation",
+    "titleZh": "OpenAI 將 Hugging Face 入侵事件歸因於其評測中的自家模型",
+    "kind": "incident",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "OpenAI",
+        "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-07-16-hugging-face-discloses-an-intrusion-driv",
+    "date": "2026-07-16",
+    "dateText": "16 July 2026",
+    "title": "Hugging Face discloses an intrusion \"driven, end to end, by an autonomous AI agent system\", with no evidence of tampering with public models, datasets or Spaces",
+    "titleZh": "Hugging Face 揭露一起「由自主 AI 代理系統端到端驅動」的入侵，未發現公開模型、資料集或 Spaces 遭竄改",
+    "kind": "incident",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Hugging Face",
+        "url": "https://huggingface.co/blog/security-incident-july-2026"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-06-12-anthropic-suspends-access-to-claude-fabl",
+    "date": "2026-06-12",
+    "dateText": "12 June to 1 July 2026",
+    "title": "Anthropic suspends access to Claude Fable 5 and Claude Mythos 5 to comply with a US export-control directive; the controls were lifted on 30 June and access was restored on 1 July",
+    "titleZh": "Anthropic 為遵循美國出口管制指令暫停 Claude Fable 5 與 Claude Mythos 5 的存取；管制於 6 月 30 日解除，7 月 1 日恢復存取",
+    "kind": "policy",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Anthropic",
+        "url": "https://www.anthropic.com/news/fable-mythos-access"
+      },
+      {
+        "title": "redeployment",
+        "url": "https://www.anthropic.com/news/redeploying-fable-5"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-06-02-us-executive-order-14409-on-advanced-ai",
+    "date": "2026-06-02",
+    "dateText": "2 June 2026",
+    "title": "US Executive Order 14409 on advanced AI innovation and security is signed",
+    "titleZh": "美國第 14409 號行政命令（先進 AI 創新與安全）簽署",
+    "kind": "policy",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Federal Register",
+        "url": "https://www.federalregister.gov/documents/2026/06/05/2026-11415/promoting-advanced-artificial-intelligence-innovation-and-security"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-05-22-project-glasswing-partners-report-more-t",
+    "date": "2026-05-22",
+    "dateText": "22 May 2026",
+    "title": "Project Glasswing partners report more than 10,000 high- or critical-severity vulnerabilities found",
+    "titleZh": "Project Glasswing 合作夥伴回報發現超過 10,000 個高或嚴重等級漏洞",
+    "kind": "report",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Anthropic",
+        "url": "https://www.anthropic.com/news/glasswing-initial-update"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-04-07-anthropic-limits-claude-mythos-preview-t",
+    "date": "2026-04-07",
+    "dateText": "7 April 2026",
+    "title": "Anthropic limits Claude Mythos Preview to Project Glasswing partners instead of releasing it generally",
+    "titleZh": "Anthropic 將 Claude Mythos Preview 限定提供給 Project Glasswing 合作夥伴，未全面釋出",
+    "kind": "policy",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Anthropic",
+        "url": "https://www.anthropic.com/glasswing"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-03-24-malicious-litellm-releases-are-live-on-p",
+    "date": "2026-03-24",
+    "dateText": "24 March 2026",
+    "title": "Malicious LiteLLM releases are live on PyPI for about 40 minutes",
+    "titleZh": "遭植入惡意程式的 LiteLLM 版本在 PyPI 上架約 40 分鐘",
+    "kind": "supply-chain",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "LiteLLM",
+        "url": "https://docs.litellm.ai/blog/security-update-march-2026"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-02-23-anthropic-reports-distillation-campaigns",
+    "date": "2026-02-23",
+    "dateText": "23 February 2026",
+    "title": "Anthropic reports distillation campaigns that used about 24,000 fraudulent accounts and over 16 million exchanges",
+    "titleZh": "Anthropic 揭露蒸餾行動：約 24,000 個詐騙帳號、超過 1,600 萬次對話",
+    "kind": "misuse",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Anthropic",
+        "url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-02-01-openclaw-cve-2026-25253-cvss-8-8-is-publ",
+    "date": "2026-02-01",
+    "dateText": "1 to 2 February 2026",
+    "title": "OpenClaw CVE-2026-25253 (CVSS 8.8) is published; Wiz finds an exposed Moltbook database holding 1.5 million API tokens",
+    "titleZh": "OpenClaw 漏洞 CVE-2026-25253（CVSS 8.8）公布；Wiz 發現外洩的 Moltbook 資料庫含 150 萬組 API 權杖",
+    "kind": "vulnerability",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "CVE record",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-25253"
+      },
+      {
+        "title": "Wiz",
+        "url": "https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-01-14-taiwan-s-artificial-intelligence-basic-a",
+    "date": "2026-01-14",
+    "dateText": "14 January 2026",
+    "title": "Taiwan's Artificial Intelligence Basic Act is promulgated and takes effect",
+    "titleZh": "台灣《人工智慧基本法》公布施行",
+    "kind": "policy",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "NSTC",
+        "url": "https://law.nstc.gov.tw/EngLawContent.aspx?lan=E&id=10099"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2025-12-09-owasp-publishes-the-top-10-for-agentic-a",
+    "date": "2025-12-09",
+    "dateText": "9 December 2025",
+    "title": "OWASP publishes the Top 10 for Agentic Applications 2026",
+    "titleZh": "OWASP 發布 2026 年版代理式應用十大風險",
+    "kind": "standard",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "OWASP",
+        "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2025-11-13-anthropic-reports-the-first-ai-orchestra",
+    "date": "2025-11-13",
+    "dateText": "13 November 2025",
+    "title": "Anthropic reports the first AI-orchestrated cyber-espionage campaign, against about 30 targets",
+    "titleZh": "Anthropic 揭露首起由 AI 協調執行的網路間諜行動，目標約 30 個",
+    "kind": "misuse",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Anthropic",
+        "url": "https://www.anthropic.com/news/disrupting-AI-espionage"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2025-08-27-malicious-nx-packages-on-npm-steal-devel",
+    "date": "2025-08-27",
+    "dateText": "27 August 2025",
+    "title": "Malicious Nx packages on npm steal developer secrets and prompt locally installed AI command-line tools to help (\"s1ngularity\")",
+    "titleZh": "npm 上的惡意 Nx 套件竊取開發者機密，並驅使本機安裝的 AI 命令列工具協助（「s1ngularity」）",
+    "kind": "supply-chain",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Wiz",
+        "url": "https://www.wiz.io/blog/s1ngularity-supply-chain-attack"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2025-06-11-echoleak-cve-2025-32711-cvss-9-3-informa",
+    "date": "2025-06-11",
+    "dateText": "11 June 2025",
+    "title": "EchoLeak, CVE-2025-32711 (CVSS 9.3): information disclosure from Microsoft 365 Copilot through AI command injection",
+    "titleZh": "EchoLeak，CVE-2025-32711（CVSS 9.3）：透過 AI 指令注入從 Microsoft 365 Copilot 洩漏資訊",
+    "kind": "vulnerability",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Microsoft",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-32711"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2025-01-29-wiz-finds-a-publicly-accessible-deepseek",
+    "date": "2025-01-29",
+    "dateText": "29 January 2025",
+    "title": "Wiz finds a publicly accessible DeepSeek database exposing chat history",
+    "titleZh": "Wiz 發現一個公開可存取的 DeepSeek 資料庫，外洩聊天紀錄",
+    "kind": "incident",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Wiz",
+        "url": "https://www.wiz.io/blog/wiz-research-uncovers-exposed-deepseek-database-leak"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  }
+]

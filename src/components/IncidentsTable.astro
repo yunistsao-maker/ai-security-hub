@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content';
+import SourceLinks from './SourceLinks.astro';
+import { fmtDate, t, KIND_LABELS, type Lang } from '../lib/i18n';
+interface Props { lang?: Lang; limit?: number }
+const { lang = 'en', limit } = Astro.props;
+const L = t(lang);
+let items = (await getCollection('incidents')).map((e) => e.data).sort((a, b) => b.date.localeCompare(a.date));
+if (limit) items = items.slice(0, limit);
+---
+<table class="dated">
+  <thead><tr><th>{L.date}</th><th>{L.kind}</th><th>{L.event}</th><th>{L.source}</th></tr></thead>
+  <tbody>
+    {items.map((i) => (
+      <tr>
+        <td>{fmtDate(i.date, lang)}</td>
+        <td>{KIND_LABELS[i.kind][lang]}</td>
+        <td>{lang === 'zh' ? i.titleZh : i.title}</td>
+        <td><SourceLinks sources={i.sources} />{i.sourceTier === 'secondary' && ` (${L.secondary})`}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>

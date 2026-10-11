@@ -1,0 +1,24 @@
+---
+title: Research
+description: The 31 research areas of AI security in six clusters, and the problems still open.
+lastChecked: 2026-10-07
+sources:
+  - title: International AI Safety Report 2026
+    url: https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026
+  - title: Nasr et al., The Attacker Moves Second
+    url: https://arxiv.org/abs/2510.09023
+  - title: UK AISI Frontier AI Trends Report
+    url: https://www.aisi.gov.uk/frontier-ai-trends-report
+---
+
+import RowsTable from '~/components/RowsTable.astro';
+
+The field spans 31 areas in six clusters. Since 2024 its centre has moved from attacks on single models to the security of agent systems, and to AI systems that act as cyber operators.
+
+<RowsTable collection="researchAreas" labelField="cluster" textField="areas" labelHeader="cluster" textHeader="areas" />
+
+## Recognised open problems
+
+Each problem below is described as unsolved by the body or paper cited. They group under three causes: models enforce no boundary between instructions and data; what a model has learned cannot be verified from outside; and capability spreads faster than controls.
+
+<RowsTable collection="openProblems" labelField="problem" textField="evidence" labelHeader="problem" textHeader="evidence" />

@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content';
+import { fmtDate, t, type Lang } from '../lib/i18n';
+interface Props { lang?: Lang; limit?: number }
+const { lang = 'en', limit = 60 } = Astro.props;
+const L = t(lang);
+const items = (await getCollection('news'))
+  .map((e) => e.data)
+  .sort((a, b) => b.published.localeCompare(a.published))
+  .slice(0, limit);
+---
+{items.length === 0 ? <p>{L.noNews}</p> : (
+  <ul class="news-list">
+    {items.map((n) => (
+      <li><span class="news-date">{fmtDate(n.published, lang)}</span> <a href={n.url} rel="noopener noreferrer">{n.title}</a> <span class="news-source">· {n.source}</span></li>
+    ))}
+  </ul>
+)}

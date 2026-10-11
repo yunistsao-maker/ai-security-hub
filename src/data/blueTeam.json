@@ -1,0 +1,242 @@
+[
+  {
+    "id": "design-principle",
+    "topic": "Design principle",
+    "status": "Constrain an agent so that untrusted input cannot trigger consequential actions; six design patterns are published",
+    "sources": [
+      {
+        "title": "design patterns paper",
+        "url": "https://arxiv.org/abs/2506.08837"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "rule-of-thumb",
+    "topic": "Rule of thumb",
+    "status": "Agents Rule of Two: without supervision, a session should combine at most two of untrusted input, sensitive access and external action",
+    "sources": [
+      {
+        "title": "Meta",
+        "url": "https://ai.meta.com/blog/practical-ai-agent-security/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "authorisation",
+    "topic": "Authorisation",
+    "status": "Authorisation must sit outside the model, because model output is untrusted however capable the model",
+    "sources": [
+      {
+        "title": "CoSAI",
+        "url": "https://www.coalitionforsecureai.org/zero-trust-for-ai-systems-why-authorization-cant-live-inside-the-model/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "sandboxing",
+    "topic": "Sandboxing",
+    "status": "Isolation must be enforced by the operating system or hypervisor, not by instructions to the agent",
+    "sources": [
+      {
+        "title": "CoSAI",
+        "url": "https://www.coalitionforsecureai.org/treat-your-agent-like-an-insider-threat-why-ai-sandboxing-cant-wait/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "guardrail-blind-spot",
+    "topic": "Guardrail blind spot",
+    "status": "The Bedrock Guardrails prompt-attack filter does not evaluate tool results; AWS documents how to apply guardrails at tool boundaries",
+    "sources": [
+      {
+        "title": "Bedrock docs",
+        "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-prompt-attack.html"
+      },
+      {
+        "title": "AWS pattern",
+        "url": "https://aws.amazon.com/blogs/security/extend-amazon-bedrock-guardrails-to-tool-interactions-using-the-strands-agents-sdk/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "organisation-wide-guardrails",
+    "topic": "Organisation-wide guardrails",
+    "status": "Bedrock Guardrails cross-account safeguards became generally available on 3 April 2026",
+    "sources": [
+      {
+        "title": "AWS",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/bedrock-guardrails-cross-account-safeguards/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "mcp-authorisation",
+    "topic": "MCP authorisation",
+    "status": "The 2026-07-28 specification made the protocol stateless and tightened its OAuth rules; Enterprise-Managed Authorization became a stable extension on 18 June 2026",
+    "sources": [
+      {
+        "title": "changelog",
+        "url": "https://modelcontextprotocol.io/specification/2026-07-28/changelog"
+      },
+      {
+        "title": "MCP blog",
+        "url": "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "mcp-assurance-levels",
+    "topic": "MCP assurance levels",
+    "status": "CoSAI MCP Security 2.0 defines four profiles, from sandbox to regulated",
+    "sources": [
+      {
+        "title": "CoSAI",
+        "url": "https://www.coalitionforsecureai.org/mcp-security-version-2-0-from-threat-taxonomy-to-a-model-you-can-actually-audit-against/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "agent-identity-and-policy-on-aws",
+    "topic": "Agent identity and policy on AWS",
+    "status": "AgentCore generally available October 2025; Policy on 3 March 2026; Guardrails in Policy on 17 June 2026",
+    "sources": [
+      {
+        "title": "AgentCore release notes",
+        "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/release-notes.html"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "detection-and-inventory-on-aws",
+    "topic": "Detection and inventory on AWS",
+    "status": "GuardDuty AI Protection and Security Hub AI inventory generally available 14 July 2026; the prompt-injection finding depends on Bedrock Guardrails detecting the attack",
+    "sources": [
+      {
+        "title": "AWS Security Blog",
+        "url": "https://aws.amazon.com/blogs/security/security-hub-adds-ai-workload-protection-and-multicloud-support-for-microsoft-azure/"
+      },
+      {
+        "title": "GuardDuty docs",
+        "url": "https://docs.aws.amazon.com/guardduty/latest/ug/ai-protection.html"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "logging-default",
+    "topic": "Logging default",
+    "status": "Bedrock model invocation logging is off until enabled",
+    "sources": [
+      {
+        "title": "Bedrock docs",
+        "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-invocation-logging.html"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "telemetry-standard",
+    "topic": "Telemetry standard",
+    "status": "OpenTelemetry's GenAI conventions are still at Development status, with message content capture opt-in",
+    "sources": [
+      {
+        "title": "OpenTelemetry",
+        "url": "https://opentelemetry.io/docs/specs/semconv/gen-ai/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "incident-response",
+    "topic": "Incident response",
+    "status": "CoSAI AI Incident Response Framework 1.0 (October 2025); OWASP GenAI Incident Response Guide 1.0 (July 2025)",
+    "sources": [
+      {
+        "title": "CoSAI",
+        "url": "https://www.coalitionforsecureai.org/defending-ai-systems-a-new-framework-for-incident-response-in-the-age-of-intelligent-technology/"
+      },
+      {
+        "title": "OWASP",
+        "url": "https://genai.owasp.org/resource/genai-incident-response-guide-1-0/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "model-supply-chain",
+    "topic": "Model supply chain",
+    "status": "Prefer safetensors, scan what you download, and sign and verify with OpenSSF Model Signing",
+    "sources": [
+      {
+        "title": "model signing",
+        "url": "https://github.com/sigstore/model-transparency"
+      },
+      {
+        "title": "Hugging Face",
+        "url": "https://huggingface.co/docs/hub/security"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "ai-for-defence",
+    "topic": "AI for defence",
+    "status": "AWS Security Agent penetration testing generally available 31 March 2026 and now part of AWS Continuum; DARPA AI Cyber Challenge final results in August 2025",
+    "sources": [
+      {
+        "title": "AWS",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-continuum/"
+      },
+      {
+        "title": "DARPA",
+        "url": "https://www.darpa.mil/news/2025/aixcc-results"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "aws-guidance",
+    "topic": "AWS guidance",
+    "status": "Well-Architected Generative AI and Responsible AI lenses (19 November 2025) and Agentic AI Lens (10 June 2026); security reference architecture for AI",
+    "sources": [
+      {
+        "title": "lenses",
+        "url": "https://aws.amazon.com/blogs/architecture/architecting-for-ai-excellence-aws-launches-three-well-architected-lenses-at-reinvent-2025"
+      },
+      {
+        "title": "Agentic AI Lens",
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentic-ai-lens.html"
+      },
+      {
+        "title": "SRA",
+        "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-generative-ai/introduction.html"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "other-clouds",
+    "topic": "Other clouds",
+    "status": "Microsoft Entra Agent ID generally available April 2026; Google Model Armor MCP integration generally available 22 April 2026",
+    "sources": [
+      {
+        "title": "Microsoft",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whats-new"
+      },
+      {
+        "title": "Google",
+        "url": "https://docs.cloud.google.com/model-armor/release-notes"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  }
+]

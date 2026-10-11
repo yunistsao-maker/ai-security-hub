@@ -1,0 +1,16 @@
+---
+import { getCollection } from 'astro:content';
+import { t, type Lang } from '../lib/i18n';
+interface Props { lang?: Lang }
+const { lang = 'en' } = Astro.props;
+const L = t(lang);
+const feeds = (await getCollection('sources')).map((e) => e.data);
+---
+<table>
+  <thead><tr><th>{L.feed}</th><th>{L.adds}</th><th>{L.language}</th></tr></thead>
+  <tbody>
+    {feeds.map((f) => (
+      <tr><td><a href={f.feedUrl} rel="noopener noreferrer">{f.name}</a></td><td>{f.adds}</td><td>{f.language === 'zh-TW' ? '繁體中文' : 'English'}</td></tr>
+    ))}
+  </tbody>
+</table>

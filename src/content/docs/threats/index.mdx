@@ -1,0 +1,41 @@
+---
+title: Threats
+description: What attackers do to AI systems and with them, and what the evidence shows in 2026.
+lastChecked: 2026-10-07
+sources:
+  - title: OWASP Top 10 for LLM Applications 2026
+    url: https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/README.md
+  - title: OWASP Top 10 for Agentic Applications 2026
+    url: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
+  - title: MITRE ATLAS changelog
+    url: https://github.com/mitre-atlas/atlas-data/blob/main/CHANGELOG.md
+---
+
+import RowsTable from '~/components/RowsTable.astro';
+
+The best-evidenced exploitation is of exposed AI tooling, stolen AI access and AI-assisted fraud. Prompt injection is rising, but large verified losses from it remain rare.
+
+Threats fall into six groups: classic adversarial machine learning, attacks on LLM applications, attacks on agents and MCP tooling, supply chain and infrastructure, AI-enabled offence, and risk that originates in the model itself.
+
+## The two OWASP Top 10 lists
+
+The LLM list covers a model used as a component of an application; the agentic list covers a model acting with tools and memory. Write identifiers with their year, such as LLM01:2026, because OWASP renumbered eight of the ten LLM entries between 2025 and 2026.
+
+| No. | LLM applications, 2026 | Agentic applications, 2026 |
+|---|---|---|
+| 01 | Prompt Injection | Agent Goal Hijack |
+| 02 | Sensitive Information Disclosure | Tool Misuse and Exploitation |
+| 03 | Excessive Agency | Identity and Privilege Abuse |
+| 04 | Supply Chain | Agentic Supply Chain Vulnerabilities |
+| 05 | Data and Model Poisoning | Unexpected Code Execution (RCE) |
+| 06 | Unbounded Consumption | Memory and Context Poisoning |
+| 07 | Misinformation | Insecure Inter-Agent Communication |
+| 08 | Hidden Context Exposure | Cascading Failures |
+| 09 | Vector and Embedding Weaknesses | Human-Agent Trust Exploitation |
+| 10 | Improper Output Handling | Rogue Agents |
+
+List titles from OWASP, published under CC BY-SA 4.0.
+
+## What the evidence says
+
+<RowsTable collection="threats" labelField="name" textField="evidence" labelHeader="threat" textHeader="evidence" />

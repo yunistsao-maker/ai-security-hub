@@ -1,0 +1,20 @@
+---
+title: Responsible AI
+description: Where security sits in responsible AI, frontier safety frameworks and AI governance.
+lastChecked: 2026-10-07
+sources:
+  - title: NIST, AI risks and trustworthiness
+    url: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/
+  - title: METR, frontier AI safety policies
+    url: https://metr.org/fsp
+  - title: Stanford AI Index 2026, responsible AI chapter
+    url: https://hai.stanford.edu/ai-index/2026-ai-index-report/responsible-ai
+---
+
+import RowsTable from '~/components/RowsTable.astro';
+
+Every principle set treats security as one named dimension of responsible AI, information security is the most common owner of AI governance, and frontier safety frameworks are where developers now publish their weight-security commitments.
+
+This site uses one working boundary. Responsible AI is the full set of properties. AI safety is about preventing harm from what a system does or enables. AI security is about protecting AI systems, data and model weights from adversaries, and protecting other systems from AI-enabled attack.
+
+<RowsTable collection="responsibleAi" labelField="topic" textField="status" labelHeader="topic" textHeader="status" />

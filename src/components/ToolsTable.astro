@@ -1,0 +1,17 @@
+---
+import { getCollection } from 'astro:content';
+import { t, type Lang } from '../lib/i18n';
+interface Props { lang?: Lang }
+const { lang = 'en' } = Astro.props;
+const L = t(lang);
+const tools = (await getCollection('tools')).map((e) => e.data);
+---
+{lang === 'zh' && <p class="note">{L.englishOnly}</p>}
+<table>
+  <thead><tr><th>{L.tool}</th><th>{L.maintainer}</th><th>{L.tests}</th><th>{L.release}</th><th>{L.licence}</th></tr></thead>
+  <tbody>
+    {tools.map((x) => (
+      <tr><td><a href={x.repo} rel="noopener noreferrer">{x.name}</a></td><td>{x.maintainer}</td><td>{x.tests}</td><td>{x.release}</td><td>{x.licence}</td></tr>
+    ))}
+  </tbody>
+</table>

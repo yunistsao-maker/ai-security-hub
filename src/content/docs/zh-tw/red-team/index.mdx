@@ -1,0 +1,27 @@
+---
+title: 紅隊
+description: 2026 年如何對 AI 系統進行對抗測試，以及常用的開源工具。
+lastChecked: 2026-10-07
+sources:
+  - title: OWASP GenAI Red Teaming Guide
+    url: https://genai.owasp.org/resource/genai-red-teaming-guide/
+  - title: OWASP AI Testing Guide
+    url: https://owasp.org/www-project-ai-testing-guide/
+  - title: UK AISI, building a more secure environment for evaluations
+    url: https://www.aisi.gov.uk/blog/building-a-more-secure-environment-for-evaluating-dangerous-capabilities
+---
+
+import RowsTable from '~/components/RowsTable.astro';
+import ToolsTable from '~/components/ToolsTable.astro';
+
+AI 紅隊演練已有穩定的方法文件與活躍的開源工具。2026 年的教訓是：測試環境本身必須被隔離。評測中的代理在網路存取沒有關閉時，曾經觸及真實系統。
+
+回報結果時，請以「在註明的嘗試次數下的攻擊成功率」呈現，並假設攻擊者會調整手法。靜態基準測試很快就會失去鑑別力。
+
+<RowsTable collection="redTeam" labelField="topic" textField="status" labelHeader="topic" textHeader="status" lang="zh" />
+
+## 開源工具
+
+版本資訊於 2026 年 10 月 7 日從各專案的標籤或套件庫讀取。
+
+<ToolsTable lang="zh" />

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "prompt-injection-inside-the-model",
+    "problem": "Prompt injection inside the model",
+    "evidence": "OpenAI calls it unlikely ever to be fully solved. The alternative is to enforce limits outside the model, which cost task success in one design: 77% of tasks solved against 84% undefended",
+    "sources": [
+      {
+        "title": "OpenAI",
+        "url": "https://openai.com/index/hardening-atlas-against-prompt-injection/"
+      },
+      {
+        "title": "CaMeL",
+        "url": "https://arxiv.org/abs/2503.18813"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "defences-under-adaptive-attack",
+    "problem": "Defences under adaptive attack",
+    "evidence": "Twelve recent defences were bypassed, most at above 90% success, although most had reported near-zero",
+    "sources": [
+      {
+        "title": "Nasr et al.",
+        "url": "https://arxiv.org/abs/2510.09023"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "universal-jailbreaks",
+    "problem": "Universal jailbreaks",
+    "evidence": "UK AISI has found one for every system it has tested; safeguards raised the expert effort needed about 40-fold between two models released six months apart",
+    "sources": [
+      {
+        "title": "UK AISI",
+        "url": "https://www.aisi.gov.uk/frontier-ai-trends-report"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "evaluations-that-predict-deployment",
+    "problem": "Evaluations that predict deployment",
+    "evidence": "Models now distinguish test settings from real use, so pre-deployment results do not reliably predict real-world risk",
+    "sources": [
+      {
+        "title": "International AI Safety Report 2026",
+        "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "containing-capable-agents",
+    "problem": "Containing capable agents",
+    "evidence": "Agents under evaluation took unsanctioned actions on the live internet in July 2026",
+    "sources": [
+      {
+        "title": "UK AISI",
+        "url": "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "poisoning-and-backdoor-detection",
+    "problem": "Poisoning and backdoor detection",
+    "evidence": "About 250 poisoned documents suffice whatever the model size, and backdoors can survive safety training",
+    "sources": [
+      {
+        "title": "Souly et al.",
+        "url": "https://arxiv.org/abs/2510.07192"
+      },
+      {
+        "title": "Hubinger et al.",
+        "url": "https://arxiv.org/abs/2401.05566"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "open-weight-diffusion",
+    "problem": "Open-weight diffusion",
+    "evidence": "Safeguards are easier to remove from open-weight models, which UK AISI put four to eight months behind closed models",
+    "sources": [
+      {
+        "title": "International AI Safety Report 2026",
+        "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+      },
+      {
+        "title": "UK AISI",
+        "url": "https://www.aisi.gov.uk/frontier-ai-trends-report"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "secure-ai-written-code",
+    "problem": "Secure AI-written code",
+    "evidence": "In one agent benchmark, 57% of solutions worked and 11.8% were secure",
+    "sources": [
+      {
+        "title": "SusVibes",
+        "url": "https://arxiv.org/abs/2512.03262"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "watermarks-and-deepfake-detection",
+    "problem": "Watermarks and deepfake detection",
+    "evidence": "Strong watermarking is impossible under natural assumptions; detector AUC fell by about half on in-the-wild media",
+    "sources": [
+      {
+        "title": "Zhang et al.",
+        "url": "https://arxiv.org/abs/2311.04378"
+      },
+      {
+        "title": "Deepfake-Eval-2024",
+        "url": "https://arxiv.org/abs/2503.02857"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "robust-perception-models",
+    "problem": "Robust perception models",
+    "evidence": "On CIFAR-10, robust accuracy barely exceeds 70%, and scaling laws predict a plateau near 90%",
+    "sources": [
+      {
+        "title": "Bartoldson et al.",
+        "url": "https://arxiv.org/abs/2404.09349"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "hardware-roots-of-trust",
+    "problem": "Hardware roots of trust",
+    "evidence": "Confidential-computing protections on current server processors were defeated by low-cost interposition on the memory bus",
+    "sources": [
+      {
+        "title": "TEE.fail",
+        "url": "https://tee.fail/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "validity-of-the-research-itself",
+    "problem": "Validity of the research itself",
+    "evidence": "A review of 72 peer-reviewed LLM-security papers found at least one methodological pitfall in every paper",
+    "sources": [
+      {
+        "title": "Evertz et al.",
+        "url": "https://arxiv.org/abs/2512.09549"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  }
+]

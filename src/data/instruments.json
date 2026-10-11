@@ -1,0 +1,344 @@
+[
+  {
+    "id": "eu-ai-act",
+    "jurisdiction": "EU",
+    "name": "AI Act",
+    "status": "Prohibitions since 2 February 2025; general-purpose AI duties since 2 August 2025; AI Office enforcement powers since 2 August 2026",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+      },
+      {
+        "title": "enforcement",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/enforcement-ai-act"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "eu-digital-omnibus-on-ai-regulation-eu-2026-1744",
+    "jurisdiction": "EU",
+    "name": "Digital Omnibus on AI, Regulation (EU) 2026/1744",
+    "status": "In force 27 July 2026; high-risk duties, including Article 15 cybersecurity, moved to 2 December 2027 (Annex III) and 2 August 2028 (Annex I)",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "EUR-Lex",
+        "url": "https://eur-lex.europa.eu/eli/reg/2026/1744/oj"
+      },
+      {
+        "title": "Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "eu-article-55-models-with-systemic-risk",
+    "jurisdiction": "EU",
+    "name": "Article 55, models with systemic risk",
+    "status": "Adversarial testing, serious-incident reporting and cybersecurity duties are binding and enforceable",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "AI Act text",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "eu-article-50-marking-of-ai-generated-content",
+    "jurisdiction": "EU",
+    "name": "Article 50 marking of AI-generated content",
+    "status": "Applies since 2 August 2026, with a grace period to 2 December 2026 for systems already on the market; code of practice published 10 June 2026",
+    "sourceTier": "secondary",
+    "sources": [
+      {
+        "title": "Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content"
+      },
+      {
+        "title": "Gibson Dunn",
+        "url": "https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "eu-cyber-resilience-act",
+    "jurisdiction": "EU",
+    "name": "Cyber Resilience Act",
+    "status": "Exploited vulnerabilities and severe incidents reported within 24 and 72 hours since 11 September 2026",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/cra-reporting"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "united-states-executive-order-14409",
+    "jurisdiction": "United States",
+    "name": "Executive Order 14409",
+    "status": "Signed 2 June 2026: voluntary pre-release government access for covered frontier models, plus federal cyber-defence actions. There is no federal AI statute",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Federal Register",
+        "url": "https://www.federalregister.gov/documents/2026/06/05/2026-11415/promoting-advanced-artificial-intelligence-innovation-and-security"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "california-sb-53",
+    "jurisdiction": "California",
+    "name": "SB 53",
+    "status": "In force since 1 January 2026: published frontier AI framework, incident reports, security for unreleased model weights",
+    "sourceTier": "secondary",
+    "sources": [
+      {
+        "title": "Morrison Foerster",
+        "url": "https://www.mofo.com/resources/insights/251001-california-enacts-ai-safety-transparency-regulation-tfaia-sb-53"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "new-york-raise-act",
+    "jurisdiction": "New York",
+    "name": "RAISE Act",
+    "status": "Applies from 1 January 2027: 72-hour incident reports and five-year record retention",
+    "sourceTier": "secondary",
+    "sources": [
+      {
+        "title": "Davis Wright Tremaine",
+        "url": "https://www.dwt.com/blogs/artificial-intelligence-law-advisor/2026/04/ny-overhauls-frontier-ai-transparency-law"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "colorado-sb-26-189",
+    "jurisdiction": "Colorado",
+    "name": "SB 26-189",
+    "status": "Replaced the 2024 AI Act; applies to decisions from 1 January 2027",
+    "sourceTier": "secondary",
+    "sources": [
+      {
+        "title": "Baker Botts",
+        "url": "https://ourtake.bakerbotts.com/post/102msga/colorado-repeals-and-replaces-ai-act"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "texas-traiga-hb-149",
+    "jurisdiction": "Texas",
+    "name": "TRAIGA, HB 149",
+    "status": "In force since 1 January 2026; NIST AI RMF alignment and red-team findings count as defences",
+    "sourceTier": "secondary",
+    "sources": [
+      {
+        "title": "King & Spalding",
+        "url": "https://www.kslaw.com/insights/articles/new-state-ai-laws-are-effective-on-january-1-2026-but-a-new-executive-order-signals-disruption"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "united-kingdom-cyber-security-and-resilience-bill",
+    "jurisdiction": "United Kingdom",
+    "name": "Cyber Security and Resilience Bill",
+    "status": "At Lords report stage on 5 October 2026; there is no AI statute, and the AI Cyber Security Code of Practice is voluntary",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Parliament",
+        "url": "https://bills.parliament.uk/bills/4035"
+      },
+      {
+        "title": "GOV.UK",
+        "url": "https://www.gov.uk/government/publications/ai-cyber-security-code-of-practice"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "taiwan-artificial-intelligence-basic-act",
+    "jurisdiction": "Taiwan",
+    "name": "Artificial Intelligence Basic Act",
+    "status": "Promulgated and in effect 14 January 2026; the National Science and Technology Council is the competent authority; seven principles including cybersecurity and safety; no penalties",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "NSTC",
+        "url": "https://law.nstc.gov.tw/EngLawContent.aspx?lan=E&id=10099"
+      }
+    ],
+    "lastChecked": "2026-10-07",
+    "nameZh": "人工智慧基本法",
+    "statusZh": "2026 年 1 月 14 日公布施行；中央主管機關為國科會；七大原則包含資安與安全；本法無罰則"
+  },
+  {
+    "id": "taiwan-ai-risk-classification-framework-v1-0",
+    "jurisdiction": "Taiwan",
+    "name": "AI Risk Classification Framework v1.0",
+    "status": "Issued by the Ministry of Digital Affairs on 7 July 2026; a reference for sector regulators, whose binding rules are due within two years of the Act",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "MODA",
+        "url": "https://moda.gov.tw/major-policies/ai/governance/19244"
+      },
+      {
+        "title": "NSTC plan",
+        "url": "https://www.ey.gov.tw/File/76681FD3D1A41585?A=C"
+      }
+    ],
+    "lastChecked": "2026-10-07",
+    "nameZh": "人工智慧風險分類框架 v1.0",
+    "statusZh": "數位發展部 2026 年 7 月 7 日發布；供各目的事業主管機關參考，產業別的拘束性規範須在本法施行後兩年內訂定"
+  },
+  {
+    "id": "taiwan-financial-supervisory-commission",
+    "jurisdiction": "Taiwan",
+    "name": "Financial Supervisory Commission",
+    "status": "AI guidelines for the financial industry since June 2024; reminder on frontier-AI attack risk issued 14 July 2026",
+    "sourceTier": "secondary",
+    "sources": [
+      {
+        "title": "FSC",
+        "url": "https://www.fsc.gov.tw/ch/home.jsp?id=2&parentpath=0&mcustomize=news_view.jsp&dataserno=202607140002&dtable=News"
+      },
+      {
+        "title": "CNA",
+        "url": "https://www.cna.com.tw/news/afe/202406200383.aspx"
+      }
+    ],
+    "lastChecked": "2026-10-07",
+    "nameZh": "金融監督管理委員會",
+    "statusZh": "2024 年 6 月起施行金融業運用 AI 指引；2026 年 7 月 14 日提醒金融業強化前沿 AI 模型攻擊風險整備"
+  },
+  {
+    "id": "taiwan-cyber-security-management-act-amendments",
+    "jurisdiction": "Taiwan",
+    "name": "Cyber Security Management Act amendments",
+    "status": "In force 1 December 2025",
+    "sourceTier": "secondary",
+    "sources": [
+      {
+        "title": "Lee and Li",
+        "url": "https://www.leeandli.com/TW/NewslettersDetail/7505.htm"
+      }
+    ],
+    "lastChecked": "2026-10-07",
+    "nameZh": "資通安全管理法修正",
+    "statusZh": "2025 年 12 月 1 日施行"
+  },
+  {
+    "id": "south-korea-ai-basic-act",
+    "jurisdiction": "South Korea",
+    "name": "AI Basic Act",
+    "status": "In force 22 January 2026; fines deferred during a grace period",
+    "sourceTier": "secondary",
+    "sources": [
+      {
+        "title": "US International Trade Administration",
+        "url": "https://www.trade.gov/market-intelligence/south-korea-ai-basic-act"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "vietnam-law-on-artificial-intelligence",
+    "jurisdiction": "Vietnam",
+    "name": "Law on Artificial Intelligence",
+    "status": "In force 1 March 2026; existing systems have 12 to 18 months to comply",
+    "sourceTier": "secondary",
+    "sources": [
+      {
+        "title": "VILAF",
+        "url": "https://www.vilaf.com.vn/blog/vietnam-enacts-its-first-law-on-artificial-intelligence-key-regulatory-obligations-from-1-march-2026/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "japan-ai-promotion-act",
+    "jurisdiction": "Japan",
+    "name": "AI Promotion Act",
+    "status": "Fully in force since 1 September 2025, without penalties; second AI Basic Plan dated 14 July 2026",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Cabinet Office",
+        "url": "https://www8.cao.go.jp/cstp/ai/ai_hou_gaiyou_en.pdf"
+      },
+      {
+        "title": "plan",
+        "url": "https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_eng_20260714.pdf"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "china-labelling-measures-and-amended-cybersecurity-law",
+    "jurisdiction": "China",
+    "name": "Labelling measures and amended Cybersecurity Law",
+    "status": "Labelling since 1 September 2025; amended law since 1 January 2026; there is no comprehensive AI law",
+    "sourceTier": "secondary",
+    "sources": [
+      {
+        "title": "CAC",
+        "url": "https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm"
+      },
+      {
+        "title": "Covington",
+        "url": "https://www.insideprivacy.com/cybersecurity-2/china-amends-cybersecurity-law-and-incident-reporting-regime-to-address-ai-and-infrastructure-risks/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "singapore-voluntary-frameworks",
+    "jurisdiction": "Singapore",
+    "name": "Voluntary frameworks",
+    "status": "Model AI Governance Framework for Agentic AI (22 January 2026); Cyber Security Agency addendum on securing agentic AI (17 June 2026)",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "IMDA",
+        "url": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2026/new-model-ai-governance-framework-for-agentic-ai"
+      },
+      {
+        "title": "CSA Singapore",
+        "url": "https://www.csa.gov.sg/resources/publications/addendum-on-securing-ai-systems/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "assurance-iso-iec-42001-certification",
+    "jurisdiction": "Assurance",
+    "name": "ISO/IEC 42001 certification",
+    "status": "The only AI management-system certification with accreditation rules in place (ISO/IEC 42006:2025); it certifies a management system, not a product's security",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "ISO/IEC 42001",
+        "url": "https://www.iso.org/standard/42001"
+      },
+      {
+        "title": "ISO/IEC 42006",
+        "url": "https://www.iso.org/standard/44546.html"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  }
+]

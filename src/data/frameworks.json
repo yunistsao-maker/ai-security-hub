@@ -1,0 +1,364 @@
+[
+  {
+    "id": "owasp-top-10-for-llm-applications-2026",
+    "name": "OWASP Top 10 for LLM Applications 2026",
+    "status": "Published 4 August 2026; eight of ten identifiers renumbered from 2025",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "release notes",
+        "url": "https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/README.md"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "owasp-top-10-for-agentic-applications-2026",
+    "name": "OWASP Top 10 for Agentic Applications 2026",
+    "status": "Published 9 December 2025; ASI01 to ASI10",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "OWASP",
+        "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "owasp-aisvs",
+    "name": "OWASP AISVS",
+    "status": "Version 1.0 released 26 June 2026: 191 testable requirements in 12 chapters",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "AISVS",
+        "url": "https://github.com/OWASP/AISVS/blob/main/README.md"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "owasp-ai-testing-guide",
+    "name": "OWASP AI Testing Guide",
+    "status": "Version 1 published 26 November 2025 with 32 test cases",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "OWASP",
+        "url": "https://owasp.org/www-project-ai-testing-guide/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "owasp-aivss",
+    "name": "OWASP AIVSS",
+    "status": "Version 0.8 (19 March 2026); version 1.0 targeted before the end of 2026",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "AIVSS",
+        "url": "https://aivss.owasp.org/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "owasp-mcp-top-10",
+    "name": "OWASP MCP Top 10",
+    "status": "Version 0.1 beta; next release listed for October 2026",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "OWASP",
+        "url": "https://owasp.org/www-project-mcp-top-10/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "owasp-agentic-skills-top-10",
+    "name": "OWASP Agentic Skills Top 10",
+    "status": "Version 1.0 published 17 August 2026",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "OWASP",
+        "url": "https://owasp.org/www-project-agentic-skills-top-10/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "owasp-agent-control-standard",
+    "name": "OWASP Agent Control Standard",
+    "status": "Public preview; version 0.1.3 dated 9 September 2026",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "OWASP",
+        "url": "https://genai.owasp.org/resource/agent-control-standard-acs/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "owasp-genai-security-crosswalk",
+    "name": "OWASP GenAI Security Crosswalk",
+    "status": "Version 4.0.0 (28 August 2026): 51 risk entries mapped to 26 frameworks",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "crosswalk",
+        "url": "https://github.com/GenAI-Security-Project/crosswalk/blob/main/README.md"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "mitre-atlas",
+    "name": "MITRE ATLAS",
+    "status": "Monthly releases since May 2026; release 2026.09 (14 September) has 16 tactics, 120 techniques, 88 sub-techniques, 40 mitigations and 73 case studies",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "changelog",
+        "url": "https://github.com/mitre-atlas/atlas-data/blob/main/CHANGELOG.md"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "cwe",
+    "name": "CWE",
+    "status": "CWE 4.20 (30 April 2026) added an AI and ML view, CWE-1448",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "CWE news",
+        "url": "https://cwe.mitre.org/news/archives/news2026.html"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "nist-final-publications",
+    "name": "NIST final publications",
+    "status": "AI RMF 1.0 (2023), AI 600-1 and SP 800-218A (2024), AI 100-2 E2025 (2025); none new in 2026",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "AI RMF",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      },
+      {
+        "title": "AI 100-2",
+        "url": "https://csrc.nist.gov/pubs/ai/100/2/e2025/final"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "nist-cyber-ai-profile-ir-8596",
+    "name": "NIST Cyber AI Profile (IR 8596)",
+    "status": "Preliminary draft of 16 December 2025; no later draft found",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "NIST",
+        "url": "https://csrc.nist.gov/pubs/ir/8596/iprd"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "nist-control-overlays-for-ai-cosais",
+    "name": "NIST control overlays for AI (COSAiS)",
+    "status": "A concept paper and one annotated outline only",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "NIST",
+        "url": "https://csrc.nist.gov/projects/cosais"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "nist-ai-agent-work",
+    "name": "NIST AI agent work",
+    "status": "Agent Standards Initiative announced 17 February 2026; comment summary published as NIST AI 800-5 on 18 May 2026",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "announcement",
+        "url": "https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure"
+      },
+      {
+        "title": "AI 800-5",
+        "url": "https://www.nist.gov/publications/summary-analysis-responses-request-information-regarding-security-considerations-ai"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "iso-iec-management-standards",
+    "name": "ISO/IEC management standards",
+    "status": "42001:2023, 42005:2025, 42006:2025 and 23894:2023 are published",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "ISO/IEC 42001",
+        "url": "https://www.iso.org/standard/42001"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "iso-iec-27090-ai-security-threats",
+    "name": "ISO/IEC 27090, AI security threats",
+    "status": "Approved and under publication; projected for October 2026",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "ISO",
+        "url": "https://www.iso.org/standard/27090"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "eu-harmonised-standards",
+    "name": "EU harmonised standards",
+    "status": "EN 18286 (quality management) published 22 July 2026 but not yet cited in the Official Journal; the cybersecurity draft prEN 18282 was rejected at enquiry",
+    "sourceTier": "secondary",
+    "sources": [
+      {
+        "title": "standards tracker",
+        "url": "https://krogrules.com/news"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "etsi-en-304-223",
+    "name": "ETSI EN 304 223",
+    "status": "Version 2.1.1 (December 2025): baseline cyber security requirements for AI models and systems",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "ETSI",
+        "url": "https://www.etsi.org/deliver/etsi_en/304200_304299/304223/02.01.01_60/en_304223v020101p.pdf"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "csa-ai-controls-matrix",
+    "name": "CSA AI Controls Matrix",
+    "status": "Version 1.1: 247 control objectives across 18 domains",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "CSA",
+        "url": "https://cloudsecurityalliance.org/blog/2026/07/14/ai-controls-matrix-v1-1-strengthening-the-foundation-for-trustworthy-ai"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "coalition-for-secure-ai",
+    "name": "Coalition for Secure AI",
+    "status": "MCP Security version 2.0 (12 August 2026); Zero Trust for AI Systems (September 2026)",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "MCP Security",
+        "url": "https://www.coalitionforsecureai.org/mcp-security-version-2-0-from-threat-taxonomy-to-a-model-you-can-actually-audit-against/"
+      },
+      {
+        "title": "Zero Trust",
+        "url": "https://www.coalitionforsecureai.org/zero-trust-for-ai-systems-why-authorization-cant-live-inside-the-model/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "google-saif-2-0",
+    "name": "Google SAIF 2.0",
+    "status": "Announced 6 October 2025 with an agent risk map",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Google",
+        "url": "https://blog.google/innovation-and-ai/technology/safety-security/ai-security-frontier-strategy-tools/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "databricks-dasf",
+    "name": "Databricks DASF",
+    "status": "Version 3.0 (20 March 2026): 97 risks and 73 controls",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "Databricks",
+        "url": "https://www.databricks.com/blog/agentic-ai-security-new-risks-and-controls-databricks-ai-security-framework-dasf-v30"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "aws-scoping-matrices",
+    "name": "AWS scoping matrices",
+    "status": "Generative AI matrix with five scopes; Agentic AI matrix with four scopes, published 21 November 2025",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "generative AI",
+        "url": "https://aws.amazon.com/ai/security/generative-ai-scoping-matrix/"
+      },
+      {
+        "title": "agentic AI",
+        "url": "https://aws.amazon.com/blogs/security/the-agentic-ai-security-scoping-matrix-a-framework-for-securing-autonomous-ai-systems/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "joint-government-guidance",
+    "name": "Joint government guidance",
+    "status": "\"Careful adoption of agentic AI services\", six agencies, 1 May 2026",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "ASD",
+        "url": "https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence/careful-adoption-of-agentic-ai-services"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "model-supply-chain",
+    "name": "Model supply chain",
+    "status": "OpenSSF Model Signing specification 1.0; CycloneDX 1.7 and SPDX 3.0.1 carry AI profiles; G7 minimum elements for an SBOM for AI (2026)",
+    "sourceTier": "primary",
+    "sources": [
+      {
+        "title": "OpenSSF",
+        "url": "https://github.com/ossf/model-signing-spec"
+      },
+      {
+        "title": "CycloneDX",
+        "url": "https://cyclonedx.org/capabilities/mlbom/"
+      },
+      {
+        "title": "G7 paper",
+        "url": "https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/KI/SBOM-for-AI_minimum-elements.pdf?__blob=publicationFile&v=4"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  }
+]

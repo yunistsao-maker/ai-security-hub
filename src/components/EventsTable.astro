@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content';
+import SourceLinks from './SourceLinks.astro';
+import { fmtRange, t, type Lang } from '../lib/i18n';
+interface Props { lang?: Lang; upcomingOnly?: boolean }
+const { lang = 'en', upcomingOnly = true } = Astro.props;
+const L = t(lang);
+const today = new Date().toISOString().slice(0, 10);
+const events = (await getCollection('events'))
+  .map((e) => e.data)
+  .filter((e) => !upcomingOnly || e.end >= today)
+  .sort((a, b) => a.start.localeCompare(b.start));
+---
+<table class="dated">
+  <thead><tr><th>{L.dates}</th><th>{L.event}</th><th>{L.place}</th><th>{L.source}</th></tr></thead>
+  <tbody>
+    {events.map((e) => (
+      <tr>
+        <td>{fmtRange(e.start, e.end, lang)}</td>
+        <td>{lang === 'zh' ? e.nameZh : e.name}</td>
+        <td>{lang === 'zh' ? e.placeZh : e.place}</td>
+        <td><SourceLinks sources={e.sources} /></td>
+      </tr>
+    ))}
+  </tbody>
+</table>

@@ -1,0 +1,50 @@
+---
+title: AI Security Hub
+description: A sourced, bilingual reference to AI security, with a section on Taiwan's AI regulation and a news stream.
+template: splash
+hero:
+  tagline: Where AI security stands now, with a primary source and a check date for every fact. Published by EPCD in English and Traditional Chinese.
+  actions:
+    - text: Start with the threats
+      link: /threats/
+      icon: right-arrow
+    - text: Taiwan regulation
+      link: /taiwan/ai-basic-act/
+      variant: minimal
+lastChecked: 2026-10-07
+sources:
+  - title: NIST AI 100-2 E2025
+    url: https://csrc.nist.gov/pubs/ai/100/2/e2025/final
+  - title: International AI Safety Report 2026
+    url: https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026
+---
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+## General AI security
+
+<CardGrid>
+  <LinkCard title="Threats" href="/threats/" description="What attackers do to AI systems, and what attackers now do with them." />
+  <LinkCard title="Frameworks and standards" href="/frameworks/" description="OWASP, MITRE ATLAS, NIST, ISO/IEC and industry frameworks, with versions." />
+  <LinkCard title="Red team" href="/red-team/" description="How AI systems are tested adversarially, and the open-source tools in use." />
+  <LinkCard title="Blue team" href="/blue-team/" description="The controls that hold up once a model reads untrusted content." />
+  <LinkCard title="Responsible AI" href="/responsible-ai/" description="Where security sits in responsible AI, safety frameworks and governance." />
+  <LinkCard title="Research" href="/research/" description="The 31 research areas and the problems still open." />
+</CardGrid>
+
+## Taiwan regulation
+
+<CardGrid>
+  <LinkCard title="Artificial Intelligence Basic Act" href="/taiwan/ai-basic-act/" description="In force since 14 January 2026: principles, authorities and the timetable." />
+  <LinkCard title="Risk framework and sector rules" href="/taiwan/risk-framework/" description="MODA's risk classification framework, the FSC and the AI Evaluation Center." />
+  <LinkCard title="Cybersecurity and personal data laws" href="/taiwan/cyber-and-data-laws/" description="Where binding security duties come from today." />
+  <LinkCard title="Taiwan compared" href="/taiwan/comparison/" description="Taiwan beside the EU, the US, Japan, Korea and others." />
+</CardGrid>
+
+## News and incidents
+
+<CardGrid>
+  <LinkCard title="News stream" href="/news/" description="Headlines from checked feeds, with a link to each publisher." />
+  <LinkCard title="Incident timeline" href="/news/incidents/" description="Dated AI security events, each with a primary source." />
+  <LinkCard title="Events" href="/news/events/" description="Confirmed conference dates." />
+</CardGrid>

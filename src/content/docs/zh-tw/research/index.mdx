@@ -1,0 +1,24 @@
+---
+title: 研究
+description: AI 安全的 31 個研究領域（分為六大類），以及仍未解決的問題。
+lastChecked: 2026-10-07
+sources:
+  - title: International AI Safety Report 2026
+    url: https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026
+  - title: Nasr et al., The Attacker Moves Second
+    url: https://arxiv.org/abs/2510.09023
+  - title: UK AISI Frontier AI Trends Report
+    url: https://www.aisi.gov.uk/frontier-ai-trends-report
+---
+
+import RowsTable from '~/components/RowsTable.astro';
+
+這個領域涵蓋六大類共 31 個研究方向。2024 年以來，重心從攻擊單一模型，轉向代理系統的安全，以及會自行執行資安行動的 AI 系統。
+
+<RowsTable collection="researchAreas" labelField="cluster" textField="areas" labelHeader="cluster" textHeader="areas" lang="zh" />
+
+## 公認未解的問題
+
+下列每個問題，都是引用的機構或論文自己描述為尚未解決。這些問題可歸結為三個根本原因：模型內部沒有區隔指令與資料的強制邊界；無法從外部驗證模型學到了什麼；能力擴散的速度快過管控。
+
+<RowsTable collection="openProblems" labelField="problem" textField="evidence" labelHeader="problem" textHeader="evidence" lang="zh" />

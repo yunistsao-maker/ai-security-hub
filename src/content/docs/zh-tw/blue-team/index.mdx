@@ -1,0 +1,24 @@
+---
+title: 藍隊
+description: 模型讀取不可信內容之後，仍然有效的防護控制。
+lastChecked: 2026-10-07
+sources:
+  - title: Design Patterns for Securing LLM Agents against Prompt Injections
+    url: https://arxiv.org/abs/2506.08837
+  - title: CoSAI, Zero Trust for AI Systems
+    url: https://www.coalitionforsecureai.org/zero-trust-for-ai-systems-why-authorization-cant-live-inside-the-model/
+  - title: Meta, Agents Rule of Two
+    url: https://ai.meta.com/blog/practical-ai-agent-security/
+---
+
+import RowsTable from '~/components/RowsTable.astro';
+
+已發表的共識是從架構下手：代理一旦讀取了不可信的內容，就必須由模型之外的控制來限制它能做的事；過濾器只是其中一層。
+
+最關鍵的三條規則：
+
+- **在模型之外做授權。** 不論模型多強，它的輸出都不可信。
+- **用作業系統或虛擬化層隔離，** 而不是靠對代理下指令。
+- **限制組合。** 沒有人監督時，一個工作階段最多只能同時具備以下三者中的兩項：不可信的輸入、存取敏感資料、對外採取行動。
+
+<RowsTable collection="blueTeam" labelField="topic" textField="status" labelHeader="topic" textHeader="status" lang="zh" />

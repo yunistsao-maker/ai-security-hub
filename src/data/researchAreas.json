@@ -1,0 +1,98 @@
+[
+  {
+    "id": "a-classical-ml-security-9",
+    "cluster": "A. Classical ML security (9)",
+    "areas": "Adversarial robustness and certified defences; poisoning and backdoors; privacy attacks; differential privacy; federated learning; machine unlearning; confidential computing; homomorphic encryption and secure multiparty inference; model extraction and fingerprinting",
+    "sources": [
+      {
+        "title": "NIST AI 100-2",
+        "url": "https://csrc.nist.gov/pubs/ai/100/2/e2025/final"
+      },
+      {
+        "title": "RobustBench",
+        "url": "https://robustbench.github.io/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "b-llm-and-agent-security-8",
+    "cluster": "B. LLM and agent security (8)",
+    "areas": "Jailbreaks and misuse safeguards; prompt injection; agent security; multi-agent security; retrieval and memory security; AI supply chain; AI-generated code and coding agents; inference-stack side channels and availability",
+    "sources": [
+      {
+        "title": "AgentDojo",
+        "url": "https://agentdojo.spylab.ai/"
+      },
+      {
+        "title": "JailbreakBench",
+        "url": "https://jailbreakbench.github.io/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "c-ai-and-cyber-operations-3",
+    "cluster": "C. AI and cyber operations (3)",
+    "areas": "AI for offence; AI for defence; AI-enabled cybercrime and threat-actor use",
+    "sources": [
+      {
+        "title": "Cybench",
+        "url": "https://cybench.github.io/"
+      },
+      {
+        "title": "DARPA AI Cyber Challenge",
+        "url": "https://www.darpa.mil/news/2025/aixcc-results"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "d-trust-in-content-1",
+    "cluster": "D. Trust in content (1)",
+    "areas": "Provenance, watermarking and deepfake detection",
+    "sources": [
+      {
+        "title": "watermarking survey",
+        "url": "https://arxiv.org/abs/2411.18479"
+      },
+      {
+        "title": "C2PA",
+        "url": "https://c2pa.org/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "e-assurance-and-oversight-4",
+    "cluster": "E. Assurance and oversight (4)",
+    "areas": "Interpretability for security; control, scheming and evaluation awareness; evaluation science and red-team method; formal verification",
+    "sources": [
+      {
+        "title": "Inspect",
+        "url": "https://inspect.aisi.org.uk/"
+      },
+      {
+        "title": "Towards Guaranteed Safe AI",
+        "url": "https://arxiv.org/abs/2405.06624"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "f-infrastructure-physical-world-and-society-6",
+    "cluster": "F. Infrastructure, physical world and society (6)",
+    "areas": "Model weights and compute; accelerator hardware; multimodal, speech and embodied robustness; critical infrastructure; economics, measurement and policy; cryptography that meets AI",
+    "sources": [
+      {
+        "title": "RAND",
+        "url": "https://www.rand.org/pubs/research_reports/RRA2849-1.html"
+      },
+      {
+        "title": "technical AI governance",
+        "url": "https://arxiv.org/abs/2407.14981"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  }
+]

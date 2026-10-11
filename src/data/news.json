@@ -1,0 +1,515 @@
+[
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/",
+    "title": "ARTEX AI, Claude agents used in cyberattacks on South Korean banks",
+    "url": "https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/",
+    "source": "BleepingComputer",
+    "published": "2026-10-10",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://www.ithome.com.tw/news/179532",
+    "title": "企業如何防止AI代理「做錯事」，專家建議四大治理方向",
+    "url": "https://www.ithome.com.tw/news/179532",
+    "source": "iThome 資安頻道",
+    "published": "2026-10-10",
+    "area": "responsible-ai",
+    "language": "zh-TW"
+  },
+  {
+    "id": "https://www.infosecurity-magazine.com/news/ai-training-critical-as-governance/",
+    "title": "AI Training Critical as Governance Challenges Grow",
+    "url": "https://www.infosecurity-magazine.com/news/ai-training-critical-as-governance/",
+    "source": "Infosecurity Magazine",
+    "published": "2026-10-09",
+    "area": "responsible-ai",
+    "language": "en"
+  },
+  {
+    "id": "https://www.wsj.com/us-news/chatgpt-mass-shooting-openai-78a436d1",
+    "title": "ChatGPT Wrestles With Its Most Chilling Conversation: How Do I Plan an Attack?",
+    "url": "https://www.wsj.com/us-news/chatgpt-mass-shooting-openai-78a436d1",
+    "source": "AI Incident Database",
+    "published": "2026-10-09",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/",
+    "title": "Hackers abuse Google Ads, Bing redirects to push Claude ClickFix attacks",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/",
+    "source": "BleepingComputer",
+    "published": "2026-10-09",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/how-to-keep-ai-agents-within-their-permissions/",
+    "title": "How to keep AI agents within their permissions",
+    "url": "https://www.bleepingcomputer.com/news/security/how-to-keep-ai-agents-within-their-permissions/",
+    "source": "BleepingComputer",
+    "published": "2026-10-09",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://www.infosecurity-magazine.com/news/ai-firms-pledge-data-protection/",
+    "title": "Major AI Firms Pledge Data Protection Changes Following UK Privacy Watchdog Push",
+    "url": "https://www.infosecurity-magazine.com/news/ai-firms-pledge-data-protection/",
+    "source": "Infosecurity Magazine",
+    "published": "2026-10-09",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://www.infosecurity-magazine.com/news/wikimedia-confirms-platforms-rogue/",
+    "title": "Wikimedia Says Rogue AI Agents Abused its Platforms",
+    "url": "https://www.infosecurity-magazine.com/news/wikimedia-confirms-platforms-rogue/",
+    "source": "Infosecurity Magazine",
+    "published": "2026-10-09",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://www.ithome.com.tw/news/179522",
+    "title": "【資安日報】10月8日，龔化中上任兩個月揭「國家資安防護2.0」，明年4月AI紅隊先攻政府機關",
+    "url": "https://www.ithome.com.tw/news/179522",
+    "source": "iThome 資安頻道",
+    "published": "2026-10-08",
+    "area": "red-team",
+    "language": "zh-TW"
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/ai-coding-agents-exposed-13000-internal.html",
+    "title": "AI Coding Agents Exposed 13,000 Internal Images, Including Billing Records, on GitHub",
+    "url": "https://thehackernews.com/2026/09/ai-coding-agents-exposed-13000-internal.html",
+    "source": "AI Incident Database",
+    "published": "2026-10-08",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://www.infosecurity-magazine.com/news/chinese-hacker-ai-korean-banks/",
+    "title": "Chinese Hacker Deployed AI in Campaign Against South Korean Banks",
+    "url": "https://www.infosecurity-magazine.com/news/chinese-hacker-ai-korean-banks/",
+    "source": "Infosecurity Magazine",
+    "published": "2026-10-08",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+    "title": "Disrupting AI-enabled “false front” operations",
+    "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+    "source": "OpenAI News",
+    "published": "2026-10-08",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://genai.owasp.org/2026/10/08/genai-and-agentic-ai-exploit-roundup-q3-2026/?utm_source=rss&utm_medium=rss&utm_campaign=genai-and-agentic-ai-exploit-roundup-q3-2026",
+    "title": "GenAI and Agentic AI Exploit Roundup Q3 2026",
+    "url": "https://genai.owasp.org/2026/10/08/genai-and-agentic-ai-exploit-roundup-q3-2026/?utm_source=rss&utm_medium=rss&utm_campaign=genai-and-agentic-ai-exploit-roundup-q3-2026",
+    "source": "OWASP GenAI Security Project",
+    "published": "2026-10-08",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://www.theatlantic.com/technology/2026/10/ai-hacking-cybersecurity-race/688911/",
+    "title": "How Long Until AI Hacks Everything?",
+    "url": "https://www.theatlantic.com/technology/2026/10/ai-hacking-cybersecurity-race/688911/",
+    "source": "AI Incident Database",
+    "published": "2026-10-08",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://www.glow.io/blogs/how-ai-agents-exposed-developer-screenshots-from-leading-tech-companies",
+    "title": "PixelLeak: How AI Agents Exposed Developer Screenshots from Leading Tech Companies",
+    "url": "https://www.glow.io/blogs/how-ai-agents-exposed-developer-screenshots-from-leading-tech-companies",
+    "source": "AI Incident Database",
+    "published": "2026-10-08",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://www.ithome.com.tw/news/179506",
+    "title": "多家韓國金融業者接連遭駭，CrowdStrike揭露疑似中國背景駭客結合AI與滲透測試工具從事攻擊",
+    "url": "https://www.ithome.com.tw/news/179506",
+    "source": "iThome 資安頻道",
+    "published": "2026-10-08",
+    "area": "threats",
+    "language": "zh-TW"
+  },
+  {
+    "id": "https://www.ithome.com.tw/news/179545",
+    "title": "美國DARPA推動安全通訊App漏洞研究，Theori旗下Xint將以AI分析軍用通訊程式攻擊面",
+    "url": "https://www.ithome.com.tw/news/179545",
+    "source": "iThome 資安頻道",
+    "published": "2026-10-08",
+    "area": "research",
+    "language": "zh-TW"
+  },
+  {
+    "id": "https://www.ithome.com.tw/news/179523",
+    "title": "行政院通過中小微企業轉型升級條例修法，數位、AI、資安與淨零投資納入抵減，門檻降至25萬元",
+    "url": "https://www.ithome.com.tw/news/179523",
+    "source": "iThome 資安頻道",
+    "published": "2026-10-08",
+    "area": "news",
+    "language": "zh-TW"
+  },
+  {
+    "id": "https://www.ithome.com.tw/news/179462",
+    "title": "語音AI新創Modulate募資2,500萬美元，從遊戲語音安全擴展深偽偵測與AI代理監督",
+    "url": "https://www.ithome.com.tw/news/179462",
+    "source": "iThome 資安頻道",
+    "published": "2026-10-08",
+    "area": "blue-team",
+    "language": "zh-TW"
+  },
+  {
+    "id": "https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/",
+    "title": "3 lessons from frontier AI vulnerability research",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/",
+    "source": "Microsoft Security Blog",
+    "published": "2026-10-07",
+    "area": "research",
+    "language": "en"
+  },
+  {
+    "id": "https://toronto.citynews.ca/2026/10/01/ai-agent-attempted-to-hack-library-and-archives-canada-says-u-s-research-group/",
+    "title": "AI agent attempted to hack Library and Archives Canada, says U.S. research group",
+    "url": "https://toronto.citynews.ca/2026/10/01/ai-agent-attempted-to-hack-library-and-archives-canada-says-u-s-research-group/",
+    "source": "AI Incident Database",
+    "published": "2026-10-07",
+    "area": "research",
+    "language": "en"
+  },
+  {
+    "id": "https://www.washingtonpost.com/technology/2026/09/30/openais-ai-agents-attempted-hack-canadian-government-website/",
+    "title": "AI agents tried to hack a Canadian government website, researchers say",
+    "url": "https://www.washingtonpost.com/technology/2026/09/30/openais-ai-agents-attempted-hack-canadian-government-website/",
+    "source": "AI Incident Database",
+    "published": "2026-10-07",
+    "area": "research",
+    "language": "en"
+  },
+  {
+    "id": "https://www.infosecurity-magazine.com/news/attackers-hide-ai-prompt/",
+    "title": "Attackers Hide AI Prompt Injections Inside Phishing Emails",
+    "url": "https://www.infosecurity-magazine.com/news/attackers-hide-ai-prompt/",
+    "source": "Infosecurity Magazine",
+    "published": "2026-10-07",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://aws.amazon.com/blogs/security/building-your-ai-vulnerability-harness-part-1/",
+    "title": "Building your AI vulnerability harness, Part 1",
+    "url": "https://aws.amazon.com/blogs/security/building-your-ai-vulnerability-harness-part-1/",
+    "source": "AWS Security Blog",
+    "published": "2026-10-07",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://aws.amazon.com/blogs/security/configuring-your-ai-vulnerability-harness-part-2-the-steering-file/",
+    "title": "Configuring your AI vulnerability harness, Part 2: The steering file",
+    "url": "https://aws.amazon.com/blogs/security/configuring-your-ai-vulnerability-harness-part-2-the-steering-file/",
+    "source": "AWS Security Blog",
+    "published": "2026-10-07",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://www.premiumtimesng.com/news/headlines/897605-special-report-inside-ai-scam-ads-exploiting-tiktoks-advertising-system-to-defraud-nigerians.html",
+    "title": "SPECIAL REPORT: Inside AI scam ads exploiting TikTok’s advertising system to defraud Nigerians",
+    "url": "https://www.premiumtimesng.com/news/headlines/897605-special-report-inside-ai-scam-ads-exploiting-tiktoks-advertising-system-to-defraud-nigerians.html",
+    "source": "AI Incident Database",
+    "published": "2026-10-07",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://www.ithome.com.tw/news/179468",
+    "title": "大映科技運用AI加速IoT網路封包分析，處理500MB資料量所需時間可從4小時縮至10幾分鐘",
+    "url": "https://www.ithome.com.tw/news/179468",
+    "source": "iThome 資安頻道",
+    "published": "2026-10-07",
+    "area": "news",
+    "language": "zh-TW"
+  },
+  {
+    "id": "https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/",
+    "title": "CISO perspectives on managing vulnerability risks in the age of AI",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/",
+    "source": "Microsoft Security Blog",
+    "published": "2026-10-06",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-127-aws/",
+    "title": "CVE-2026-105812 and CVE-2026-106032: Issue with Bedrock AgentCore Starter Toolkit - Import Agent Code Injection and SSRF",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-127-aws/",
+    "source": "AWS Security Bulletins",
+    "published": "2026-10-06",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://aws.amazon.com/blogs/security/identity-aware-ai-data-agents-with-aws-lake-formation-and-trusted-identity-propagation/",
+    "title": "Identity-aware AI data agents with AWS Lake Formation and Trusted Identity Propagation",
+    "url": "https://aws.amazon.com/blogs/security/identity-aware-ai-data-agents-with-aws-lake-formation-and-trusted-identity-propagation/",
+    "source": "AWS Security Blog",
+    "published": "2026-10-06",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://www.wiz.io/blog/introducing-wiz-ai-sast",
+    "title": "Introducing Wiz AI SAST: Application Security that Understands Your Code and Your Infrastructure",
+    "url": "https://www.wiz.io/blog/introducing-wiz-ai-sast",
+    "source": "Wiz",
+    "published": "2026-10-06",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://www.infosecurity-magazine.com/news/google-suspends-opensource-bug/",
+    "title": "Google Suspends Open-Source Bug Bounty Due to AI Vulnerability Reports",
+    "url": "https://www.infosecurity-magazine.com/news/google-suspends-opensource-bug/",
+    "source": "Infosecurity Magazine",
+    "published": "2026-10-05",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://www.coalitionforsecureai.org/how-much-assurance-does-your-ai-supply-chain-need/",
+    "title": "How Much Assurance Does Your AI Supply Chain Need?",
+    "url": "https://www.coalitionforsecureai.org/how-much-assurance-does-your-ai-supply-chain-need/",
+    "source": "Coalition for Secure AI",
+    "published": "2026-10-05",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://labs.zenity.io/post/salesbleed-0-click-data-exfiltration-on-agentforce",
+    "title": "SalesBleed: Indirect Prompt Injection and 0-Click Data Exfiltration on Agentforce",
+    "url": "https://labs.zenity.io/post/salesbleed-0-click-data-exfiltration-on-agentforce",
+    "source": "AI Incident Database",
+    "published": "2026-10-03",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://www.infosecurity-magazine.com/news/microsoft-ai-attack-time-minutes/",
+    "title": "Microsoft: AI Cuts Post-Compromise Attack Time to Minutes",
+    "url": "https://www.infosecurity-magazine.com/news/microsoft-ai-attack-time-minutes/",
+    "source": "Infosecurity Magazine",
+    "published": "2026-10-02",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://www.infosecurity-magazine.com/news/mitigating-adversarial-ai-top/",
+    "title": "AI Threats Top Cybersecurity Preparedness Gap, PwC Finds",
+    "url": "https://www.infosecurity-magazine.com/news/mitigating-adversarial-ai-top/",
+    "source": "Infosecurity Magazine",
+    "published": "2026-10-01",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://www.infosecurity-magazine.com/news/ta419-impersonates-ai-experts-us/",
+    "title": "China-Linked Hackers Impersonate AI Experts to Target US Policy Insiders",
+    "url": "https://www.infosecurity-magazine.com/news/ta419-impersonates-ai-experts-us/",
+    "source": "Infosecurity Magazine",
+    "published": "2026-10-01",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://www.infosecurity-magazine.com/news/ai-found-vulnerabilities-rce/",
+    "title": "AI-Found Vulnerabilities More Likely to Enable RCE, Google Says",
+    "url": "https://www.infosecurity-magazine.com/news/ai-found-vulnerabilities-rce/",
+    "source": "Infosecurity Magazine",
+    "published": "2026-09-30",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://embracethered.com/blog/posts/2026/from-select-to-sysadmin-sql-copilot-bluehat-asia/",
+    "title": "From SELECT to SYSADMIN with SQL Copilot (CVE-2026-65669)",
+    "url": "https://embracethered.com/blog/posts/2026/from-select-to-sysadmin-sql-copilot-bluehat-asia/",
+    "source": "Embrace The Red",
+    "published": "2026-09-30",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://www.motherjones.com/politics/2026/09/how-a-russian-attack-on-the-midterms-deepfaked-mother-jones-matryoshka-putin-trump/",
+    "title": "How Russia Is Attacking the Midterms with a Mother Jones Deepfake",
+    "url": "https://www.motherjones.com/politics/2026/09/how-a-russian-attack-on-the-midterms-deepfaked-mother-jones-matryoshka-putin-trump/",
+    "source": "AI Incident Database",
+    "published": "2026-09-29",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://www.reuters.com/legal/litigation/chinas-zai-disables-ai-coding-assistant-features-after-security-issue-2026-09-21/",
+    "title": "China's Z.ai disables AI coding assistant features after security issue",
+    "url": "https://www.reuters.com/legal/litigation/chinas-zai-disables-ai-coding-assistant-features-after-security-issue-2026-09-21/",
+    "source": "AI Incident Database",
+    "published": "2026-09-27",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://www.coalitionforsecureai.org/mcp-security-version-2-0-from-threat-taxonomy-to-a-model-you-can-actually-audit-against/",
+    "title": "MCP Security, Version 2.0: From Threat Taxonomy to a Model You Can Actually Audit Against",
+    "url": "https://www.coalitionforsecureai.org/mcp-security-version-2-0-from-threat-taxonomy-to-a-model-you-can-actually-audit-against/",
+    "source": "Coalition for Secure AI",
+    "published": "2026-09-25",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://www.wiz.io/blog/infostealer-incursion-cloud-ai-credentials",
+    "title": "The Infostealer Incursion: How Stolen Credentials Breach Cloud, Code, and AI Environments",
+    "url": "https://www.wiz.io/blog/infostealer-incursion-cloud-ai-credentials",
+    "source": "Wiz",
+    "published": "2026-09-25",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://www.wiz.io/blog/scan-for-good-critical-ai-exposures",
+    "title": "Scan for Good: Using AI to discover and fix high-priority exposures across public services and critical infrastructure",
+    "url": "https://www.wiz.io/blog/scan-for-good-critical-ai-exposures",
+    "source": "Wiz",
+    "published": "2026-09-24",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-052-aws/",
+    "title": "CVE-2026-14471 - Authenticated SQL injection in the metrics-service retention policy subsystem of mcp-gateway-registry",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-052-aws/",
+    "source": "AWS Security Bulletins",
+    "published": "2026-09-22",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-060-aws/",
+    "title": "CVE-2026-15415 - Path traversal and arbitrary file write in the workflow linters of aws-healthomics-mcp-server",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-060-aws/",
+    "source": "AWS Security Bulletins",
+    "published": "2026-09-22",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-054-aws/",
+    "title": "CVE-2026-15643 - AWS HealthLake MCP Server SSRF via Unvalidated Pagination URL",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-054-aws/",
+    "source": "AWS Security Bulletins",
+    "published": "2026-09-22",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-063-aws/",
+    "title": "CVE-2026-16584 - AWS API MCP Server Security Policy Bypass via Startup Failure",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-063-aws/",
+    "source": "AWS Security Bulletins",
+    "published": "2026-09-22",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-065-aws/",
+    "title": "CVE-2026-16796 - Improper neutralization of argument delimiters in AWS Bedrock AgentCore Python SDK install_packages()",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-065-aws/",
+    "source": "AWS Security Bulletins",
+    "published": "2026-09-22",
+    "area": "threats",
+    "language": "en"
+  },
+  {
+    "id": "https://www.wiz.io/blog/wiz-mcp-agent-integrations",
+    "title": "Growing the WIN AI Ecosystem with Agent Integrations",
+    "url": "https://www.wiz.io/blog/wiz-mcp-agent-integrations",
+    "source": "Wiz",
+    "published": "2026-09-22",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://aws.amazon.com/blogs/security/transforming-bedrock-guardrails-events-into-ocsf-with-cloudwatch/",
+    "title": "Transforming Bedrock Guardrails events into OCSF with CloudWatch",
+    "url": "https://aws.amazon.com/blogs/security/transforming-bedrock-guardrails-events-into-ocsf-with-cloudwatch/",
+    "source": "AWS Security Blog",
+    "published": "2026-09-21",
+    "area": "blue-team",
+    "language": "en"
+  },
+  {
+    "id": "https://blog.trailofbits.com/2026/09/18/auditing-in-the-age-of-good-enough-ai/",
+    "title": "Auditing in the age of (good enough) AI",
+    "url": "https://blog.trailofbits.com/2026/09/18/auditing-in-the-age-of-good-enough-ai/",
+    "source": "Trail of Bits",
+    "published": "2026-09-18",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://www.wiz.io/blog/building-an-ai-detection-engine-for-agent-intent",
+    "title": "Building an AI Detection Engine That Understands Agent Intent",
+    "url": "https://www.wiz.io/blog/building-an-ai-detection-engine-for-agent-intent",
+    "source": "Wiz",
+    "published": "2026-09-17",
+    "area": "blue-team",
+    "language": "en"
+  },
+  {
+    "id": "https://aws.amazon.com/blogs/security/run-open-weight-models-on-aws-bedrock-in-aws-european-sovereign-cloud/",
+    "title": "Run open weight models on Amazon Bedrock in AWS European Sovereign Cloud",
+    "url": "https://aws.amazon.com/blogs/security/run-open-weight-models-on-aws-bedrock-in-aws-european-sovereign-cloud/",
+    "source": "AWS Security Blog",
+    "published": "2026-09-17",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
+    "title": "Self-generated prompt injections in compaction summaries",
+    "url": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
+    "source": "Simon Willison, prompt-injection tag",
+    "published": "2026-09-17",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://www.coalitionforsecureai.org/zero-trust-for-ai-systems-why-authorization-cant-live-inside-the-model/",
+    "title": "Zero Trust for AI Systems: Why Authorization Can’t Live Inside the Model",
+    "url": "https://www.coalitionforsecureai.org/zero-trust-for-ai-systems-why-authorization-cant-live-inside-the-model/",
+    "source": "Coalition for Secure AI",
+    "published": "2026-09-16",
+    "area": "news",
+    "language": "en"
+  },
+  {
+    "id": "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading/",
+    "title": "1Password's AI patching benchmark is misleading",
+    "url": "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading/",
+    "source": "Trail of Bits",
+    "published": "2026-09-15",
+    "area": "blue-team",
+    "language": "en"
+  }
+]

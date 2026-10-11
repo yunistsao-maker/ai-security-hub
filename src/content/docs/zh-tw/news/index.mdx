@@ -1,0 +1,25 @@
+---
+title: 新聞
+description: 來自已查核來源的 AI 安全新聞標題，連結至各發布者。
+sidebar:
+  order: 1
+lastChecked: 2026-10-07
+sources:
+  - title: OWASP GenAI Security Project feed
+    url: https://genai.owasp.org/feed/
+  - title: iThome 資安頻道
+    url: https://www.ithome.com.tw/rss/security
+---
+
+import NewsList from '~/components/NewsList.astro';
+import FeedsTable from '~/components/FeedsTable.astro';
+
+只收錄標題：每則顯示標題、日期與發布者，並連到原文。新聞由 GitHub Actions 工作收集，保留符合 AI 安全關鍵字的項目，再提交到網站，與其他內容經過相同的檢查。
+
+<NewsList lang="zh" />
+
+## 來源
+
+以下來源於 2026 年 10 月 7 日查核時都有最新內容。
+
+<FeedsTable lang="zh" />

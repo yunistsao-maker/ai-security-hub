@@ -1,0 +1,20 @@
+---
+title: 框架與標準
+description: 主要的 AI 安全框架與標準，附目前版本。
+lastChecked: 2026-10-07
+sources:
+  - title: OWASP GenAI Security Project resources
+    url: https://genai.owasp.org/resources/
+  - title: MITRE ATLAS changelog
+    url: https://github.com/mitre-atlas/atlas-data/blob/main/CHANGELOG.md
+  - title: NIST AI Risk Management Framework
+    url: https://www.nist.gov/itl/ai-risk-management-framework
+---
+
+import RowsTable from '~/components/RowsTable.astro';
+
+OWASP 在 2026 年 8 月重新發布 LLM 十大風險並調整編號，MITRE ATLAS 改為每月發布，NIST 在 2026 年沒有發布新的正式 AI 安全框架。
+
+這些框架應搭配使用，而不是擇一：OWASP 清單列出風險，MITRE ATLAS 描述攻擊手法與真實案例，NIST 與 ISO/IEC 說明如何管理風險，OWASP GenAI Security Crosswalk 則提供彼此之間的對照。
+
+<RowsTable collection="frameworks" labelField="name" textField="status" labelHeader="item" textHeader="status" lang="zh" />

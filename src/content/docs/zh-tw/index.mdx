@@ -1,0 +1,50 @@
+---
+title: AI 安全知識中心
+description: 附來源的雙語 AI 安全參考網站，包含台灣 AI 法規專區與新聞更新。
+template: splash
+hero:
+  tagline: AI 安全的最新現況，每一項事實都附原始來源與查核日期。由 EPCD 以英文與繁體中文發布。
+  actions:
+    - text: 從威脅開始
+      link: /zh-tw/threats/
+      icon: right-arrow
+    - text: 台灣法規
+      link: /zh-tw/taiwan/ai-basic-act/
+      variant: minimal
+lastChecked: 2026-10-07
+sources:
+  - title: NIST AI 100-2 E2025
+    url: https://csrc.nist.gov/pubs/ai/100/2/e2025/final
+  - title: International AI Safety Report 2026
+    url: https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026
+---
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+## AI 安全總覽
+
+<CardGrid>
+  <LinkCard title="威脅" href="/zh-tw/threats/" description="攻擊者如何攻擊 AI 系統，以及如何利用 AI 發動攻擊。" />
+  <LinkCard title="框架與標準" href="/zh-tw/frameworks/" description="OWASP、MITRE ATLAS、NIST、ISO/IEC 與產業框架，附目前版本。" />
+  <LinkCard title="紅隊" href="/zh-tw/red-team/" description="如何對 AI 系統進行對抗測試，以及常用的開源工具。" />
+  <LinkCard title="藍隊" href="/zh-tw/blue-team/" description="模型讀取不可信內容之後，仍然有效的防護控制。" />
+  <LinkCard title="負責任 AI" href="/zh-tw/responsible-ai/" description="資安在負責任 AI、前沿安全框架與治理中的位置。" />
+  <LinkCard title="研究" href="/zh-tw/research/" description="31 個研究領域，以及仍未解決的問題。" />
+</CardGrid>
+
+## 台灣法規
+
+<CardGrid>
+  <LinkCard title="人工智慧基本法" href="/zh-tw/taiwan/ai-basic-act/" description="2026 年 1 月 14 日施行：原則、主管機關與時程。" />
+  <LinkCard title="風險框架與產業規範" href="/zh-tw/taiwan/risk-framework/" description="數位部風險分類框架、金管會與 AI 評測中心。" />
+  <LinkCard title="資安與個資法規" href="/zh-tw/taiwan/cyber-and-data-laws/" description="目前具拘束力的資安義務從哪裡來。" />
+  <LinkCard title="台灣與各國比較" href="/zh-tw/taiwan/comparison/" description="台灣與歐盟、美國、日本、南韓等地的對照。" />
+</CardGrid>
+
+## 新聞與事件
+
+<CardGrid>
+  <LinkCard title="新聞" href="/zh-tw/news/" description="來自已查核來源的標題，連結至各發布者。" />
+  <LinkCard title="事件時間軸" href="/zh-tw/news/incidents/" description="依日期排列的 AI 安全事件，每筆附原始來源。" />
+  <LinkCard title="活動" href="/zh-tw/news/events/" description="已確認日期的研討會。" />
+</CardGrid>

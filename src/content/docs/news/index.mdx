@@ -1,0 +1,25 @@
+---
+title: News stream
+description: AI security headlines from checked feeds, each linking to its publisher.
+sidebar:
+  order: 1
+lastChecked: 2026-10-07
+sources:
+  - title: OWASP GenAI Security Project feed
+    url: https://genai.owasp.org/feed/
+  - title: AWS Security Blog feed
+    url: https://aws.amazon.com/blogs/security/feed/
+---
+
+import NewsList from '~/components/NewsList.astro';
+import FeedsTable from '~/components/FeedsTable.astro';
+
+Headlines only: each item shows the title, date and publisher and links to the original. A GitHub Actions job collects them, keeps items that match an AI security keyword list, and commits them so they pass the same checks as the rest of the site.
+
+<NewsList />
+
+## Feeds
+
+These endpoints returned current items when checked on 7 October 2026.
+
+<FeedsTable />

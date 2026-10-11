@@ -1,0 +1,20 @@
+---
+title: Frameworks and standards
+description: The main AI security frameworks and standards, with their current versions.
+lastChecked: 2026-10-07
+sources:
+  - title: OWASP GenAI Security Project resources
+    url: https://genai.owasp.org/resources/
+  - title: MITRE ATLAS changelog
+    url: https://github.com/mitre-atlas/atlas-data/blob/main/CHANGELOG.md
+  - title: NIST AI Risk Management Framework
+    url: https://www.nist.gov/itl/ai-risk-management-framework
+---
+
+import RowsTable from '~/components/RowsTable.astro';
+
+OWASP reissued its LLM Top 10 in August 2026 with new numbering, MITRE ATLAS now ships monthly, and NIST published no new final AI security framework in 2026.
+
+Use them together rather than choosing one. OWASP's lists name the risks, MITRE ATLAS describes attacker techniques and real cases, NIST and ISO/IEC set out how to manage risk, and the OWASP GenAI Security Crosswalk maps between them.
+
+<RowsTable collection="frameworks" labelField="name" textField="status" labelHeader="item" textHeader="status" />

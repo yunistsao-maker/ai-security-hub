@@ -1,0 +1,234 @@
+[
+  {
+    "id": "2026-10-21-camlis",
+    "name": "CAMLIS, applied machine learning in security",
+    "nameZh": "CAMLIS，資安領域的機器學習應用研討會",
+    "start": "2026-10-21",
+    "end": "2026-10-23",
+    "place": "Arlington, Virginia",
+    "placeZh": "美國維吉尼亞州阿靈頓",
+    "sources": [
+      {
+        "title": "CAMLIS",
+        "url": "https://www.camlis.org/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-10-27-un-prompted-ii",
+    "name": "[un]prompted II, an AI security practitioner conference",
+    "nameZh": "[un]prompted II，AI 安全實務研討會",
+    "start": "2026-10-27",
+    "end": "2026-10-29",
+    "place": "San Francisco",
+    "placeZh": "美國舊金山",
+    "sources": [
+      {
+        "title": "conference site",
+        "url": "https://unpromptedcon.org/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-11-02-sans-ai-cybersecurity-summit",
+    "name": "SANS AI Cybersecurity Summit",
+    "nameZh": "SANS AI 資安高峰會",
+    "start": "2026-11-02",
+    "end": "2026-11-03",
+    "place": "Arlington, Virginia",
+    "placeZh": "美國維吉尼亞州阿靈頓",
+    "sources": [
+      {
+        "title": "partner listing",
+        "url": "https://unpromptedcon.org/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-11-15-acm-ccs",
+    "name": "ACM CCS, with the AISec workshop on 15 November",
+    "nameZh": "ACM CCS（AISec 工作坊於 11 月 15 日）",
+    "start": "2026-11-15",
+    "end": "2026-11-19",
+    "place": "The Hague",
+    "placeZh": "荷蘭海牙",
+    "sources": [
+      {
+        "title": "CCS",
+        "url": "https://www.sigsac.org/ccs/CCS2026/"
+      },
+      {
+        "title": "AISec",
+        "url": "https://aisec.cc/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-11-30-aws-re-invent",
+    "name": "AWS re:Invent, with re:Inforce folded into it this year",
+    "nameZh": "AWS re:Invent（今年併入 re:Inforce）",
+    "start": "2026-11-30",
+    "end": "2026-12-04",
+    "place": "Las Vegas",
+    "placeZh": "美國拉斯維加斯",
+    "sources": [
+      {
+        "title": "re:Invent",
+        "url": "https://aws.amazon.com/events/reinvent/"
+      },
+      {
+        "title": "re:Inforce",
+        "url": "https://aws.amazon.com/events/reinforce"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-12-06-neurips",
+    "name": "NeurIPS, with satellite events in Atlanta and Paris on 9 to 13 December",
+    "nameZh": "NeurIPS（亞特蘭大與巴黎衛星場次 12 月 9 至 13 日）",
+    "start": "2026-12-06",
+    "end": "2026-12-12",
+    "place": "Sydney",
+    "placeZh": "澳洲雪梨",
+    "sources": [
+      {
+        "title": "NeurIPS",
+        "url": "https://neurips.cc/Conferences/2026"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-12-07-black-hat-europe",
+    "name": "Black Hat Europe",
+    "nameZh": "Black Hat Europe",
+    "start": "2026-12-07",
+    "end": "2026-12-10",
+    "place": "London",
+    "placeZh": "英國倫敦",
+    "sources": [
+      {
+        "title": "Black Hat",
+        "url": "https://www.blackhat.com/upcoming.html"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2026-12-07-acsac",
+    "name": "ACSAC",
+    "nameZh": "ACSAC",
+    "start": "2026-12-07",
+    "end": "2026-12-11",
+    "place": "Los Angeles",
+    "placeZh": "美國洛杉磯",
+    "sources": [
+      {
+        "title": "ACSAC",
+        "url": "https://www.acsac.org/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2027-02-28-black-hat-asia",
+    "name": "Black Hat Asia",
+    "nameZh": "Black Hat Asia",
+    "start": "2027-02-28",
+    "end": "2027-03-03",
+    "place": "Singapore",
+    "placeZh": "新加坡",
+    "sources": [
+      {
+        "title": "Black Hat",
+        "url": "https://www.blackhat.com/upcoming.html"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2027-03-22-ndss-symposium",
+    "name": "NDSS Symposium",
+    "nameZh": "NDSS 研討會",
+    "start": "2027-03-22",
+    "end": "2027-03-26",
+    "place": "Seoul",
+    "placeZh": "南韓首爾",
+    "sources": [
+      {
+        "title": "NDSS",
+        "url": "https://www.ndss-symposium.org/ndss2027/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2027-04-26-iclr",
+    "name": "ICLR",
+    "nameZh": "ICLR",
+    "start": "2027-04-26",
+    "end": "2027-04-30",
+    "place": "California",
+    "placeZh": "美國加州",
+    "sources": [
+      {
+        "title": "ICLR",
+        "url": "https://iclr.cc/Conferences/2027"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2027-07-31-black-hat-usa",
+    "name": "Black Hat USA",
+    "nameZh": "Black Hat USA",
+    "start": "2027-07-31",
+    "end": "2027-08-05",
+    "place": "Las Vegas",
+    "placeZh": "美國拉斯維加斯",
+    "sources": [
+      {
+        "title": "Black Hat",
+        "url": "https://www.blackhat.com/upcoming.html"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2027-08-05-def-con-35",
+    "name": "DEF CON 35, home of the AI Village",
+    "nameZh": "DEF CON 35（AI Village 所在）",
+    "start": "2027-08-05",
+    "end": "2027-08-08",
+    "place": "Las Vegas",
+    "placeZh": "美國拉斯維加斯",
+    "sources": [
+      {
+        "title": "DEF CON",
+        "url": "https://defcon.org/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "2027-08-11-usenix-security",
+    "name": "USENIX Security",
+    "nameZh": "USENIX Security",
+    "start": "2027-08-11",
+    "end": "2027-08-13",
+    "place": "Denver",
+    "placeZh": "美國丹佛",
+    "sources": [
+      {
+        "title": "USENIX",
+        "url": "https://www.usenix.org/conference/usenixsecurity27"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  }
+]

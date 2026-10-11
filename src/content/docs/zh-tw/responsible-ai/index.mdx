@@ -1,0 +1,20 @@
+---
+title: 負責任 AI
+description: 資安在負責任 AI、前沿安全框架與 AI 治理中的位置。
+lastChecked: 2026-10-07
+sources:
+  - title: NIST, AI risks and trustworthiness
+    url: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/
+  - title: METR, frontier AI safety policies
+    url: https://metr.org/fsp
+  - title: Stanford AI Index 2026, responsible AI chapter
+    url: https://hai.stanford.edu/ai-index/2026-ai-index-report/responsible-ai
+---
+
+import RowsTable from '~/components/RowsTable.astro';
+
+各家原則都把資安列為負責任 AI 的一個面向；資安部門是最常見的 AI 治理負責單位；前沿安全框架則是開發者公開承諾模型權重保護的地方。
+
+本站採用以下分界：負責任 AI 是整體屬性的集合；AI 安全（safety）著重於防止系統的行為或促成的事造成傷害；AI 資安（security）著重於保護 AI 系統、資料與模型權重不受攻擊，以及保護其他系統不受 AI 賦能的攻擊。
+
+<RowsTable collection="responsibleAi" labelField="topic" textField="status" labelHeader="topic" textHeader="status" lang="zh" />

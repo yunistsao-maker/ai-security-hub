@@ -1,0 +1,30 @@
+---
+// Generic two-column table for collections shaped as {label, text, sources}.
+import { getCollection, type CollectionKey } from 'astro:content';
+import SourceLinks from './SourceLinks.astro';
+import { t, type Lang } from '../lib/i18n';
+interface Props {
+  collection: CollectionKey;
+  labelField: string;
+  textField: string;
+  labelHeader: 'item' | 'threat' | 'topic' | 'problem' | 'cluster';
+  textHeader: 'status' | 'evidence' | 'areas';
+  lang?: Lang;
+}
+const { collection, labelField, textField, labelHeader, textHeader, lang = 'en' } = Astro.props;
+const L = t(lang);
+const rows = (await getCollection(collection)).map((e) => e.data as Record<string, any>);
+---
+{lang === 'zh' && <p class="note">{L.englishOnly}</p>}
+<table>
+  <thead><tr><th>{L[labelHeader]}</th><th>{L[textHeader]}</th><th>{L.source}</th></tr></thead>
+  <tbody>
+    {rows.map((r) => (
+      <tr>
+        <td>{r[labelField]}</td>
+        <td>{r[textField]}{r.sourceTier === 'secondary' && ` (${L.secondary})`}</td>
+        <td><SourceLinks sources={r.sources} /></td>
+      </tr>
+    ))}
+  </tbody>
+</table>

@@ -1,0 +1,41 @@
+---
+title: 威脅
+description: 攻擊者如何攻擊 AI 系統、如何利用 AI，以及 2026 年的證據顯示什麼。
+lastChecked: 2026-10-07
+sources:
+  - title: OWASP Top 10 for LLM Applications 2026
+    url: https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/README.md
+  - title: OWASP Top 10 for Agentic Applications 2026
+    url: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
+  - title: MITRE ATLAS changelog
+    url: https://github.com/mitre-atlas/atlas-data/blob/main/CHANGELOG.md
+---
+
+import RowsTable from '~/components/RowsTable.astro';
+
+證據最充分的攻擊，是針對對外暴露的 AI 工具、遭竊的 AI 存取權，以及 AI 輔助的詐騙。提示注入持續增加，但經證實的大額損失仍然少見。
+
+威脅可分為六類：傳統對抗式機器學習、針對 LLM 應用的攻擊、針對代理與 MCP 工具的攻擊、供應鏈與基礎設施、AI 賦能的攻擊，以及源自模型本身的風險。
+
+## OWASP 的兩份十大風險清單
+
+LLM 清單涵蓋作為應用程式元件的模型；代理式清單涵蓋使用工具與記憶、會採取行動的模型。引用編號時請加上年份，例如 LLM01:2026，因為 OWASP 在 2025 與 2026 年版之間重新編排了十項中的八項。
+
+| 編號 | LLM 應用（2026） | 代理式應用（2026） |
+|---|---|---|
+| 01 | 提示注入（Prompt Injection） | 代理目標劫持（Agent Goal Hijack） |
+| 02 | 敏感資訊揭露（Sensitive Information Disclosure） | 工具濫用與利用（Tool Misuse and Exploitation） |
+| 03 | 過度代理權限（Excessive Agency） | 身分與權限濫用（Identity and Privilege Abuse） |
+| 04 | 供應鏈（Supply Chain） | 代理式供應鏈漏洞（Agentic Supply Chain Vulnerabilities） |
+| 05 | 資料與模型投毒（Data and Model Poisoning） | 非預期程式碼執行（Unexpected Code Execution） |
+| 06 | 無上限資源消耗（Unbounded Consumption） | 記憶與情境投毒（Memory and Context Poisoning） |
+| 07 | 錯誤資訊（Misinformation） | 不安全的代理間通訊（Insecure Inter-Agent Communication） |
+| 08 | 隱藏情境外洩（Hidden Context Exposure） | 連鎖失效（Cascading Failures） |
+| 09 | 向量與嵌入弱點（Vector and Embedding Weaknesses） | 人與代理信任濫用（Human-Agent Trust Exploitation） |
+| 10 | 不當輸出處理（Improper Output Handling） | 失控代理（Rogue Agents） |
+
+清單標題出自 OWASP，以 CC BY-SA 4.0 授權發布；中文為本站翻譯。
+
+## 證據顯示
+
+<RowsTable collection="threats" labelField="name" textField="evidence" labelHeader="threat" textHeader="evidence" lang="zh" />

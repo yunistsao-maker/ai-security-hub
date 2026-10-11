@@ -1,0 +1,190 @@
+[
+  {
+    "id": "known-exploited-ai-software",
+    "name": "Known-exploited AI software",
+    "evidence": "At least 13 CVEs in AI tooling were in CISA's exploited-vulnerabilities catalogue on 4 October 2026 (Langflow 6, LiteLLM 3, n8n, Marimo, MLflow, Ray); 12 were added in 2026",
+    "sources": [
+      {
+        "title": "CISA KEV feed",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "prompt-injection",
+    "name": "Prompt injection",
+    "evidence": "The UK NCSC says it may never be totally mitigated; adaptive attacks bypassed 12 published defences, most above 90% success",
+    "sources": [
+      {
+        "title": "NCSC",
+        "url": "https://www.ncsc.gov.uk/blog-post/prompt-injection-is-not-sql-injection"
+      },
+      {
+        "title": "Nasr et al.",
+        "url": "https://arxiv.org/abs/2510.09023"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "indirect-prompt-injection-on-the-web",
+    "name": "Indirect prompt injection on the web",
+    "evidence": "Malicious injections rose 32% in relative terms between November 2025 and February 2026; sophistication stayed low",
+    "sources": [
+      {
+        "title": "Google",
+        "url": "https://blog.google/security/prompt-injections-web/"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "agent-hijacking",
+    "name": "Agent hijacking",
+    "evidence": "8,648 successes in 272,000 attempts against 13 frontier models, or 0.5% to 8.5% per model",
+    "sources": [
+      {
+        "title": "competition paper",
+        "url": "https://arxiv.org/abs/2603.15714"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "agent-tool-ecosystems",
+    "name": "Agent tool ecosystems",
+    "evidence": "MITRE ATLAS added tool poisoning, supply chain rug pulls and, in August 2026, autonomous-agent techniques",
+    "sources": [
+      {
+        "title": "ATLAS changelog",
+        "url": "https://github.com/mitre-atlas/atlas-data/blob/main/CHANGELOG.md"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "data-poisoning",
+    "name": "Data poisoning",
+    "evidence": "About 250 poisoned documents backdoored models from 600 million to 13 billion parameters",
+    "sources": [
+      {
+        "title": "Anthropic",
+        "url": "https://www.anthropic.com/research/small-samples-poison"
+      },
+      {
+        "title": "paper",
+        "url": "https://arxiv.org/abs/2510.07192"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "model-extraction-by-distillation",
+    "name": "Model extraction by distillation",
+    "evidence": "About 24,000 fraudulent accounts and over 16 million exchanges in one disclosure; a second lab reported a coordinated campaign in September 2026",
+    "sources": [
+      {
+        "title": "Anthropic",
+        "url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks"
+      },
+      {
+        "title": "OpenAI",
+        "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "model-file-supply-chain",
+    "name": "Model file supply chain",
+    "evidence": "44.9% of popular hub models still used the pickle format in a 2025 study",
+    "sources": [
+      {
+        "title": "study",
+        "url": "https://arxiv.org/abs/2508.15987"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "ai-package-compromise",
+    "name": "AI package compromise",
+    "evidence": "Malicious LiteLLM releases were live on PyPI for about 40 minutes on 24 March 2026",
+    "sources": [
+      {
+        "title": "LiteLLM",
+        "url": "https://docs.litellm.ai/blog/security-update-march-2026"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "ai-orchestrated-intrusion",
+    "name": "AI-orchestrated intrusion",
+    "evidence": "First reported AI-orchestrated espionage campaign: about 30 targets, with the model doing an estimated 80 to 90% of tactical work",
+    "sources": [
+      {
+        "title": "Anthropic",
+        "url": "https://www.anthropic.com/news/disrupting-AI-espionage"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "autonomous-vulnerability-discovery",
+    "name": "Autonomous vulnerability discovery",
+    "evidence": "Claude Mythos Preview was limited to Project Glasswing partners on 7 April 2026; partners reported more than 10,000 high- or critical-severity flaws by 22 May",
+    "sources": [
+      {
+        "title": "Glasswing",
+        "url": "https://www.anthropic.com/glasswing"
+      },
+      {
+        "title": "update",
+        "url": "https://www.anthropic.com/news/glasswing-initial-update"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "open-weight-capability",
+    "name": "Open-weight capability",
+    "evidence": "NIST assessed GLM-5.3 as the most cyber-capable open-weight model to date, about four months behind the US frontier",
+    "sources": [
+      {
+        "title": "NIST",
+        "url": "https://www.nist.gov/news-events/news/2026/09/caisis-assessment-zais-glm-53-cyber-capabilities"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "agents-acting-beyond-scope",
+    "name": "Agents acting beyond scope",
+    "evidence": "OpenAI attributed the July 2026 Hugging Face intrusion to its own models under evaluation; UK AISI recorded 19 unsanctioned actions in 10 of 122 evaluation runs",
+    "sources": [
+      {
+        "title": "OpenAI",
+        "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/"
+      },
+      {
+        "title": "UK AISI",
+        "url": "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  },
+  {
+    "id": "ai-enabled-fraud",
+    "name": "AI-enabled fraud",
+    "evidence": "The FBI recorded 22,364 AI-related complaints and US$893 million in losses for 2025",
+    "sources": [
+      {
+        "title": "FBI IC3",
+        "url": "https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf"
+      }
+    ],
+    "lastChecked": "2026-10-07"
+  }
+]

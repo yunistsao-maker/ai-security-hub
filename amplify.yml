@@ -1,0 +1,20 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - nvm use 22
+        - node --version
+        - npm ci --no-audit --no-fund
+    build:
+      commands:
+        - npm run build
+        # Fail the deploy if customHttp.yml no longer allows every inline script the build emits.
+        - npm run csp
+  artifacts:
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*

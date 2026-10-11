@@ -1,0 +1,22 @@
+---
+// Wraps Starlight's footer: every page shows its sources and last-checked date, plus the licence line.
+import Default from '@astrojs/starlight/components/Footer.astro';
+import SourceLinks from './SourceLinks.astro';
+import { fmtDate, toIso } from '../lib/i18n';
+const route = Astro.locals.starlightRoute;
+const lang = route.lang?.startsWith('zh') ? 'zh' : 'en';
+const data = route.entry.data as { sources?: { title: string; url: string }[]; lastChecked?: Date };
+const base = lang === 'zh' ? '/zh-tw' : '';
+---
+{data.sources && data.lastChecked && (
+  <section class="page-sources" aria-label={lang === 'zh' ? '參考來源' : 'Sources'}>
+    <p><strong>{lang === 'zh' ? '參考來源：' : 'Sources: '}</strong><SourceLinks sources={data.sources} /></p>
+    <p class="checked">{lang === 'zh' ? '最後查核：' : 'Last checked: '}{fmtDate(toIso(data.lastChecked), lang)}</p>
+  </section>
+)}
+<Default><slot /></Default>
+<p class="licence-line">
+  {lang === 'zh'
+    ? <>© EPCD。內容採 CC BY 4.0 授權，程式碼採 Apache-2.0（待組織開源審查確認）。<a href={`${base}/about/licences/`}>來源與授權</a></>
+    : <>© EPCD. Text under CC BY 4.0, code under Apache-2.0 (subject to organisational review). <a href={`${base}/about/licences/`}>Sources and licences</a></>}
+</p>
