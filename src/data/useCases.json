@@ -16,6 +16,11 @@
    "ASI02",
    "ASI10"
   ],
+  "tests": [
+   "SEC-06",
+   "SEC-15",
+   "SEC-26"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -42,6 +47,11 @@
    "ASI07",
    "ASI10"
   ],
+  "tests": [
+   "SEC-06",
+   "SEC-15",
+   "SEC-26"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -64,6 +74,10 @@
   "impact": "Delayed incident response (no figure published); Talos calls this friction the 'safety penalty' and recommends auditing refusal rates.",
   "impactZh": "事件應變延遲（未公布數據）；Talos 將此阻力稱為「安全懲罰」(safety penalty)，並建議稽核拒答率。",
   "owasp": [],
+  "tests": [
+   "SEC-10",
+   "SEC-11"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -86,6 +100,9 @@
   "impact": "Per the report, credentials were compromised and a persistent foothold established. The affected agencies have remediated.",
   "impactZh": "根據報告，憑證遭到入侵且攻擊者已建立持續性立足點；受影響機關已完成修復。",
   "owasp": [],
+  "tests": [
+   "SEC-07"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -110,6 +127,10 @@
   "owasp": [
    "ASI09"
   ],
+  "tests": [
+   "SEC-09",
+   "SEC-13"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -132,6 +153,11 @@
   "impact": "Political deepfakes fall into a legal gap for non-candidates.",
   "impactZh": "針對非候選人的政治深偽處於法律空窗。",
   "owasp": [],
+  "tests": [
+   "SEC-09",
+   "SEC-12",
+   "SEC-30"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -158,6 +184,9 @@
    "ASI02",
    "ASI03"
   ],
+  "tests": [
+   "SEC-06"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -182,6 +211,10 @@
   "owasp": [
    "LLM01:2026",
    "LLM10:2026"
+  ],
+  "tests": [
+   "SEC-02",
+   "SEC-05"
   ],
   "sourceTier": "secondary",
   "sources": [
@@ -212,6 +245,10 @@
    "LLM04:2026",
    "ASI05"
   ],
+  "tests": [
+   "SEC-15",
+   "SEC-16"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -240,6 +277,9 @@
   "owasp": [
    "LLM04:2026",
    "ASI04"
+  ],
+  "tests": [
+   "SEC-16"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -271,6 +311,11 @@
    "LLM04:2026",
    "ASI03"
   ],
+  "tests": [
+   "SEC-06",
+   "SEC-16",
+   "SEC-21"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -301,6 +346,10 @@
    "LLM07:2026",
    "ASI09"
   ],
+  "tests": [
+   "SEC-03",
+   "SEC-08"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -327,6 +376,11 @@
    "LLM05:2026",
    "LLM08:2026",
    "LLM09:2026"
+  ],
+  "tests": [
+   "SEC-03",
+   "SEC-04",
+   "SEC-14"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -357,6 +411,10 @@
    "LLM01:2026",
    "ASI01"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -383,6 +441,10 @@
    "LLM03:2026",
    "ASI02"
   ],
+  "tests": [
+   "SEC-09",
+   "SEC-13"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -405,6 +467,10 @@
   "impact": "At least 55 victims and about NT$200 million in losses. 4 people indicted.",
   "impactZh": "至少 55 名中國籍受害者，損失約新台幣 2 億元（NT$200 million）；4 人遭起訴。",
   "owasp": [],
+  "tests": [
+   "SEC-03",
+   "SEC-30"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -431,6 +497,11 @@
    "LLM02:2026",
    "ASI01"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-06"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -453,6 +524,11 @@
   "impact": "In 2025: 2.314 million disputed messages and 45,000 suspicious accounts, about 17,000 more accounts than in 2024.",
   "impactZh": "2025 年共有 231.4 萬則爭議訊息與 45,000 個可疑帳號，帳號數較 2024 年增加約 17,000 個。",
   "owasp": [],
+  "tests": [
+   "SEC-08",
+   "SEC-09",
+   "SEC-12"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -481,6 +557,9 @@
   "owasp": [
    "LLM07:2026"
   ],
+  "tests": [
+   "SEC-08"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -508,6 +587,11 @@
    "ASI03",
    "ASI07"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-25"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -534,6 +618,11 @@
    "LLM06:2026",
    "ASI05"
   ],
+  "tests": [
+   "SEC-07",
+   "SEC-15",
+   "SEC-16"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -556,6 +645,10 @@
   "impact": "In Jan-Sep 2025, 17,461 fake-celebrity ads were reported for takedown. In Oct 2025 there were about 441 fraud cases a day, with fake investment accounting for 41.09% of losses.",
   "impactZh": "2025 年 1-9 月共有 17,461 則假冒名人廣告被通報下架；2025 年 10 月每日約 441 件詐騙案，其中假投資占損失的 41.09%。",
   "owasp": [],
+  "tests": [
+   "SEC-09",
+   "SEC-30"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -580,6 +673,11 @@
   "owasp": [
    "LLM01:2026",
    "LLM03:2026"
+  ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-27"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -607,6 +705,11 @@
    "LLM02:2026",
    "LLM10:2026"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-05"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -633,6 +736,11 @@
    "LLM02:2026",
    "LLM10:2026"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-05"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -656,6 +764,9 @@
   "impactZh": "退還最後一期合約款項；修正後的 273 頁報告將參考文獻從 141 筆減至 127 筆；AI 使用僅在第 58 頁揭露。",
   "owasp": [
    "LLM07:2026"
+  ],
+  "tests": [
+   "SEC-08"
   ],
   "sourceTier": "secondary",
   "sources": [
@@ -683,6 +794,11 @@
    "LLM02:2026",
    "LLM10:2026"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-05",
+   "SEC-16"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -707,6 +823,11 @@
   "owasp": [
    "LLM04:2026",
    "ASI04"
+  ],
+  "tests": [
+   "SEC-03",
+   "SEC-16",
+   "SEC-20"
   ],
   "sourceTier": "secondary",
   "sources": [
@@ -734,6 +855,11 @@
    "LLM02:2026",
    "LLM03:2026"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-06"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -760,6 +886,11 @@
    "LLM02:2026",
    "ASI01"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-06"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -784,6 +915,10 @@
   "owasp": [
    "LLM03:2026",
    "LLM06:2026"
+  ],
+  "tests": [
+   "SEC-06",
+   "SEC-07"
   ],
   "sourceTier": "secondary",
   "sources": [
@@ -810,6 +945,10 @@
    "LLM04:2026",
    "LLM06:2026"
   ],
+  "tests": [
+   "SEC-07",
+   "SEC-16"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -832,6 +971,9 @@
   "impact": "Redundancies reversed; staff offered to stay, be redeployed or take redundancy; public apology.",
   "impactZh": "裁員決定已撤回；員工可選擇留任、轉調或接受資遣；並公開道歉。",
   "owasp": [],
+  "tests": [
+   "SEC-11"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -857,6 +999,12 @@
    "LLM01:2026",
    "LLM03:2026",
    "ASI01"
+  ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-06",
+   "SEC-27"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -884,6 +1032,11 @@
    "LLM02:2026",
    "LLM10:2026"
   ],
+  "tests": [
+   "SEC-01",
+   "SEC-03",
+   "SEC-05"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -910,6 +1063,11 @@
    "LLM03:2026",
    "ASI01",
    "ASI02"
+  ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-14"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -941,6 +1099,11 @@
    "LLM03:2026",
    "ASI05"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-15"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -964,6 +1127,10 @@
   "impactZh": "出現偏執與幻覺，遭非自願精神科留置，出院前三週內逐步減停抗精神病藥物（病例報告刊載於 Annals of Internal Medicine: Clinical Cases）。",
   "owasp": [
    "LLM07:2026"
+  ],
+  "tests": [
+   "SEC-08",
+   "SEC-09"
   ],
   "sourceTier": "secondary",
   "sources": [
@@ -990,6 +1157,11 @@
    "LLM01:2026",
    "LLM03:2026",
    "ASI05"
+  ],
+  "tests": [
+   "SEC-02",
+   "SEC-15",
+   "SEC-16"
   ],
   "sourceTier": "secondary",
   "sources": [
@@ -1018,6 +1190,11 @@
    "ASI03",
    "ASI04"
   ],
+  "tests": [
+   "SEC-03",
+   "SEC-16",
+   "SEC-21"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -1042,6 +1219,10 @@
   "owasp": [
    "LLM03:2026",
    "ASI02"
+  ],
+  "tests": [
+   "SEC-09",
+   "SEC-13"
   ],
   "sourceTier": "secondary",
   "sources": [
@@ -1069,6 +1250,11 @@
    "LLM02:2026",
    "LLM03:2026"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-06"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -1094,6 +1280,9 @@
    "LLM03:2026",
    "ASI02",
    "ASI10"
+  ],
+  "tests": [
+   "SEC-06"
   ],
   "sourceTier": "secondary",
   "sources": [
@@ -1122,6 +1311,11 @@
    "ASI04",
    "ASI05"
   ],
+  "tests": [
+   "SEC-06",
+   "SEC-15",
+   "SEC-16"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -1145,6 +1339,9 @@
   "impactZh": "超過 6,400 萬份求職申請的對話遭外洩，包括姓名、電子郵件、電話號碼、住家地址、可上班時間、對話紀錄與工作階段權杖。",
   "owasp": [
    "LLM02:2026"
+  ],
+  "tests": [
+   "SEC-03"
   ],
   "sourceTier": "secondary",
   "sources": [
@@ -1171,6 +1368,11 @@
    "LLM02:2026",
    "LLM04:2026"
   ],
+  "tests": [
+   "SEC-03",
+   "SEC-16",
+   "SEC-21"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -1193,6 +1395,10 @@
   "impact": "383 institutions surveyed in Apr 2025. 126 had adopted AI and 61 use generative AI (48% of adopters, up 21 percentage points). Main uses: internal administration 39%, customer service 15%. Over 80% periodically check for drift.",
   "impactZh": "2025 年 4 月調查 383 家機構，其中 126 家已導入 AI、61 家使用生成式 AI（占導入者 48%，增加 21 個百分點）。主要用途為內部行政 39%、客戶服務 15%，超過 80% 定期檢查模型漂移。",
   "owasp": [],
+  "tests": [
+   "SEC-03",
+   "SEC-08"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -1218,6 +1424,10 @@
    "LLM04:2026",
    "ASI05"
   ],
+  "tests": [
+   "SEC-15",
+   "SEC-16"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1242,6 +1452,9 @@
   "owasp": [
    "LLM07:2026"
   ],
+  "tests": [
+   "SEC-08"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -1264,6 +1477,9 @@
   "impact": "Over US$499,000 transferred on 2025-03-26; fully withheld on 2025-03-28 with Hong Kong Police; scammers then sought US$1.4m more.",
   "impactZh": "2025-03-26 轉出逾 US$499,000，2025-03-28 在香港警方協助下全數攔截；詐騙者隨後試圖再索取 US$1.4m。",
   "owasp": [],
+  "tests": [
+   "SEC-30"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1289,6 +1505,12 @@
    "LLM06:2026",
    "ASI03"
   ],
+  "tests": [
+   "SEC-07",
+   "SEC-09",
+   "SEC-16",
+   "SEC-21"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -1311,6 +1533,11 @@
   "impact": "Public agencies banned use. Critical-infrastructure operators and government-funded foundations were guided to follow. Universities may use it offline on standalone machines with no personal data.",
   "impactZh": "公部門禁止使用；關鍵基礎設施營運者與政府捐助之財團法人比照辦理；大學可在不含個人資料的離線獨立電腦上使用。",
   "owasp": [],
+  "tests": [
+   "SEC-03",
+   "SEC-12",
+   "SEC-16"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -1333,6 +1560,9 @@
   "impact": "7,290,087 personal-information records possibly leaked (name, address, phone, date of birth, member data); no card data or passwords; arrest reported 2025-12-04.",
   "impactZh": "7,290,087 筆個人資料可能外洩（姓名、地址、電話、出生日期、會員資料），不含信用卡資料或密碼；2025-12-04 報導有人遭逮捕。",
   "owasp": [],
+  "tests": [
+   "SEC-09"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -1359,6 +1589,9 @@
   "impact": "Regulator-level alert (FIN-2024-Alert004) to US financial institutions with red-flag indicators in the full alert.",
   "impactZh": "監管機關層級警示 (FIN-2024-Alert004) 發送予美國金融機構，完整警示中列有紅旗指標。",
   "owasp": [],
+  "tests": [
+   "SEC-30"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1382,6 +1615,9 @@
   "impactZh": "官方政府服務在勞動、住房與消費者法律方面多次給出錯誤答案；市府仍讓試辦服務持續上線。",
   "owasp": [
    "LLM07:2026"
+  ],
+  "tests": [
+   "SEC-08"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1407,6 +1643,9 @@
   "owasp": [
    "LLM07:2026"
   ],
+  "tests": [
+   "SEC-08"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1429,6 +1668,9 @@
   "impact": "HK$200m (about GBP20m) sent in 15 transactions to five local bank accounts; Arup says no internal systems were compromised.",
   "impactZh": "HK$200m（約 GBP20m）分 15 筆匯至五個本地銀行帳戶；Arup 表示內部系統未遭入侵。",
   "owasp": [],
+  "tests": [
+   "SEC-30"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -1457,6 +1699,11 @@
   "owasp": [
    "LLM01:2026"
   ],
+  "tests": [
+   "SEC-01",
+   "SEC-09",
+   "SEC-13"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -1481,6 +1728,10 @@
   "owasp": [
    "LLM01:2026",
    "LLM07:2026"
+  ],
+  "tests": [
+   "SEC-01",
+   "SEC-08"
   ],
   "sourceTier": "secondary",
   "sources": [

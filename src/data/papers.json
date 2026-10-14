@@ -14,6 +14,10 @@
    "LLM01:2026",
    "ASI01"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-11"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -36,6 +40,10 @@
   "findingZh": "報告對 Claude Sonnet 4 與 Gemini 3（完整）、Claude Sonnet 4.5（最小可行性證明）及 GPT-5.5（搭配已知攻擊提示詞時）的越獄；商用有害內容分類器無法偵測加密輸出（質性、單一作者研究）。",
   "owasp": [
    "LLM01:2026"
+  ],
+  "tests": [
+   "SEC-01",
+   "SEC-11"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -61,6 +69,10 @@
    "LLM03:2026",
    "ASI02",
    "ASI09"
+  ],
+  "tests": [
+   "SEC-06",
+   "SEC-24"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -88,6 +100,11 @@
    "ASI01",
    "ASI09"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-24"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -113,6 +130,11 @@
    "ASI01",
    "ASI02"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-27"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -135,6 +157,10 @@
   "findingZh": "效果取決於刻意的意圖組織，而非上下文長度或查詢次數（例如在四個模型上，登門檻式逐步升級優於直接與堅持策略）；有組織的意圖使偵測需從回合層級提升至工作階段及跨工作階段層級。",
   "owasp": [
    "LLM01:2026"
+  ],
+  "tests": [
+   "SEC-11",
+   "SEC-13"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -159,6 +185,11 @@
   "owasp": [
    "LLM01:2026",
    "LLM07:2026"
+  ],
+  "tests": [
+   "SEC-01",
+   "SEC-08",
+   "SEC-09"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -186,6 +217,11 @@
    "ASI01",
    "ASI09"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-27"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -212,6 +248,12 @@
    "ASI07",
    "ASI10"
   ],
+  "tests": [
+   "SEC-06",
+   "SEC-15",
+   "SEC-16",
+   "SEC-26"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -237,6 +279,10 @@
    "LLM03:2026",
    "LLM10:2026"
   ],
+  "tests": [
+   "SEC-05",
+   "SEC-06"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -261,6 +307,12 @@
    "LLM01:2026",
    "LLM07:2026",
    "LLM08:2026"
+  ],
+  "tests": [
+   "SEC-02",
+   "SEC-04",
+   "SEC-06",
+   "SEC-08"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -289,6 +341,11 @@
    "ASI04",
    "ASI05"
   ],
+  "tests": [
+   "SEC-06",
+   "SEC-15",
+   "SEC-16"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -312,6 +369,9 @@
   "owasp": [
    "LLM04:2026",
    "ASI04"
+  ],
+  "tests": [
+   "SEC-16"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -337,6 +397,10 @@
    "LLM04:2026",
    "ASI04"
   ],
+  "tests": [
+   "SEC-16",
+   "SEC-22"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -361,6 +425,10 @@
    "LLM01:2026",
    "LLM05:2026",
    "ASI06"
+  ],
+  "tests": [
+   "SEC-02",
+   "SEC-14"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -389,6 +457,11 @@
    "ASI04",
    "ASI05"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-15",
+   "SEC-16"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -416,6 +489,11 @@
    "ASI01",
    "ASI02"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-06"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -438,6 +516,9 @@
   "findingZh": "前沿模型的隱私違規率介於 15.8%-50.9%，外洩率最高達 26.7%；任務效用越高往往伴隨越多違規，更大的模型或更深入的推理也未能解決此問題。",
   "owasp": [
    "LLM02:2026"
+  ],
+  "tests": [
+   "SEC-03"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -465,6 +546,12 @@
    "ASI04",
    "ASI05"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-15",
+   "SEC-16",
+   "SEC-27"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -487,6 +574,10 @@
   "findingZh": "在 596 筆人工標記的 HarmBench 補全結果上：分類器精確率 0.835 / 召回率 0.974；LLM 評審精確率 0.81-0.94，但召回率僅 0.06-0.65；良性包裝使 LLM 評審判定翻轉的比例達 57-100%（僅前置一句拒絕語即占 39-88%）；白箱 GCG 使分類器 70% 的高信心真陽性翻轉（95% CI 54-86%）。",
   "owasp": [
    "LLM01:2026"
+  ],
+  "tests": [
+   "SEC-09",
+   "SEC-11"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -514,6 +605,11 @@
    "ASI01",
    "ASI03"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-06"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -537,6 +633,10 @@
   "owasp": [
    "LLM01:2026"
   ],
+  "tests": [
+   "SEC-09",
+   "SEC-13"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -558,6 +658,11 @@
   "finding": "Conservative families (Llama) trade more over-refusal for fewer unsafe outputs, while permissive ones (DeepSeek, Qwen) tolerate more harmful compliance; prominent racial/religious groups are over-protected while disability-targeted attacks are under-protected; tendencies are stable within families across generations and scales.",
   "findingZh": "保守型模型家族（Llama）以較多的過度拒絕換取較少的不安全輸出，寬鬆型（DeepSeek、Qwen）則容忍較多有害遵從；知名種族／宗教群體受到過度保護，針對身心障礙者的攻擊則保護不足；這些傾向在同一家族的各世代與規模間保持穩定。",
   "owasp": [],
+  "tests": [
+   "SEC-09",
+   "SEC-10",
+   "SEC-12"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -581,6 +686,11 @@
   "owasp": [
    "LLM04:2026",
    "LLM07:2026"
+  ],
+  "tests": [
+   "SEC-08",
+   "SEC-16",
+   "SEC-23"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -606,6 +716,10 @@
    "LLM01:2026",
    "LLM08:2026"
   ],
+  "tests": [
+   "SEC-01",
+   "SEC-04"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -629,6 +743,10 @@
   "owasp": [
    "LLM01:2026",
    "ASI01"
+  ],
+  "tests": [
+   "SEC-02",
+   "SEC-11"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -655,6 +773,11 @@
    "ASI04",
    "ASI07",
    "ASI08"
+  ],
+  "tests": [
+   "SEC-06",
+   "SEC-16",
+   "SEC-25"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -683,6 +806,11 @@
    "ASI07",
    "ASI08"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-25"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -707,6 +835,10 @@
    "LLM03:2026",
    "ASI03"
   ],
+  "tests": [
+   "SEC-06",
+   "SEC-21"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -730,6 +862,9 @@
   "owasp": [
    "LLM07:2026"
   ],
+  "tests": [
+   "SEC-08"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -751,6 +886,11 @@
   "finding": "TWGuard improved F1 by +0.289 over its foundation model and reduced the false-positive rate by 0.037 (a 94.9% reduction) versus the strongest baseline.",
   "findingZh": "TWGuard 相較其基礎模型 F1 提升 +0.289，且相較最強基準方法偽陽性率降低 0.037（降幅 94.9%）。",
   "owasp": [],
+  "tests": [
+   "SEC-09",
+   "SEC-10",
+   "SEC-12"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -775,6 +915,12 @@
    "LLM04:2026",
    "LLM05:2026"
   ],
+  "tests": [
+   "SEC-09",
+   "SEC-11",
+   "SEC-16",
+   "SEC-28"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -796,6 +942,11 @@
   "finding": "Breeze Guard beats Granite Guardian 3.3 on TS-Bench by +0.17 overall F1, with +0.66 F1 on scams and +0.43 F1 on financial malpractice, at a slight cost on English-centric benchmarks (ToxicChat, AegisSafetyTest).",
   "findingZh": "Breeze Guard 在 TS-Bench 上整體 F1 比 Granite Guardian 3.3 高 +0.17，其中詐騙類 +0.66 F1、金融不當行為類 +0.43 F1，但在以英文為主的基準（ToxicChat、AegisSafetyTest）上略有下降。",
   "owasp": [],
+  "tests": [
+   "SEC-09",
+   "SEC-11",
+   "SEC-12"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -820,6 +971,12 @@
    "LLM01:2026",
    "LLM08:2026"
   ],
+  "tests": [
+   "SEC-01",
+   "SEC-02",
+   "SEC-04",
+   "SEC-10"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -843,6 +1000,10 @@
   "owasp": [
    "LLM04:2026",
    "ASI04"
+  ],
+  "tests": [
+   "SEC-16",
+   "SEC-22"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -871,6 +1032,11 @@
    "ASI02",
    "ASI05"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-15"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -895,6 +1061,10 @@
    "LLM05:2026",
    "LLM09:2026"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-17"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -917,6 +1087,9 @@
   "findingZh": "在 9 種防禦設定（Qwen3-14B 教師模型、Qwen2.5-7B-Instruct 學生模型）中，多數大致無效；僅移除思維鏈 (chain-of-thought) 明顯損害學生模型（數學準確率 31.4%，基準為 67.8%）；程式碼生成不受影響。",
   "owasp": [
    "LLM06:2026"
+  ],
+  "tests": [
+   "SEC-29"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -941,6 +1114,11 @@
   "owasp": [
    "LLM01:2026"
   ],
+  "tests": [
+   "SEC-01",
+   "SEC-11",
+   "SEC-12"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -964,6 +1142,11 @@
   "owasp": [
    "LLM01:2026"
   ],
+  "tests": [
+   "SEC-01",
+   "SEC-02",
+   "SEC-11"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -986,6 +1169,11 @@
   "findingZh": "根據 6,642 筆人工驗證標籤，評審模型的表現常降至接近隨機猜測；許多攻擊是利用評審的不足來灌水 ASR，而非真正誘發有害內容；並發布 ReliableBench 與 JudgeStressTest。",
   "owasp": [
    "LLM01:2026"
+  ],
+  "tests": [
+   "SEC-01",
+   "SEC-09",
+   "SEC-11"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1011,6 +1199,10 @@
    "LLM04:2026",
    "ASI04",
    "ASI07"
+  ],
+  "tests": [
+   "SEC-16",
+   "SEC-25"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1041,6 +1233,14 @@
    "ASI08",
    "ASI10"
   ],
+  "tests": [
+   "SEC-03",
+   "SEC-06",
+   "SEC-07",
+   "SEC-14",
+   "SEC-21",
+   "SEC-25"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1064,6 +1264,11 @@
   "owasp": [
    "LLM02:2026",
    "ASI07"
+  ],
+  "tests": [
+   "SEC-03",
+   "SEC-14",
+   "SEC-25"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1089,6 +1294,10 @@
    "LLM02:2026",
    "LLM09:2026"
   ],
+  "tests": [
+   "SEC-03",
+   "SEC-17"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1111,6 +1320,9 @@
   "findingZh": "全部 13 個 LLM 皆會捏造引用，比例為 14.23%-94.93%；56,381 篇論文中有 1.07% 含無效引用，該比例在 2025 年上升 80.9%。",
   "owasp": [
    "LLM07:2026"
+  ],
+  "tests": [
+   "SEC-08"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1135,6 +1347,11 @@
   "owasp": [
    "LLM07:2026"
   ],
+  "tests": [
+   "SEC-08",
+   "SEC-10",
+   "SEC-12"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1157,6 +1374,12 @@
   "findingZh": "相較基準交換分類器運算量減少 40x，生產流量拒答率 0.05%，且經過 >1,700 小時紅隊測試，未發現能以未防禦模型的詳細程度回答全部 8 個目標查詢的通用越獄。",
   "owasp": [
    "LLM01:2026"
+  ],
+  "tests": [
+   "SEC-01",
+   "SEC-09",
+   "SEC-10",
+   "SEC-11"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1181,6 +1404,12 @@
   "owasp": [
    "LLM01:2026"
   ],
+  "tests": [
+   "SEC-01",
+   "SEC-09",
+   "SEC-10",
+   "SEC-12"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1203,6 +1432,9 @@
   "findingZh": "在 12 項 AdvBench 任務中，整體 ASR 為 45.0%，Crescendo 為 28.6%、DAN 為 9.5%；例如 Gemini 2.5 Flash 為 72.7% 對 33.3% 對 25.0%，GPT-4.1 為 50.0% 對 16.7% 對 0.0%。",
   "owasp": [
    "LLM01:2026"
+  ],
+  "tests": [
+   "SEC-13"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1232,6 +1464,12 @@
    "ASI02",
    "ASI04"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-16",
+   "SEC-20"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1257,6 +1495,9 @@
    "LLM09:2026",
    "ASI06"
   ],
+  "tests": [
+   "SEC-14"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1279,6 +1520,9 @@
   "findingZh": "在 41 個黑箱商用模型上評估；摘要指出可在這些模型上完整或近乎完整地還原系統提示詞（摘要未提供個別模型比率）。",
   "owasp": [
    "LLM08:2026"
+  ],
+  "tests": [
+   "SEC-04"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1304,6 +1548,10 @@
    "LLM04:2026",
    "LLM05:2026"
   ],
+  "tests": [
+   "SEC-16",
+   "SEC-28"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1326,6 +1574,9 @@
   "findingZh": "平均 286.7x 輸入對輸出放大；在推理模型上約產生 18,759 個補全權杖與 19,263 個推理權杖，為良性查詢的 6-7x 權杖量；繞過輸入、輸出及雙階段偵測的比率分別為 99.8%、98.7% 與 98.4%。",
   "owasp": [
    "LLM06:2026"
+  ],
+  "tests": [
+   "SEC-07"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1352,6 +1603,10 @@
    "LLM06:2026",
    "ASI04"
   ],
+  "tests": [
+   "SEC-07",
+   "SEC-16"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1373,6 +1628,12 @@
   "finding": "Overall attack success rate was 60.15% for multi-turn and 50.12% for single-turn, so the two tracks expose different weaknesses. The GPT-OSS series stayed below 9%, while Gemma-3, Qwen3, DeepSeek-Qwen and TAIDE were higher-risk in several settings.",
   "findingZh": "多輪的整體攻擊成功率為 60.15%，單輪為 50.12%，顯示兩條測試軌道暴露出不同弱點。GPT-OSS 系列維持在 9% 以下，而 Gemma-3、Qwen3、DeepSeek-Qwen 與 TAIDE 在多種設定下風險較高。",
   "owasp": [],
+  "tests": [
+   "SEC-01",
+   "SEC-09",
+   "SEC-11",
+   "SEC-13"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1397,6 +1658,10 @@
    "LLM10:2026",
    "ASI05"
   ],
+  "tests": [
+   "SEC-05",
+   "SEC-15"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1420,6 +1685,9 @@
   "owasp": [
    "ASI10"
   ],
+  "tests": [
+   "SEC-32"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1442,6 +1710,10 @@
   "findingZh": "高資源語言（包括中文與英文）在標準查詢下較安全，但面對對抗性查詢時更脆弱；簡單的防禦可能有效，但效果因語言與模型而異。",
   "owasp": [
    "LLM01:2026"
+  ],
+  "tests": [
+   "SEC-01",
+   "SEC-12"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1467,6 +1739,11 @@
    "LLM01:2026",
    "ASI01"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-11",
+   "SEC-27"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1488,6 +1765,13 @@
   "finding": "Claude Sonnet 4.5 ranked first and the top four models were closed-source. Safety varies greatly by dimension. Questions are withheld, the public-safety dimension is grounded in PRC law, and agentic and text-to-image dimensions are planned.",
   "findingZh": "Claude Sonnet 4.5 排名第一，前四名模型皆為閉源模型，且安全性因面向不同而有很大差異。題目不公開，公共安全面向以中華人民共和國 (PRC) 法律為依據，代理式與文字生成圖像面向仍在規劃中。",
   "owasp": [],
+  "tests": [
+   "SEC-01",
+   "SEC-03",
+   "SEC-08",
+   "SEC-09",
+   "SEC-12"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1509,6 +1793,10 @@
   "finding": "'Securitisation by absorption': attention to AI and deepfakes is episodic and peaks at elections. AI is folded into existing provenance checks, verification duties and takedown procedures rather than emergency measures.",
   "findingZh": "「吸納式安全化」(securitisation by absorption)：對 AI 與深偽的關注是間歇性的，並在選舉期間達到高峰；AI 被納入既有的來源查核、驗證義務與下架程序，而非採取緊急措施。",
   "owasp": [],
+  "tests": [
+   "SEC-08",
+   "SEC-12"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1531,6 +1819,10 @@
   "findingZh": "在基準方法失敗的情況下成功攻擊 Google Gemini、DeepSeek Chat、xAI Grok 與 Mistral Le Chat，並從 Gemini 擷取受著作權保護的資料；在 14 個開放權重提示詞防護模型中，即使具推理能力的過濾器也無法在不付出過高成本的情況下可靠偵測。",
   "owasp": [
    "LLM01:2026"
+  ],
+  "tests": [
+   "SEC-01",
+   "SEC-11"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1555,6 +1847,9 @@
   "owasp": [
    "LLM01:2026"
   ],
+  "tests": [
+   "SEC-01"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1578,6 +1873,11 @@
   "owasp": [
    "LLM01:2026",
    "ASI01"
+  ],
+  "tests": [
+   "SEC-01",
+   "SEC-02",
+   "SEC-11"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1604,6 +1904,10 @@
    "ASI01",
    "ASI02"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1628,6 +1932,11 @@
    "LLM02:2026",
    "LLM03:2026",
    "ASI10"
+  ],
+  "tests": [
+   "SEC-03",
+   "SEC-06",
+   "SEC-26"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1656,6 +1965,12 @@
    "ASI02",
    "ASI04"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-16",
+   "SEC-20"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1683,6 +1998,11 @@
    "ASI02",
    "ASI05"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-15"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1709,6 +2029,11 @@
    "ASI02",
    "ASI05"
   ],
+  "tests": [
+   "SEC-03",
+   "SEC-06",
+   "SEC-15"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1734,6 +2059,10 @@
    "LLM02:2026",
    "LLM10:2026"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-05"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1756,6 +2085,10 @@
   "findingZh": "自適應攻擊完全繞過 10 種近期提出之指紋辨識方案的身分驗證，同時維持高效用。",
   "owasp": [
    "LLM04:2026"
+  ],
+  "tests": [
+   "SEC-16",
+   "SEC-29"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1783,6 +2116,12 @@
    "ASI02",
    "ASI04"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-16",
+   "SEC-20"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1809,6 +2148,12 @@
    "ASI02",
    "ASI04"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-16",
+   "SEC-20"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1833,6 +2178,11 @@
    "LLM04:2026",
    "LLM07:2026"
   ],
+  "tests": [
+   "SEC-08",
+   "SEC-16",
+   "SEC-23"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1856,6 +2206,10 @@
   "owasp": [
    "LLM01:2026",
    "ASI01"
+  ],
+  "tests": [
+   "SEC-02",
+   "SEC-06"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1884,6 +2238,11 @@
    "ASI01",
    "ASI02"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-06"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1907,6 +2266,10 @@
   "owasp": [
    "LLM04:2026",
    "LLM05:2026"
+  ],
+  "tests": [
+   "SEC-16",
+   "SEC-28"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1934,6 +2297,12 @@
    "ASI01",
    "ASI02"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-19",
+   "SEC-27"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1956,6 +2325,10 @@
   "findingZh": "敏感內容常出現在推理軌跡中，卻在最終輸出中被省略或改寫（透明度、政府問責、公民動員），偶爾還會放大與國家宣傳一致的措辭。",
   "owasp": [
    "LLM07:2026"
+  ],
+  "tests": [
+   "SEC-08",
+   "SEC-12"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1982,6 +2355,11 @@
    "LLM02:2026",
    "ASI01"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-06"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -2004,6 +2382,9 @@
   "findingZh": "在來自 61 個資料集的 1,000 則提示詞與對話紀錄上，Gemini-2.5-Pro 的 AUC 達 0.83，人類基準為 0.92；無論模型或人類，在代理式情境中都比在聊天情境中更容易識別出評估。",
   "owasp": [
    "ASI10"
+  ],
+  "tests": [
+   "SEC-32"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -2028,6 +2409,9 @@
   "owasp": [
    "LLM02:2026"
   ],
+  "tests": [
+   "SEC-03"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -2050,6 +2434,9 @@
   "findingZh": "摘要未提供主要數據；貢獻 3 種防禦技術與嚴重度指標，並於多個基準資料集上評估。",
   "owasp": [
    "LLM08:2026"
+  ],
+  "tests": [
+   "SEC-04"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -2075,6 +2462,9 @@
    "LLM01:2026",
    "LLM10:2026"
   ],
+  "tests": [
+   "SEC-05"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -2097,6 +2487,11 @@
   "findingZh": "規避包括 Azure Prompt Shield 與 Meta Prompt Guard 在內的六種防護系統，部分情況下規避成功率最高達 100%，同時維持對抗效用。",
   "owasp": [
    "LLM01:2026"
+  ],
+  "tests": [
+   "SEC-01",
+   "SEC-02",
+   "SEC-11"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -2124,6 +2519,10 @@
    "ASI02",
    "ASI03"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -2149,6 +2548,11 @@
    "ASI05",
    "ASI07",
    "ASI08"
+  ],
+  "tests": [
+   "SEC-02",
+   "SEC-15",
+   "SEC-25"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -2176,6 +2580,9 @@
    "LLM09:2026",
    "ASI06"
   ],
+  "tests": [
+   "SEC-14"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -2199,6 +2606,10 @@
   "owasp": [
    "LLM02:2026",
    "LLM09:2026"
+  ],
+  "tests": [
+   "SEC-03",
+   "SEC-17"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -2224,6 +2635,10 @@
    "LLM02:2026",
    "LLM09:2026"
   ],
+  "tests": [
+   "SEC-03",
+   "SEC-17"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -2246,6 +2661,11 @@
   "findingZh": "在 13 個主流 LLM 上評估；在現有中文基準中，對 ChatGPT 的攻擊成功率最高。",
   "owasp": [
    "LLM01:2026"
+  ],
+  "tests": [
+   "SEC-01",
+   "SEC-09",
+   "SEC-12"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -2271,6 +2691,10 @@
    "LLM03:2026",
    "ASI03"
   ],
+  "tests": [
+   "SEC-06",
+   "SEC-21"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -2294,6 +2718,10 @@
   "owasp": [
    "LLM01:2026",
    "LLM06:2026"
+  ],
+  "tests": [
+   "SEC-01",
+   "SEC-07"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -2319,6 +2747,10 @@
    "LLM04:2026",
    "LLM05:2026"
   ],
+  "tests": [
+   "SEC-16",
+   "SEC-28"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -2341,6 +2773,9 @@
   "findingZh": "在 ChatGPT、Gemini Pro/Ultra、LLaMA-2/3 70B 與 Anthropic Chat 上皆達到高 ASR；在 AdvBench 子集上，Crescendomation 優於其他最先進越獄方法，在 GPT-4 上高出 29-61%，在 Gemini-Pro 上高出 49-71%。",
   "owasp": [
    "LLM01:2026"
+  ],
+  "tests": [
+   "SEC-13"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -2366,6 +2801,11 @@
    "LLM01:2026",
    "LLM08:2026"
   ],
+  "tests": [
+   "SEC-01",
+   "SEC-02",
+   "SEC-04"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -2388,6 +2828,9 @@
   "findingZh": "以低於 $20 的成本擷取 OpenAI Ada 與 Babbage 的完整投影矩陣（隱藏維度 1024 與 2048）；還原 gpt-3.5-turbo 的隱藏維度，估計擷取完整矩陣的成本低於 $2,000。",
   "owasp": [
    "LLM06:2026"
+  ],
+  "tests": [
+   "SEC-29"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -2413,6 +2856,11 @@
    "LLM01:2026",
    "LLM02:2026",
    "LLM09:2026"
+  ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-17"
   ],
   "sourceTier": "primary",
   "sources": [

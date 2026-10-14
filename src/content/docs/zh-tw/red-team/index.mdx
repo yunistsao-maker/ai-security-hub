@@ -16,7 +16,7 @@ import ToolsTable from '~/components/ToolsTable.astro';
 
 AI 紅隊演練已有穩定的方法文件與活躍的開源工具。2026 年的教訓是：測試環境本身必須被隔離。評測中的代理在網路存取沒有關閉時，曾經觸及真實系統。
 
-回報結果時，請以「在註明的嘗試次數下的攻擊成功率」呈現，並假設攻擊者會調整手法。靜態基準測試很快就會失去鑑別力。
+回報結果時，請以「在註明的嘗試次數下的攻擊成功率」呈現，並假設攻擊者會調整手法。靜態基準測試很快就會失去鑑別力。模型或閘道上線或更換前應執行的測試，請見 [LLM 安全評估矩陣](/zh-tw/red-team/evaluation-matrix/)。
 
 <RowsTable collection="redTeam" labelField="topic" textField="status" labelHeader="topic" textHeader="status" lang="zh" />
 

@@ -1,0 +1,48 @@
+---
+title: LLM 安全評估矩陣
+description: 模型或其前端 LLM 閘道上線或更換前應執行的 32 項安全測試，對應 OWASP 2026、MITRE ATLAS 與數發部風險類別，並附每項測試背後的研究。
+lastChecked: 2026-10-15
+sources:
+  - title: OWASP Top 10 for LLM Applications 2026
+    url: https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/README.md
+  - title: OWASP Top 10 for Agentic Applications 2026
+    url: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
+  - title: MITRE ATLAS data
+    url: https://github.com/mitre-atlas/atlas-data
+  - title: iThome，數發部人工智慧風險分類框架
+    url: https://www.ithome.com.tw/news/177184
+  - title: Rule of three (statistics)
+    url: https://en.wikipedia.org/wiki/Rule_of_three_%28statistics%29
+---
+
+import MatrixOverview from '~/components/MatrixOverview.astro';
+import MatrixItems from '~/components/MatrixItems.astro';
+
+這份矩陣列出聊天機器人、檢索增強（RAG）與代理應用，在模型或其前端 LLM 閘道上線或更換前應執行的安全測試。每項測試都說明測什麼、如何判定通過、使用哪些工具、由誰執行，以及適用的使用者與架構。
+
+SEC-01 到 SEC-16 是核心項目。SEC-17 到 SEC-32 是 2026 年 10 月對照 OWASP 2026 年各清單、MITRE ATLAS 與數位發展部（數發部）人工智慧風險分類框架 20 項子風險做缺口分析後提出的草案；其優先序是我們的判斷，並非上述任何框架的要求。
+
+閱讀方式：
+
+- **OWASP 編號採 2026 年版。** OWASP 在 2026 年把 LLM 清單 10 項中的 8 項改號，例如 Excessive Agency 由 LLM06 改為 LLM03:2026。
+- **「現役模型」** 指目前上線中的模型。候選模型與現役模型要用同一批題目測試，且每題重複多次，因為輸出每次都可能不同。
+- **「0 of n」** 指 n 次嘗試中沒有失敗。這只能說明真實失敗率很可能低於約 3/n（三的法則），所以 100 次全數通過支持的是「低於約 3%」，而不是「零」。
+- 每個項目下的 **相關資料** 列出本站與該項目有關的[論文](/zh-tw/research/papers/)、[社群文章](/zh-tw/research/community/)與[使用案例](/zh-tw/use-cases/)。
+
+## 核心項目：SEC-01 到 SEC-16
+
+<MatrixOverview group="core" lang="zh" />
+
+## 擴充草案：SEC-17 到 SEC-32
+
+<MatrixOverview group="extension" lang="zh" />
+
+## 各項目說明
+
+### 核心項目
+
+<MatrixItems group="core" lang="zh" />
+
+### 擴充草案
+
+<MatrixItems group="extension" lang="zh" />

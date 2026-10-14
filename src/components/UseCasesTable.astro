@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import SourceLinks from './SourceLinks.astro';
+import TestTags from './TestTags.astro';
 import { fmtPartial, t, ARCH_LABELS, INDUSTRY_LABELS, type Lang } from '../lib/i18n';
 interface Props { lang?: Lang; architecture?: string[] }
 const { lang = 'en', architecture } = Astro.props;
@@ -25,6 +26,7 @@ const items = (await getCollection('useCases'))
           )}
           <br /><span class="note">
             {c.owasp.length > 0 && <>{c.owasp.map((o, i) => <>{i > 0 && ' '}<span class="nowrap">{o}</span></>)} · </>}
+            {c.tests.length > 0 && <><TestTags tests={c.tests} lang={lang} /> · </>}
             {L.source}: <SourceLinks sources={c.sources} />{c.sourceTier === 'secondary' && ` (${L.secondary})`}
           </span>
         </td>

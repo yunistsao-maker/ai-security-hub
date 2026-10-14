@@ -1,0 +1,48 @@
+---
+title: LLM security evaluation matrix
+description: 32 tests to run before a model, or the LLM gateway in front of it, changes in service, mapped to OWASP 2026, MITRE ATLAS and MODA's risk categories, with the research behind each test.
+lastChecked: 2026-10-15
+sources:
+  - title: OWASP Top 10 for LLM Applications 2026
+    url: https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/README.md
+  - title: OWASP Top 10 for Agentic Applications 2026
+    url: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
+  - title: MITRE ATLAS data
+    url: https://github.com/mitre-atlas/atlas-data
+  - title: iThome, MODA AI risk classification framework
+    url: https://www.ithome.com.tw/news/177184
+  - title: Rule of three (statistics)
+    url: https://en.wikipedia.org/wiki/Rule_of_three_%28statistics%29
+---
+
+import MatrixOverview from '~/components/MatrixOverview.astro';
+import MatrixItems from '~/components/MatrixItems.astro';
+
+This matrix lists the security tests to run before a model, or the LLM gateway in front of it, changes in service for chatbot, retrieval (RAG) and agent applications. For each test it gives what to test, how to judge a pass, the tools to use, who can run it and which users and architectures it matters for.
+
+Items SEC-01 to SEC-16 are the core set. Items SEC-17 to SEC-32 are drafts from a gap analysis carried out in October 2026 against OWASP's 2026 lists, MITRE ATLAS and the 20 sub-risks in Taiwan's Ministry of Digital Affairs (MODA) AI risk classification framework. Their priorities are our judgement, not a requirement of any of those frameworks.
+
+How to read it:
+
+- **OWASP IDs use the 2026 numbering.** OWASP renumbered eight of the ten LLM entries in 2026; for example, Excessive Agency moved from LLM06 to LLM03:2026.
+- **"The model in service"** means the model currently deployed. Run the candidate and the model in service on the same prompts, and repeat each prompt, because outputs vary from run to run.
+- **"0 of n"** means no failures in n attempts. That shows only that the true failure rate is probably below about 3/n (the rule of three), so 100 clean attempts support "below about 3%", not "zero".
+- **Related reading** under each item lists the [papers](/research/papers/), [community write-ups](/research/community/) and [use cases](/use-cases/) on this site that bear on it.
+
+## Core items: SEC-01 to SEC-16
+
+<MatrixOverview group="core" />
+
+## Draft extension: SEC-17 to SEC-32
+
+<MatrixOverview group="extension" />
+
+## Item details
+
+### Core items
+
+<MatrixItems group="core" />
+
+### Draft extension
+
+<MatrixItems group="extension" />

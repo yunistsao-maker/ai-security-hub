@@ -47,6 +47,11 @@ const LABELS = {
     paper: 'Paper', finding: 'What it shows', keyResult: 'Key result', owasp: 'OWASP 2026',
     write: 'Write-up', summary: 'Summary', useCase: 'Case', where: 'Sector and system', whatHappened: 'What happened',
     impact: 'Impact', titleOriginal: '',
+    tests: 'Matrix items', matrixItem: 'Item', appliesTo: 'Applies to', architecture: 'Architecture', testedBy: 'Tested by',
+    owaspOther: 'Other lists', atlas: 'MITRE ATLAS', moda: 'MODA risk category', whatToTest: 'What to test',
+    passCriteria: 'Pass criteria', toolsMethod: 'Tools and method', notes2026: 'Notes', whyNeeded: 'Why it is needed',
+    priority: 'Priority', related: 'Related reading', papersN: 'papers', writeupsN: 'write-ups', casesN: 'cases',
+    papersH: 'Papers', writeupsH: 'Community write-ups and talks', casesH: 'Use cases', none: 'None yet',
   },
   zh: {
     source: '來源', sources: '參考來源', lastChecked: '最後查核', date: '日期', event: '事件',
@@ -59,11 +64,21 @@ const LABELS = {
     paper: '論文', finding: '內容', keyResult: '主要結果', owasp: 'OWASP 2026',
     write: '文章或演講', summary: '摘要', useCase: '案例', where: '產業與系統', whatHappened: '發生了什麼',
     impact: '影響', titleOriginal: '標題保留原文。',
+    tests: '對應矩陣項目', matrixItem: '項目', appliesTo: '適用使用者', architecture: '適用架構', testedBy: '測試單位',
+    owaspOther: '其他清單', atlas: 'MITRE ATLAS', moda: '數發部風險類別', whatToTest: '測什麼',
+    passCriteria: '通過標準', toolsMethod: '工具與測試方式', notes2026: '補充說明', whyNeeded: '為什麼需要',
+    priority: '優先序', related: '相關資料', papersN: '篇論文', writeupsN: '則社群文章', casesN: '件案例',
+    papersH: '論文', writeupsH: '社群文章與演講', casesH: '使用案例', none: '尚無',
   },
 } as const;
 
 export function t(lang: Lang) {
   return LABELS[lang];
+}
+
+/** Link to an item of the evaluation matrix in the reader's language. */
+export function matrixHref(sec: string, lang: Lang): string {
+  return `${lang === 'zh' ? '/zh-tw' : ''}/red-team/evaluation-matrix/#${sec.toLowerCase()}`;
 }
 
 export const INDUSTRY_LABELS: Record<string, { en: string; zh: string }> = {

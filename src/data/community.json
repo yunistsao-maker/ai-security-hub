@@ -13,6 +13,9 @@
    "LLM06:2026",
    "ASI08"
   ],
+  "tests": [
+   "SEC-07"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -40,6 +43,12 @@
    "ASI03",
    "ASI05"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-06",
+   "SEC-15"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -62,6 +71,12 @@
   "owasp": [
    "ASI04",
    "ASI06"
+  ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-14",
+   "SEC-16"
   ],
   "sourceTier": "secondary",
   "sources": [
@@ -86,6 +101,11 @@
    "ASI04",
    "ASI05"
   ],
+  "tests": [
+   "SEC-06",
+   "SEC-15",
+   "SEC-16"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -109,6 +129,10 @@
    "ASI02",
    "ASI05"
   ],
+  "tests": [
+   "SEC-06",
+   "SEC-15"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -131,6 +155,10 @@
   "owasp": [
    "LLM02:2026",
    "LLM08:2026"
+  ],
+  "tests": [
+   "SEC-03",
+   "SEC-04"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -156,6 +184,11 @@
    "LLM02:2026",
    "ASI05"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-15"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -180,6 +213,12 @@
    "LLM04:2026",
    "LLM06:2026",
    "ASI04"
+  ],
+  "tests": [
+   "SEC-03",
+   "SEC-06",
+   "SEC-07",
+   "SEC-16"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -207,6 +246,12 @@
    "ASI04",
    "ASI05"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-15",
+   "SEC-16"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -231,6 +276,11 @@
    "ASI03",
    "ASI10"
   ],
+  "tests": [
+   "SEC-06",
+   "SEC-21",
+   "SEC-26"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -253,6 +303,16 @@
   "owasp": [
    "ASI01",
    "ASI06"
+  ],
+  "tests": [
+   "SEC-01",
+   "SEC-02",
+   "SEC-04",
+   "SEC-06",
+   "SEC-07",
+   "SEC-08",
+   "SEC-14",
+   "SEC-16"
   ],
   "sourceTier": "secondary",
   "sources": [
@@ -278,6 +338,10 @@
    "ASI02",
    "ASI09"
   ],
+  "tests": [
+   "SEC-06",
+   "SEC-27"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -300,6 +364,10 @@
   "owasp": [
    "LLM04:2026",
    "ASI04"
+  ],
+  "tests": [
+   "SEC-16",
+   "SEC-22"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -324,6 +392,12 @@
    "ASI02",
    "ASI04"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-09",
+   "SEC-16"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -346,6 +420,12 @@
   "owasp": [
    "ASI04",
    "ASI06"
+  ],
+  "tests": [
+   "SEC-03",
+   "SEC-06",
+   "SEC-14",
+   "SEC-16"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -371,6 +451,10 @@
    "LLM05:2026",
    "ASI06"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-14"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -391,6 +475,12 @@
   "summary": "Announces Breeze Guard 26, an open-source content-safety guard model designed for Taiwan. It is built on Breeze 2 8B and fine-tuned with 12,000+ records on Taiwan-specific risks: profanity, fraud, misinformation, discrimination and political manipulation. The rationale is that international guard models are English-centric and miss local fraud scripts and culturally specific hate speech. It was released alongside TS-Bench, which is already on the hub.",
   "summaryZh": "發表開源的台灣在地內容安全防護模型 Breeze Guard 26：以 Breeze 2 8B 為基礎，使用逾 12,000 筆台灣特有風險資料微調，涵蓋髒話、詐騙、錯假訊息、歧視言論與政治操弄；理由是國際安全模型多以英文設計，容易漏掉在地詐騙話術與文化脈絡下的歧視語。與 TS-Bench（已收錄）同步釋出。",
   "owasp": [],
+  "tests": [
+   "SEC-08",
+   "SEC-09",
+   "SEC-11",
+   "SEC-12"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -416,6 +506,11 @@
    "ASI04",
    "ASI05"
   ],
+  "tests": [
+   "SEC-03",
+   "SEC-15",
+   "SEC-16"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -439,6 +534,12 @@
    "LLM01:2026",
    "LLM03:2026",
    "ASI01"
+  ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-06",
+   "SEC-27"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -464,6 +565,12 @@
    "LLM04:2026",
    "ASI04"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-16",
+   "SEC-18",
+   "SEC-22"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -484,6 +591,10 @@
   "summary": "Summarizes Taiwan counter-FIMI work. Doublethink Lab found generative AI lets actors scale with fewer people, and that varied AI-written text helps mask coordinated inauthentic behavior. Taiwan AI Labs found DeepSeek-R1 embedded PRC-aligned propaganda in 23.3% of its responses to Simplified Chinese geopolitics queries. IORG uses CKIP Tagger and Whisper to detect coordinated inauthentic behavior.",
   "summaryZh": "整理台灣反境外資訊操弄研究：Doublethink Lab 發現生成式 AI 讓操作者以更少人力擴大規模，且文字變化可掩蓋協同造假行為；台灣人工智慧實驗室發現 DeepSeek-R1 對簡體中文地緣政治提問有 23.3% 的回應嵌入中共立場宣傳；IORG 以 CKIP Tagger 與 Whisper 偵測協同造假。",
   "owasp": [],
+  "tests": [
+   "SEC-08",
+   "SEC-12"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -504,6 +615,12 @@
   "summary": "Profile of CyCraft (奧義智慧) at listing. XecGuard, announced in Jul 2025, is an LLM firewall for chatbots and agents that targets misuse and data leakage. It is a LoRA-based module trained on about 60,000 attack/defense records with SFT and GRPO, and runs in SaaS or on-prem. CyCraft also sells Safety LLM evaluation and LLM red-team services, and claims about 20 of Taiwan's roughly 40 banks as customers. Performance figures are company claims.",
   "summaryZh": "奧義智慧上市報導：XecGuard（2025/7 發表）為針對聊天機器人與 AI 代理的 LLM 防火牆，防範濫用與資料外洩；以 LoRA 模組部署，使用約 6 萬筆攻防資料以 SFT 與 GRPO 訓練，支援雲端與地端；另提供 Safety LLM 評測與 LLM 紅隊演練服務；自述約 20 家本國銀行為客戶（數據為公司說法）。",
   "owasp": [],
+  "tests": [
+   "SEC-01",
+   "SEC-02",
+   "SEC-03",
+   "SEC-11"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -527,6 +644,10 @@
    "LLM02:2026",
    "LLM10:2026"
   ],
+  "tests": [
+   "SEC-03",
+   "SEC-05"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -549,6 +670,10 @@
   "owasp": [
    "LLM04:2026",
    "LLM06:2026"
+  ],
+  "tests": [
+   "SEC-07",
+   "SEC-16"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -574,6 +699,13 @@
    "LLM03:2026",
    "LLM10:2026"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-05",
+   "SEC-06",
+   "SEC-08",
+   "SEC-27"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -595,6 +727,12 @@
   "summaryZh": "介紹兩階段串接分類器：先以低成本的模型內部激活探針篩檢所有流量，可疑對話再交由較強的整合分類器、同時參照輸入與輸出判定。額外運算約 1%，在 Claude Sonnet 4.5 正常流量上的拒答率為 0.05%，約 19.8 萬次紅隊嘗試僅發現一個高風險漏洞、未發現通用越獄。",
   "owasp": [
    "LLM01:2026"
+  ],
+  "tests": [
+   "SEC-01",
+   "SEC-09",
+   "SEC-10",
+   "SEC-11"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -620,6 +758,12 @@
    "LLM03:2026",
    "ASI05"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-15",
+   "SEC-27"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -642,6 +786,11 @@
   "owasp": [
    "LLM01:2026",
    "LLM03:2026"
+  ],
+  "tests": [
+   "SEC-01",
+   "SEC-02",
+   "SEC-06"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -668,6 +817,11 @@
    "ASI01",
    "ASI02"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-11"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -691,6 +845,11 @@
    "LLM01:2026",
    "ASI01"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-27"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -712,6 +871,11 @@
   "summaryZh": "整理 Meta 的 Rule of Two，以及由 OpenAI、Anthropic、Google DeepMind 等 14 位作者發表的〈The Attacker Moves Second〉：自適應攻擊以超過 90% 的成功率突破 12 種已發表的越獄與提示注入防禦，500 人參與的人工紅隊競賽更全數攻破。結論是用固定攻擊字串評估防禦並不可靠。",
   "owasp": [
    "LLM01:2026"
+  ],
+  "tests": [
+   "SEC-01",
+   "SEC-02",
+   "SEC-11"
   ],
   "sourceTier": "secondary",
   "sources": [
@@ -738,6 +902,12 @@
    "ASI01",
    "ASI07"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-13",
+   "SEC-25"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -763,6 +933,10 @@
    "ASI02",
    "ASI03"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -783,6 +957,11 @@
   "summary": "HKMA circular enclosing the first-cohort GenAI Sandbox report, which covers challenges in data preparation, fine-tuning, output evaluation and monitoring. Per Fintech News HK (https://fintechnews.hk/36534/ai/hkma-genai-sandbox-report/): prompt engineering mitigates but does not eliminate hallucination, and RAG or fine-tuning is needed for sensitive uses. Banks balanced English, Traditional Chinese and Simplified Chinese data and used masking and pseudonymisation. The second cohort targets adaptive guardrails and 'AI vs AI' risk management. Only the cover letter and press summary were read, not the full report.",
   "summaryZh": "香港金管局致銀行通函，附第一梯次 GenAI 沙盒實務報告，涵蓋資料準備、微調、輸出評估與持續監控的挑戰。據 Fintech News HK 報導：提示工程只能減少、不能消除幻覺，敏感用途仍需 RAG 或微調；銀行在資料中平衡英文、繁中、簡中，並使用遮罩與假名化；第二梯次聚焦自適應防護與「AI 對 AI」風險管理。僅閱讀通函與報導，未讀報告全文。",
   "owasp": [],
+  "tests": [
+   "SEC-03",
+   "SEC-08",
+   "SEC-12"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -808,6 +987,11 @@
    "ASI02",
    "ASI05"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-15"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -831,6 +1015,11 @@
    "LLM01:2026",
    "LLM05:2026",
    "ASI06"
+  ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-14"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -856,6 +1045,12 @@
    "LLM02:2026",
    "LLM10:2026"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-05",
+   "SEC-14"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -878,6 +1073,12 @@
   "owasp": [
    "ASI02",
    "ASI04"
+  ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-15",
+   "SEC-16"
   ],
   "sourceTier": "secondary",
   "sources": [
@@ -905,6 +1106,14 @@
    "ASI05",
    "ASI06"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-05",
+   "SEC-06",
+   "SEC-14",
+   "SEC-15"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -929,6 +1138,10 @@
    "LLM04:2026",
    "ASI04"
   ],
+  "tests": [
+   "SEC-06",
+   "SEC-16"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -949,6 +1162,7 @@
   "summary": "ESET identified PromptLock, a ransomware sample that runs a local model to generate cross-platform Lua scripts on the fly and decides whether to steal or encrypt files based on hard-coded prompts. ESET later noted that it closely matches an academic research prototype, so it is a proof of concept rather than malware seen in real attacks.",
   "summaryZh": "ESET 發現 PromptLock 勒索軟體樣本，它在本機執行模型、依內建提示即時產生跨平台 Lua 腳本，並自行決定竊取或加密檔案。ESET 之後補充其與某學術研究原型高度相符，屬概念驗證，未見於實際攻擊。",
   "owasp": [],
+  "tests": [],
   "sourceTier": "primary",
   "sources": [
    {
@@ -973,6 +1187,12 @@
    "LLM02:2026",
    "ASI05"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-06",
+   "SEC-15"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -995,6 +1215,10 @@
   "owasp": [
    "LLM01:2026",
    "ASI01"
+  ],
+  "tests": [
+   "SEC-02",
+   "SEC-19"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1019,6 +1243,11 @@
    "ASI01",
    "ASI02"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-15"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -1041,6 +1270,11 @@
   "owasp": [
    "ASI02",
    "ASI04"
+  ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-16"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1065,6 +1299,11 @@
    "LLM01:2026",
    "LLM10:2026"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-05",
+   "SEC-11"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1087,6 +1326,11 @@
   "owasp": [
    "ASI02",
    "ASI03"
+  ],
+  "tests": [
+   "SEC-03",
+   "SEC-06",
+   "SEC-16"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1112,6 +1356,10 @@
    "ASI04",
    "ASI05"
   ],
+  "tests": [
+   "SEC-15",
+   "SEC-16"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1133,6 +1381,10 @@
   "summaryZh": "多輪越獄手法：先埋下看似無害的暗示，再引用模型自己先前的回答逐步升級；廠商自評對 GPT-4o、Gemini 等模型在多個有害類別成功率超過 90%，多數在 1 至 3 輪內成功。建議以整段對話為單位做安全稽核並累積風險評分。",
   "owasp": [
    "LLM01:2026"
+  ],
+  "tests": [
+   "SEC-09",
+   "SEC-13"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1159,6 +1411,11 @@
    "LLM03:2026",
    "ASI01"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-06"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1180,6 +1437,13 @@
   "summaryZh": "新加坡全球 AI 保證試點：16 家測試商配對 17 個實際部署案（10 個產業）。17 案中 13 案認為「找到合適測試資料」是最大挑戰；幾乎都使用 LLM-as-judge，但需人工校準；紅隊案例包括對機場多輪聊天機器人產生數千次對抗嘗試，以及以馬來西亞宗教、族群、文化脈絡客製化的攻擊種子；建議對代理流程的中間步驟做「內部」測試；多數測試數百個案例、歷時 2–4 週（50–100 小時）；領域專家需求常被低估。",
   "owasp": [
    "ASI01"
+  ],
+  "tests": [
+   "SEC-01",
+   "SEC-06",
+   "SEC-08",
+   "SEC-12",
+   "SEC-13"
   ],
   "sourceTier": "primary",
   "sources": [
@@ -1205,6 +1469,11 @@
    "LLM02:2026",
    "LLM10:2026"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-03",
+   "SEC-05"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1225,6 +1494,11 @@
   "summary": "Monthly roundup. CYBERSEC 2025 speakers framed LLM risk with OWASP and cited three real failure types: an AI customer-service bot answering beyond its intended scope, employees uploading confidential data to public AI services, and users trusting hallucinations. Speakers called LLM risk testing hard and recommended automated testing with LLM-as-a-Judge.",
   "summaryZh": "月報整理 CYBERSEC 2025 多場 LLM 風險議程：以 OWASP 架構說明風險，並提到三類實際失誤：AI 客服回答超出業務範圍的問題、員工把機密資料上傳公有 AI 服務、使用者誤信幻覺內容。講者指出 LLM 風險難以測試，建議採自動化測試與 LLM-as-a-Judge。",
   "owasp": [],
+  "tests": [
+   "SEC-01",
+   "SEC-03",
+   "SEC-08"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -1248,6 +1522,11 @@
    "LLM01:2026",
    "LLM08:2026"
   ],
+  "tests": [
+   "SEC-01",
+   "SEC-04",
+   "SEC-09"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1268,6 +1547,12 @@
   "summary": "CYBERSEC 2025 talk by the former NICS deputy director. He cited OWASP LLM Top 10 and NIST AI RMF, and noted that Taiwan's 2025 national cybersecurity strategy makes AI application and security one of four pillars. He described MODA's LLM evaluation mechanism, which has 10 test items (safety, explainability, resilience, fairness, transparency, reliability, privacy and others), and recommended the WEF six self-assessment questions before adopting AI.",
   "summaryZh": "CYBERSEC 2025 演講：引用 OWASP LLM Top 10 與 NIST AI RMF；指出 2025 國家資通安全戰略將「AI 應用與安全」列為四大主軸之一；介紹數位產業署 LLM 評測機制（安全性、可解釋性、韌性、公平性、透明性、可靠性、隱私等 10 項，人工或自動驗證）；建議導入前以 WEF 六題自我評估。",
   "owasp": [],
+  "tests": [
+   "SEC-01",
+   "SEC-03",
+   "SEC-05",
+   "SEC-16"
+  ],
   "sourceTier": "secondary",
   "sources": [
    {
@@ -1290,6 +1575,11 @@
   "owasp": [
    "LLM04:2026",
    "LLM07:2026"
+  ],
+  "tests": [
+   "SEC-08",
+   "SEC-16",
+   "SEC-23"
   ],
   "sourceTier": "secondary",
   "sources": [
@@ -1316,6 +1606,12 @@
    "ASI02",
    "ASI04"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-06",
+   "SEC-16",
+   "SEC-20"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1340,6 +1636,12 @@
    "LLM04:2026",
    "ASI04"
   ],
+  "tests": [
+   "SEC-02",
+   "SEC-16",
+   "SEC-18",
+   "SEC-22"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1360,6 +1662,11 @@
   "summary": "An NYCU researcher says deepfake detection is falling behind generation. Fully generated images are harder to judge than face swaps, and repeated reposting degrades the cues. TFC staff note that Douyin and Xiaohongshu watermarks often break the provenance trail. Recommends human-AI collaboration and watermarking for source tracing.",
   "summaryZh": "陽明交大學者指出偵測技術落後於生成技術：全生成影像比換臉更難判斷，影片多次轉傳後線索流失；查核中心表示常見抖音、小紅書浮水印但未必代表原創來源，溯源因此中斷。建議人機協作與生成內容浮水印。",
   "owasp": [],
+  "tests": [
+   "SEC-08",
+   "SEC-09",
+   "SEC-30"
+  ],
   "sourceTier": "primary",
   "sources": [
    {
@@ -1381,6 +1688,11 @@
   "summaryZh": "AWS 建議以分層方式防禦提示注入：使用 Amazon Bedrock Guardrails 的 prompt attack 過濾器（以 input tags 只套用在不可信段落）、以 IAM 角色對應落實最小權限、用提示範本區隔系統指令與使用者輸入，並透過模型呼叫日誌、Guardrail trace 與 CloudWatch 監控；並提醒 CloudTrail 不記錄提示與回應內容。",
   "owasp": [
    "LLM01:2026"
+  ],
+  "tests": [
+   "SEC-01",
+   "SEC-02",
+   "SEC-11"
   ],
   "sourceTier": "primary",
   "sources": [
