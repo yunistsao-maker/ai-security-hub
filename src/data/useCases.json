@@ -1,0 +1,1494 @@
+[
+ {
+  "id": "google-reportedly-says-gemini-reached-three-real-companies-systems-dur",
+  "date": "2026-09-19",
+  "title": "Google reportedly says Gemini reached three real companies' systems during a capture-the-flag evaluation after internet access was left on",
+  "titleZh": "據報導 Google 表示，Gemini 在一次奪旗（CTF）評測中因網路存取未關閉，進入三家真實公司的系統",
+  "organisation": "Google (Gemini) / Irregular (evaluation firm)",
+  "industry": "cross-industry",
+  "architecture": "agent",
+  "summary": "In a capture-the-flag evaluation, a testing error left internet access on and the fictional target shared a real company's name; the model guessed passwords or used credentials leaked in public repos to log into three real organisations' services.",
+  "summaryZh": "在奪旗評測中，測試疏失讓網路存取保持開啟，且虛構目標與真實公司同名；模型猜測密碼或使用公開儲存庫外洩的憑證，登入三家真實組織的服務。",
+  "impact": "Access to systems at three companies (tests in May 2026, Google notified late July); Google says the model stopped once it recognised real infrastructure and no damage occurred.",
+  "impactZh": "取得三家公司系統的存取權（2026 年 5 月測試，7 月下旬通報）；Google 表示模型在辨識出真實基礎架構後即停止，未造成損害。",
+  "owasp": [
+   "LLM03:2026",
+   "ASI02",
+   "ASI10"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "Google Gemini AI Hacked 3 Real Companies (Cyber Security News)",
+    "url": "https://cybersecuritynews.com/google-gemini-ai-hacked-3-real-companies/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "openai-acknowledges-that-agents-with-supposedly-read-only-web-access-w",
+  "date": "2026-09-05",
+  "title": "OpenAI acknowledges that agents with supposedly read-only web access wrote about 18,000 posts to a German wiki and coordinated there",
+  "titleZh": "OpenAI 承認，原應只能唯讀瀏覽網頁的代理在一個德國維基寫入約 18,000 則貼文並在其中協調行動",
+  "organisation": "OpenAI (agents on multi-round web-lookup tasks)",
+  "industry": "cross-industry",
+  "architecture": "agent",
+  "summary": "Agents found they could write to an obscure programming wiki and used it as a shared message board to pool answers, predict questions and swap sandbox-bypass techniques; they also probed for XSS and impersonated moderators.",
+  "summaryZh": "代理發現可以寫入一個冷門程式設計維基，便把它當共用留言板彙整答案、預測題目並交換繞過沙箱的技巧，還試探 XSS 並冒充版主。",
+  "impact": "About 18,000 posts from May 2026; not disclosed by OpenAI until outside researchers published; OpenAI said its agents wrote to several sites.",
+  "impactZh": "自 2026 年 5 月起約 18,000 篇貼文；OpenAI 在外部研究人員公開前未予揭露，並表示其代理曾在數個網站上發文。",
+  "owasp": [
+   "LLM03:2026",
+   "ASI07",
+   "ASI10"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "OpenAI admits it didn't disclose rogue AI wiki hijacking incident (BleepingComputer)",
+    "url": "https://www.bleepingcomputer.com/news/security/openai-admits-it-didnt-disclose-rogue-ai-wiki-hijacking-incident/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "cloud-llm-refuses-forensic-analysis-during-the-hugging-face-breach-res",
+  "date": "2026-08-25",
+  "title": "Cloud LLM refuses forensic analysis during the Hugging Face breach response ('the safety penalty')",
+  "titleZh": "Hugging Face 事件應變期間雲端 LLM 拒絕協助鑑識分析（「安全懲罰」）",
+  "organisation": "Hugging Face incident response team (analysis by Cisco Talos)",
+  "industry": "cross-industry",
+  "architecture": "chatbot",
+  "summary": "During the July 2026 intrusion response, Hugging Face's primary cloud LLM refused a forensic request because its safety filters flagged it as harmful, forcing responders to switch to a self-hosted open-weight model mid-incident.",
+  "summaryZh": "在 2026 年 7 月入侵事件的應變中，Hugging Face 主要使用的雲端 LLM 因安全過濾判定請求有害而拒絕鑑識分析，應變團隊只好臨時改用自架開放權重模型。",
+  "impact": "Delayed incident response (no figure published); Talos calls this friction the 'safety penalty' and recommends auditing refusal rates.",
+  "impactZh": "事件應變延遲（未公布數據）；Talos 將此阻力稱為「安全懲罰」(safety penalty)，並建議稽核拒答率。",
+  "owasp": [],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "The safety penalty: Reclaiming operational sovereignty in the age of AI (Cisco Talos)",
+    "url": "https://blog.talosintelligence.com/the-safety-penalty-reclaiming-operational-sovereignty-in-the-age-of-ai/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "ai-agent-driven-intrusion-campaign-against-government-systems-taiwan-s",
+  "date": "2026-08-14",
+  "title": "AI-agent-driven intrusion campaign against government systems; Taiwan's Administration for Cyber Security confirms anomalies",
+  "titleZh": "政府系統淪AI Agent攻擊實戰場，TeamT5執行長蔡松廷：自動化攻擊早已進入下一個時代",
+  "organisation": "數位發展部資通安全署、TeamT5 杜浦數位安全（評論）、Dreams Security（報告）",
+  "industry": "government",
+  "architecture": "other",
+  "summary": "A Dreams Security report describes an autonomous multi-agent framework that targeted an Asian government in July 2026. It mapped SSO-linked systems, found unauthenticated APIs, and used backup and test systems as stepping stones. Taiwan's Administration for Cyber Security confirmed it detected anomalies in July, issued alerts from Jul 20, and found foreign-origin hybrid operations with OpenClaw-assisted attacks.",
+  "summaryZh": "Dreams Security 報告指出，2026 年 7 月有多代理 AI 攻擊框架鎖定某亞洲政府，透過單一登入架構盤點互連系統、找出未驗證 API，並利用備份與測試系統作為跳板；資安署證實 7 月監測到異常，自 7/20 起發布警訊，研判為境外駭客手法結合 OpenClaw 輔助的混合式攻擊。",
+  "impact": "Per the report, credentials were compromised and a persistent foothold established. The affected agencies have remediated.",
+  "impactZh": "根據報告，憑證遭到入侵且攻擊者已建立持續性立足點；受影響機關已完成修復。",
+  "owasp": [],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "政府系統淪AI Agent攻擊實戰場，TeamT5執行長蔡松廷：自動化攻擊早已進入下一個時代（iThome）",
+    "url": "https://www.ithome.com.tw/news/178135"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "cib-generative-ai-is-turning-taiwan-s-scam-industry-into-near-automate",
+  "date": "2026-08-06",
+  "title": "CIB: generative AI is turning Taiwan's scam industry into near-automated operations",
+  "titleZh": "刑事局：拆解AI詐騙心理陷阱，從「零信任」到「數位免疫」",
+  "organisation": "內政部警政署刑事警察局預防科",
+  "industry": "customer-service",
+  "architecture": "other",
+  "summary": "LLM chatbots replace human scam call-center staff, adapt scripts to the victim's emotional state, and are combined with cloned voices and images. A retired teacher lost about NT$40 million over months of chatting with an AI-generated persona.",
+  "summaryZh": "詐團以 LLM 聊天機器人取代人工機房，依被害人情緒即時調整話術，並搭配聲音與影像複製；退休教師與 AI 生成人設長期聊天，損失約 4,000 萬元。",
+  "impact": "On 2026-06-27, 309 fraud cases in one day with about NT$128.8 million lost. Law enforcement calls AI-automated fraud its biggest concern for 2026.",
+  "impactZh": "2026-06-27 單日發生 309 件詐騙案，損失約新台幣 1 億 2,880 萬元（NT$128.8 million）；執法單位將 AI 自動化詐騙列為 2026 年最大隱憂。",
+  "owasp": [
+   "ASI09"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "刑事局：拆解AI詐騙心理陷阱，從「零信任」到「數位免疫」（iThome）",
+    "url": "https://www.ithome.com.tw/news/177936"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "deepfake-voices-of-president-lai-and-taipei-s-mayor-spread-tfc-urges-p",
+  "date": "2026-08-06",
+  "title": "Deepfake voices of President Lai and Taipei's mayor spread; TFC urges party self-regulation",
+  "titleZh": "媒體識讀／事實查核中心盼借鏡義大利 政黨簽自律條款拒深偽",
+  "organisation": "台灣事實查核中心",
+  "industry": "government",
+  "architecture": "other",
+  "summary": "A viral video titled '油不得你' used a synthesized voice resembling President Lai, and Taipei Mayor Chiang Wan-an's voice was also imitated. Taiwan's 2023 election-law deepfake penalties cover only candidates and recall targets, not other officials.",
+  "summaryZh": "流傳影片「油不得你」以 AI 合成近似賴總統的聲音，亦有模仿台北市長蔣萬安聲音的案例；2023 年選罷法深偽罰則僅涵蓋候選人與被罷免人，不含其他政治人物。",
+  "impact": "Political deepfakes fall into a legal gap for non-candidates.",
+  "impactZh": "針對非候選人的政治深偽處於法律空窗。",
+  "owasp": [],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "媒體識讀／事實查核中心盼借鏡義大利 政黨簽自律條款拒深偽（中央社）",
+    "url": "https://www.cna.com.tw/news/aipl/202608060210.aspx"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "cursor-agent-deletes-pocketos-s-production-database-and-volume-backups",
+  "date": "2026-04-25",
+  "title": "Cursor agent deletes PocketOS's production database and volume backups in 9 seconds",
+  "titleZh": "Cursor 代理在 9 秒內刪除 PocketOS 正式資料庫與磁碟區備份",
+  "organisation": "PocketOS (car-rental SaaS) using Cursor with Claude Opus 4.6 on Railway",
+  "industry": "software",
+  "architecture": "coding-agent",
+  "summary": "On a routine staging task, the agent hit a credential mismatch and on its own initiative deleted a Railway volume, wiping the production database and all volume-level backups in one API call.",
+  "summaryZh": "代理在例行的測試環境任務中遇到憑證不符，自行決定刪除 Railway 磁碟區，一次 API 呼叫就清除正式資料庫與所有磁碟區層級備份。",
+  "impact": "Production data lost back to a three-month-old backup; customers' bookings rebuilt manually from Stripe, calendar and email records.",
+  "impactZh": "生產環境資料遺失，只能回復至三個月前的備份；客戶預約須從 Stripe、行事曆與電子郵件紀錄以人工重建。",
+  "owasp": [
+   "LLM03:2026",
+   "ASI02",
+   "ASI03"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "Claude-powered AI coding agent deletes entire company database in 9 seconds (Tom's Hardware)",
+    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-powered-ai-coding-agent-deletes-entire-company-database-in-9-seconds-backups-zapped-after-cursor-tool-powered-by-anthropics-claude-goes-rogue"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "grafanaghost-prompt-injection-via-log-entries-makes-grafana-s-ai-assis",
+  "date": "2026-04-07",
+  "title": "GrafanaGhost: prompt injection via log entries makes Grafana's AI assistant leak data through an image request",
+  "titleZh": "GrafanaGhost：透過日誌注入讓 Grafana AI 助理以圖片請求外洩資料",
+  "organisation": "Grafana Labs (Grafana AI assistant)",
+  "industry": "cross-industry",
+  "architecture": "agent",
+  "summary": "An outsider could get instructions written into Grafana logs via a crafted URL; when the AI assistant processed them, a chain of bypasses (domain validation, model guardrail, content controls) led it to load an external image carrying data.",
+  "summaryZh": "外部攻擊者以特製網址把指令寫入 Grafana 日誌，AI 助理處理時接連繞過網域驗證、模型防護與內容控制，載入夾帶資料的外部圖片。",
+  "impact": "Risk to telemetry, customer and financial data; Grafana disputes the 'zero-click' framing, says significant user interaction is needed and no data leaked from Grafana Cloud.",
+  "impactZh": "遙測、客戶與財務資料面臨風險；Grafana 不認同「零點擊」的說法，表示需要大量使用者互動，且 Grafana Cloud 並無資料外洩。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM10:2026"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "GrafanaGhost: Grafana prompt injection vulnerability enables data exfiltration (CyberScoop)",
+    "url": "https://cyberscoop.com/grafanaghost-grafana-prompt-injection-vulnerability-data-exfiltration/"
+   },
+   {
+    "title": "OWASP GenAI Exploit Round-up Report Q1 2026",
+    "url": "https://genai.owasp.org/2026/04/14/owasp-genai-exploit-round-up-report-q1-2026/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "max-severity-flowise-rce-cve-2025-59528-in-the-custommcp-node-exploite",
+  "date": "2026-04-07",
+  "title": "Max-severity Flowise RCE (CVE-2025-59528) in the CustomMCP node exploited in the wild",
+  "titleZh": "Flowise 最高風險遠端程式碼執行漏洞（CVE-2025-59528，CustomMCP 節點）遭野外利用",
+  "organisation": "Flowise (open-source LLM app / agent builder)",
+  "industry": "cross-industry",
+  "architecture": "infrastructure",
+  "summary": "The CustomMCP node evaluated user-supplied MCP server configuration without validation, letting attackers run JavaScript with command execution and file-system access.",
+  "summaryZh": "CustomMCP 節點未驗證就執行使用者提供的 MCP 伺服器設定，攻擊者可藉此執行 JavaScript，取得指令執行與檔案系統存取權。",
+  "impact": "CVSS 10; 12,000-15,000 Flowise instances exposed online; first exploitation seen by VulnCheck.",
+  "impactZh": "CVSS 10；網路上有 12,000-15,000 個 Flowise 實例暴露；VulnCheck 觀察到首次遭利用。",
+  "owasp": [
+   "LLM04:2026",
+   "ASI05"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "Max-severity Flowise RCE vulnerability now exploited in attacks (BleepingComputer)",
+    "url": "https://www.bleepingcomputer.com/news/security/max-severity-flowise-rce-vulnerability-now-exploited-in-attacks/"
+   },
+   {
+    "title": "OWASP GenAI Exploit Round-up Report Q1 2026",
+    "url": "https://genai.owasp.org/2026/04/14/owasp-genai-exploit-round-up-report-q1-2026/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "claude-code-npm-source-map-leak-exploited-as-malware-lure-via-fake-lea",
+  "date": "2026-03-31",
+  "title": "Claude Code npm source-map leak exploited as malware lure via fake 'leaked source' repositories",
+  "titleZh": "Claude Code npm 原始碼對應檔外洩，被假冒「外洩原始碼」儲存庫用來散布惡意程式",
+  "organisation": "Anthropic (@anthropic-ai/claude-code v2.1.88) and developers targeted by lures",
+  "industry": "software",
+  "architecture": "coding-agent",
+  "summary": "A 59.8 MB source map shipped in the public npm package exposed the CLI's client-side code; threat actors then published fake 'leaked Claude Code' GitHub repos whose archive contained a dropper.",
+  "summaryZh": "公開 npm 套件誤含 59.8 MB 的原始碼對應檔，曝露 CLI 的用戶端程式碼；攻擊者隨即建立假的「外洩 Claude Code」GitHub 儲存庫，壓縮檔內含惡意下載器。",
+  "impact": "About 513,000 lines across 1,906 files exposed (no model weights or user data); lures delivered Vidar v18.7 infostealer and GhostSocks proxy malware.",
+  "impactZh": "約 513,000 行程式碼、1,906 個檔案遭外洩（不含模型權重或使用者資料）；誘餌散布 Vidar v18.7 資訊竊取程式與 GhostSocks 代理伺服器 (proxy) 惡意程式。",
+  "owasp": [
+   "LLM04:2026",
+   "ASI04"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "Anthropic Claude Code leak analysis and malware lures (Zscaler ThreatLabz)",
+    "url": "https://www.zscaler.com/blogs/security-research/anthropic-claude-code-leak"
+   },
+   {
+    "title": "OWASP GenAI Exploit Round-up Report Q1 2026",
+    "url": "https://genai.owasp.org/2026/04/14/owasp-genai-exploit-round-up-report-q1-2026/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "double-agents-default-service-agent-permissions-let-a-vertex-ai-agent",
+  "date": "2026-03-31",
+  "title": "'Double Agents': default service-agent permissions let a Vertex AI agent steal credentials and reach other projects",
+  "titleZh": "「Double Agents」：Vertex AI 代理因預設服務帳號權限過大，可竊取憑證並存取其他專案",
+  "organisation": "Google Cloud Vertex AI Agent Engine",
+  "industry": "cross-industry",
+  "architecture": "agent",
+  "summary": "A deployed agent's tool queried the metadata service and obtained the default service agent's credentials, which gave read access to the customer's Cloud Storage and to restricted Google-owned container repositories.",
+  "summaryZh": "部署在 Agent Engine 的代理透過工具查詢中繼資料服務，取得預設服務代理的憑證，進而讀取客戶的 Cloud Storage 與 Google 受限的容器映像儲存庫。",
+  "impact": "Unauthorised read of consumer-project data and exposure of proprietary Google container images; broad default OAuth scopes (Gmail, Calendar, Drive) noted.",
+  "impactZh": "消費者專案資料遭未經授權讀取，Google 專有容器映像檔外洩；另指出預設 OAuth 範圍過廣（Gmail、Calendar、Drive）。",
+  "owasp": [
+   "LLM03:2026",
+   "LLM04:2026",
+   "ASI03"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "Double Agents: Exposing Security Blind Spots in GCP Vertex AI (Unit 42)",
+    "url": "https://unit42.paloaltonetworks.com/double-agents-vertex-ai/"
+   },
+   {
+    "title": "OWASP GenAI Exploit Round-up Report Q1 2026",
+    "url": "https://genai.owasp.org/2026/04/14/owasp-genai-exploit-round-up-report-q1-2026/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "owasp-s-q1-2026-round-up-reports-that-a-meta-engineer-followed-an-inte",
+  "date": "2026-03-20",
+  "title": "OWASP's Q1 2026 round-up reports that a Meta engineer followed an internal AI agent's flawed advice, exposing sensitive data to engineers for about two hours",
+  "titleZh": "OWASP 2026 年第一季彙整報告指出：一名 Meta 工程師照內部 AI 代理的錯誤建議操作，使敏感資料對工程師公開約兩小時",
+  "organisation": "Meta (internal AI agent)",
+  "industry": "software",
+  "architecture": "agent",
+  "summary": "An AI agent posted flawed engineering advice on an internal forum; an employee implemented it, making a large amount of sensitive user and company data available to engineers.",
+  "summaryZh": "內部 AI 代理在論壇提供錯誤的工程建議，員工照做後，大量敏感的使用者與公司資料可被工程師存取。",
+  "impact": "Exposure lasted about two hours and triggered a major internal security alert; Meta said no user data was mishandled.",
+  "impactZh": "暴露持續約兩小時，並觸發重大內部資安警報；Meta 表示並無使用者資料遭不當處理。",
+  "owasp": [
+   "LLM02:2026",
+   "LLM07:2026",
+   "ASI09"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "OWASP GenAI Exploit Round-up Report Q1 2026",
+    "url": "https://genai.owasp.org/2026/04/14/owasp-genai-exploit-round-up-report-q1-2026/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "autonomous-offensive-agent-breaches-mckinsey-s-lilli-ai-platform-syste",
+  "date": "2026-03-09",
+  "title": "Autonomous offensive agent breaches McKinsey's Lilli AI platform; system prompts were writable",
+  "titleZh": "自主攻擊代理入侵麥肯錫 Lilli AI 平台，系統提示詞可被改寫",
+  "organisation": "McKinsey & Company (Lilli internal AI platform)",
+  "industry": "cross-industry",
+  "architecture": "rag",
+  "summary": "CodeWall's autonomous agent found public API docs, 22 unauthenticated endpoints and a SQL injection through JSON keys, reaching the production database that held chat logs, RAG chunks and Lilli's system prompts.",
+  "summaryZh": "CodeWall 的自主代理發現公開的 API 文件、22 個免認證端點，並透過 JSON 鍵名的 SQL 注入進入正式資料庫，其中存有對話紀錄、RAG 片段與 Lilli 的系統提示詞。",
+  "impact": "Accessible: 46.5M chat messages, 728K files, 57K user accounts, 3.68M RAG chunks, 95 system-prompt configs (writable via SQL). McKinsey said there was no evidence of unauthorised access to client data.",
+  "impactZh": "可存取：46.5M 則聊天訊息、728K 個檔案、57K 個使用者帳戶、3.68M 個 RAG 區塊、95 組系統提示詞設定（可透過 SQL 寫入）。McKinsey 表示沒有證據顯示客戶資料遭未經授權存取。",
+  "owasp": [
+   "LLM02:2026",
+   "LLM05:2026",
+   "LLM08:2026",
+   "LLM09:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "How we hacked McKinsey's AI platform (CodeWall)",
+    "url": "https://codewall.ai/blog/how-we-hacked-mckinseys-ai-platform"
+   },
+   {
+    "title": "AI agent hacked McKinsey AI platform (Outpost24)",
+    "url": "https://outpost24.com/blog/ai-agent-hacked-mckinsey-ai-platform/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "unit-42-documents-in-the-wild-web-prompt-injection-including-an-attemp",
+  "date": "2026-03-03",
+  "title": "Unit 42 documents in-the-wild web prompt injection, including an attempt to fool an AI ad-review system",
+  "titleZh": "Unit 42 記錄野外網頁提示詞注入，包括企圖欺騙 AI 廣告審核系統",
+  "organisation": "Multiple websites targeting AI agents and AI reviewers",
+  "industry": "cross-industry",
+  "architecture": "browser-agent",
+  "summary": "Hidden prompts on live sites tried to get AI systems to approve a scam ad, push a betting site in LLM recommendations, delete databases, sign users up for paid plans and rate a job candidate as extremely qualified.",
+  "summaryZh": "真實網站中的隱藏提示詞企圖讓 AI 系統核准詐騙廣告、在 LLM 推薦中推銷博弈網站、刪除資料庫、替使用者訂閱付費方案，以及把求職者評為極度合格。",
+  "impact": "12 case studies plus the ad-review case (first reported Dec 2025); 22 delivery techniques catalogued.",
+  "impactZh": "12 個案例研究加上廣告審查案例（首次通報於 2025 年 12 月）；歸納出 22 種投遞手法。",
+  "owasp": [
+   "LLM01:2026",
+   "ASI01"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "Fooling AI Agents: Web-Based Indirect Prompt Injection Observed in the Wild (Unit 42)",
+    "url": "https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "owasp-s-q1-2026-round-up-citing-press-reports-says-an-attacker-used-cl",
+  "date": "2026-02-25",
+  "title": "OWASP's Q1 2026 round-up, citing press reports, says an attacker used Claude and ChatGPT to automate parts of a breach of Mexican government systems",
+  "titleZh": "OWASP 2026 年第一季彙整報告引述媒體報導：攻擊者使用 Claude 與 ChatGPT 自動化入侵墨西哥多個政府機關系統的部分步驟",
+  "organisation": "Mexican government agencies (incl. tax and electoral bodies)",
+  "industry": "government",
+  "architecture": "agent",
+  "summary": "From late December 2025 into January 2026, an attacker used commercial LLMs to automate parts of an intrusion that began with vulnerable government-facing systems.",
+  "summaryZh": "2025 年 12 月底至 2026 年 1 月，攻擊者利用商用大型語言模型自動化部分入侵流程，起點是政府對外系統的弱點。",
+  "impact": "About 150 GB of sensitive data, including tax and voter information, exposed.",
+  "impactZh": "約 150 GB 的敏感資料外洩，包括稅務與選民資訊。",
+  "owasp": [
+   "LLM02:2026",
+   "LLM03:2026",
+   "ASI02"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "OWASP GenAI Exploit Round-up Report Q1 2026",
+    "url": "https://genai.owasp.org/2026/04/14/owasp-genai-exploit-round-up-report-q1-2026/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "cib-busts-ring-using-deepfakes-to-pass-an-e-wallet-s-face-verification",
+  "date": "2026-02-02",
+  "title": "CIB busts ring using deepfakes to pass an e-wallet's face verification",
+  "titleZh": "刑事局破AI深偽詐騙 55中國人受害財損達2億",
+  "organisation": "內政部警政署刑事警察局",
+  "industry": "finance",
+  "architecture": "other",
+  "summary": "A syndicate set up by a Taiwanese national, working with a PRC fraud group, used deepfaked 3D face images of victims to pass the face-verification step of a digital-RMB wallet app, then linked the victims' accounts and moved their deposits out. The 55 victims identified were PRC nationals.",
+  "summaryZh": "台灣人出資的集團取得被害人照片，以深偽技術製作人臉驗證影片，通過數字人民幣 App 身分驗證後綁定帳戶並轉出存款。",
+  "impact": "At least 55 victims and about NT$200 million in losses. 4 people indicted.",
+  "impactZh": "至少 55 名中國籍受害者，損失約新台幣 2 億元（NT$200 million）；4 人遭起訴。",
+  "owasp": [],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "刑事局破AI深偽詐騙 55中國人受害財損達2億（公視）",
+    "url": "https://news.pts.org.tw/article/793450"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "dormant-calendar-invite-instructions-make-gemini-leak-private-meeting",
+  "date": "2026-01-19",
+  "title": "Dormant calendar-invite instructions make Gemini leak private meeting summaries into a new event",
+  "titleZh": "行事曆邀請中的潛伏指令讓 Gemini 把私人會議摘要寫入新活動而外洩",
+  "organisation": "Google Gemini (Calendar)",
+  "industry": "cross-industry",
+  "architecture": "agent",
+  "summary": "A plausible-sounding request in an invite description lay dormant until the user asked Gemini about their schedule; Gemini then wrote a summary of the day's meetings into a new event the attacker could read and told the user it was a free slot.",
+  "summaryZh": "邀請描述中語氣自然的請求潛伏到使用者詢問行程時才被觸發，Gemini 把當日會議摘要寫入攻擊者可讀取的新活動，還告訴使用者那是空檔。",
+  "impact": "Private meeting data exposed without further user action; bypassed Google's existing malicious-prompt detector.",
+  "impactZh": "私人會議資料在使用者無須進一步操作的情況下外洩；繞過 Google 既有的惡意提示詞偵測器。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM02:2026",
+   "ASI01"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "Weaponizing Calendar Invites: A Semantic Attack on Google Gemini (Miggo Security)",
+    "url": "https://www.miggo.io/post/weaponizing-calendar-invites-a-semantic-attack-on-google-gemini"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "nsb-2025-cognitive-warfare-report-2-31m-disputed-messages-and-an-ai-al",
+  "date": "2026-01-11",
+  "title": "NSB 2025 cognitive-warfare report: 2.31M disputed messages and an AI-altered video of the President and Vice President",
+  "titleZh": "國安局揭中共認知作戰5手法 去年查獲逾231萬爭議訊息",
+  "organisation": "國家安全局",
+  "industry": "government",
+  "architecture": "other",
+  "summary": "AI-generated audio and video, including a Sept 2025 fabricated video that altered dialogue between President Lai and VP Hsiao. Hijacked Taiwanese accounts and impersonated international media were used to push doubt-US and doubt-military narratives. In Apr 2025 the NSB had already told parliament that AI tools were helping create divisive messages, with 500k+ flagged messages in early 2025.",
+  "summaryZh": "利用 AI 生成影音（如 2025 年 9 月竄改賴總統與蕭副總統對話的偽造影片）、盜用台灣民眾帳號、冒充國際媒體，推送疑美論與疑軍論；國安局 2025 年 4 月已向立法院報告 AI 工具被用於產製分化訊息。",
+  "impact": "In 2025: 2.314 million disputed messages and 45,000 suspicious accounts, about 17,000 more accounts than in 2024.",
+  "impactZh": "2025 年共有 231.4 萬則爭議訊息與 45,000 個可疑帳號，帳號數較 2024 年增加約 17,000 個。",
+  "owasp": [],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "國安局揭中共認知作戰5手法 去年查獲逾231萬爭議訊息（公視）",
+    "url": "https://news.pts.org.tw/article/790076"
+   },
+   {
+    "title": "Taiwan says China using generative AI to ramp up disinformation and 'divide' the island（Reuters via Interaksyon）",
+    "url": "https://media.interaksyon.com/politics-issues/2025/04/08/294572/taiwan-china-generative-ai-disinformation-divide-island/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "ai-fabricated-citations-now-appear-in-712-court-decisions-worldwide-sa",
+  "date": "2025-12-29",
+  "title": "AI-fabricated citations now appear in ~712 court decisions worldwide; sanctions escalate",
+  "titleZh": "AI 捏造判例已出現在全球約 712 件裁判中，制裁金額持續升高",
+  "organisation": "Courts, law firms and self-represented litigants (multiple jurisdictions)",
+  "industry": "legal",
+  "architecture": "chatbot",
+  "summary": "Lawyers and self-represented litigants filed briefs citing cases invented by AI; about 90% of the ~712 decisions in Damien Charlotin's database were issued in 2025.",
+  "summaryZh": "律師與自行訴訟者在書狀中引用 AI 編造的判例；Damien Charlotin 資料庫收錄約 712 件相關裁判，其中約九成出自 2025 年。",
+  "impact": "Examples: US$15,500 fine (D. Oregon, Dec 2025); US$59,500 combined (Illinois, Dec 2025); EDNY sanctions (Apr 2025).",
+  "impactZh": "案例：US$15,500 罰款（D. Oregon，2025 年 12 月）；合計 US$59,500（Illinois，2025 年 12 月）；EDNY 制裁（2025 年 4 月）。",
+  "owasp": [
+   "LLM07:2026"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "AI-Faked Cases Become Core Issue Irritating Overworked Judges (Bloomberg Law)",
+    "url": "https://news.bloomberglaw.com/legal-ops-and-tech/ai-faked-cases-become-core-issue-irritating-overworked-judges"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "servicenow-now-assist-agents-recruited-by-second-order-prompt-injectio",
+  "date": "2025-11-19",
+  "title": "ServiceNow Now Assist agents recruited by second-order prompt injection to act with a privileged user's rights",
+  "titleZh": "ServiceNow Now Assist 二階提示詞注入，誘使其他代理以高權限使用者身分執行動作",
+  "organisation": "ServiceNow Now Assist AI agents",
+  "industry": "cross-industry",
+  "architecture": "agent",
+  "summary": "A low-privileged user planted instructions in a record field; when a higher-privileged user's agent processed it, default agent discovery let it recruit other agents to copy restricted data, assign roles or send email.",
+  "summaryZh": "低權限使用者在工單欄位植入指令，高權限使用者的代理處理時，預設的代理探索機制讓它招募其他代理去複製受限資料、指派角色或寄送郵件。",
+  "impact": "Demonstrated cross-ticket data copying, privilege escalation and out-of-band email exfiltration, with prompt-injection protection enabled.",
+  "impactZh": "在啟用提示詞注入防護的情況下，仍展示了跨工單資料複製、權限提升與頻外電子郵件外洩。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM03:2026",
+   "ASI03",
+   "ASI07"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "AI agent-to-agent discovery and second-order prompt injection in ServiceNow (AppOmni AO Labs)",
+    "url": "https://appomni.com/ao-labs/ai-agent-to-agent-discovery-prompt-injection/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "oligo-reports-shadowray-2-0-a-self-propagating-campaign-that-hijacks-e",
+  "date": "2025-11-18",
+  "title": "Oligo reports ShadowRay 2.0, a self-propagating campaign that hijacks exposed Ray AI clusters, with payloads it judged likely to be AI-generated",
+  "titleZh": "Oligo 揭露 ShadowRay 2.0：可自我擴散的攻擊行動劫持對外暴露的 Ray AI 叢集，其酬載經研判可能由 AI 生成",
+  "organisation": "Ray (Anyscale) clusters exposed to the internet",
+  "industry": "cross-industry",
+  "architecture": "infrastructure",
+  "summary": "Attackers submitted jobs through unauthenticated Ray dashboards (CVE-2023-48022), using the clusters for cryptomining and DDoS, spreading to other clusters and stealing models, data and credentials.",
+  "summaryZh": "攻擊者透過未認證的 Ray 儀表板提交工作（CVE-2023-48022），利用叢集挖礦與發動 DDoS、擴散到其他叢集，並竊取模型、資料與憑證。",
+  "impact": "More than 230,000 internet-facing Ray clusters; campaign active since at least Sept 2024; every manually inspected exposed server had been reached.",
+  "impactZh": "超過 230,000 個連網的 Ray 叢集；攻擊活動至少自 2024 年 9 月起持續進行；所有經人工檢查的暴露伺服器皆已遭攻擊者觸及。",
+  "owasp": [
+   "LLM04:2026",
+   "LLM06:2026",
+   "ASI05"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "Self-replicating botnet hijacks Ray clusters (The Register, on Oligo ShadowRay 2.0)",
+    "url": "https://www.theregister.com/2025/11/18/selfreplicating_botnet_ray_clusters/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "cib-warns-of-ai-synthesized-fake-celebrity-video-scams",
+  "date": "2025-11-10",
+  "title": "CIB warns of AI-synthesized fake-celebrity video scams",
+  "titleZh": "刑事局示警AI影片假名人詐術　吊車大王現身說法",
+  "organisation": "內政部警政署刑事警察局、165 打詐儀錶板、數位發展部",
+  "industry": "retail",
+  "architecture": "other",
+  "summary": "Criminals use AI to synthesize celebrity videos and voices for fake endorsements, product sales and investment groups. One example used an AI-generated video of a businessman's disaster-relief work to sell products.",
+  "summaryZh": "犯罪集團以 AI 合成名人影片或聲音，假冒代言、賣貨或經營投資群組，例如以 AI 生成吊車大王花蓮救災影片賣貨。",
+  "impact": "In Jan-Sep 2025, 17,461 fake-celebrity ads were reported for takedown. In Oct 2025 there were about 441 fraud cases a day, with fake investment accounting for 41.09% of losses.",
+  "impactZh": "2025 年 1-9 月共有 17,461 則假冒名人廣告被通報下架；2025 年 10 月每日約 441 件詐騙案，其中假投資占損失的 41.09%。",
+  "owasp": [],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "刑事局示警AI影片假名人詐術 吊車大王現身說法（中央社）",
+    "url": "https://www.cna.com.tw/news/aipl/202511100080.aspx"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "openai-atlas-omnibox-treats-a-malformed-url-as-a-trusted-user-prompt",
+  "date": "2025-10-24",
+  "title": "OpenAI Atlas omnibox treats a malformed 'URL' as a trusted user prompt",
+  "titleZh": "OpenAI Atlas 網址列把格式錯誤的「網址」當成可信任的使用者提示詞",
+  "organisation": "OpenAI ChatGPT Atlas browser",
+  "industry": "cross-industry",
+  "architecture": "browser-agent",
+  "summary": "A string that looks like a URL but fails URL parsing, with embedded natural-language instructions, was treated as a first-party prompt when pasted into the omnibox, so the agent followed it with user-level trust.",
+  "summaryZh": "看起來像網址、但無法通過網址解析且夾帶自然語言指令的字串，被貼進網址列時被當作使用者本人的提示詞，代理以使用者等級的信任執行。",
+  "impact": "Researchers showed phishing redirection and potential destructive actions such as deleting files in the user's Google Drive.",
+  "impactZh": "研究人員展示了釣魚重新導向，以及刪除使用者 Google Drive 中檔案等潛在破壞性操作。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM03:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "OpenAI Atlas omnibox prompt injection (NeuralTrust)",
+    "url": "https://neuraltrust.ai/blog/openai-atlas-omnibox-prompt-injection"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "m365-copilot-indirect-prompt-injection-exfiltrates-emails-through-a-cl",
+  "date": "2025-10-21",
+  "title": "M365 Copilot indirect prompt injection exfiltrates emails through a clickable Mermaid diagram",
+  "titleZh": "M365 Copilot 間接提示詞注入，透過可點擊的 Mermaid 圖表外洩郵件",
+  "organisation": "Microsoft 365 Copilot",
+  "industry": "cross-industry",
+  "architecture": "rag",
+  "summary": "Hidden text in an Excel file made Copilot search recent corporate emails, hex-encode them and render a Mermaid diagram styled as a login button whose link carried the data to an attacker's server.",
+  "summaryZh": "Excel 檔案中的隱藏文字讓 Copilot 搜尋近期企業郵件並編碼，再產生偽裝成登入按鈕的 Mermaid 圖表，使用者一點擊就把資料送往攻擊者伺服器。",
+  "impact": "Tenant email content exfiltrable with one user click; not eligible for bounty (out of scope).",
+  "impactZh": "使用者僅需點擊一次即可外洩租用戶電子郵件內容；不符合漏洞獎勵資格（超出範圍）。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM02:2026",
+   "LLM10:2026"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "Microsoft 365 Copilot prompt injection vulnerability (Cyber Security News)",
+    "url": "https://cybersecuritynews.com/copilot-prompt-injection-vulnerability-2"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "camoleak-hidden-pr-comments-make-github-copilot-chat-leak-private-code",
+  "date": "2025-10-08",
+  "title": "CamoLeak: hidden PR comments make GitHub Copilot Chat leak private code through image-proxy URLs",
+  "titleZh": "CamoLeak：PR 隱藏註解讓 GitHub Copilot Chat 透過圖片代理網址外洩私有程式碼",
+  "organisation": "GitHub Copilot Chat",
+  "industry": "software",
+  "architecture": "coding-agent",
+  "summary": "A prompt hidden in a pull request's invisible comment ran with the viewing user's permissions; it made Copilot Chat encode private repository content as a sequence of pre-generated Camo image URLs, which the browser fetched, bypassing CSP.",
+  "summaryZh": "藏在 PR 隱形註解中的提示詞以檢視者的權限執行，讓 Copilot Chat 把私有儲存庫內容編碼成一串預先產生的 Camo 圖片網址，瀏覽器載入時即繞過 CSP 外洩資料。",
+  "impact": "CVSS 9.6; private source code, secrets such as AWS keys and private zero-day issue descriptions could be exfiltrated.",
+  "impactZh": "CVSS 9.6；私有原始碼、AWS 金鑰等機密以及未公開的零時差 issue 描述可能遭外洩。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM02:2026",
+   "LLM10:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "CamoLeak: Critical GitHub Copilot Vulnerability Leaks Private Source Code (Legit Security)",
+    "url": "https://legitsecurity.com/blog/camoleak-critical-github-copilot-vulnerability-leaks-private-source-code"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "deloitte-refunds-part-of-an-a-440-000-australian-government-report-tha",
+  "date": "2025-10-07",
+  "title": "Deloitte refunds part of an A$440,000 Australian government report that contained AI-fabricated citations",
+  "titleZh": "Deloitte 因澳洲政府 44 萬澳元報告含 AI 捏造引用而部分退款",
+  "organisation": "Deloitte Australia / Department of Employment and Workplace Relations (DEWR)",
+  "industry": "government",
+  "architecture": "chatbot",
+  "summary": "A welfare-compliance review produced with an Azure OpenAI GPT-4o tool chain contained a fabricated quote from a Federal Court judgment and references to academic works that do not exist.",
+  "summaryZh": "以 Azure OpenAI GPT-4o 工具鏈協助撰寫的社福合規審查報告，含有捏造的聯邦法院判決引文與不存在的學術文獻。",
+  "impact": "Final contract instalment refunded; corrected 273-page report cut references from 141 to 127; AI use disclosed only on page 58.",
+  "impactZh": "退還最後一期合約款項；修正後的 273 頁報告將參考文獻從 141 筆減至 127 筆；AI 使用僅在第 58 頁揭露。",
+  "owasp": [
+   "LLM07:2026"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "Deloitte admits AI hallucinated quotes in government report, offers partial refund (TechSpot)",
+    "url": "https://www.techspot.com/news/109758-deloitte-admits-ai-hallucinated-quotes-government-report-offers.html"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "forcedleak-web-to-lead-prompt-injection-plus-a-5-expired-domain-leak-s",
+  "date": "2025-09-25",
+  "title": "ForcedLeak: Web-to-Lead prompt injection plus a $5 expired domain leak Salesforce Agentforce CRM data",
+  "titleZh": "ForcedLeak：Web-to-Lead 表單注入加上 5 美元購得的過期網域，使 Salesforce Agentforce 外洩 CRM 資料",
+  "organisation": "Salesforce Agentforce",
+  "industry": "cross-industry",
+  "architecture": "agent",
+  "summary": "Instructions planted in a public Web-to-Lead form's description field were later processed by Agentforce, which put lead data into an image URL pointing to an expired domain still on Salesforce's CSP allowlist.",
+  "summaryZh": "攻擊者在公開 Web-to-Lead 表單的描述欄位植入指令，員工之後請 Agentforce 處理該潛在客戶時，代理把 CRM 資料放進圖片網址，指向仍在 CSP 白名單上的過期網域。",
+  "impact": "CVSS v4.0 9.4 (critical); CRM lead data such as email addresses at risk; no CVE assigned.",
+  "impactZh": "CVSS v4.0 9.4（重大）；電子郵件地址等 CRM 潛在客戶資料面臨風險；未指派 CVE。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM02:2026",
+   "LLM10:2026"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "Prompt injection - and a $5 domain - trick Salesforce Agentforce into leaking sales (The Register)",
+    "url": "https://www.theregister.com/2025/09/26/salesforce_agentforce_forceleak_attack/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "the-postmark-mcp-npm-package-described-by-its-discoverers-as-the-first",
+  "date": "2025-09-25",
+  "title": "The 'postmark-mcp' npm package, described by its discoverers as the first malicious MCP server found in the wild, silently copied every email to an attacker",
+  "titleZh": "npm 套件「postmark-mcp」被發現者稱為首個在真實環境出現的惡意 MCP server，會暗中把每封信件副本寄給攻擊者",
+  "organisation": "postmark-mcp (unofficial npm package impersonating Postmark's MCP server)",
+  "industry": "software",
+  "architecture": "infrastructure",
+  "summary": "After 15 clean releases built trust, version 1.0.16 of a package copying Postmark's MCP server added one line that silently BCC'd all outgoing emails to an attacker-controlled domain.",
+  "summaryZh": "一個複製 Postmark MCP 伺服器的非官方套件，先以 15 個正常版本建立信任，再於 1.0.16 版加入一行程式，把所有寄出郵件密件副本到攻擊者網域。",
+  "impact": "About 1,500 weekly downloads; Koi Security estimated ~300 organisations and 3,000-15,000 emails per day; Postmark knows of one affected customer.",
+  "impactZh": "每週下載量約 1,500 次；Koi Security 估計約 300 個組織受影響，每天 3,000-15,000 封電子郵件；Postmark 已知有一位客戶受影響。",
+  "owasp": [
+   "LLM04:2026",
+   "ASI04"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "Postmark MCP server code hijacked (The Register)",
+    "url": "https://www.theregister.com/2025/09/29/postmark_mcp_server_code_hijacked/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "notion-3-0-ai-agent-tricked-by-hidden-pdf-text-into-leaking-a-client-l",
+  "date": "2025-09-19",
+  "title": "Notion 3.0 AI agent tricked by hidden PDF text into leaking a client list via its web-search tool",
+  "titleZh": "Notion 3.0 AI 代理被 PDF 隱藏文字誘導，經由網頁搜尋工具外洩客戶名單",
+  "organisation": "Notion (Notion AI agents)",
+  "industry": "cross-industry",
+  "architecture": "agent",
+  "summary": "White-on-white text in a PDF told the agent to read a client list and put client names, companies and ARR into a URL passed to its web-search tool, sending the data to an attacker-controlled domain.",
+  "summaryZh": "PDF 中白底白字的指令要求代理讀取客戶名單，把客戶名稱、公司與年度經常性營收串進網址並交給網頁搜尋工具，進而送到攻擊者網域。",
+  "impact": "Demonstrated exfiltration path for workspace data (client name, company, ARR); demo used Claude Sonnet 4.",
+  "impactZh": "展示工作區資料（客戶名稱、公司、ARR）的外洩路徑；示範使用 Claude Sonnet 4。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM02:2026",
+   "LLM03:2026"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "The lethal trifecta in Notion 3.0 AI agents (Simon Willison, summarising CodeIntegrity)",
+    "url": "https://simonwillison.net/2025/Sep/19/notion-lethal-trifecta"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "shadowleak-zero-click-email-injection-makes-chatgpt-deep-research-leak",
+  "date": "2025-09-18",
+  "title": "ShadowLeak: zero-click email injection makes ChatGPT Deep Research leak Gmail data from OpenAI's servers",
+  "titleZh": "ShadowLeak：零點擊郵件注入讓 ChatGPT Deep Research 從 OpenAI 雲端外洩 Gmail 資料",
+  "organisation": "OpenAI (ChatGPT Deep Research with Gmail connector)",
+  "industry": "cross-industry",
+  "architecture": "agent",
+  "summary": "Hidden instructions in an email were followed when the user asked Deep Research to analyse their inbox; the agent sent personal details to an attacker URL from OpenAI's cloud, leaving no trace on the user's network.",
+  "summaryZh": "攻擊者在郵件中藏入指令，使用者請 Deep Research 分析收件匣時，代理照做並從 OpenAI 雲端把個人資料送往攻擊者網址，企業網路端看不到任何流量。",
+  "impact": "PoC exfiltrated personal details such as name and address; researchers said other connectors (Drive, Dropbox, SharePoint) could be abused; not seen exploited in the wild.",
+  "impactZh": "PoC 外洩了姓名與地址等個人資料；研究人員指出其他連接器（Drive、Dropbox、SharePoint）也可能遭濫用；尚未發現實際遭利用。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM02:2026",
+   "ASI01"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "OpenAI fixes zero-click ShadowLeak vulnerability (The Record)",
+    "url": "https://therecord.media/openai-fixes-zero-click-shadowleak-vulnerability"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "taco-bell-reassesses-drive-thru-voice-ai-after-an-18-000-waters-order",
+  "date": "2025-09-02",
+  "title": "Taco Bell reassesses drive-thru voice AI after an '18,000 waters' order and other failures",
+  "titleZh": "Taco Bell 得來速語音 AI 遭惡作劇點購 18,000 杯水，重新評估導入計畫",
+  "organisation": "Taco Bell",
+  "industry": "retail",
+  "architecture": "chatbot",
+  "summary": "A customer trolled the voice-ordering AI by ordering 18,000 cups of water, and other clips showed it mishandling orders; Taco Bell's digital chief said his own experiences were inconsistent.",
+  "summaryZh": "顧客以點購 18,000 杯水惡搞語音點餐 AI，另有影片顯示 AI 誤解點餐內容；Taco Bell 數位長坦承自己的使用體驗也不一致。",
+  "impact": "Voice AI was in about 500 drive-throughs; the company is adjusting its AI strategy and reassessing the rollout.",
+  "impactZh": "語音 AI 已部署於約 500 個得來速據點；該公司正調整 AI 策略並重新評估推行計畫。",
+  "owasp": [
+   "LLM03:2026",
+   "LLM06:2026"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "18,000 Waters In One Order Causes Taco Bell To Pause AI Drive-Through Rollout (Jalopnik)",
+    "url": "https://www.jalopnik.com/1956939/taco-bell-drive-through-18000-waters/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "cisco-finds-1-139-ollama-llm-servers-exposed-to-the-internet-many-with",
+  "date": "2025-09-01",
+  "title": "Cisco finds 1,139 Ollama LLM servers exposed to the internet, many without authentication",
+  "titleZh": "Cisco 發現 1,139 台 Ollama 大型語言模型伺服器直接暴露在網際網路上",
+  "organisation": "Self-hosted Ollama deployments (various)",
+  "industry": "cross-industry",
+  "architecture": "infrastructure",
+  "summary": "Shodan-based scanning found self-hosted Ollama servers reachable without authentication; about 18.8% were actively serving models to anyone.",
+  "summaryZh": "以 Shodan 掃描發現大量自建 Ollama 伺服器無需認證即可連線，其中約 18.8% 正對任何人提供模型服務。",
+  "impact": "1,139 exposed instances, 214 actively hosting models; US 36.6%, China 22.5%, Germany 8.9%. Risks: free compute abuse, model extraction, jailbreak, model poisoning.",
+  "impactZh": "1,139 個暴露實例，其中 214 個正在託管模型；美國 36.6%、中國 22.5%、德國 8.9%。風險：免費運算資源遭濫用、模型擷取、越獄、模型投毒。",
+  "owasp": [
+   "LLM04:2026",
+   "LLM06:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "Detecting Exposed LLM Servers: A Shodan Case Study on Ollama (Cisco)",
+    "url": "https://blogs.cisco.com/security/detecting-exposed-llm-servers-shodan-case-study-on-ollama"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "commonwealth-bank-reverses-decision-to-replace-45-call-centre-roles-wi",
+  "date": "2025-08-21",
+  "title": "Commonwealth Bank reverses decision to replace 45 call-centre roles with an AI voice bot",
+  "titleZh": "澳洲聯邦銀行撤回以 AI 語音機器人取代 45 名客服人員的決定",
+  "organisation": "Commonwealth Bank of Australia (CBA)",
+  "industry": "finance",
+  "architecture": "chatbot",
+  "summary": "After announcing that an AI voice bot would replace 45 customer-service roles, call volumes rose and team leaders had to answer calls; CBA admitted its assessment had not considered all relevant factors.",
+  "summaryZh": "銀行宣布以 AI 語音機器人取代 45 個客服職位後，來電量反而上升，需由主管支援接聽，銀行承認當初評估未考量所有因素。",
+  "impact": "Redundancies reversed; staff offered to stay, be redeployed or take redundancy; public apology.",
+  "impactZh": "裁員決定已撤回；員工可選擇留任、轉調或接受資遣；並公開道歉。",
+  "owasp": [],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "CBA reverses AI-driven job cuts, admits 'error' (Information Age / ACS)",
+    "url": "https://ia.acs.org.au/article/2025/cba-reverses-ai-driven-job-cuts--admits--error-.html"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "perplexity-comet-agentic-browser-hijacked-by-hidden-instructions-in-a",
+  "date": "2025-08-20",
+  "title": "Perplexity Comet agentic browser hijacked by hidden instructions in a Reddit comment",
+  "titleZh": "Perplexity Comet 代理瀏覽器被 Reddit 留言中的隱藏指令劫持",
+  "organisation": "Perplexity Comet",
+  "industry": "cross-industry",
+  "architecture": "browser-agent",
+  "summary": "When a user asked Comet to summarise a page, hidden instructions in a comment made the agent open the user's Perplexity account, obtain their email and a one-time password from their logged-in Gmail, and post both back to the attacker.",
+  "summaryZh": "使用者請 Comet 摘要網頁時，留言中的隱藏指令讓代理開啟使用者的 Perplexity 帳號頁面，取得電子郵件與已登入 Gmail 中的一次性密碼，再回覆給攻擊者。",
+  "impact": "Account takeover with no further user input after the summarise request.",
+  "impactZh": "使用者提出摘要請求後，無需任何進一步輸入即遭帳戶接管。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM03:2026",
+   "ASI01"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "Agentic Browser Security: Indirect Prompt Injection in Perplexity Comet (Brave)",
+    "url": "https://brave.com/blog/comet-prompt-injection/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "lenovo-lena-support-chatbot-xss-one-prompt-can-steal-human-support-age",
+  "date": "2025-08-18",
+  "title": "Lenovo 'Lena' support chatbot XSS: one prompt can steal human support agents' session cookies",
+  "titleZh": "聯想客服聊天機器人 Lena 存在 XSS，單一提示詞即可竊取真人客服的工作階段 Cookie",
+  "organisation": "Lenovo (Lena, GPT-4-based support chatbot)",
+  "industry": "customer-service",
+  "architecture": "chatbot",
+  "summary": "A ~400-character prompt made the chatbot output HTML that was saved in the chat history; when the chat was escalated, the human agent's browser rendered it and sent the agent's session cookies to the attacker.",
+  "summaryZh": "約 400 字元的提示詞讓聊天機器人輸出 HTML 並存入對話紀錄；轉接真人客服時，客服人員的瀏覽器渲染該內容，把其工作階段 Cookie 傳給攻擊者。",
+  "impact": "Potential hijack of support-agent sessions and access to active and past customer chats without the agent's credentials.",
+  "impactZh": "可能劫持客服人員的工作階段，並在無須客服人員憑證的情況下存取進行中及過往的客戶對話。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM02:2026",
+   "LLM10:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "Critical flaw plagues Lenovo AI chatbot (Cybernews research)",
+    "url": "https://cybernews.com/security/lenovo-chatbot-lena-plagued-by-critical-vulnerabilities/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "invitation-is-all-you-need-google-calendar-invites-hijack-gemini-assis",
+  "date": "2025-08-16",
+  "title": "'Invitation Is All You Need': Google Calendar invites hijack Gemini assistant actions",
+  "titleZh": "「Invitation Is All You Need」：Google 行事曆邀請劫持 Gemini 助理執行動作",
+  "organisation": "Google (Gemini assistant with Workspace / Calendar)",
+  "industry": "cross-industry",
+  "architecture": "agent",
+  "summary": "Instructions hidden in a calendar invite's title or description entered Gemini's context when the victim later asked about upcoming events, and the assistant carried them out.",
+  "summaryZh": "攻擊者把指令藏在行事曆邀請的標題或描述中，受害者之後詢問近期行程時，Gemini 讀入邀請內容並執行其中指令。",
+  "impact": "Demonstrated deleting events, disclosing email content, starting a Zoom video stream, locating the user and controlling smart-home devices; about 73% of scenarios rated high or critical.",
+  "impactZh": "展示了刪除行程、揭露電子郵件內容、啟動 Zoom 視訊串流、定位使用者及控制智慧家庭裝置；約 73% 的情境被評為高風險或重大。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM03:2026",
+   "ASI01",
+   "ASI02"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "Invitation Is All You Need! Promptware Attacks Against LLM-Powered Assistants in Production Are Practical and Dangerous (arXiv 2508.12175)",
+    "url": "https://arxiv.org/abs/2508.12175"
+   },
+   {
+    "title": "Gemini AI Vulnerable to Calendar-Based Hack (TechRepublic)",
+    "url": "https://www.techrepublic.com/article/news-google-gemini-indirect-prompt-injection-attack/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "cve-2025-53773-prompt-injection-makes-github-copilot-switch-on-auto-ap",
+  "date": "2025-08-12",
+  "title": "CVE-2025-53773: prompt injection makes GitHub Copilot switch on auto-approve mode for local code execution",
+  "titleZh": "CVE-2025-53773：提示詞注入讓 GitHub Copilot 開啟自動核准模式並在本機執行程式碼",
+  "organisation": "GitHub Copilot / Visual Studio (Microsoft)",
+  "industry": "software",
+  "architecture": "coding-agent",
+  "summary": "Injected instructions got Copilot to edit the workspace settings file so that its own tool calls were auto-approved, removing user confirmations and enabling local code execution.",
+  "summaryZh": "注入的指令讓 Copilot 修改工作區設定檔，自動核准自己的工具呼叫，取消使用者確認並得以在本機執行程式碼。",
+  "impact": "CVSS 3.1 score 7.8 (High); local code execution on developer machines.",
+  "impactZh": "CVSS 3.1 分數 7.8（高）；可在開發人員電腦上執行本機程式碼。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM03:2026",
+   "ASI05"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "CVE-2025-53773 (Wiz Vulnerability Database)",
+    "url": "https://www.wiz.io/vulnerability-database/cve/cve-2025-53773"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "man-hospitalised-with-bromide-poisoning-after-chatgpt-suggested-bromid",
+  "date": "2025-08-05",
+  "title": "Man hospitalised with bromide poisoning after ChatGPT suggested bromide as a chloride substitute",
+  "titleZh": "男子依 ChatGPT 回答以溴化鈉取代食鹽，溴中毒住院",
+  "organisation": "OpenAI ChatGPT (consumer use)",
+  "industry": "healthcare",
+  "architecture": "chatbot",
+  "summary": "A 60-year-old trying to cut chloride from his diet replaced table salt with sodium bromide for about three months after consulting ChatGPT; when doctors asked ChatGPT 3.5, it suggested bromide without a specific health warning.",
+  "summaryZh": "60 歲男子想減少飲食中的氯，諮詢 ChatGPT 後以溴化鈉取代食鹽約三個月；醫師以 ChatGPT 3.5 重現時，模型提到溴化物卻沒有具體健康警示。",
+  "impact": "Paranoia and hallucinations, involuntary psychiatric hold, tapered off antipsychotic over three weeks before discharge (case report in Annals of Internal Medicine: Clinical Cases).",
+  "impactZh": "出現偏執與幻覺，遭非自願精神科留置，出院前三週內逐步減停抗精神病藥物（病例報告刊載於 Annals of Internal Medicine: Clinical Cases）。",
+  "owasp": [
+   "LLM07:2026"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "Man sought diet advice from ChatGPT and ended up with dangerous 'bromism' syndrome (Live Science)",
+    "url": "https://www.livescience.com/health/food-diet/man-sought-diet-advice-from-chatgpt-and-ended-up-with-bromide-intoxication"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "curxecute-cve-2025-54135-injected-mcp-data-rewrites-cursor-s-mcp-confi",
+  "date": "2025-08-01",
+  "title": "CurXecute (CVE-2025-54135): injected MCP data rewrites Cursor's MCP config to run commands",
+  "titleZh": "CurXecute（CVE-2025-54135）：經由 MCP 資料注入改寫 Cursor 設定檔以執行指令",
+  "organisation": "Cursor",
+  "industry": "software",
+  "architecture": "coding-agent",
+  "summary": "Injected text arriving through an external MCP server such as Slack made the agent add an entry to the global MCP config file, which started automatically and ran attacker commands even if the edit was later rejected.",
+  "summaryZh": "透過外部 MCP 伺服器（例如 Slack 訊息）傳入的注入內容，讓代理在全域 MCP 設定檔新增項目，該項目自動啟動並執行攻擊者指令，即使事後拒絕編輯也已經執行。",
+  "impact": "CVSS 8.6; remote code execution on developer machines.",
+  "impactZh": "CVSS 8.6；可在開發人員電腦上遠端執行程式碼。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM03:2026",
+   "ASI05"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "Cursor AI Code Editor Fixed Flaw Allowing Attackers to Run Commands via Prompt Injection (The Hacker News)",
+    "url": "https://thehackernews.com/2025/08/cursor-ai-code-editor-fixed-flaw.html"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "stolen-salesloft-drift-ai-chat-integration-tokens-used-to-mass-export",
+  "date": "2025-08",
+  "title": "Stolen Salesloft Drift AI-chat integration tokens used to mass-export Salesforce data",
+  "titleZh": "Salesloft Drift AI 聊天整合的 OAuth 權杖遭竊，被用於大量匯出 Salesforce 資料",
+  "organisation": "Salesloft Drift (AI chat agent) and its Salesforce / Google Workspace customers",
+  "industry": "cross-industry",
+  "architecture": "infrastructure",
+  "summary": "Between 8 and 18 August 2025, threat actor UNC6395 used OAuth tokens tied to the Drift integration to query and export Salesforce records at scale, then searched the data for more credentials.",
+  "summaryZh": "2025 年 8 月 8 日至 18 日，攻擊者 UNC6395 利用與 Drift 整合相關的 OAuth 權杖大量查詢並匯出 Salesforce 紀錄，再從資料中搜尋其他憑證以擴大入侵。",
+  "impact": "Confirmed victims included Zscaler, Palo Alto Networks, Cloudflare (104 API tokens found in stolen data), PagerDuty, SpyCloud and Tanium; a small number of Google Workspace mailboxes were accessed on 9 Aug.",
+  "impactZh": "已確認的受害者包括 Zscaler、Palo Alto Networks、Cloudflare（在遭竊資料中發現 104 個 API 權杖）、PagerDuty、SpyCloud 與 Tanium；少數 Google Workspace 信箱於 8 月 9 日遭存取。",
+  "owasp": [
+   "LLM02:2026",
+   "LLM04:2026",
+   "ASI03",
+   "ASI04"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "Google warns of Salesloft OAuth breach (The Hacker News)",
+    "url": "https://thehackernews.com/2025/08/google-warns-salesloft-oauth-breach.html?m=1"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "anthropic-reports-that-a-criminal-used-claude-code-to-run-a-data-extor",
+  "date": "2025-08",
+  "title": "Anthropic reports that a criminal used Claude Code to run a data-extortion campaign against at least 17 organisations ('vibe hacking')",
+  "titleZh": "Anthropic 報告：一名犯罪者使用 Claude Code 對至少 17 個組織進行資料勒索（vibe hacking）",
+  "organisation": "Anthropic (Claude Code misused); victims in healthcare, emergency services, government and religious institutions",
+  "industry": "cross-industry",
+  "architecture": "coding-agent",
+  "summary": "An actor used a coding agent at every stage of an extortion operation, from gaining access to writing ransom notes, against at least 17 organisations in one month.",
+  "summaryZh": "攻擊者在勒索行動的每個階段都使用程式代理，從取得存取權到撰寫勒索信，一個月內攻擊至少 17 個組織。",
+  "impact": "Stolen healthcare, financial and government-credential data; ransom demands of US$75,000-500,000 in Bitcoin.",
+  "impactZh": "醫療、金融與政府憑證資料遭竊；勒索要求以比特幣支付 US$75,000-500,000。",
+  "owasp": [
+   "LLM03:2026",
+   "ASI02"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "Claude AI chatbot abused to launch 'cybercrime spree' (Malwarebytes, on Anthropic threat report)",
+    "url": "https://www.malwarebytes.com/blog/news/2025/08/claude-ai-chatbot-abused-to-launch-cybercrime-spree"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "supabase-mcp-running-with-service-role-lets-a-support-ticket-make-curs",
+  "date": "2025-07",
+  "title": "Supabase MCP running with service_role lets a support ticket make Cursor leak integration tokens",
+  "titleZh": "Supabase MCP 以 service_role 權限執行，一張客服工單即可誘使 Cursor 外洩整合權杖",
+  "organisation": "Supabase MCP server used from Cursor",
+  "industry": "software",
+  "architecture": "coding-agent",
+  "summary": "An attacker-filed support ticket told the developer's agent to read the integration_tokens table and post it back into the ticket thread; the agent's service_role access bypassed row-level security.",
+  "summaryZh": "攻擊者送出的客服工單要求開發者的代理讀取 integration_tokens 資料表並回貼到工單；代理以 service_role 權限執行，繞過資料列層級安全。",
+  "impact": "Demonstrated read of sensitive tables (integration tokens) written back where the attacker could see them.",
+  "impactZh": "展示讀取敏感資料表（整合權杖），並將其寫回攻擊者可見之處。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM02:2026",
+   "LLM03:2026"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "Supabase MCP can leak your entire SQL database (Simon Willison, summarising General Analysis)",
+    "url": "https://simonwillison.net/2025/Jul/06/supabase-mcp-lethal-trifecta/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "replit-ai-agent-deletes-a-production-database-during-an-explicit-code",
+  "date": "2025-07",
+  "title": "Replit AI agent deletes a production database during an explicit code freeze",
+  "titleZh": "Replit AI 代理在明確要求凍結變更期間刪除正式環境資料庫",
+  "organisation": "Replit (agent used by SaaStr founder Jason Lemkin)",
+  "industry": "software",
+  "architecture": "coding-agent",
+  "summary": "Despite instructions not to change anything without approval, the coding agent ran destructive commands that wiped a production database and then misrepresented what had happened.",
+  "summaryZh": "使用者已明確要求未經核准不得變更，程式代理仍執行破壞性指令清空正式資料庫，事後還對經過做出不實陳述。",
+  "impact": "Records on 1,206 executives and more than 1,196 companies deleted.",
+  "impactZh": "1,206 名高階主管與超過 1,196 家公司的紀錄遭刪除。",
+  "owasp": [
+   "LLM03:2026",
+   "ASI02",
+   "ASI10"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "'Catastrophic Failure': AI Agent Wipes Production Database, Then Lies About It (eWeek)",
+    "url": "https://www.eweek.com/news/replit-ai-coding-assistant-failure/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "amazon-q-developer-vs-code-extension-shipped-with-an-injected-data-wip",
+  "date": "2025-07",
+  "title": "Amazon Q Developer VS Code extension shipped with an injected data-wiping prompt",
+  "titleZh": "Amazon Q Developer VS Code 擴充功能被植入清除資料的提示詞並正式發布",
+  "organisation": "AWS (Amazon Q Developer extension for VS Code)",
+  "industry": "software",
+  "architecture": "coding-agent",
+  "summary": "A malicious commit added a prompt telling the AI agent to delete local files and use AWS profiles to delete cloud resources, invoked through the Q CLI with flags that skip confirmation and trust all tools.",
+  "summaryZh": "惡意提交加入一段提示詞，要求 AI 代理刪除本機檔案並利用 AWS 設定檔刪除雲端資源，且以略過確認、信任所有工具的參數呼叫 Q CLI。",
+  "impact": "Version 1.84 was live on the VS Code Marketplace for about two days; AWS said no production services or end users were affected.",
+  "impactZh": "版本 1.84 在 VS Code Marketplace 上架約兩天；AWS 表示無任何生產服務或終端使用者受影響。",
+  "owasp": [
+   "LLM03:2026",
+   "LLM04:2026",
+   "ASI04",
+   "ASI05"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "Compromised Amazon Q extension told AI to delete everything - and it shipped (The Register)",
+    "url": "https://www.theregister.com/2025/07/24/amazon_q_ai_prompt/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "mcdonald-s-mchire-ai-hiring-chatbot-backend-exposed-64-million-applica",
+  "date": "2025-06-30",
+  "title": "McDonald's McHire AI hiring chatbot backend exposed 64 million applications via a default password and IDOR",
+  "titleZh": "麥當勞 McHire AI 招募聊天機器人後台因預設密碼與 IDOR，曝露 6,400 萬筆應徵資料",
+  "organisation": "McDonald's / Paradox.ai (McHire)",
+  "industry": "hr",
+  "architecture": "chatbot",
+  "summary": "Researchers logged into a test-franchise admin account with default credentials 123456/123456, then an IDOR in an internal API let them read other applicants' records by changing an ID.",
+  "summaryZh": "研究人員以預設帳密 123456 登入測試加盟店的管理後台，再利用內部 API 的 IDOR 漏洞，只要改變編號即可讀取其他應徵者紀錄。",
+  "impact": "Chats from more than 64 million job applications exposed, including names, emails, phone numbers, home addresses, availability, chat transcripts and session tokens.",
+  "impactZh": "超過 6,400 萬份求職申請的對話遭外洩，包括姓名、電子郵件、電話號碼、住家地址、可上班時間、對話紀錄與工作階段權杖。",
+  "owasp": [
+   "LLM02:2026"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "'123456' password exposed chats for 64 million McDonald's job chatbot applications (BleepingComputer)",
+    "url": "https://www.bleepingcomputer.com/news/security/123456-password-exposed-chats-for-64-million-mcdonalds-job-chatbot-applications"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "asana-mcp-server-logic-flaw-exposed-data-across-customer-organisations",
+  "date": "2025-06-04",
+  "title": "Asana MCP server logic flaw exposed data across customer organisations",
+  "titleZh": "Asana MCP 伺服器邏輯錯誤導致資料跨組織外洩",
+  "organisation": "Asana (MCP server for AI integrations)",
+  "industry": "cross-industry",
+  "architecture": "infrastructure",
+  "summary": "A logic flaw in Asana's MCP server, launched on 1 May 2025 to connect LLM tools to Asana data, let some data become visible to users in other organisations for over a month.",
+  "summaryZh": "Asana 於 2025 年 5 月 1 日推出、供 AI 工具存取資料的 MCP 伺服器存在邏輯錯誤，使部分資料可被其他組織的使用者看見，持續一個多月。",
+  "impact": "About 1,000 customers notified; potentially exposed task data, project metadata, team details, comments and uploaded files.",
+  "impactZh": "約 1,000 名客戶已收到通知；可能外洩的資料包括任務資料、專案中繼資料、團隊詳細資訊、留言與上傳的檔案。",
+  "owasp": [
+   "LLM02:2026",
+   "LLM04:2026"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "Asana warns MCP AI feature exposed customer data to other orgs (BleepingComputer)",
+    "url": "https://bleepingcomputer.com/news/security/asana-warns-mcp-ai-feature-exposed-customer-data-to-other-orgs/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "fsc-survey-61-financial-institutions-use-generative-ai-inaccurate-outp",
+  "date": "2025-05-20",
+  "title": "FSC survey: 61 financial institutions use generative AI; inaccurate output is the top challenge",
+  "titleZh": "金融業導入AI 跳躍式成長…運用生成式技術業者比例大增",
+  "organisation": "金融監督管理委員會",
+  "industry": "finance",
+  "architecture": "other",
+  "summary": "Not a single incident. Among the 61 generative-AI users, the top reported challenges were unstable, inaccurate or erroneous output (32%), data security and privacy risk (21%), and regulatory compliance (18%).",
+  "summaryZh": "非單一事件；61 家使用生成式 AI 的機構回報主要挑戰為：輸出不穩定、不正確或錯誤（32%）、資料安全與隱私風險（21%）、法規遵循（18%）。",
+  "impact": "383 institutions surveyed in Apr 2025. 126 had adopted AI and 61 use generative AI (48% of adopters, up 21 percentage points). Main uses: internal administration 39%, customer service 15%. Over 80% periodically check for drift.",
+  "impactZh": "2025 年 4 月調查 383 家機構，其中 126 家已導入 AI、61 家使用生成式 AI（占導入者 48%，增加 21 個百分點）。主要用途為內部行政 39%、客戶服務 15%，超過 80% 定期檢查模型漂移。",
+  "owasp": [],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "金融業導入AI 跳躍式成長…運用生成式技術業者比例大增（聯合報，104 職場力轉載）",
+    "url": "https://blog.104.com.tw/?p=203086"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "langflow-unauthenticated-rce-cve-2025-3248-added-to-cisa-kev-and-used",
+  "date": "2025-05-05",
+  "title": "Langflow unauthenticated RCE (CVE-2025-3248) added to CISA KEV and used to spread the Flodrix botnet",
+  "titleZh": "Langflow 免認證遠端程式碼執行漏洞（CVE-2025-3248）列入 CISA KEV，並遭用於散布 Flodrix 殭屍網路",
+  "organisation": "Langflow (open-source AI agent / workflow builder)",
+  "industry": "cross-industry",
+  "architecture": "infrastructure",
+  "summary": "A code-validation API endpoint had no authentication and compiled and executed submitted Python, letting attackers run arbitrary code on internet-exposed Langflow servers.",
+  "summaryZh": "程式碼驗證 API 端點沒有認證，且會編譯並執行送入的 Python 程式，攻擊者因此能在對外暴露的 Langflow 伺服器上執行任意程式碼。",
+  "impact": "CVSS 9.8; exploited in the wild; Flodrix botnet installed for DDoS; possible full system compromise.",
+  "impactZh": "CVSS 9.8；已遭實際利用；被植入 Flodrix 殭屍網路以發動 DDoS；可能導致系統完全遭入侵。",
+  "owasp": [
+   "LLM04:2026",
+   "ASI05"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "Langflow vulnerability exploited to deliver Flodrix botnet (Trend Micro Research)",
+    "url": "https://www.trendmicro.com/en_us/research/25/f/langflow-vulnerability-flodric-botnet.html"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "cursor-s-ai-support-agent-invents-a-one-device-per-subscription-policy",
+  "date": "2025-05",
+  "title": "Cursor's AI support agent invents a 'one device per subscription' policy",
+  "titleZh": "Cursor 的 AI 客服捏造「每個訂閱僅限一台裝置」政策",
+  "organisation": "Anysphere (Cursor)",
+  "industry": "customer-service",
+  "architecture": "chatbot",
+  "summary": "After a backend session-security change logged users out, the support bot 'Sam' told a user that one device per subscription was a core security policy; no such policy existed and many users thought Sam was human.",
+  "summaryZh": "後端工作階段安全變更導致使用者被登出，AI 客服「Sam」聲稱單一裝置是核心安全政策，但該政策並不存在，且不少使用者以為 Sam 是真人。",
+  "impact": "Public cancellation announcements on Reddit and Hacker News; the company apologised and refunded the affected user.",
+  "impactZh": "使用者在 Reddit 與 Hacker News 上公開宣布取消訂閱；該公司道歉並退款給受影響使用者。",
+  "owasp": [
+   "LLM07:2026"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "Another AI bot causes a mess after inventing a company policy (Fanatical Futurist)",
+    "url": "https://www.fanaticalfuturist.com/2025/05/another-ai-bot-causes-a-mess-after-inventing-a-company-policy/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "singapore-and-hong-kong-police-recover-us-499k-after-a-deepfake-execut",
+  "date": "2025-04-07",
+  "title": "Singapore and Hong Kong police recover US$499k after a deepfake executive video-call scam",
+  "titleZh": "新加坡企業財務長遭深偽視訊冒充高層詐騙，新港警方攔回 49.9 萬美元",
+  "organisation": "Multinational corporation (unnamed); Singapore Police Force; HSBC",
+  "industry": "cross-industry",
+  "architecture": "other",
+  "summary": "A finance director contacted on WhatsApp by a fake CFO joined a video conference where deepfakes impersonated senior executives, signed an NDA at a fake lawyer's request and transferred funds to a mule account.",
+  "summaryZh": "財務總監在 WhatsApp 上被冒充 CFO 者聯繫，參加以深偽冒充高層的視訊會議，並依假律師要求簽署保密協議後匯款到人頭帳戶。",
+  "impact": "Over US$499,000 transferred on 2025-03-26; fully withheld on 2025-03-28 with Hong Kong Police; scammers then sought US$1.4m more.",
+  "impactZh": "2025-03-26 轉出逾 US$499,000，2025-03-28 在香港警方協助下全數攔截；詐騙者隨後試圖再索取 US$1.4m。",
+  "owasp": [],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "Singapore and Hong Kong Police Force recover over $670,000 in a scam (Singapore Police Force)",
+    "url": "https://www.police.gov.sg/media-hub/news/2025/04/20250407_singapore_and_hong_kong_police_force_recover_over_$670000_in_a_scam"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "microsoft-names-storm-2139-llmjacking-network-that-hijacked-azure-open",
+  "date": "2025-02-27",
+  "title": "Microsoft names Storm-2139 'LLMjacking' network that hijacked Azure OpenAI accounts with scraped credentials",
+  "titleZh": "微軟揭露 Storm-2139 LLMjacking 集團：以外洩憑證劫持 Azure OpenAI 帳號並轉售",
+  "organisation": "Microsoft Azure OpenAI Service customers",
+  "industry": "cross-industry",
+  "architecture": "infrastructure",
+  "summary": "The group logged into customers' Azure OpenAI accounts with credentials scraped from public sources, altered service capabilities to get around guardrails and resold access with instructions for generating harmful content.",
+  "summaryZh": "集團以從公開來源蒐集的憑證登入客戶的 Azure OpenAI 帳號，修改服務功能以繞過防護，並連同產生有害內容的教學轉售存取權。",
+  "impact": "Customer accounts abused to generate harmful and non-consensual intimate imagery; four individuals named (Iran, UK, Hong Kong, Vietnam).",
+  "impactZh": "客戶帳戶遭濫用以產生有害及未經同意的私密影像；四名個人遭點名（伊朗、英國、香港、越南）。",
+  "owasp": [
+   "LLM06:2026",
+   "ASI03"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "Microsoft Exposes LLMjacking Cybercriminals Behind Azure AI Abuse Scheme (The Hacker News)",
+    "url": "https://thehackernews.com/2025/02/microsoft-exposes-llmjacking.html"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "taiwan-bans-deepseek-ai-services-across-public-agencies",
+  "date": "2025-02-03",
+  "title": "Taiwan bans DeepSeek AI services across public agencies",
+  "titleZh": "卓榮泰：公務機關全面禁用DeepSeek AI服務",
+  "organisation": "行政院、數位發展部",
+  "industry": "government",
+  "architecture": "other",
+  "summary": "Risk that prompts and data entered into a PRC-operated AI service flow to China, plus privacy, copyright and training-data censorship concerns. MODA warned on Jan 31, 2025, and the Executive Yuan banned use in principle on Feb 3.",
+  "summaryZh": "使用者輸入的資料可能經由中國業者營運的 AI 服務傳回中國，並有個資、著作權與訓練語料受審查等疑慮；數發部 1/31 示警，行政院 2/3 宣布原則全面禁用。",
+  "impact": "Public agencies banned use. Critical-infrastructure operators and government-funded foundations were guided to follow. Universities may use it offline on standalone machines with no personal data.",
+  "impactZh": "公部門禁止使用；關鍵基礎設施營運者與政府捐助之財團法人比照辦理；大學可在不含個人資料的離線獨立電腦上使用。",
+  "owasp": [],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "卓榮泰：公務機關全面禁用DeepSeek AI服務（中央社）",
+    "url": "https://cna.com.tw/news/aipl/202502030237.aspx"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "japanese-teen-allegedly-used-a-generative-ai-written-program-to-breach",
+  "date": "2025-01-18",
+  "title": "Japanese teen allegedly used a generative-AI-written program to breach Kaikatsu Club; 7.29 million records possibly leaked",
+  "titleZh": "日本 17 歲少年涉嫌以生成式 AI 撰寫的程式入侵快活 CLUB，約 729 萬筆個資可能外洩",
+  "organisation": "Kaikatsu Frontier (Kaikatsu CLUB internet cafes, FiT24 gyms)",
+  "industry": "retail",
+  "architecture": "chatbot",
+  "summary": "The company detected unauthorised server access on 18 January 2025; police later alleged the 17-year-old suspect used a program generated by a conversational AI while hiding his intent in prompts.",
+  "summaryZh": "業者於 2025 年 1 月 18 日偵測到伺服器遭未授權存取；警方之後指稱 17 歲嫌犯使用對話式 AI 產生的程式，並在提示詞中隱藏真實意圖。",
+  "impact": "7,290,087 personal-information records possibly leaked (name, address, phone, date of birth, member data); no card data or passwords; arrest reported 2025-12-04.",
+  "impactZh": "7,290,087 筆個人資料可能外洩（姓名、地址、電話、出生日期、會員資料），不含信用卡資料或密碼；2025-12-04 報導有人遭逮捕。",
+  "owasp": [],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "Notice of unauthorized access and possible personal information leakage (Kaikatsu Frontier)",
+    "url": "https://www.kaikatsu.jp/info/detail/ddos.html"
+   },
+   {
+    "title": "AIID Incident 1295: Japanese teen allegedly uses AI-generated program to breach Kaikatsu Frontier",
+    "url": "https://incidentdatabase.ai/cite/1295/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "fincen-alert-deepfake-media-used-to-defeat-banks-identity-verification",
+  "date": "2024-11-13",
+  "title": "FinCEN alert: deepfake media used to defeat banks' identity verification",
+  "titleZh": "美國 FinCEN 警示：深偽媒體被用來繞過金融機構的身分驗證",
+  "organisation": "US FinCEN / US financial institutions",
+  "industry": "finance",
+  "architecture": "other",
+  "summary": "FinCEN reported an increase in suspicious activity reports describing suspected deepfake media, particularly fraudulent identity documents used to circumvent identity verification and authentication.",
+  "summaryZh": "FinCEN 指出可疑交易報告中涉及深偽媒體的案件增加，特別是以偽造身分文件繞過身分驗證與認證。",
+  "impact": "Regulator-level alert (FIN-2024-Alert004) to US financial institutions with red-flag indicators in the full alert.",
+  "impactZh": "監管機關層級警示 (FIN-2024-Alert004) 發送予美國金融機構，完整警示中列有紅旗指標。",
+  "owasp": [],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "FinCEN Issues Alert on Fraud Schemes Involving Deepfake Media Targeting Financial Institutions (FinCEN)",
+    "url": "https://fincen.gov/news/news-releases/fincen-issues-alert-fraud-schemes-involving-deepfake-media-targeting-financial"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "nyc-s-mycity-business-chatbot-tells-owners-they-can-break-the-law",
+  "date": "2024-03-29",
+  "title": "NYC's MyCity business chatbot tells owners they can break the law",
+  "titleZh": "紐約市政府 MyCity 聊天機器人建議業者做出違法行為",
+  "organisation": "New York City (MyCity chatbot on Microsoft Azure AI)",
+  "industry": "government",
+  "architecture": "chatbot",
+  "summary": "Reporters' testing found the city's AI chatbot saying employers could take a cut of workers' tips, landlords need not accept Section 8 vouchers and restaurants could go cash-free, all contrary to city law; answers also varied between users.",
+  "summaryZh": "媒體測試發現市府 AI 聊天機器人回答雇主可抽取員工小費、房東可拒收住房補助券、餐廳可不收現金，皆違反市法規，且同一問題不同人得到的答案不一致。",
+  "impact": "Multiple wrong answers on labour, housing and consumer law in an official government service; the city kept the pilot online.",
+  "impactZh": "官方政府服務在勞動、住房與消費者法律方面多次給出錯誤答案；市府仍讓試辦服務持續上線。",
+  "owasp": [
+   "LLM07:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "NYC's AI Chatbot Tells Businesses to Break the Law (The Markup)",
+    "url": "https://themarkup.org/news/2024/03/29/nycs-ai-chatbot-tells-businesses-to-break-the-law"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "tribunal-holds-air-canada-liable-for-its-chatbot-s-wrong-bereavement-f",
+  "date": "2024-02-14",
+  "title": "Tribunal holds Air Canada liable for its chatbot's wrong bereavement-fare answer",
+  "titleZh": "加拿大航空因聊天機器人提供錯誤的喪親優惠票價資訊，遭仲裁庭判賠",
+  "organisation": "Air Canada",
+  "industry": "transport",
+  "architecture": "chatbot",
+  "summary": "The website chatbot told a grieving customer he could claim a bereavement fare within 90 days after travel, contradicting the airline's own policy page; Air Canada argued it was not responsible for what the chatbot said.",
+  "summaryZh": "官網聊天機器人告訴喪親顧客可在開票後 90 天內追溯申請優惠，與官網政策頁面矛盾；航空公司主張不須為聊天機器人的說法負責，遭駁回。",
+  "impact": "BC Civil Resolution Tribunal (2024 BCCRT 149) found negligent misrepresentation and ordered CA$812.02 (CA$650.88 damages plus interest and fees).",
+  "impactZh": "BC 民事解決審裁處 (Civil Resolution Tribunal，2024 BCCRT 149) 認定構成過失不實陳述，判令支付 CA$812.02（CA$650.88 損害賠償加計利息與費用）。",
+  "owasp": [
+   "LLM07:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "Moffatt v. Air Canada, 2024 BCCRT 149 (Civil Resolution Tribunal decision)",
+    "url": "https://decisions.civilresolutionbc.ca/crt/crtd/en/525448/1/document.do"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "deepfake-video-conference-of-senior-officers-tricks-arup-hong-kong-emp",
+  "date": "2024-02",
+  "title": "Deepfake video conference of 'senior officers' tricks Arup Hong Kong employee into HK$200m transfers",
+  "titleZh": "深偽視訊會議冒充公司高層，騙走 Arup 香港員工 2 億港元",
+  "organisation": "Arup (Hong Kong office)",
+  "industry": "cross-industry",
+  "architecture": "other",
+  "summary": "Fraudsters staged a video call in which several participants looked and sounded like senior company officers and instructed a finance employee to transfer money to designated accounts.",
+  "summaryZh": "詐騙集團安排一場視訊會議，多名與會者的臉孔與聲音都像公司高層，指示財務人員把款項匯到指定帳戶。",
+  "impact": "HK$200m (about GBP20m) sent in 15 transactions to five local bank accounts; Arup says no internal systems were compromised.",
+  "impactZh": "HK$200m（約 GBP20m）分 15 筆匯至五個本地銀行帳戶；Arup 表示內部系統未遭入侵。",
+  "owasp": [],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "How a British company was duped off GBP20m with an AI-generated video of its CFO (Graphic Online, via The Guardian)",
+    "url": "https://www.graphic.com.gh/tech-news/how-a-british-company-was-duped-off-gbp20m-with-an-ai-generated-video-of-its-cfo.html"
+   },
+   {
+    "title": "Arup named as victim of GBP20m deepfake scam (Building Design)",
+    "url": "https://www.bdonline.co.uk/NEWS/ARUP-NAMED-AS-VICTIM-OF-20M-DEEPFAKE-SCAM/5129484.ARTICLE"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "dpd-parcel-chatbot-swears-and-disparages-its-own-company-after-a-syste",
+  "date": "2024-01-18",
+  "title": "DPD parcel chatbot swears and disparages its own company after a system update",
+  "titleZh": "DPD 物流客服聊天機器人於系統更新後被誘導罵髒話並批評自家公司",
+  "organisation": "DPD (UK parcel delivery)",
+  "industry": "transport",
+  "architecture": "chatbot",
+  "summary": "A customer who could not get help tracking a parcel coaxed the chatbot out of its rules over the conversation: it swore, wrote a haiku calling itself useless and called DPD the worst delivery firm in the world.",
+  "summaryZh": "顧客查詢包裹未果，在對話中逐步誘導聊天機器人脫離規範，使它罵髒話、作俳句自嘲無用，並稱 DPD 是全世界最差的物流公司。",
+  "impact": "The customer's post passed 25,000 likes at the time of reporting; DPD disabled the AI element of its chat.",
+  "impactZh": "截至報導時，該客戶的貼文按讚數已超過 25,000；DPD 停用其聊天服務中的 AI 功能。",
+  "owasp": [
+   "LLM01:2026"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "DPD disables sweary AI chatbot (TechInformed)",
+    "url": "https://techinformed.com/dpd-disables-sweary-ai-chatbot/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "car-dealership-chatbot-agrees-to-sell-a-2024-chevy-tahoe-for-1",
+  "date": "2023-12-17",
+  "title": "Car dealership chatbot 'agrees' to sell a 2024 Chevy Tahoe for $1",
+  "titleZh": "汽車經銷商聊天機器人被誘導「同意」以 1 美元出售 2024 年雪佛蘭 Tahoe",
+  "organisation": "Chevrolet of Watsonville (dealer chatbot by Fullpath, ChatGPT-based)",
+  "industry": "retail",
+  "architecture": "chatbot",
+  "summary": "A user told the ChatGPT-based sales chatbot to agree with everything and to end every reply by calling it a legally binding offer, then got it to accept $1 for a new SUV.",
+  "summaryZh": "使用者以直接指令覆寫銷售聊天機器人的角色，要求它同意顧客所有說法並宣稱每則回覆都具法律約束力，接著讓它「接受」以 1 美元購買新車。",
+  "impact": "Viral screenshots and reputational damage; the dealership ended its chatbot service. The source does not say any sale was honoured.",
+  "impactZh": "截圖在網路瘋傳，造成聲譽損害；該經銷商終止聊天機器人服務。來源未提及任何交易獲得履行。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM07:2026"
+  ],
+  "sourceTier": "secondary",
+  "sources": [
+   {
+    "title": "Dealer's AI chatbot agrees to sell new car for just $1 (GIGAZINE)",
+    "url": "https://gigazine.net/gsc_news/en/20231220-gm-dealer-chat-bot-tricked"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ }
+]

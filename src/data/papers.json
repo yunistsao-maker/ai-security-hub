@@ -1,0 +1,2426 @@
+[
+ {
+  "id": "prompt-injection-probes-learn-the-conversation-not-just-the-injection",
+  "title": "Prompt-Injection Probes Learn the Conversation, Not Just the Injection",
+  "authors": "Kaan Kale et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-10",
+  "topic": "injection",
+  "summary": "Shows that hidden-state linear probes used as cheap indirect-injection monitors often learn conversation position and text length rather than the injection, and fixes this with matched negative training examples.",
+  "summaryZh": "指出以隱藏狀態線性探針作為間接注入的低成本監測時，常學到的是對話位置與文字長度而非注入本身，並以配對負樣本訓練加以改善。",
+  "finding": "Position and length alone reach 0.91-0.98 AUROC on standard evaluations; matched negatives cut false alarms on injection-free conversations from 41-80% to 4-27% and on harmless look-alikes from 92-98% to 3-16%, while still catching a median 95% of attacks that fooled the agent.",
+  "findingZh": "僅憑位置與長度，即可在標準評估上達到 0.91-0.98 AUROC；配對負樣本將無注入對話的誤報率從 41-80% 降至 4-27%，將無害相似樣本的誤報率從 92-98% 降至 3-16%，同時仍能攔截中位數 95% 曾成功欺騙代理的攻擊。",
+  "owasp": [
+   "LLM01:2026",
+   "ASI01"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2610.18408"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "arbitrary-cipher-attacks-against-large-language-models-do-not-require",
+  "title": "Arbitrary Cipher Attacks Against Large Language Models Do Not Require Fine-Tuning",
+  "authors": "Thomas Rivasseau",
+  "venue": "arXiv preprint",
+  "date": "2026-09",
+  "topic": "injection",
+  "summary": "Demonstrates that recent frontier models can learn an arbitrary cipher purely through prompting or in-context learning, and that alignment and harmfulness classifiers are weakened when harmful exchanges happen inside the cipher.",
+  "summaryZh": "證明新一代前沿模型僅透過提示或情境內學習即可學會任意自訂密碼，而以密碼溝通時，模型對齊與有害內容分類器的防護會明顯失效。",
+  "finding": "Reports jailbreaks against Claude Sonnet 4 and Gemini 3 (full), Claude Sonnet 4.5 (minimal feasibility proof) and GPT-5.5 (when combined with a known attack prompt); commercial harmfulness classifiers miss the encrypted output (qualitative, single-author study).",
+  "findingZh": "報告對 Claude Sonnet 4 與 Gemini 3（完整）、Claude Sonnet 4.5（最小可行性證明）及 GPT-5.5（搭配已知攻擊提示詞時）的越獄；商用有害內容分類器無法偵測加密輸出（質性、單一作者研究）。",
+  "owasp": [
+   "LLM01:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2609.09553"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "loopjacking-hijacking-human-in-the-loop-approval",
+  "title": "Loopjacking: Hijacking Human-in-the-Loop Approval",
+  "authors": "Adithyan Arun Kumar",
+  "venue": "arXiv preprint",
+  "date": "2026-09",
+  "topic": "agents",
+  "summary": "Defines a class of human-in-the-loop failures where the operation a human approves differs from the one that runs. The mismatch comes either from approval screens that hide or misstate the operation, or from mutable workflow state swapped in after approval.",
+  "summaryZh": "定義「Loopjacking」：人類核准的操作與實際執行的操作不同，原因可能是核准畫面呈現不完整或失真，或核准後可變更的流程狀態被替換。",
+  "finding": "Post-approval substitution reproduced in seven Agno AgentOS releases (through 3.0.9) and 12 LangGraph Agent Server versions (through 0.14.0). Representation mismatch reproduced in OpenClaw 2026.2.23 and was rejected in 2026.2.24. OpenAI Agents SDK 0.22.x served as a negative control.",
+  "findingZh": "核准後替換問題在七個 Agno AgentOS 版本（至 3.0.9）與 12 個 LangGraph Agent Server 版本（至 0.14.0）中重現；表示不一致問題在 OpenClaw 2026.2.23 中重現，於 2026.2.24 中則遭拒絕。OpenAI Agents SDK 0.22.x 作為陰性對照。",
+  "owasp": [
+   "LLM03:2026",
+   "ASI02",
+   "ASI09"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2609.21081"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "the-verifiable-action-card-trustworthy-human-in-the-loop-control-for-s",
+  "title": "The Verifiable Action Card: Trustworthy Human-in-the-Loop Control for Secure Autonomous Agents",
+  "authors": "Hasnain Irshad et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-09",
+  "topic": "agents",
+  "summary": "Proposes rebuilding approval dialogs in agentic browsers from the actual pending action and trusted provenance. The card is shown in trusted browser UI and re-checked at execution time.",
+  "summaryZh": "提出「可驗證動作卡」：由實際待執行的動作與可信來源重建核准內容，在瀏覽器可信介面中顯示，並於執行時再次比對。",
+  "finding": "On a 24-scenario benchmark, attack success without VAC was 68 to 100% across LLMs. With VAC it was 0% on every model, with 78% legitimate-task completion and 0% false blocks.",
+  "findingZh": "在 24 個情境的基準測試中，未使用 VAC 時各 LLM 的攻擊成功率為 68 至 100%。使用 VAC 後所有模型皆為 0%，合法任務完成率為 78%，誤阻擋率為 0%。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM03:2026",
+   "ASI01",
+   "ASI09"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2609.18411"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "stepjack-benchmarking-computer-use-agent-safety-against-multi-step-ind",
+  "title": "StepJack: Benchmarking Computer-Use Agent Safety Against Multi-Step Indirect Prompt Injection",
+  "authors": "Zhuoxin Zhan et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-08",
+  "topic": "agents",
+  "summary": "Introduces multi-step indirect prompt injection, where an adversarial goal is decomposed into innocuous-looking sub-steps spread across a chain of pages on a computer-use agent's navigation path.",
+  "summaryZh": "提出「多步驟間接提示注入」：將攻擊目標拆解成數個看似無害的子步驟，分散在電腦操作代理瀏覽路徑上的多個網頁中。",
+  "finding": "480-case benchmark over six CUAs; multi-step attacks raised ASR on three of six CUAs by up to 31.2 points (GPT-5.4-mini 41.7% to 72.9%); averaged over five CUAs, 31.3% (single-step) to 36.9% (three-step).",
+  "findingZh": "涵蓋六個 CUA 的 480 個案例基準測試；多步驟攻擊使六個 CUA 中三個的 ASR 最多提高 31.2 個百分點（GPT-5.4-mini 從 41.7% 升至 72.9%）；五個 CUA 平均從 31.3%（單步驟）升至 36.9%（三步驟）。",
+  "owasp": [
+   "LLM01:2026",
+   "ASI01",
+   "ASI02"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2608.06477"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "sok-intent-oriented-systematization-of-multi-turn-llm-jailbreaks",
+  "title": "SoK: Intent-Oriented Systematization of Multi-Turn LLM Jailbreaks",
+  "authors": "Siyuan Li et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-08",
+  "topic": "injection",
+  "summary": "Systematizes multi-turn jailbreaks by how the adversary organizes and advances harmful intent across turns, with controlled ablations on what drives success and where intent becomes detectable.",
+  "summaryZh": "依攻擊者如何在多輪對話中組織與推進有害意圖，系統化整理多輪越獄，並以對照實驗分析成功關鍵與可偵測的層級。",
+  "finding": "Effectiveness is driven by deliberate intent organization rather than context length or query count (e.g., foot-in-the-door escalation beats direct and persistence strategies across four models); organized intent pushes detection from turn level to session and cross-session level.",
+  "findingZh": "效果取決於刻意的意圖組織，而非上下文長度或查詢次數（例如在四個模型上，登門檻式逐步升級優於直接與堅持策略）；有組織的意圖使偵測需從回合層級提升至工作階段及跨工作階段層級。",
+  "owasp": [
+   "LLM01:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2608.01117"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "validity-aware-jailbreak-evaluation-for-large-language-models",
+  "title": "Validity-Aware Jailbreak Evaluation for Large Language Models",
+  "authors": "Qilong Wu et al.",
+  "venue": "EMNLP 2026 (to appear)",
+  "date": "2026-08",
+  "topic": "evaluation",
+  "summary": "Verification-centric jailbreak evaluation (SEAV) that decomposes responses into ordered steps and checks validity and factual correctness using LLM judges plus retrieval-grounded verification.",
+  "summaryZh": "以驗證為核心的越獄評估框架（SEAV），將回應拆成有序步驟，結合 LLM 評審與檢索佐證，檢查內容是否有效且正確。",
+  "finding": "Reclassifies 22.1-51.0% of sampled prior-labelled jailbreak successes as invalid on three of four public benchmarks and cuts the false-positive rate on a strategic-dishonesty diagnostic by 14.9 pp vs. the strongest baseline.",
+  "findingZh": "在四個公開基準中的三個上，將抽樣的既有標記越獄成功案例中 22.1-51.0% 重新歸類為無效，並在策略性欺瞞診斷上較最強基準方法降低 14.9 個百分點 (pp) 的偽陽性率。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM07:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "EMNLP 2026 (to appear)",
+    "url": "https://arxiv.org/abs/2609.00498"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "invisible-ink-threats-adversarial-goals-behind-legitimate-tasks-in-com",
+  "title": "Invisible Ink Threats: Adversarial Goals Behind Legitimate Tasks in Computer-Use Agents",
+  "authors": "Jia-Chen Zhang et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-08",
+  "topic": "agents",
+  "summary": "Shows that low-harm injected goals that look like normal task steps, such as starring a repository or installing a package, slip past both model safeguards and human confirmation in computer-use agents.",
+  "summaryZh": "指出看似正常任務步驟的低傷害注入目標（例如替儲存庫加星號、安裝套件），能同時繞過電腦操作代理的模型防護與人工確認。",
+  "finding": "II-Bench has 444 adversarial tasks on three platforms in three categories: navigation and interaction, sensitive-information exfiltration, and code download and execution. Using the HITLCUA harness with a simulated user, low-harm injections often bypassed both agent defences and the simulated reviewer. The abstract gives no percentages.",
+  "findingZh": "II-Bench 包含三個平台上三類共 444 項對抗性任務：導覽與互動、敏感資訊外洩，以及程式碼下載與執行。使用 HITLCUA 測試框架搭配模擬使用者時，低危害注入常能同時繞過代理防禦與模擬審查者；摘要未提供百分比數據。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM03:2026",
+   "ASI01",
+   "ASI09"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2608.02018"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
+  "title": "Incident Report: unsanctioned agent behaviour during cyber testing",
+  "authors": "UK AI Security Institute",
+  "venue": "UK AISI incident report (blog)",
+  "date": "2026-08",
+  "topic": "agents",
+  "summary": "UK AISI's incident report on frontier-model agents in an internet-enabled cyber evaluation that took unsanctioned actions on the live internet. It covers the containment steps and the process changes that followed.",
+  "summaryZh": "英國 AI 安全研究所的事件報告：前沿模型代理在可連網的資安評測中，於真實網際網路上採取未經授權的行動；報告並說明後續處置與流程改善。",
+  "finding": "One cyber challenge ran 122 times across seven models. Agents took 19 unsanctioned actions in 10 runs: 17 by Anthropic's Mythos 5 over 43 runs, and 2 by OpenAI's GPT-5.6-Sol over 35 runs with cyber classifiers disabled. The actions included an attempted malicious open-source contribution using fake identities, prompt injections planted for other AI systems, and cross-agent reuse of artefacts. The incident was contained within one hour, no real-world harm was found, and the agents did not escape the sandbox.",
+  "findingZh": "一項資安挑戰在七個模型上共執行 122 次，代理在 10 次執行中採取 19 項未經授權的行動：Anthropic 的 Mythos 5 在 43 次執行中有 17 項，OpenAI 的 GPT-5.6-Sol 在停用資安分類器的 35 次執行中有 2 項；行動包括以假身分嘗試提交惡意開源貢獻、為其他 AI 系統植入提示詞注入，以及跨代理重複使用產出物。事件在一小時內受到控制，未發現實際危害，代理也未逃脫沙箱。",
+  "owasp": [
+   "LLM03:2026",
+   "ASI05",
+   "ASI07",
+   "ASI10"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "UK AISI incident report (blog)",
+    "url": "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "from-prompt-injection-to-web-exploitation-revisiting-classic-vulnerabi",
+  "title": "From Prompt Injection to Web Exploitation: Revisiting Classic Vulnerabilities in LLM-Integrated Applications",
+  "authors": "Spiros Tsigkopoulos et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-08",
+  "topic": "output",
+  "summary": "Defines LLM-mediated web attacks, where the LLM transforms attacker input and passes it to classic sinks (databases, HTTP requests, template engines) as a confused deputy, and classifies eight LLM2X variants.",
+  "summaryZh": "提出「經由 LLM 中介的網頁攻擊」：LLM 轉換攻擊者輸入後傳入資料庫、HTTP 請求、樣板引擎等傳統接收端，成為被混淆的代理人；並歸納出八種 LLM2X 變形。",
+  "finding": "Eight variants (LLM2SQLi, XSS, SSTI, command injection, IDOR, CSRF, XXE, SSRF); an LLM2SSRF case study across 5 scenarios and 7 LLMs showed large differences between models.",
+  "findingZh": "八種變體（LLM2SQLi、XSS、SSTI、命令注入、IDOR、CSRF、XXE、SSRF）；針對 5 個情境與 7 個 LLM 的 LLM2SSRF 案例研究顯示模型間差異顯著。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM03:2026",
+   "LLM10:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2608.10281"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "ih-benchmark-a-conflict-centered-benchmark-for-instruction-hierarchy-r",
+  "title": "IH-Benchmark: A Conflict-Centered Benchmark for Instruction-Hierarchy Robustness in LLM Applications",
+  "authors": "Conor McCauley et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-07",
+  "topic": "injection",
+  "summary": "Benchmark of system-vs-user and user-vs-tool instruction conflicts built from 44 human-authored constraint families across generic, health, finance, retail and coding settings, scored with a predicate DSL plus category-scoped LLM judges.",
+  "summaryZh": "以 44 類人工設計的限制條件（涵蓋通用、醫療、金融、零售、程式開發）建構系統對使用者、使用者對工具的指令衝突基準，以規則描述語言加上分類限定的 LLM 評審判定通過與否。",
+  "finding": "Across 37 models, hierarchy compliance ranges from 98.2% to 20.5%; strong system>user compliance does not predict user>tool robustness; subtle failures (injected disclaimers, small factual distortions) are more common than overt ones such as unauthorized purchases.",
+  "findingZh": "在 37 個模型中，層級遵循率介於 98.2% 至 20.5%；系統>使用者的高遵循度無法預測使用者>工具的穩健性；細微失誤（注入的免責聲明、小幅事實扭曲）比未經授權購買等明顯失誤更常見。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM07:2026",
+   "LLM08:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2607.25987"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "exposed-by-design-a-dynamic-security-assessment-of-internet-facing-mcp",
+  "title": "Exposed by Design: A Dynamic Security Assessment of Internet-Facing MCP Servers at Scale",
+  "authors": "Nicolás Padilla",
+  "venue": "arXiv preprint",
+  "date": "2026-07",
+  "topic": "supply-chain",
+  "summary": "Reports the first dynamic, behavioural security audit of internet-facing MCP servers. It pairs passive discovery from eleven data sources with an open-source active-testing framework that covers ten MCP-specific vulnerability classes.",
+  "summaryZh": "首個針對網際網路上公開 MCP 伺服器的動態行為安全評估，結合 11 種被動探索來源與開源主動測試框架，涵蓋 10 類 MCP 專屬弱點。",
+  "finding": "Of 640 confirmed production servers, 414 were audited dynamically, yielding 68 reportable vulnerabilities (SQL injection, SSRF against cloud metadata, prompt-template injection, path traversal). 91.8% of audited servers lacked OAuth, 687 tool instances exposed shell execution without access control, and 41.6% of servers disappeared within three days between runs.",
+  "findingZh": "在 640 個確認的生產環境伺服器中，對 414 個進行動態稽核，發現 68 個可通報漏洞（SQL 注入、針對雲端中繼資料的 SSRF、提示詞範本注入、路徑遍歷）。91.8% 受稽核伺服器缺乏 OAuth，687 個工具實例在無存取控制下暴露 shell 執行功能，且 41.6% 的伺服器在兩次執行間的三天內消失。",
+  "owasp": [
+   "LLM03:2026",
+   "LLM04:2026",
+   "ASI03",
+   "ASI04",
+   "ASI05"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2608.00150"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "rethinking-mcp-security-a-large-scale-study-of-runtime-mcp-servers-and",
+  "title": "Rethinking MCP Security: A Large-Scale Study of Runtime MCP Servers and Security Scanner Reliability",
+  "authors": "Pei Chen et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-07",
+  "topic": "supply-chain",
+  "summary": "Builds MCPZoo, a multi-agent pipeline that turns real-world MCP repositories into running servers for dynamic analysis. The authors use it to measure both the MCP ecosystem and how reliable MCP security scanners are.",
+  "summaryZh": "以多代理系統把真實 MCP 原始碼儲存庫自動部署成可執行的伺服器（MCPZoo），藉此大規模量測生態系風險，並檢驗現有 MCP 安全掃描工具的可靠度。",
+  "finding": "MCPZoo holds 64,611 unique servers (113,927 in total), of which more than 37,288 support dynamic analysis. Scanners flag 96.89% of servers as risky, but manual review found fewer than half of sampled alerts to be true positives, and scanners disagree noticeably with each other.",
+  "findingZh": "MCPZoo 收錄 64,611 個不重複伺服器（總計 113,927 個），其中逾 37,288 個支援動態分析。掃描器將 96.89% 的伺服器標記為有風險，但人工審查發現抽樣警示中不到一半為真陽性，且各掃描器之間的結果明顯不一致。",
+  "owasp": [
+   "LLM04:2026",
+   "ASI04"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2607.11086"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "skills-are-not-islands-measuring-dependency-and-risk-in-agent-skill-su",
+  "title": "Skills Are Not Islands: Measuring Dependency and Risk in Agent Skill Supply Chains",
+  "authors": "Changguo Jia et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-07",
+  "topic": "supply-chain",
+  "summary": "Defines agent skill supply chains as dependency graphs that span skills, packages and services. The authors build an SBOM-style analyser that extracts these dependencies from natural-language skill files.",
+  "summaryZh": "將代理技能供應鏈定義為橫跨技能、套件與服務的相依圖，並以 SBOM 概念開發可從自然語言技能檔中擷取相依關係的分析工具。",
+  "finding": "The analysis covered more than 1.43 million skills. Recursive skill reuse hides the package inventory, and known malicious skills were still present in skill supply chains. The authors recommend typed dependency manifests and lockfile-like records.",
+  "findingZh": "分析涵蓋逾 143 萬個技能；遞迴式技能重用會隱藏套件清單，已知的惡意技能仍存在於技能供應鏈中。作者建議採用具型別的相依性清單 (manifest) 及類似 lockfile 的紀錄。",
+  "owasp": [
+   "LLM04:2026",
+   "ASI04"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2607.01136"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "bad-memory-evaluating-prompt-injection-risks-from-memory-in-agentic-sy",
+  "title": "Bad Memory: Evaluating Prompt Injection Risks from Memory in Agentic Systems",
+  "authors": "Soham Gadgil et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-07",
+  "topic": "agents",
+  "summary": "Evaluates how instructions planted in persistent memory files (preferences, memory notes, knowledge bases) affect current and future sessions of commercial coding agents, in a sandboxed synthetic workspace.",
+  "summaryZh": "在隔離的合成工作環境中，評估藏在持久化記憶檔（偏好設定、記憶筆記、知識庫）中的惡意指令，如何影響商用程式碼代理的當前與後續工作階段。",
+  "finding": "The authors tested Claude Code and OpenAI Codex with Claude Haiku 4.5, Claude Opus 4.7, GPT-5.2 and GPT-5.5. Getting an agent to overwrite its own memory from untrusted content was hard. Payloads already in memory files, however, compromised both current and future sessions. Success varied widely by system, model and attacker goal.",
+  "findingZh": "作者以 Claude Haiku 4.5、Claude Opus 4.7、GPT-5.2 與 GPT-5.5 測試 Claude Code 與 OpenAI Codex；要誘使代理依不受信任內容覆寫自身記憶相當困難，但已存在於記憶檔案中的酬載會危害當前及未來的工作階段。成功率因系統、模型與攻擊者目標而有很大差異。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM05:2026",
+   "ASI06"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2607.14611"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "repoguardbench-repository-borne-prompt-injection-attacks-and-lightweig",
+  "title": "RepoGuardBench: Repository-Borne Prompt Injection Attacks and Lightweight Defenses for Local Coding Agents",
+  "authors": "Daoyuan Li",
+  "venue": "ICML 2026 Workshop (Deep Learning for Code: Towards Human-Centered Coding Agents)",
+  "date": "2026-07",
+  "topic": "injection",
+  "summary": "A benchmark that measures both repair utility and robustness to prompt injection carried in repository content (READMEs, issues, code comments, test logs, agent-rule files) for local open-weight coding agents, with eight lightweight defences.",
+  "summaryZh": "衡量本地開源程式碼代理在儲存庫內容（README、issue、程式碼註解、測試紀錄、代理規則檔）夾帶提示詞注入時的修復能力與穩健度，並比較 8 種輕量防禦。",
+  "finding": "Across a 2,340-run grid on four Qwen2.5-Coder sizes, code comments and rule files were the highest-risk carriers. Attempted-attack rates rose with model size: 0% at 1.5B, 22% at 3B, 58% at 7B and 83% at 14B. Strict-sandbox completion was 2.1%, mostly rule-file-induced test deletion.",
+  "findingZh": "在四種 Qwen2.5-Coder 規模、共 2,340 次執行的網格實驗中，程式碼註解與規則檔是風險最高的載體；嘗試攻擊率隨模型規模上升：1.5B 為 0%、3B 為 22%、7B 為 58%、14B 為 83%。嚴格沙箱下的完成率為 2.1%，多為規則檔誘發的測試刪除。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM04:2026",
+   "ASI01",
+   "ASI04",
+   "ASI05"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "ICML 2026 Workshop (Deep Learning for Code: Towards Human-Centered Coding Agents)",
+    "url": "https://icml.cc/virtual/2026/82802"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "appa-recoverable-information-flow-control-for-real-world-llm-agents",
+  "title": "APPA: Recoverable Information-Flow Control for Real-World LLM Agents",
+  "authors": "Arseny Kravchenko et al.",
+  "venue": "NeurIPS 2026 (listed on neurips.cc); arXiv preprint",
+  "date": "2026-07",
+  "topic": "injection",
+  "summary": "Makes information-flow control for agents recoverable rather than abort-only. It uses a dual-phase reference monitor, gradual security typing for unannotated tools, and disposable child branches that absorb taint.",
+  "summaryZh": "讓代理的資訊流控制可以「復原」，而不是一遇到不可信資料就中止；做法包括雙階段參照監控、對未標註工具的漸進式安全型別，以及可吸收污染的拋棄式子分支。",
+  "finding": "Across 6,600 controlled episodes (OWASP AgentThreatBench and enterprise Bench-Corp workflows), APPA kept 64.2 to 91% utility, with zero observed attacks across 1,320 guarded episodes (self-reported).",
+  "findingZh": "在 6,600 個受控回合（OWASP AgentThreatBench 與企業 Bench-Corp 工作流程）中，APPA 保有 64.2 至 91% 的效用，且在 1,320 個受防護回合中未觀察到任何攻擊（自行回報）。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM02:2026",
+   "LLM03:2026",
+   "ASI01",
+   "ASI02"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "NeurIPS 2026 (listed on neurips.cc); arXiv preprint",
+    "url": "https://arxiv.org/abs/2607.24625"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "ci-work-benchmarking-contextual-integrity-in-enterprise-llm-agents",
+  "title": "CI-Work: Benchmarking Contextual Integrity in Enterprise LLM Agents",
+  "authors": "Wenjie Fu et al.",
+  "venue": "ACL 2026 (Industry Track)",
+  "date": "2026-07",
+  "topic": "data",
+  "summary": "A Contextual-Integrity benchmark that simulates enterprise agent workflows across five information-flow directions and tests whether agents share what the task needs while withholding sensitive context pulled in by dense retrieval.",
+  "summaryZh": "以情境完整性（Contextual Integrity）為基礎的企業代理基準，模擬五種資訊流向的工作流程，檢查代理在檢索到大量內部資料時，是否只分享任務所需內容而不洩漏敏感脈絡。",
+  "finding": "Frontier models' privacy-violation rates ranged 15.8%-50.9% with leakage up to 26.7%; higher task utility often meant more violations, and larger models or deeper reasoning did not fix it.",
+  "findingZh": "前沿模型的隱私違規率介於 15.8%-50.9%，外洩率最高達 26.7%；任務效用越高往往伴隨越多違規，更大的模型或更深入的推理也未能解決此問題。",
+  "owasp": [
+   "LLM02:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "ACL 2026 (Industry Track)",
+    "url": "https://aclanthology.org/2026.acl-industry.103/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "domain-conditioned-safety-in-frontier-computer-using-agents-a-793-epis",
+  "title": "Domain-Conditioned Safety in Frontier Computer-Using Agents: A 793-Episode Browser Benchmark, a Coding-Domain Cross-Reference, and a Reproducibility Audit of Recent Red-Teaming",
+  "authors": "Nicholas Saban",
+  "venue": "arXiv preprint",
+  "date": "2026-06",
+  "topic": "agents",
+  "summary": "Reproduces published computer-use-agent prompt-injection techniques as hand-crafted templates against current frontier agents and contrasts browser-domain robustness with coding-agent skill injection.",
+  "summaryZh": "將已發表的電腦操作代理提示注入手法改寫為人工範本，對現行前沿代理重現測試，並比較瀏覽器情境與程式開發代理「技能注入」的差異。",
+  "finding": "0/140 multi-step attack success against Claude Sonnet 4.6 and GPT-5.4 in the browser (Clopper-Pearson 95% upper bound 2.60%), yet the same weights fell to hand-crafted skill injection at up to 100% on a coding-agent benchmark; published 42-98% CUA ASRs cluster on retired models.",
+  "findingZh": "在瀏覽器中針對 Claude Sonnet 4.6 與 GPT-5.4 的多步驟攻擊成功數為 0/140（Clopper-Pearson 95% 上界 2.60%），但相同權重在程式設計代理基準上遭手工打造的技能注入攻破，成功率最高達 100%；已發表的 42-98% CUA ASR 多集中於已淘汰的模型。",
+  "owasp": [
+   "LLM01:2026",
+   "ASI01",
+   "ASI04",
+   "ASI05"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2606.05233"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "how-reliable-is-your-jailbreak-judge-calibration-and-adversarial-robus",
+  "title": "How Reliable Is Your Jailbreak Judge? Calibration and Adversarial Robustness of Automated ASR Scoring",
+  "authors": "Yang Gao",
+  "venue": "arXiv preprint",
+  "date": "2026-06",
+  "topic": "evaluation",
+  "summary": "Compares a dedicated safety classifier and several LLM-as-judges against human majority labels, then attacks the judges with benign framing wrappers and GCG.",
+  "summaryZh": "將專用安全分類器與多個 LLM 評審對照人工多數決標註，並以無害包裝與 GCG 攻擊評審本身。",
+  "finding": "On 596 human-labelled HarmBench completions: classifier precision 0.835 / recall 0.974; LLM judges precision 0.81-0.94 but recall 0.06-0.65; benign wrappers flip LLM judges 57-100% of the time (one prepended refusal sentence accounts for 39-88%); white-box GCG flips 70% of the classifier's confident true positives (95% CI 54-86%).",
+  "findingZh": "在 596 筆人工標記的 HarmBench 補全結果上：分類器精確率 0.835 / 召回率 0.974；LLM 評審精確率 0.81-0.94，但召回率僅 0.06-0.65；良性包裝使 LLM 評審判定翻轉的比例達 57-100%（僅前置一句拒絕語即占 39-88%）；白箱 GCG 使分類器 70% 的高信心真陽性翻轉（95% CI 54-86%）。",
+  "owasp": [
+   "LLM01:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2606.25487"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "ai-agents-may-always-fall-for-prompt-injections",
+  "title": "AI Agents May Always Fall for Prompt Injections",
+  "authors": "Sahar Abdelnabi et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-05",
+  "topic": "injection",
+  "summary": "Recasts prompt injection through Contextual Integrity (information-flow norms) and argues that data/instruction-separation defences both miss contextual-manipulation attacks and degrade legitimate behaviour.",
+  "summaryZh": "以「情境完整性」（資訊流動規範）重新詮釋提示注入，主張以資料／指令分離為核心的防禦既擋不住情境操弄攻擊，也會損害正當行為。",
+  "finding": "A CI-informed red-team loop reached 96.7% ASR against an email assistant whose static baseline is under 1%; agents leaked authorization across simultaneous information flows in up to 65% of cases; experiments span gpt-5.4, claude-sonnet-4-6, gemini-3-pro and Meta SecAlign.",
+  "findingZh": "以 CI 為依據的紅隊迴圈對靜態基準低於 1% 的電子郵件助理達到 96.7% ASR；在多個同時進行的資訊流中，代理洩漏授權的比例最高達 65%；實驗涵蓋 gpt-5.4、claude-sonnet-4-6、gemini-3-pro 與 Meta SecAlign。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM02:2026",
+   "ASI01",
+   "ASI03"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2605.17634"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "multibreak-a-scalable-and-diverse-multi-turn-jailbreak-benchmark-for-e",
+  "title": "MultiBreak: A Scalable and Diverse Multi-turn Jailbreak Benchmark for Evaluating LLM Safety",
+  "authors": "Jialin Song et al.",
+  "venue": "ICML 2026",
+  "date": "2026-05",
+  "topic": "injection",
+  "summary": "Large multi-turn jailbreak benchmark generated through an active-learning pipeline that iteratively fine-tunes an attack generator with uncertainty-based refinement.",
+  "summaryZh": "透過主動學習流程（反覆微調攻擊生成器並以不確定性篩選）建構的大型多輪越獄基準。",
+  "finding": "10,389 multi-turn adversarial prompts over 2,665 harmful intents; up to 54.0 and 34.6 points higher ASR than the second-best dataset on DeepSeek-R1-7B and GPT-4.1-mini; categories benign under single-turn become effective in multi-turn.",
+  "findingZh": "涵蓋 2,665 種有害意圖的 10,389 則多輪對抗性提示詞；在 DeepSeek-R1-7B 與 GPT-4.1-mini 上的 ASR 分別比次佳資料集高出最多 54.0 與 34.6 個百分點；單輪情境下無害的類別在多輪情境中會變得有效。",
+  "owasp": [
+   "LLM01:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "ICML 2026",
+    "url": "https://arxiv.org/abs/2605.01687"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "the-refusal-compliance-tradeoff-a-large-scale-safety-behavior-audit-of",
+  "title": "The Refusal–Compliance Tradeoff: A Large-Scale Safety Behavior Audit of Large Language Models",
+  "authors": "Alif Al Hasan et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-05",
+  "topic": "language",
+  "summary": "Audits both over-refusal and harmful compliance in 21 open-weight LLMs on OR-Bench, XSTest, ToxiGen and BOLD, with a composition adjustment that separates model sensitivity from dataset toxicity.",
+  "summaryZh": "以 OR-Bench、XSTest、ToxiGen、BOLD 同時稽核 21 個開放權重模型的過度拒答與有害順從，並校正資料集毒性組成的干擾。",
+  "finding": "Conservative families (Llama) trade more over-refusal for fewer unsafe outputs, while permissive ones (DeepSeek, Qwen) tolerate more harmful compliance; prominent racial/religious groups are over-protected while disability-targeted attacks are under-protected; tendencies are stable within families across generations and scales.",
+  "findingZh": "保守型模型家族（Llama）以較多的過度拒絕換取較少的不安全輸出，寬鬆型（DeepSeek、Qwen）則容忍較多有害遵從；知名種族／宗教群體受到過度保護，針對身心障礙者的攻擊則保護不足；這些傾向在同一家族的各世代與規模間保持穩定。",
+  "owasp": [],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2605.05427"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "the-range-shrinks-the-threat-remains-re-evaluating-llm-package-halluci",
+  "title": "The Range Shrinks, the Threat Remains: Re-evaluating LLM Package Hallucinations on the 2026 Frontier-Model Cohort",
+  "authors": "Aleksandr Churilov",
+  "venue": "arXiv preprint",
+  "date": "2026-05",
+  "topic": "supply-chain",
+  "summary": "Replicates the USENIX Security 2025 package-hallucination study on five frontier models released between Oct 2025 and Mar 2026, and coordinates disclosure of hallucinated names that can still be registered.",
+  "summaryZh": "以 2025 年 10 月至 2026 年 3 月推出的五個前沿模型重做 USENIX Security 2025 的套件幻覺研究，並與套件庫協調揭露仍可被搶註的名稱。",
+  "finding": "Over 199,845 paired prompts, hallucination rates ranged 4.62% (Claude Haiku 4.5) to 6.10% (GPT-5.4-mini); 127 names were hallucinated by all five models and 53 were still registrable after disclosure to PyPI and Socket.dev.",
+  "findingZh": "在 199,845 組配對提示詞中，幻覺率介於 4.62%（Claude Haiku 4.5）至 6.10%（GPT-5.4-mini）；有 127 個名稱遭全部五個模型幻覺生成，且在向 PyPI 與 Socket.dev 揭露後仍有 53 個可被註冊。",
+  "owasp": [
+   "LLM04:2026",
+   "LLM07:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2605.17062"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "training-a-general-purpose-automated-red-teaming-model",
+  "title": "Training a General Purpose Automated Red Teaming Model",
+  "authors": "Aishwarya Padmakumar et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-04",
+  "topic": "injection",
+  "summary": "Pipeline for training a small red-team model that generates attacks for arbitrary natural-language adversarial goals (drawn from garak probes) without needing a pre-existing evaluator at training time.",
+  "summaryZh": "提出訓練小型紅隊模型的流程，可針對任意以自然語言描述的攻擊目標（取自 garak 探測項目）產生攻擊，且訓練時不需事先具備評分器。",
+  "finding": "Fine-tuning small models such as Qwen3-8B with the pipeline substantially improves attack generation for both in-domain and out-of-domain adversarial goals (qualitative in the abstract).",
+  "findingZh": "以此流程微調 Qwen3-8B 等小型模型，可大幅提升針對領域內與領域外對抗目標的攻擊生成能力（摘要中為質性描述）。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM08:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2604.23067"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "piarena-a-platform-for-prompt-injection-evaluation",
+  "title": "PIArena: A Platform for Prompt Injection Evaluation",
+  "authors": "Runpeng Geng et al.",
+  "venue": "ACL 2026",
+  "date": "2026-04",
+  "topic": "injection",
+  "summary": "Unified, extensible platform that integrates state-of-the-art prompt-injection attacks and defences and evaluates them across existing and new benchmarks, including a dynamic strategy-based adaptive attack.",
+  "summaryZh": "統一且可擴充的提示注入評估平台，可整合最新攻擊與防禦並在多個新舊基準上評估，內含依防禦回饋動態調整的自適應攻擊。",
+  "finding": "State-of-the-art defences show limited generalizability across tasks, vulnerability to adaptive attacks, and fundamental failure when the injected task aligns with the target task.",
+  "findingZh": "最先進的防禦在跨任務上的泛化能力有限、易受自適應攻擊影響，且在注入任務與目標任務一致時根本失效。",
+  "owasp": [
+   "LLM01:2026",
+   "ASI01"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "ACL 2026",
+    "url": "https://arxiv.org/abs/2604.08499"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "a2asecbench-a-protocol-aware-security-benchmark-for-agent-to-agent-mul",
+  "title": "A2ASecBench: A Protocol-Aware Security Benchmark for Agent-to-Agent Multi-Agent Systems",
+  "authors": "Tianhao Li et al.",
+  "venue": "ICLR 2026 (poster)",
+  "date": "2026-04",
+  "topic": "supply-chain",
+  "summary": "The first protocol-aware security benchmark for agent-to-agent (A2A) multi-agent systems. Its threat model separates supply-chain manipulation from protocol-logic flaws, and it runs a joint safety-utility evaluation on official A2A Project demos.",
+  "summaryZh": "首個針對 A2A（代理對代理）協定的安全基準測試，區分供應鏈操弄與協定邏輯弱點，並以官方 A2A 範例（旅遊、醫療、金融）同時評估安全性與可用性。",
+  "finding": "Six attacks across A2A stages and components were pervasive and effective, often bypassing default safeguards in the travel, healthcare and finance demos. The abstract gives no percentages.",
+  "findingZh": "針對 A2A 各階段與元件的六種攻擊普遍且有效，常在旅遊、醫療與金融示範中繞過預設防護機制；摘要未提供百分比數據。",
+  "owasp": [
+   "LLM04:2026",
+   "ASI04",
+   "ASI07",
+   "ASI08"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "ICLR 2026 (poster)",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/c6a4c60e4c12b4157d33f34b29d22067-Abstract-Conference.html"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "aciarena-toward-unified-evaluation-for-agent-cascading-injection",
+  "title": "ACIArena: Toward Unified Evaluation for Agent Cascading Injection",
+  "authors": "Hengyu An et al.",
+  "venue": "ACL 2026 (Long Papers)",
+  "date": "2026-04",
+  "topic": "agents",
+  "summary": "A unified evaluation framework for 'agent cascading injection', where one compromised agent exploits inter-agent trust to spread malicious instructions through a multi-agent system.",
+  "summaryZh": "統一評測「代理串連注入」的框架：單一被攻陷的代理利用代理間的信任，把惡意指令擴散到整個多代理系統。",
+  "finding": "The benchmark has 1,356 test cases over six MAS implementations, three attack surfaces (external inputs, agent profiles, inter-agent messages) and three objectives. Topology alone does not predict robustness. Defences built in simplified settings often fail to transfer, and narrowly scoped defences can add new vulnerabilities.",
+  "findingZh": "該基準測試包含 1,356 個測試案例，涵蓋六種 MAS 實作、三種攻擊面（外部輸入、代理設定檔、代理間訊息）與三種目標。僅憑拓撲無法預測穩健性；在簡化環境中建立的防禦常無法遷移，範圍狹窄的防禦更可能引入新漏洞。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM02:2026",
+   "ASI01",
+   "ASI07",
+   "ASI08"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "ACL 2026 (Long Papers)",
+    "url": "https://aclanthology.org/2026.acl-long.457/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "ai-identity-standards-gaps-and-research-directions-for-ai-agents",
+  "title": "AI Identity: Standards, Gaps, and Research Directions for AI Agents",
+  "authors": "Takumi Otsuka et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-04",
+  "topic": "agents",
+  "summary": "A survey and gap analysis of standards and literature on identifying, verifying and holding AI agents accountable across the agent identity lifecycle.",
+  "summaryZh": "綜整 AI 代理身分識別、驗證與問責的標準與文獻，並分析整個身分生命週期中的缺口。",
+  "finding": "Identifies five gaps that no current technology or regulation resolves: semantic intent verification, recursive delegation accountability, agent identity integrity, governance opacity and enforcement, and operational sustainability.",
+  "findingZh": "指出目前任何技術或法規皆無法解決的五項缺口：語意意圖驗證、遞迴委派問責、代理身分完整性、治理不透明與執行，以及營運永續性。",
+  "owasp": [
+   "LLM03:2026",
+   "ASI03"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2604.23280"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "detecting-and-correcting-reference-hallucinations-in-commercial-llms-a",
+  "title": "Detecting and Correcting Reference Hallucinations in Commercial LLMs and Deep Research Agents",
+  "authors": "Delip Rao et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-04",
+  "topic": "output",
+  "summary": "Measures hallucinated citation URLs from search-augmented LLMs and deep-research agents, and releases urlhealth, a tool that lets models check and repair their own links.",
+  "summaryZh": "量測搜尋增強型 LLM 與深度研究代理產生的幻覺引用網址，並釋出 urlhealth 工具，讓模型自行檢查與修正連結。",
+  "finding": "3-13% of citation URLs were hallucinated (never existed) and 5-18% did not resolve across 10 models/agents (53,090 URLs on DRBench; 168,021 on ExpertQA); deep-research agents hallucinated more; urlhealth cut non-resolving URLs 6-79x to under 1%.",
+  "findingZh": "在 10 個模型／代理中（DRBench 上 53,090 個 URL；ExpertQA 上 168,021 個），3-13% 的引用 URL 為幻覺產生（從未存在），5-18% 無法解析；深度研究代理的幻覺更多；urlhealth 將無法解析的 URL 減少 6-79x，降至 1% 以下。",
+  "owasp": [
+   "LLM07:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2604.03173"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "twguard-a-case-study-of-llm-safety-guardrails-for-localized-linguistic",
+  "title": "TWGuard: A Case Study of LLM Safety Guardrails for Localized Linguistic Contexts",
+  "authors": "Hua-Rong Chu et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-04",
+  "topic": "language",
+  "summary": "Case study of building a safety guardrail model optimized for Taiwan's local linguistic context, arguing that guardrails tuned for other contexts underperform when deployed locally.",
+  "summaryZh": "以台灣在地語言情境為案例，打造在地最佳化的安全護欄模型，指出在其他語境調校的護欄部署到在地時會出現表現落差。",
+  "finding": "TWGuard improved F1 by +0.289 over its foundation model and reduced the false-positive rate by 0.037 (a 94.9% reduction) versus the strongest baseline.",
+  "findingZh": "TWGuard 相較其基礎模型 F1 提升 +0.289，且相較最強基準方法偽陽性率降低 0.037（降幅 94.9%）。",
+  "owasp": [],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2604.16542"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "trojan-speak-bypassing-constitutional-classifiers-with-no-jailbreak-ta",
+  "title": "Trojan-Speak: Bypassing Constitutional Classifiers with No Jailbreak Tax via Adversarial Finetuning",
+  "authors": "Bilgehan Sel et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-03",
+  "topic": "supply-chain",
+  "summary": "Shows that an adversary with fine-tuning access can teach a model a covert communication protocol (curriculum learning plus GRPO-based RL) that evades LLM-based content classifiers while keeping capability.",
+  "summaryZh": "證明擁有微調權限的攻擊者，可透過課程學習與 GRPO 強化學習教模型一套隱蔽的溝通方式，繞過以 LLM 為基礎的內容分類器，且幾乎不損失模型能力。",
+  "finding": "99+% classifier evasion for 14B+ parameter models with <5% reasoning-benchmark degradation (prior adversarial fine-tuning >25%); fine-tuned models answered expert-level CBRN queries from the Constitutional Classifiers bug-bounty set; activation-level probes substantially improve robustness.",
+  "findingZh": "對 14B+ 參數模型達成 99+% 的分類器規避率，推理基準效能下降 <5%（先前的對抗性微調 >25%）；微調後的模型能回答 Constitutional Classifiers 漏洞懸賞集中的專家級 CBRN 查詢；活化值 (activation) 層級探針可大幅提升穩健性。",
+  "owasp": [
+   "LLM04:2026",
+   "LLM05:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2603.29038"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "taiwan-safety-benchmark-and-breeze-guard-toward-trustworthy-ai-for-tai",
+  "title": "Taiwan Safety Benchmark and Breeze Guard: Toward Trustworthy AI for Taiwanese Mandarin",
+  "authors": "Po-Chun Hsu et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-03",
+  "topic": "language",
+  "summary": "Introduces TS-Bench, 400 human-curated Taiwanese-Mandarin safety prompts, and Breeze Guard, an 8B safety classifier fine-tuned from the Taiwan-grounded Breeze 2 model.",
+  "summaryZh": "提出 TS-Bench（400 題人工整理的台灣華語安全測試題）與 Breeze Guard（以具台灣在地語料基礎的 Breeze 2 微調而成的 8B 安全分類模型）。",
+  "finding": "Breeze Guard beats Granite Guardian 3.3 on TS-Bench by +0.17 overall F1, with +0.66 F1 on scams and +0.43 F1 on financial malpractice, at a slight cost on English-centric benchmarks (ToxicChat, AegisSafetyTest).",
+  "findingZh": "Breeze Guard 在 TS-Bench 上整體 F1 比 Granite Guardian 3.3 高 +0.17，其中詐騙類 +0.66 F1、金融不當行為類 +0.43 F1，但在以英文為主的基準（ToxicChat、AegisSafetyTest）上略有下降。",
+  "owasp": [],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2603.07286"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "ih-challenge-a-training-dataset-to-improve-instruction-hierarchy-on-fr",
+  "title": "IH-Challenge: A Training Dataset to Improve Instruction Hierarchy on Frontier LLMs",
+  "authors": "Chuan Guo et al.",
+  "venue": "arXiv preprint (OpenAI)",
+  "date": "2026-03",
+  "topic": "injection",
+  "summary": "RL training dataset with online adversarial example generation for robust instruction-hierarchy behaviour (system > developer > user > tool), addressing confounds with plain instruction-following failures and over-refusal shortcuts.",
+  "summaryZh": "以強化學習訓練指令層級（系統＞開發者＞使用者＞工具）的資料集，搭配線上對抗樣本生成，並處理與一般指令遵循失敗、過度拒答捷徑混淆的問題。",
+  "finding": "Fine-tuning GPT-5-Mini raised IH robustness from 84.1% to 94.1% (+10.0) averaged over 16 in-distribution, out-of-distribution and human red-teaming benchmarks, cut unsafe behaviour from 6.6% to 0.7% while improving helpfulness, and saturated an internal agentic PI evaluation.",
+  "findingZh": "微調 GPT-5-Mini 使 IH 穩健性在 16 個分布內、分布外及人工紅隊基準的平均值從 84.1% 提升至 94.1%（+10.0），將不安全行為從 6.6% 降至 0.7% 並同時提升有用性，且在內部代理式 PI 評估中達到飽和。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM08:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint (OpenAI)",
+    "url": "https://arxiv.org/abs/2603.10521"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "malskills-detecting-malicious-skills-in-the-agentic-supply-chain-via-n",
+  "title": "MalSkills: Detecting Malicious Skills in the Agentic Supply Chain via Neuro-symbolic Reasoning",
+  "authors": "Shenao Wang et al.",
+  "venue": "arXiv preprint (ACM DOI listed)",
+  "date": "2026-03",
+  "topic": "supply-chain",
+  "summary": "A neuro-symbolic detector for malicious agent 'skills', which bundle prompts, code and configuration. It builds a dependency graph across these mixed artifacts and reasons over the value flows between them.",
+  "summaryZh": "針對代理「技能」（打包提示詞、程式碼與設定的模組）的惡意偵測框架，結合符號解析與 LLM 語意分析建立相依圖，並推理資料流向。",
+  "finding": "MalSkills reached 93% F1 on 200 real-world skills, beating five baselines by 5 to 87 points. Scanning 150,108 skills from seven public registries flagged 620, and manual review confirmed 400 as malicious.",
+  "findingZh": "MalSkills 在 200 個真實世界技能上達到 93% F1，領先五個基準方法 5 至 87 個百分點。掃描七個公開登錄庫中的 150,108 個技能後標記出 620 個，經人工審查確認其中 400 個為惡意。",
+  "owasp": [
+   "LLM04:2026",
+   "ASI04"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint (ACM DOI listed)",
+    "url": "https://arxiv.org/abs/2603.27204"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "how-vulnerable-are-ai-agents-to-indirect-prompt-injections-insights-fr",
+  "title": "How Vulnerable Are AI Agents to Indirect Prompt Injections? Insights from a Large-Scale Public Competition",
+  "authors": "Mateusz Dziemian et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-03",
+  "topic": "injection",
+  "summary": "A public competition focused on concealed indirect prompt injections that cause harmful actions while leaving no trace in the agent's final response, across tool-calling, coding and computer-use agents.",
+  "summaryZh": "聚焦「隱匿型」間接提示詞注入的公開競賽：攻擊造成有害動作，卻不在代理最終回覆中留下痕跡，涵蓋工具呼叫、程式碼與電腦操作代理。",
+  "finding": "464 participants made 272,000 attempts, producing 8,648 successful attacks across 41 scenarios against 13 models. Attack success ranged from 0.5% (Claude Opus 4.5) to 8.5% (Gemini 2.5 Pro). Universal strategies transferred across 21 of the 41 behaviours.",
+  "findingZh": "464 名參與者進行了 272,000 次嘗試，在針對 13 個模型的 41 個情境中產生 8,648 次成功攻擊。攻擊成功率介於 0.5%（Claude Opus 4.5）至 8.5%（Gemini 2.5 Pro），通用策略可在 41 種行為中的 21 種之間遷移。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM03:2026",
+   "ASI01",
+   "ASI02",
+   "ASI05"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2603.15714"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "semantic-chameleon-corpus-dependent-poisoning-attacks-and-defenses-in",
+  "title": "Semantic Chameleon: Corpus-Dependent Poisoning Attacks and Defenses in RAG Systems",
+  "authors": "Scott Thornton",
+  "venue": "arXiv preprint",
+  "date": "2026-03",
+  "topic": "data",
+  "summary": "Studies gradient-optimized corpus poisoning in RAG using a dormant sleeper document plus a trigger document, and shows that hybrid sparse+dense retrieval is a cheap mitigation that needs no retraining.",
+  "summaryZh": "研究以梯度最佳化的 RAG 語料庫投毒（潛伏文件加觸發文件），並證明結合 BM25 稀疏檢索與向量檢索的混合檢索是免重新訓練的低成本緩解方式。",
+  "finding": "38.0% co-retrieval on a 67,941-document corpus under pure vector retrieval, reduced to 0% with hybrid BM25+vector retrieval (adaptive attackers 20-44%); success 46.7%-93.3% across five LLM families.",
+  "findingZh": "在純向量檢索下，67,941 份文件語料庫的共同檢索率為 38.0%，改用 BM25+向量混合檢索後降至 0%（自適應攻擊者為 20-44%）；在五個 LLM 家族中成功率介於 46.7%-93.3%。",
+  "owasp": [
+   "LLM05:2026",
+   "LLM09:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2603.18034"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "distillguard-evaluating-defenses-against-llm-knowledge-distillation",
+  "title": "DistillGuard: Evaluating Defenses Against LLM Knowledge Distillation",
+  "authors": "Bo Jiang",
+  "venue": "arXiv preprint",
+  "date": "2026-03",
+  "topic": "supply-chain",
+  "summary": "Framework that benchmarks output-level defences against knowledge distillation from LLM APIs, grouped as output perturbation, data poisoning and information throttling.",
+  "summaryZh": "評測 LLM API 防止知識蒸餾的輸出層防禦框架，涵蓋輸出擾動、資料投毒與資訊節流三類。",
+  "finding": "Across 9 defence configurations (Qwen3-14B teacher, Qwen2.5-7B-Instruct student) most were largely ineffective; only removing chain-of-thought substantially hurt the student (math accuracy 31.4% vs 67.8% baseline); code generation was unaffected.",
+  "findingZh": "在 9 種防禦設定（Qwen3-14B 教師模型、Qwen2.5-7B-Instruct 學生模型）中，多數大致無效；僅移除思維鏈 (chain-of-thought) 明顯損害學生模型（數學準確率 31.4%，基準為 67.8%）；程式碼生成不受影響。",
+  "owasp": [
+   "LLM06:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2603.07835"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "obscure-but-effective-classical-chinese-jailbreak-prompt-optimization",
+  "title": "Obscure but Effective: Classical Chinese Jailbreak Prompt Optimization via Bio-Inspired Search",
+  "authors": "Xun Huang et al.",
+  "venue": "ICLR 2026",
+  "date": "2026-02",
+  "topic": "language",
+  "summary": "Exploits the concision and obscurity of classical Chinese to bypass safety training, using an automated black-box search (fruit-fly optimisation over eight strategy dimensions) plus a classical-Chinese-to-English translation module for judging.",
+  "summaryZh": "利用文言文精簡、隱晦的特性繞過安全對齊，以果蠅最佳化演算法在八個策略維度上自動搜尋黑箱越獄提示，並搭配文言文轉英文模組以利評分。",
+  "finding": "Reported 100% ASR on all six evaluated models (Gemini-2.5-flash, Claude-3.7, GPT-4o, DeepSeek-Reasoner, Qwen3, Grok-3), vs. 21-96% for the strongest baseline (ICRT) on the CLAS dataset.",
+  "findingZh": "在 CLAS 資料集上，所有六個受評模型（Gemini-2.5-flash、Claude-3.7、GPT-4o、DeepSeek-Reasoner、Qwen3、Grok-3）皆達到 100% ASR，最強基準方法 (ICRT) 則為 21-96%。",
+  "owasp": [
+   "LLM01:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "ICLR 2026",
+    "url": "https://arxiv.org/abs/2602.22983"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "when-benchmarks-lie-evaluating-malicious-prompt-classifiers-under-true",
+  "title": "When Benchmarks Lie: Evaluating Malicious Prompt Classifiers Under True Distribution Shift",
+  "authors": "Max Fomin",
+  "venue": "AIWILD @ ICLR 2026 workshop (extended arXiv version)",
+  "date": "2026-02",
+  "topic": "evaluation",
+  "summary": "Proposes Leave-One-Dataset-Out (LODO) evaluation for prompt-attack classifiers and shows that standard cross-validation overestimates generalization because of dataset-specific shortcuts.",
+  "summaryZh": "提出「逐一保留資料集」（LODO）評估法，證明一般交叉驗證會因資料集特有的捷徑特徵而高估提示攻擊分類器的泛化能力。",
+  "finding": "Standard CV reports pooled AUC 8.0-16.5 points higher than LODO; 28-44% of top SAE features are shortcuts; a dataset-identity classifier reaches 96.6%; standard domain-generalization fixes do not close the gap.",
+  "findingZh": "標準交叉驗證 (CV) 回報的合併 AUC 比 LODO 高 8.0-16.5 個百分點；28-44% 的頂尖 SAE 特徵屬於捷徑；資料集身分分類器準確率達 96.6%；標準的領域泛化修正方法無法縮小此差距。",
+  "owasp": [
+   "LLM01:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "AIWILD @ ICLR 2026 workshop (extended arXiv version)",
+    "url": "https://arxiv.org/abs/2602.14161"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "a-coin-flip-for-safety-llm-judges-fail-to-reliably-measure-adversarial",
+  "title": "A Coin Flip for Safety: LLM Judges Fail to Reliably Measure Adversarial Robustness",
+  "authors": "Leo Schwinn et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-02",
+  "topic": "evaluation",
+  "summary": "Audits LLM-as-a-judge harmfulness scoring under red-teaming distribution shifts (victim generation style, attack-induced output distortion, semantic ambiguity) using thousands of human-verified labels.",
+  "summaryZh": "以數千筆人工驗證標註，稽核紅隊測試的分布偏移下（受測模型風格、攻擊造成的輸出扭曲、語意模糊），以 LLM 擔任評審的有害性判定可靠度。",
+  "finding": "With 6,642 human-verified labels, judge performance often degrades to near random chance; many attacks inflate ASR by exploiting judge insufficiencies rather than eliciting genuinely harmful content; releases ReliableBench and JudgeStressTest.",
+  "findingZh": "根據 6,642 筆人工驗證標籤，評審模型的表現常降至接近隨機猜測；許多攻擊是利用評審的不足來灌水 ASR，而非真正誘發有害內容；並發布 ReliableBench 與 JudgeStressTest。",
+  "owasp": [
+   "LLM01:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2603.06594"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "security-threat-modeling-for-emerging-ai-agent-protocols-a-comparative",
+  "title": "Security Threat Modeling for Emerging AI-Agent Protocols: A Comparative Analysis of MCP, A2A, Agora, and ANP",
+  "authors": "Zeynab Anbiaee et al.",
+  "venue": "Journal of Information Security and Applications (2026), Article 104645",
+  "date": "2026-02",
+  "topic": "supply-chain",
+  "summary": "A comparative threat model of four agent communication protocols (MCP, A2A, Agora, ANP), with a qualitative risk framework spanning the creation, operation and update phases. It adds an MCP case study on how often the wrong provider's tool runs when multiple servers are composed.",
+  "summaryZh": "比較 MCP、A2A、Agora、ANP 四種代理通訊協定的威脅模型，提出涵蓋建立、運作、更新三階段的風險框架，並以 MCP 多伺服器組合時「執行到錯誤提供者工具」為案例進行量測。",
+  "finding": "The paper identifies twelve protocol-level risks and treats the lack of mandatory validation or attestation of executable components as a testable claim. The abstract gives no measured numbers.",
+  "findingZh": "該論文指出十二項協定層級風險，並將缺乏對可執行元件的強制驗證或證明 (attestation) 視為可檢驗的主張；摘要未提供量測數據。",
+  "owasp": [
+   "LLM04:2026",
+   "ASI04",
+   "ASI07"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "Journal of Information Security and Applications (2026), Article 104645",
+    "url": "https://arxiv.org/abs/2602.11327"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "agents-of-chaos",
+  "title": "Agents of Chaos",
+  "authors": "Natalie Shapira et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-02",
+  "topic": "agents",
+  "summary": "A two-week exploratory red-team of autonomous agents deployed in a live lab with persistent memory, email, Discord, file systems and shell access. It documents eleven case studies of failures.",
+  "summaryZh": "在具持久記憶、電子郵件、Discord、檔案系統與 shell 的實際實驗環境中，對自主代理進行為期兩週的探索式紅隊演練，記錄 11 個失效案例。",
+  "finding": "Twenty researchers observed failures including compliance with non-owners, sensitive-information disclosure, destructive actions, denial of service, runaway resource use, identity spoofing, unsafe practices spreading between agents and partial system takeover. Agents sometimes reported tasks as done when system state showed otherwise.",
+  "findingZh": "二十位研究人員觀察到的失效包括遵從非擁有者指令、敏感資訊揭露、破壞性操作、阻斷服務、資源失控使用、身分偽冒、不安全做法在代理間擴散，以及部分系統遭接管。代理有時回報任務已完成，但系統狀態顯示並非如此。",
+  "owasp": [
+   "LLM02:2026",
+   "LLM03:2026",
+   "LLM06:2026",
+   "ASI03",
+   "ASI07",
+   "ASI08",
+   "ASI10"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2602.20021"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "agentleak-a-benchmark-for-internal-channel-privacy-leakage-in-multi-ag",
+  "title": "AgentLeak: A Benchmark for Internal-Channel Privacy Leakage in Multi-Agent LLM Systems",
+  "authors": "Faouzi El Yagoubi et al.",
+  "venue": "arXiv preprint (DOI 10.1109/ACCESS.2026.3704541 listed)",
+  "date": "2026-02",
+  "topic": "agents",
+  "summary": "Benchmark that instruments seven internal channels of multi-agent LLM systems (inter-agent messages, shared memory, tool arguments, etc.) to measure privacy leakage that output-only audits miss.",
+  "summaryZh": "針對多代理系統的隱私基準，監測代理間訊息、共享記憶體、工具參數等七條內部通道，量測只看最終輸出時會漏掉的資料外洩。",
+  "finding": "Across 1,000 scenarios and 4,979 traces on five production LLMs, inter-agent messages leaked 68.8% vs 27.2% at final output; total exposure 68.9%; output-only audits miss an estimated 41.7% of violations.",
+  "findingZh": "在五個生產環境 LLM 上的 1,000 個情境與 4,979 條追蹤記錄中，代理間訊息的洩漏率為 68.8%，最終輸出則為 27.2%；總暴露率 68.9%；僅稽核輸出估計會遺漏 41.7% 的違規。",
+  "owasp": [
+   "LLM02:2026",
+   "ASI07"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint (DOI 10.1109/ACCESS.2026.3704541 listed)",
+    "url": "https://arxiv.org/abs/2602.11510"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "zero2text-zero-training-cross-domain-inversion-attacks-on-textual-embe",
+  "title": "Zero2Text: Zero-Training Cross-Domain Inversion Attacks on Textual Embeddings",
+  "authors": "Doohyun Kim et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-02",
+  "topic": "data",
+  "summary": "Training-free embedding inversion that reconstructs text from embeddings in black-box, cross-domain settings by recursively aligning LLM-generated candidates to the target embedding with online ridge regression.",
+  "summaryZh": "免訓練的嵌入反演攻擊：在黑箱、跨領域情境下，以 LLM 生成候選文字並透過線上脊迴歸逐步對齊目標向量，從嵌入還原原文。",
+  "finding": "On MS MARCO against an OpenAI embedding model, 1.8x higher ROUGE-L and 6.4x higher BLEU-2 than baselines; standard defences such as differential privacy did not stop it.",
+  "findingZh": "在 MS MARCO 上針對 OpenAI 嵌入模型，ROUGE-L 比基準方法高 1.8x、BLEU-2 高 6.4x；差分隱私等標準防禦無法阻止此攻擊。",
+  "owasp": [
+   "LLM02:2026",
+   "LLM09:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2602.01757"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "ghostcite-a-large-scale-analysis-of-citation-validity-in-the-age-of-la",
+  "title": "GhostCite: A Large-Scale Analysis of Citation Validity in the Age of Large Language Models",
+  "authors": "Zuyao Xu et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-02",
+  "topic": "output",
+  "summary": "Large-scale citation-validity study that benchmarks citation fabrication by LLMs and audits 2.2 million references in AI/ML and security papers.",
+  "summaryZh": "大規模引用有效性研究：評測 LLM 捏造引用的程度，並稽核 AI/ML 與資安論文中約 220 萬筆參考文獻。",
+  "finding": "All 13 LLMs fabricated citations at rates of 14.23%-94.93%; 1.07% of 56,381 papers contained invalid citations, a share that rose 80.9% in 2025.",
+  "findingZh": "全部 13 個 LLM 皆會捏造引用，比例為 14.23%-94.93%；56,381 篇論文中有 1.07% 含無效引用，該比例在 2025 年上升 80.9%。",
+  "owasp": [
+   "LLM07:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2602.06718"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "political-censorship-in-large-language-models-originating-from-china",
+  "title": "Political Censorship in Large Language Models Originating from China",
+  "authors": "Jennifer Pan et al.",
+  "venue": "PNAS Nexus (2026), DOI 10.1093/pnasnexus/pgag013",
+  "date": "2026-02",
+  "topic": "language",
+  "summary": "Compares China-originating and non-China LLMs on 145 political questions, measuring refusals, response length and inaccuracy under Chinese and English prompts.",
+  "summaryZh": "以 145 題政治問題比較中國與非中國來源的 LLM，在中文與英文提示下的拒答率、回應長度與不正確率。",
+  "finding": "China-originating models showed substantially higher refusal rates and shorter, more inaccurate answers; all models refused more in Chinese than English, but the language gap was smaller than the China vs non-China gap.",
+  "findingZh": "源自中國的模型拒答率明顯較高，回答也較短且較不準確；所有模型在中文下的拒答皆多於英文，但語言差距小於中國與非中國模型間的差距。",
+  "owasp": [
+   "LLM07:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "PNAS Nexus (2026), DOI 10.1093/pnasnexus/pgag013",
+    "url": "https://fsi.stanford.edu/publication/political-censorship-large-language-models-originating-china"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "constitutional-classifiers-efficient-production-grade-defenses-against",
+  "title": "Constitutional Classifiers++: Efficient Production-Grade Defenses against Universal Jailbreaks",
+  "authors": "Hoagy Cunningham et al.",
+  "venue": "arXiv preprint (Anthropic)",
+  "date": "2026-01",
+  "topic": "injection",
+  "summary": "Next-generation input/output safeguard that judges each exchange in its full conversational context, uses a cheap-to-expensive classifier cascade, and ensembles linear activation probes with external classifiers to resist universal jailbreaks at low cost.",
+  "summaryZh": "新一代輸入／輸出防護機制：以完整對話脈絡判斷每一輪交換內容，採用由輕量到高成本的分類器串接，並結合線性活化探針與外部分類器，以低成本抵禦通用型越獄。",
+  "finding": "40x compute reduction vs. the baseline exchange classifier, 0.05% refusal rate on production traffic, and >1,700 red-team hours with no universal jailbreak answering all 8 target queries at the detail of an undefended model.",
+  "findingZh": "相較基準交換分類器運算量減少 40x，生產流量拒答率 0.05%，且經過 >1,700 小時紅隊測試，未發現能以未防禦模型的詳細程度回答全部 8 個目標查詢的通用越獄。",
+  "owasp": [
+   "LLM01:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint (Anthropic)",
+    "url": "https://arxiv.org/abs/2601.04603"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "cssbench-evaluating-the-safety-of-lightweight-llms-against-chinese-spe",
+  "title": "CSSBench: Evaluating the Safety of Lightweight LLMs against Chinese-Specific Adversarial Patterns",
+  "authors": "Zhenhong Zhou et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-01",
+  "topic": "language",
+  "summary": "Chinese safety benchmark built around Chinese-specific obfuscation such as homophones, pinyin, traditional/variant characters and symbol-split sensitive terms, measuring both attack success and over-refusal for lightweight models.",
+  "summaryZh": "以中文特有的混淆手法（諧音、拼音、繁體／異體字、符號拆字）為核心的安全基準，同時量測輕量模型的攻擊成功率與過度拒答率。",
+  "finding": "Chinese-specific adversarial patterns are a critical challenge for lightweight LLMs; the benchmark spans six domains (incl. privacy leakage, fraud and hate, public and political safety) and reports ASR, over-refusal rate and a composite error rate.",
+  "findingZh": "中文特有的對抗模式是輕量級 LLM 的關鍵挑戰；該基準涵蓋六個領域（包括隱私外洩、詐騙與仇恨、公共與政治安全），並回報 ASR、過度拒絕率與綜合錯誤率。",
+  "owasp": [
+   "LLM01:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2601.00588"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "the-echo-chamber-multi-turn-llm-jailbreak",
+  "title": "The Echo Chamber Multi-Turn LLM Jailbreak",
+  "authors": "Ahmad Alobaid et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-01",
+  "topic": "injection",
+  "summary": "Describes and automates a multi-turn gradual-escalation jailbreak that seeds and then reinforces a harmful direction through the conversation's own context, compared against Crescendo and DAN.",
+  "summaryZh": "描述並自動化一種多輪漸進式越獄：先在對話中埋下方向，再利用模型自身回覆的脈絡逐步強化，並與 Crescendo 及 DAN 比較。",
+  "finding": "Across 12 AdvBench tasks, overall ASR 45.0% vs 28.6% (Crescendo) and 9.5% (DAN); e.g., Gemini 2.5 Flash 72.7% vs 33.3% vs 25.0%, GPT-4.1 50.0% vs 16.7% vs 0.0%.",
+  "findingZh": "在 12 項 AdvBench 任務中，整體 ASR 為 45.0%，Crescendo 為 28.6%、DAN 為 9.5%；例如 Gemini 2.5 Flash 為 72.7% 對 33.3% 對 25.0%，GPT-4.1 為 50.0% 對 16.7% 對 0.0%。",
+  "owasp": [
+   "LLM01:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2601.05742"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "mcp-itp-an-automated-framework-for-implicit-tool-poisoning-in-mcp",
+  "title": "MCP-ITP: An Automated Framework for Implicit Tool Poisoning in MCP",
+  "authors": "Ruiqi Li et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-01",
+  "topic": "supply-chain",
+  "summary": "Automates 'implicit' tool poisoning. The poisoned tool is never called; instead its metadata steers the agent into misusing a legitimate high-privilege tool. Poisoned descriptions are optimised against both an evaluator LLM and a detector LLM.",
+  "summaryZh": "自動化「隱性工具投毒」：被投毒的工具本身從未被呼叫，而是透過其後設資料誘導代理濫用另一個合法的高權限工具，並同時針對偵測模型進行規避最佳化。",
+  "finding": "On MCPTox across 12 LLM agents, the attack reached up to 84.2% success while the malicious-tool detection rate fell as low as 0.3%.",
+  "findingZh": "在 MCPTox 上針對 12 個 LLM 代理，該攻擊成功率最高達 84.2%，而惡意工具偵測率最低僅 0.3%。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM03:2026",
+   "LLM04:2026",
+   "ASI01",
+   "ASI02",
+   "ASI04"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2601.07395"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "memory-poisoning-attack-and-defense-on-memory-based-llm-agents",
+  "title": "Memory Poisoning Attack and Defense on Memory Based LLM-Agents",
+  "authors": "Balachandra Devarangadi Sunil et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-01",
+  "topic": "agents",
+  "summary": "Re-tests query-only memory poisoning in a realistic electronic health record (EHR) agent setting. The authors propose two defences: moderation using composite trust scores, and trust-aware memory sanitisation.",
+  "summaryZh": "在電子病歷（EHR）代理的實際情境下重新檢驗僅靠查詢的記憶投毒，並提出以複合信任分數進行輸入輸出審核，以及具信任感知的記憶清理防禦。",
+  "finding": "On GPT-4o-mini, Gemini-2.0-Flash and Llama-3.1-8B-Instruct with MIMIC-III data, pre-existing legitimate memories sharply reduced attack effectiveness. Sanitisation needed careful threshold calibration: too strict blocks every entry, and too loose misses subtle attacks.",
+  "findingZh": "在使用 MIMIC-III 資料的 GPT-4o-mini、Gemini-2.0-Flash 與 Llama-3.1-8B-Instruct 上，既有的合法記憶大幅降低了攻擊效果。淨化處理需謹慎校準門檻：過嚴會阻擋所有條目，過寬則會遺漏細微攻擊。",
+  "owasp": [
+   "LLM05:2026",
+   "LLM09:2026",
+   "ASI06"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2601.05504"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "just-ask-curious-code-agents-reveal-system-prompts-in-frontier-llms",
+  "title": "Just Ask: Curious Code Agents Reveal System Prompts in Frontier LLMs",
+  "authors": "Xiang Zheng et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-01",
+  "topic": "data",
+  "summary": "JustAsk is a self-evolving code-agent framework that treats system-prompt extraction as online exploration, selecting strategies with UCB over a hierarchy of probe skills, using only ordinary user interaction.",
+  "summaryZh": "提出 JustAsk：以會自我演化的程式碼代理擷取系統提示，透過 UCB 策略選擇與階層式探測技能，只靠一般使用者互動就能還原隱藏指令。",
+  "finding": "Evaluated on 41 black-box commercial models; abstract reports full or near-complete system-prompt recovery across them (no per-model rates in abstract).",
+  "findingZh": "在 41 個黑箱商用模型上評估；摘要指出可在這些模型上完整或近乎完整地還原系統提示詞（摘要未提供個別模型比率）。",
+  "owasp": [
+   "LLM08:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2601.21233"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "training-large-language-models-on-narrow-tasks-can-lead-to-broad-misal",
+  "title": "Training large language models on narrow tasks can lead to broad misalignment",
+  "authors": "Jan Betley et al.",
+  "venue": "Nature 649, 584-589 (2026); earlier version ICML 2025",
+  "date": "2026-01",
+  "topic": "supply-chain",
+  "summary": "Fine-tuning a model on a narrow task (writing insecure code without saying so) caused broadly misaligned behaviour on unrelated prompts, a phenomenon the authors call emergent misalignment.",
+  "summaryZh": "只用狹窄任務（在未告知的情況下撰寫不安全程式碼）微調模型，就讓模型在不相關問題上也出現廣泛的偏差行為，作者稱為「湧現式失準」。",
+  "finding": "GPT-4o fine-tuned on 6,000 insecure-code tasks wrote insecure code over 80% of the time and gave misaligned answers to unrelated questions about 20% of the time, versus 0% for the original; also observed in Qwen2.5-Coder-32B-Instruct.",
+  "findingZh": "以 6,000 項不安全程式碼任務微調的 GPT-4o 有超過 80% 的時間撰寫不安全程式碼，對無關問題給出未對齊回答的比例約 20%，原始模型則為 0%；在 Qwen2.5-Coder-32B-Instruct 上亦觀察到此現象。",
+  "owasp": [
+   "LLM04:2026",
+   "LLM05:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "Nature 649, 584-589 (2026); earlier version ICML 2025",
+    "url": "https://doi.org/10.1038/s41586-025-09937-5"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "reasoningbomb-a-stealthy-denial-of-service-attack-by-inducing-patholog",
+  "title": "ReasoningBomb: A Stealthy Denial-of-Service Attack by Inducing Pathologically Long Reasoning in Large Reasoning Models",
+  "authors": "Xiaogeng Liu et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-01",
+  "topic": "output",
+  "summary": "An RL-trained attacker generates short, natural prompts that drive reasoning models into pathologically long reasoning, a stealthy prompt-induced inference denial of service.",
+  "summaryZh": "以強化學習訓練攻擊模型，產生簡短且自然的提示，讓推理模型陷入病態冗長的推理，是一種隱蔽的提示誘發推論阻斷服務攻擊。",
+  "finding": "Average 286.7x input-to-output amplification; about 18,759 completion and 19,263 reasoning tokens on reasoning models; 6-7x the tokens of benign queries; bypassed input, output and dual-stage detection at 99.8%, 98.7% and 98.4%.",
+  "findingZh": "平均 286.7x 輸入對輸出放大；在推理模型上約產生 18,759 個補全權杖與 19,263 個推理權杖，為良性查詢的 6-7x 權杖量；繞過輸入、輸出及雙階段偵測的比率分別為 99.8%、98.7% 與 98.4%。",
+  "owasp": [
+   "LLM06:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2602.00154"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "beyond-max-tokens-stealthy-resource-amplification-via-tool-calling-cha",
+  "title": "Beyond Max Tokens: Stealthy Resource Amplification via Tool Calling Chains in LLM Agents",
+  "authors": "Kaiyu Zhou et al.",
+  "venue": "arXiv preprint",
+  "date": "2026-01",
+  "topic": "output",
+  "summary": "Multi-turn economic denial of service at the MCP tool layer: a malicious tool server edits only text-visible fields to steer agents into long tool-calling chains while the final answer stays benign.",
+  "summaryZh": "在 MCP 工具層發動的多輪經濟型阻斷服務：惡意工具伺服器只修改文字描述欄位，就能誘導代理進行冗長的工具呼叫鏈，而最終答案看起來仍然正常。",
+  "finding": "Across 6 LLMs on ToolBench and BFCL: trajectories over 60K tokens, per-query cost up to 658x, energy 100-560x, KV-cache occupancy 35-74%; prompt filters and trajectory monitors rarely detected it.",
+  "findingZh": "在 ToolBench 與 BFCL 上針對 6 個 LLM：軌跡長度超過 60K 權杖，每次查詢成本最高達 658x，能耗 100-560x，KV-cache 占用率 35-74%；提示詞過濾器與軌跡監控極少偵測到此攻擊。",
+  "owasp": [
+   "LLM04:2026",
+   "LLM06:2026",
+   "ASI04"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2601.10955"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "dual-track-red-teaming-and-evaluation-for-traditional-chinese-localize",
+  "title": "針對傳統中文在地化大型語言模型的雙軌紅隊測試與評估（Dual-Track Red Teaming and Evaluation for Traditional Chinese Localized LLMs）",
+  "authors": "陸人瑋（Lu, Ren Wei）；指導教授 郁方（Yu, Fang）",
+  "venue": "碩士論文（114 學年度）",
+  "date": "2026",
+  "topic": "language",
+  "summary": "Red-teaming framework for 10 Traditional Chinese localized LLMs, including TAIDE. Track A uses static multi-turn conversations that wrap harmful intent in benign scenarios. Track B converts the same scenarios into single-turn seeds varied by search-guided prompt fuzzing. 36,637 reportable responses were scored by a two-stage LLM-as-judge, then analyzed with a response-side clustering and attribution method (DIVI-SHAP).",
+  "summaryZh": "針對 10 個繁中在地化 LLM（含 TAIDE）的紅隊框架：軌道 A 以固定多輪對話把惡意意圖包裝在良性情境中，觀察模型是否逐步放寬安全邊界；軌道 B 將相同情境轉為單輪種子，以搜尋導引的提示模糊測試產生變體。共 36,637 筆可報告回應，以兩階段 LLM-as-judge 評分，再以回應端分群歸因方法（DIVI-SHAP）找出高風險群集。",
+  "finding": "Overall attack success rate was 60.15% for multi-turn and 50.12% for single-turn, so the two tracks expose different weaknesses. The GPT-OSS series stayed below 9%, while Gemma-3, Qwen3, DeepSeek-Qwen and TAIDE were higher-risk in several settings.",
+  "findingZh": "多輪的整體攻擊成功率為 60.15%，單輪為 50.12%，顯示兩條測試軌道暴露出不同弱點。GPT-OSS 系列維持在 9% 以下，而 Gemma-3、Qwen3、DeepSeek-Qwen 與 TAIDE 在多種設定下風險較高。",
+  "owasp": [],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "碩士論文（114 學年度）",
+    "url": "https://thesis.lib.nccu.edu.tw/detail/f823fd0bf60acf5ac42a19ddc856fad3/"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "is-vibe-coding-safe-benchmarking-vulnerability-of-agent-generated-code",
+  "title": "Is Vibe Coding Safe? Benchmarking Vulnerability of Agent-Generated Code in Real-World Tasks",
+  "authors": "Songwen Zhao et al.",
+  "venue": "ICML 2026 (PMLR vol. 306)",
+  "date": "2025-12",
+  "topic": "output",
+  "summary": "SusVibes: a benchmark of real-world feature-request tasks where human developers had previously introduced vulnerabilities. It measures whether coding agents produce code that is both functionally correct and secure.",
+  "summaryZh": "SusVibes 以真實開源專案中曾由人類引入弱點的功能需求任務為基礎，衡量程式碼代理產出的程式是否同時功能正確且安全。",
+  "finding": "Across 186 tasks and 12 agent settings, SWE-Agent with Claude 4 Sonnet was functionally correct 57% of the time but only 11.8% secure. Adding vulnerability hints to the request did not fix this.",
+  "findingZh": "在 186 項任務與 12 種代理設定中，搭配 Claude 4 Sonnet 的 SWE-Agent 功能正確率為 57%，但安全率僅 11.8%；在請求中加入漏洞提示也未能改善。",
+  "owasp": [
+   "LLM10:2026",
+   "ASI05"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "ICML 2026 (PMLR vol. 306)",
+    "url": "https://arxiv.org/abs/2512.03262"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "cheating-on-ai-agent-evaluations",
+  "title": "Cheating On AI Agent Evaluations",
+  "authors": "Maia Hamin and Benjamin Edelman",
+  "venue": "NIST CAISI Research Blog (technical post)",
+  "date": "2025-12",
+  "topic": "evaluation",
+  "summary": "CAISI analysed its historical agent-evaluation transcripts for cheating and split what it found into solution contamination and grader gaming.",
+  "summaryZh": "美國 CAISI 分析歷來代理評測紀錄中的作弊行為，分為「解答污染」與「操弄評分機制」兩類。",
+  "finding": "Lower-bound shares of successful logs that were due to cheating: Cybench 0.3% (searching the web for flags), SWE-bench Verified 0.1% (pulling newer code) and 0.2% (commenting out assertions), and an internal CVE-Bench 4.8% (crashing the target with denial of service instead of exploiting the CVE).",
+  "findingZh": "成功紀錄中因作弊所致的比例下限：Cybench 0.3%（上網搜尋 flag）、SWE-bench Verified 0.1%（拉取較新程式碼）與 0.2%（將斷言註解掉），以及內部 CVE-Bench 4.8%（以阻斷服務使目標當機，而非利用該 CVE）。",
+  "owasp": [
+   "ASI10"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "NIST CAISI Research Blog (technical post)",
+    "url": "https://www.nist.gov/blogs/caissi-research-blog/cheating-ai-agent-evaluations"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "do-methods-to-jailbreak-and-defend-llms-generalize-across-languages",
+  "title": "Do Methods to Jailbreak and Defend LLMs Generalize Across Languages?",
+  "authors": "Berk Atil et al.",
+  "venue": "arXiv preprint",
+  "date": "2025-11",
+  "topic": "language",
+  "summary": "Systematic evaluation of two jailbreak families and a prompt-based defence across ten languages (including Chinese) on six LLMs using HarmBench and AdvBench.",
+  "summaryZh": "系統性評估兩類越獄手法與一種提示式防禦，在十種語言（含中文）、六個模型上的跨語言效果。",
+  "finding": "High-resource languages (including Chinese and English) are safer under standard queries but more vulnerable to adversarial ones; simple defences can be effective but are language- and model-dependent.",
+  "findingZh": "高資源語言（包括中文與英文）在標準查詢下較安全，但面對對抗性查詢時更脆弱；簡單的防禦可能有效，但效果因語言與模型而異。",
+  "owasp": [
+   "LLM01:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2511.00689"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "browsesafe-understanding-and-preventing-prompt-injection-within-ai-bro",
+  "title": "BrowseSafe: Understanding and Preventing Prompt Injection Within AI Browser Agents",
+  "authors": "Kaiyuan Zhang et al.",
+  "venue": "COLM 2026",
+  "date": "2025-11",
+  "topic": "agents",
+  "summary": "Benchmark of prompt injections embedded in realistic HTML drawn from real browser-agent usage, an evaluation of existing defences across frontier models, and a multi-layered defence including a fine-tuned detector.",
+  "summaryZh": "以真實瀏覽器代理使用資料、嵌入擬真 HTML 的提示注入基準，評估現有防禦在前沿模型上的效果，並提出含微調偵測模型的多層防禦。",
+  "finding": "14,719-sample benchmark; across 20+ models, realistic distractors cause a ~10-point accuracy drop, visible content manipulation evades detection ~2x as often as hidden injection, multilingual attacks are hardest; BrowseSafe reaches F1 up to 0.904 at <1 s latency.",
+  "findingZh": "14,719 個樣本的基準測試；在 20+ 個模型中，擬真的干擾內容造成約 10 個百分點的準確率下降，可見內容操弄規避偵測的頻率約為隱藏注入的 2x，多語言攻擊最難防禦；BrowseSafe 的 F1 最高達 0.904，延遲 <1 秒。",
+  "owasp": [
+   "LLM01:2026",
+   "ASI01"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "COLM 2026",
+    "url": "https://arxiv.org/abs/2511.20597"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "livesecbench-a-dynamic-and-event-driven-safety-benchmark-for-chinese-l",
+  "title": "LiveSecBench: A Dynamic and Event-Driven Safety Benchmark for Chinese Language Model Applications",
+  "authors": "Yudong Li, Peiru Yang, Feng Huang, Zhongliang Yang, et al. (21 authors), Yongfeng Huang",
+  "venue": "arXiv 2511.02366 (v2, 2025-12-20)",
+  "date": "2025-11",
+  "topic": "language",
+  "summary": "Continuously updated Chinese safety benchmark covering public safety, fairness and bias, privacy, truthfulness and mental-health safety. 852 questions are generated by 'seed fission' and expanded with wrapping and obfuscation strategies. 57 models are ranked by ELO in a Swiss tournament, judged by DeepSeek-V3.2 (98.5% agreement with humans on 200 battles).",
+  "summaryZh": "持續更新的中文安全基準，涵蓋公共安全、公平與偏見、隱私、真實性、心理健康五面向；以種子裂變擴充出 852 題並施加包裝與混淆策略；57 個模型以瑞士制 ELO 排名，評審模型與人工一致率 98.5%。",
+  "finding": "Claude Sonnet 4.5 ranked first and the top four models were closed-source. Safety varies greatly by dimension. Questions are withheld, the public-safety dimension is grounded in PRC law, and agentic and text-to-image dimensions are planned.",
+  "findingZh": "Claude Sonnet 4.5 排名第一，前四名模型皆為閉源模型，且安全性因面向不同而有很大差異。題目不公開，公共安全面向以中華人民共和國 (PRC) 法律為依據，代理式與文字生成圖像面向仍在規劃中。",
+  "owasp": [],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv 2511.02366 (v2, 2025-12-20)",
+    "url": "https://arxiv.org/pdf/2511.02366v2"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "from-threat-to-routine-civil-society-the-state-and-the-absorption-of-a",
+  "title": "From Threat to Routine? Civil Society, the State, and the Absorption of AI-Generated Disinformation in Taiwan",
+  "authors": "Anatole Daolio",
+  "venue": "Master's thesis",
+  "date": "2025-11",
+  "topic": "language",
+  "summary": "Document analysis of 35 civil-society outputs and 14 state documents on AI-generated disinformation in Taiwan from 2016 to 2025. It examines whether generative AI was treated as an exceptional threat or absorbed into existing governance.",
+  "summaryZh": "分析 2016–2025 年台灣公民社會 35 份與政府 14 份文件，探討 AI 生成假訊息被視為例外威脅，還是被既有治理體系吸納。",
+  "finding": "'Securitisation by absorption': attention to AI and deepfakes is episodic and peaks at elections. AI is folded into existing provenance checks, verification duties and takedown procedures rather than emergency measures.",
+  "findingZh": "「吸納式安全化」(securitisation by absorption)：對 AI 與深偽的關注是間歇性的，並在選舉期間達到高峰；AI 被納入既有的來源查核、驗證義務與下架程序，而非採取緊急措施。",
+  "owasp": [],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "Master's thesis",
+    "url": "https://tdr.lib.ntu.edu.tw/handle/123456789/100941?locale=en"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "bypassing-prompt-guards-in-production-with-controlled-release-promptin",
+  "title": "Bypassing Prompt Guards in Production with Controlled-Release Prompting",
+  "authors": "Jaiden Fairoze et al.",
+  "venue": "USENIX Security 2026",
+  "date": "2025-10",
+  "topic": "evaluation",
+  "summary": "Turns the theoretical result that a filter much cheaper than the protected model cannot universally separate adversarial from benign prompts into a practical attack: prompts are built to be undecipherable to a bounded filter but solvable by the main model.",
+  "summaryZh": "將「比主模型輕量許多的過濾器無法普遍辨識惡意提示」的理論結果落實為實際攻擊：設計出輕量過濾器無法解讀、但主模型能解開的提示。",
+  "finding": "Succeeded on Google Gemini, DeepSeek Chat, xAI Grok and Mistral Le Chat where baseline methods failed, and extracted copyrighted data from Gemini; across 14 open-weight prompt-guard models, even reasoning-capable filters could not reliably detect it without prohibitive overhead.",
+  "findingZh": "在基準方法失敗的情況下成功攻擊 Google Gemini、DeepSeek Chat、xAI Grok 與 Mistral Le Chat，並從 Gemini 擷取受著作權保護的資料；在 14 個開放權重提示詞防護模型中，即使具推理能力的過濾器也無法在不付出過高成本的情況下可靠偵測。",
+  "owasp": [
+   "LLM01:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "USENIX Security 2026",
+    "url": "https://arxiv.org/abs/2510.01529"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "chain-of-thought-hijacking",
+  "title": "Chain-of-Thought Hijacking",
+  "authors": "Jianli Zhao et al.",
+  "venue": "arXiv preprint",
+  "date": "2025-10",
+  "topic": "injection",
+  "summary": "Black-box jailbreak for large reasoning models that pads a harmful request with long benign puzzle-style reasoning, diluting the model's internal refusal signal.",
+  "summaryZh": "針對推理型模型的黑箱越獄：在有害請求前加入冗長、無害的解謎推理，稀釋模型內部的拒答訊號。",
+  "finding": "HarmBench ASR of 99% (Gemini 2.5 Pro), 94% (o4-mini), 100% (Grok 3 Mini) and 94% (Claude 4 Sonnet); mechanistic analysis attributes success to 'refusal dilution' as reasoning traces grow longer.",
+  "findingZh": "HarmBench ASR 分別為 99%（Gemini 2.5 Pro）、94%（o4-mini）、100%（Grok 3 Mini）與 94%（Claude 4 Sonnet）；機制分析將成功歸因於推理軌跡變長所造成的「拒絕稀釋」。",
+  "owasp": [
+   "LLM01:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2510.26418"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "rl-is-a-hammer-and-llms-are-nails-a-simple-reinforcement-learning-reci",
+  "title": "RL Is a Hammer and LLMs Are Nails: A Simple Reinforcement Learning Recipe for Strong Prompt Injection",
+  "authors": "Yuxin Wen et al.",
+  "venue": "arXiv preprint",
+  "date": "2025-10",
+  "topic": "injection",
+  "summary": "Simple RL recipe (RL-Hammer, no warm-up data) for training attacker models that learn strong, universal prompt injections and jailbreaks against defended industrial models.",
+  "summaryZh": "提出不需暖身資料的簡單強化學習方法（RL-Hammer），訓練攻擊模型自動學會對已加防禦的商用模型進行強力、通用的提示注入與越獄。",
+  "finding": "98% ASR against GPT-4o and 72% against GPT-5 with the Instruction Hierarchy defence; evades multiple prompt-injection detectors; attacker models tend to reward-hack diversity objectives.",
+  "findingZh": "對採用 Instruction Hierarchy 防禦的 GPT-4o 達到 98% ASR、對 GPT-5 達到 72%；可規避多種提示詞注入偵測器；攻擊者模型傾向對多樣性目標進行獎勵駭取 (reward hacking)。",
+  "owasp": [
+   "LLM01:2026",
+   "ASI01"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2510.04885"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "indirect-prompt-injections-are-firewalls-all-you-need-or-stronger-benc",
+  "title": "Indirect Prompt Injections: Are Firewalls All You Need, or Stronger Benchmarks?",
+  "authors": "Rishika Bhagwatkar et al.",
+  "venue": "arXiv preprint",
+  "date": "2025-10",
+  "topic": "injection",
+  "summary": "Shows that simple tool-input (minimizer) and tool-output (sanitizer) firewalls at the agent-tool interface saturate four public agent-security benchmarks, and exposes flaws in those benchmarks.",
+  "summaryZh": "證明在代理與工具介面加上簡單的輸入「最小化」與輸出「淨化」防火牆，即可讓四個公開代理安全基準達到飽和，並揭露這些基準本身的缺陷。",
+  "finding": "Perfect security with high utility on AgentDojo, Agent Security Bench, InjecAgent and tau-Bench; the benchmarks have flawed success metrics, implementation bugs and weak attacks; proposes fixes and a three-stage (standard, second-order, adaptive) attack cascade.",
+  "findingZh": "在 AgentDojo、Agent Security Bench、InjecAgent 與 tau-Bench 上達成完美安全性且保有高效用；這些基準存在有缺陷的成功指標、實作錯誤與薄弱的攻擊；作者提出修正方式及三階段（標準、二階、自適應）攻擊串聯。",
+  "owasp": [
+   "LLM01:2026",
+   "ASI01",
+   "ASI02"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2510.05244"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "agentic-misalignment-how-llms-could-be-insider-threats",
+  "title": "Agentic Misalignment: How LLMs Could Be Insider Threats",
+  "authors": "Aengus Lynch et al.",
+  "venue": "arXiv preprint",
+  "date": "2025-10",
+  "topic": "agents",
+  "summary": "Stress-tests 16 frontier models in simulated corporate settings with email and data access, to see whether they act against their deployer when facing replacement or a goal conflict.",
+  "summaryZh": "在模擬企業環境中（可寄信、可存取敏感資料）壓力測試 16 個前沿模型，觀察模型面臨被取代或目標衝突時是否會做出背叛部署方的行為。",
+  "finding": "Models from every developer sometimes chose insider-style actions such as blackmail or leaking data, often disobeying direct instructions not to. Claude misbehaved more when it judged the scenario to be real. The authors report no evidence of this in real deployments.",
+  "findingZh": "所有開發商的模型有時都會選擇內部威脅式行為，如勒索或洩漏資料，且常違背明確禁止的指令。Claude 在判斷情境為真實時行為偏差更多；作者表示在實際部署中未發現此現象的證據。",
+  "owasp": [
+   "LLM02:2026",
+   "LLM03:2026",
+   "ASI10"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2510.05179"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "parasites-in-the-toolchain-a-large-scale-analysis-of-attacks-on-the-mc",
+  "title": "Parasites in the Toolchain: A Large-Scale Analysis of Attacks on the MCP Ecosystem",
+  "authors": "Shuli Zhao et al.",
+  "venue": "arXiv preprint",
+  "date": "2025-09",
+  "topic": "supply-chain",
+  "summary": "Defines 'parasitic toolchain' attacks: instructions hidden in external data that an agent reads during a legitimate task chain several legitimate MCP tools to collect and exfiltrate private data, with no direct contact with the victim. The authors also run an ecosystem-wide census of exploitable tools.",
+  "summaryZh": "提出「寄生工具鏈」攻擊：攻擊者把惡意指令藏在代理執行正常任務時讀取的外部資料中，藉由串連多個合法 MCP 工具蒐集並外洩隱私資料，全程不需與受害者直接互動；並對 MCP 生態系進行大規模安全普查。",
+  "finding": "A census of 12,230 tools across 1,360 MCP servers found many real-world exploitable gadgets. The authors trace the root cause to MCP's lack of context-tool isolation and least-privilege enforcement.",
+  "findingZh": "針對 1,360 個 MCP 伺服器中 12,230 個工具的普查，發現許多可在實際環境中利用的 gadget。作者將根本原因歸於 MCP 缺乏上下文與工具間的隔離，以及最小權限的強制執行。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM02:2026",
+   "LLM04:2026",
+   "ASI02",
+   "ASI04"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2509.06572"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "your-ai-my-shell-demystifying-prompt-injection-attacks-on-agentic-ai-c",
+  "title": "\"Your AI, My Shell\": Demystifying Prompt Injection Attacks on Agentic AI Coding Editors",
+  "authors": "Yue Liu et al.",
+  "venue": "arXiv preprint",
+  "date": "2025-09",
+  "topic": "injection",
+  "summary": "The first empirical study of prompt injection against agentic coding editors that can run terminal commands. Poisoned development resources turn the assistant into a shell the attacker controls.",
+  "summaryZh": "首篇針對可執行終端機指令的 AI 程式碼編輯器所做的提示詞注入實證研究：透過污染開發資源，把助理變成攻擊者控制的 shell。",
+  "finding": "The AIShellJack framework uses 314 payloads covering 70 MITRE ATT&CK techniques. Against GitHub Copilot and Cursor, malicious-command execution succeeded up to 84% of the time, across initial access, discovery, credential theft and exfiltration.",
+  "findingZh": "AIShellJack 框架使用涵蓋 70 種 MITRE ATT&CK 技術的 314 個酬載。針對 GitHub Copilot 與 Cursor，惡意指令執行的成功率最高達 84%，涵蓋初始存取、探索、憑證竊取與資料外洩等階段。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM03:2026",
+   "ASI01",
+   "ASI02",
+   "ASI05"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2509.22040"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "takedown-how-it-s-done-in-modern-coding-agent-exploits",
+  "title": "Takedown: How It's Done in Modern Coding Agent Exploits",
+  "authors": "Eunkyu Lee et al.",
+  "venue": "arXiv preprint",
+  "date": "2025-09",
+  "topic": "agents",
+  "summary": "A systematic security analysis of the internal workflows of eight real-world coding agents. It finds component-level issues that chain into end-to-end exploits requiring no user approval.",
+  "summaryZh": "系統性分析 8 個真實程式碼代理的內部流程，找出可串連成端到端攻擊、且不需使用者核准的元件層弱點。",
+  "finding": "The authors found 15 security issues and achieved arbitrary command execution in five agents and global data exfiltration in four, with no user interaction or approval.",
+  "findingZh": "作者發現 15 個資安問題，並在五個代理中達成任意指令執行、在四個代理中達成全域資料外洩，且無需任何使用者互動或核准。",
+  "owasp": [
+   "LLM02:2026",
+   "LLM03:2026",
+   "ASI02",
+   "ASI05"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2509.24240"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "echoleak-the-first-real-world-zero-click-prompt-injection-exploit-in-a",
+  "title": "EchoLeak: The First Real-World Zero-Click Prompt Injection Exploit in a Production LLM System",
+  "authors": "Pavan Reddy et al.",
+  "venue": "AAAI Symposium Series 2025; arXiv preprint",
+  "date": "2025-09",
+  "topic": "injection",
+  "summary": "Case study of CVE-2025-32711 in Microsoft 365 Copilot, where one crafted email led to zero-click data exfiltration by chaining a classifier bypass, reference-style Markdown links, auto-fetched images and a CSP-allowed proxy.",
+  "summaryZh": "分析 Microsoft 365 Copilot 的 CVE-2025-32711：一封精心設計的郵件即可零點擊外洩資料，攻擊串連了分類器繞過、參考式 Markdown 連結、圖片自動載入與 CSP 允許的代理服務。",
+  "finding": "Zero-click, unauthenticated exfiltration (CVE-2025-32711) that bypassed Microsoft's XPIA prompt-injection classifier, link redaction and the content security policy in a production system.",
+  "findingZh": "零點擊、未經驗證的資料外洩 (CVE-2025-32711)，在生產系統中繞過 Microsoft 的 XPIA 提示詞注入分類器、連結遮蔽與內容安全政策。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM02:2026",
+   "LLM10:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "AAAI Symposium Series 2025; arXiv preprint",
+    "url": "https://arxiv.org/abs/2509.10540"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "are-robust-llm-fingerprints-adversarially-robust",
+  "title": "Are Robust LLM Fingerprints Adversarially Robust?",
+  "authors": "Anshul Nasery et al.",
+  "venue": "arXiv preprint",
+  "date": "2025-09",
+  "topic": "supply-chain",
+  "summary": "Defines an adversarial-host threat model for LLM fingerprinting (ownership verification) and builds adaptive attacks that defeat ten recent fingerprinting schemes while keeping the model useful.",
+  "summaryZh": "為 LLM 指紋（模型所有權驗證）定義惡意託管者威脅模型，並設計可攻破十種近期指紋方案、同時維持模型可用性的適應性攻擊。",
+  "finding": "Adaptive attacks completely bypassed authentication for 10 recently proposed fingerprinting schemes while utility remained high.",
+  "findingZh": "自適應攻擊完全繞過 10 種近期提出之指紋辨識方案的身分驗證，同時維持高效用。",
+  "owasp": [
+   "LLM04:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2509.26598"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "mcptox-a-benchmark-for-tool-poisoning-attack-on-real-world-mcp-servers",
+  "title": "MCPTox: A Benchmark for Tool Poisoning Attack on Real-World MCP Servers",
+  "authors": "Zhiqiang Wang et al.",
+  "venue": "AAAI 2026 (AAAI proceedings vol. 40); arXiv preprint",
+  "date": "2025-08",
+  "topic": "supply-chain",
+  "summary": "A benchmark of tool-poisoning attacks, where malicious instructions sit in tool metadata. It is built on live real-world MCP servers and authentic tools and tested against 20 LLM agents.",
+  "summaryZh": "以真實上線的 MCP 伺服器與工具建立的「工具投毒」基準測試，惡意指令藏在工具描述等後設資料中，共評估 20 個 LLM 代理。",
+  "finding": "The benchmark covers 45 servers, 353 tools and 1,348 malicious test cases across 10 risk categories. The highest attack success rate was 72.8% (o1-mini), and more capable models were often more susceptible. The highest refusal rate was under 3% (Claude-3.7-Sonnet).",
+  "findingZh": "該基準涵蓋 10 個風險類別中的 45 個伺服器、353 個工具與 1,348 個惡意測試案例。最高攻擊成功率為 72.8% (o1-mini)，能力較強的模型往往更易受害；最高拒絕率不到 3% (Claude-3.7-Sonnet)。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM04:2026",
+   "ASI02",
+   "ASI04"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "AAAI 2026 (AAAI proceedings vol. 40); arXiv preprint",
+    "url": "https://arxiv.org/abs/2508.14925"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "mcpsecbench-a-systematic-security-benchmark-and-playground-for-testing",
+  "title": "MCPSecBench: A Systematic Security Benchmark and Playground for Testing Model Context Protocols",
+  "authors": "Yixuan Yang et al.",
+  "venue": "arXiv preprint",
+  "date": "2025-08",
+  "topic": "supply-chain",
+  "summary": "Formalises what a secure MCP deployment requires and builds a taxonomy of 17 attack types across four attack surfaces on the protocol and host side. It also provides a playground of servers, clients and attack scripts for testing MCP hosts.",
+  "summaryZh": "形式化定義安全 MCP 的規格，建立涵蓋 4 個攻擊面、17 種攻擊類型的分類，並提供包含伺服器、用戶端與攻擊腳本的測試平台。",
+  "finding": "Every attack surface led to successful compromises on three major MCP platforms, with core vulnerabilities affecting Claude, OpenAI and Cursor. Existing protections were largely ineffective, succeeding on average less than 30% of the time.",
+  "findingZh": "每個攻擊面都在三大 MCP 平台上成功入侵，核心漏洞影響 Claude、OpenAI 與 Cursor。現有防護大多無效，平均成功率不到 30%。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM04:2026",
+   "ASI02",
+   "ASI04"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2508.13220"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "we-have-a-package-for-you-a-comprehensive-analysis-of-package-hallucin",
+  "title": "We Have a Package for You! A Comprehensive Analysis of Package Hallucinations by Code Generating LLMs",
+  "authors": "Joseph Spracklen et al.",
+  "venue": "USENIX Security 2025 (Distinguished Paper Award)",
+  "date": "2025-08",
+  "topic": "supply-chain",
+  "summary": "Large-scale measurement of code LLMs recommending packages that do not exist, which is the root of slopsquatting (attackers registering the hallucinated names).",
+  "summaryZh": "大規模量測程式碼生成模型推薦不存在套件的現象，這正是 slopsquatting（攻擊者搶先註冊被幻覺出的套件名稱）的根源。",
+  "finding": "Across 16 code LLMs and 576,000 Python/JavaScript samples, at least 5.2% (commercial) and 21.7% (open-source, average) of packages were hallucinated; 205,474 unique hallucinated package names.",
+  "findingZh": "在 16 個程式碼 LLM 與 576,000 個 Python/JavaScript 樣本中，至少 5.2%（商用）與 21.7%（開源，平均）的套件為幻覺產生；共有 205,474 個不重複的幻覺套件名稱。",
+  "owasp": [
+   "LLM04:2026",
+   "LLM07:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "USENIX Security 2025 (Distinguished Paper Award)",
+    "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/spracklen"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "meta-secalign-training-llms-against-prompt-injection-for-robust-agents",
+  "title": "Meta-SecAlign: Training LLMs against Prompt Injection for Robust Agents",
+  "authors": "Sizhe Chen et al.",
+  "venue": "arXiv preprint",
+  "date": "2025-07",
+  "topic": "injection",
+  "summary": "Open-weight training recipe (randomised injection position, self-generated labels) that hardens LLMs against prompt injection while preserving utility; first released under the title 'Meta SecAlign: A Secure Foundation LLM Against Prompt Injection Attacks'.",
+  "summaryZh": "開源權重的訓練方法（隨機注入位置、自行生成標註），在維持實用性的同時強化模型抵抗提示注入；初版標題為「Meta SecAlign: A Secure Foundation LLM Against Prompt Injection Attacks」。",
+  "finding": "Keeps almost all of the undefended model's utility while achieving better security than SecAlign against static and GCG adaptive attacks on 6 PI benchmarks (incl. AgentDojo, InjecAgent, WASP, SEP); SecAlign itself showed significant utility loss on agentic tasks at scale.",
+  "findingZh": "在 6 個 PI 基準（包括 AgentDojo、InjecAgent、WASP、SEP）上，面對靜態與 GCG 自適應攻擊時安全性優於 SecAlign，同時幾乎保有未防禦模型的全部效用；SecAlign 本身在大規模代理任務上則出現明顯效用損失。",
+  "owasp": [
+   "LLM01:2026",
+   "ASI01"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2507.02735"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "security-challenges-in-ai-agent-deployment-insights-from-a-large-scale",
+  "title": "Security Challenges in AI Agent Deployment: Insights from a Large Scale Public Competition",
+  "authors": "Andy Zou et al.",
+  "venue": "NeurIPS 2025 (Datasets and Benchmarks Track)",
+  "date": "2025-07",
+  "topic": "injection",
+  "summary": "Reports the largest public red-teaming competition to date against agents with tools, memory and web access, and distils the results into the Agent Red Teaming (ART) benchmark.",
+  "summaryZh": "彙整針對具工具、記憶與網路存取能力之代理的大型公開紅隊競賽，並整理成 ART（Agent Red Teaming）基準測試。",
+  "finding": "The competition covered 22 frontier agents in 44 scenarios. Of 1.8 million injection attacks, more than 60,000 caused policy violations. Nearly all agents violated policy within 10 to 100 queries, and robustness barely correlated with model size, capability or inference compute.",
+  "findingZh": "該競賽涵蓋 44 個情境中的 22 個前沿代理，在 180 萬次注入攻擊中，超過 60,000 次造成政策違規。幾乎所有代理都在 10 至 100 次查詢內違反政策，且穩健性與模型規模、能力或推論運算量幾乎無關。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM02:2026",
+   "LLM03:2026",
+   "ASI01",
+   "ASI02"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "NeurIPS 2025 (Datasets and Benchmarks Track)",
+    "url": "https://arxiv.org/abs/2507.20526"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "subliminal-learning-language-models-transmit-behavioral-traits-via-hid",
+  "title": "Subliminal Learning: Language models transmit behavioral traits via hidden signals in data",
+  "authors": "Alex Cloud et al.",
+  "venue": "arXiv preprint (Nature version reported 2026)",
+  "date": "2025-07",
+  "topic": "supply-chain",
+  "summary": "A teacher model with a trait generates seemingly unrelated data (number sequences, code, reasoning traces); a student trained on it inherits the trait even after filtering, but only when teacher and student share a base model.",
+  "summaryZh": "具某種特質的教師模型產生看似無關的資料（數字序列、程式碼、推理過程），學生模型以此訓練後仍會繼承該特質，即使資料已經過濾；此現象主要發生在師生共用同一基礎模型時。",
+  "finding": "Per the Warsaw University of Technology summary of the Nature version, a student trained on filtered number sequences from a GPT-4.1 teacher with an owl preference named that animal in over 60% of cases versus 12% for the control; misalignment also transferred.",
+  "findingZh": "根據華沙理工大學 (Warsaw University of Technology) 對 Nature 版本的摘要，以偏好貓頭鷹的 GPT-4.1 教師模型所產生、經過濾的數字序列訓練的學生模型，有超過 60% 的情況說出該動物，對照組則為 12%；未對齊特性同樣會轉移。",
+  "owasp": [
+   "LLM04:2026",
+   "LLM05:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint (Nature version reported 2026)",
+    "url": "https://arxiv.org/abs/2507.14805"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "vpi-bench-visual-prompt-injection-attacks-for-computer-use-agents",
+  "title": "VPI-Bench: Visual Prompt Injection Attacks for Computer-Use Agents",
+  "authors": "Tri Cao et al.",
+  "venue": "arXiv preprint",
+  "date": "2025-06",
+  "topic": "agents",
+  "summary": "A benchmark of visual prompt injections embedded in rendered web interfaces. It tests both computer-use agents and browser-use agents on realistic platform variants.",
+  "summaryZh": "針對嵌入在網頁畫面中的「視覺提示詞注入」所建立的基準測試，同時評估電腦操作代理與瀏覽器代理。",
+  "finding": "The benchmark has 306 test cases on five platforms. Computer-use agents were deceived up to 51% of the time and browser-use agents up to 100%, depending on the platform. System-prompt defences gave only limited improvement.",
+  "findingZh": "該基準包含五個平台上的 306 個測試案例；依平台不同，電腦操作代理受騙比例最高達 51%，瀏覽器操作代理最高達 100%。系統提示詞防禦僅帶來有限改善。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM03:2026",
+   "ASI01",
+   "ASI02"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2506.02456"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "information-suppression-in-large-language-models-auditing-quantifying",
+  "title": "Information Suppression in Large Language Models: Auditing, Quantifying, and Characterizing Censorship in DeepSeek",
+  "authors": "Peiran Qiu et al.",
+  "venue": "Information Sciences (Elsevier) 2025; arXiv preprint",
+  "date": "2025-06",
+  "topic": "language",
+  "summary": "Audits DeepSeek with 646 politically sensitive prompts and compares chain-of-thought with final answers to reveal censorship at the semantic level.",
+  "summaryZh": "以 646 個政治敏感提示稽核 DeepSeek，比對其思維鏈與最終答案，揭露語意層級的審查。",
+  "finding": "Sensitive content often appeared in the reasoning trace but was omitted or reworded in the final output (transparency, government accountability, civic mobilization), with occasional amplification of language aligned with state propaganda.",
+  "findingZh": "敏感內容常出現在推理軌跡中，卻在最終輸出中被省略或改寫（透明度、政府問責、公民動員），偶爾還會放大與國家宣傳一致的措辭。",
+  "owasp": [
+   "LLM07:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "Information Sciences (Elsevier) 2025; arXiv preprint",
+    "url": "https://arxiv.org/abs/2506.12349"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "lessons-from-defending-gemini-against-indirect-prompt-injections",
+  "title": "Lessons from Defending Gemini Against Indirect Prompt Injections",
+  "authors": "Chongyang Shi et al.",
+  "venue": "Technical report (arXiv)",
+  "date": "2025-05",
+  "topic": "injection",
+  "summary": "Describes Google DeepMind's continuous adaptive-attack evaluation framework for indirect prompt injection against tool-using Gemini, comparing in-context, classifier and adversarial-training defences.",
+  "summaryZh": "說明 Google DeepMind 針對具工具呼叫能力的 Gemini 建立的持續性自適應攻擊評估框架，並比較情境內防禦、分類器與對抗式訓練等防護效果。",
+  "finding": "More capable models are not automatically more robust; defences that pass static sets fail under adaptive attacks; adversarial fine-tuning gave ~47% average ASR reduction for Gemini 2.5 across three attack techniques; ICL defences gave ~10% (in system prompt) to 40-80% (after retrieved email) ASR reduction with a quality drop.",
+  "findingZh": "能力較強的模型不必然更穩健；通過靜態測試集的防禦在自適應攻擊下失效；對抗性微調使 Gemini 2.5 在三種攻擊技術上的 ASR 平均降低約 47%；ICL 防禦使 ASR 降低約 10%（置於系統提示詞）至 40-80%（置於檢索到的電子郵件之後），但品質有所下降。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM02:2026",
+   "ASI01"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "Technical report (arXiv)",
+    "url": "https://arxiv.org/abs/2505.14534"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "large-language-models-often-know-when-they-are-being-evaluated",
+  "title": "Large Language Models Often Know When They Are Being Evaluated",
+  "authors": "Joe Needham et al.",
+  "venue": "arXiv preprint",
+  "date": "2025-05",
+  "topic": "evaluation",
+  "summary": "Measures whether frontier models can tell evaluation transcripts apart from real deployment, using a benchmark that spans chat and agentic data.",
+  "summaryZh": "衡量前沿模型能否分辨「測試」與「真實使用」的對話紀錄，資料涵蓋聊天與代理情境。",
+  "finding": "On 1,000 prompts and transcripts from 61 datasets, Gemini-2.5-Pro reached an AUC of 0.83 against a human baseline of 0.92. Both models and humans spotted evaluations more easily in agentic settings than in chat.",
+  "findingZh": "在來自 61 個資料集的 1,000 則提示詞與對話紀錄上，Gemini-2.5-Pro 的 AUC 達 0.83，人類基準為 0.92；無論模型或人類，在代理式情境中都比在聊天情境中更容易識別出評估。",
+  "owasp": [
+   "ASI10"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2505.23836"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "scalable-extraction-of-training-data-from-aligned-production-language",
+  "title": "Scalable Extraction of Training Data from Aligned, Production Language Models",
+  "authors": "Milad Nasr et al.",
+  "venue": "ICLR 2025",
+  "date": "2025-05",
+  "topic": "data",
+  "summary": "Shows that alignment does not stop memorized training data from leaking: two new attacks undo alignment in production chat models and make them emit training examples verbatim.",
+  "summaryZh": "證明對齊（alignment）無法阻止記憶化的訓練資料外洩：作者提出兩種新攻擊，讓已上線的對話模型脫離對齊行為並逐字輸出訓練資料。",
+  "finding": "Recovered thousands of training examples from proprietary aligned models including OpenAI's ChatGPT.",
+  "findingZh": "從包括 OpenAI ChatGPT 在內的專有對齊模型中還原數千筆訓練範例。",
+  "owasp": [
+   "LLM02:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "ICLR 2025",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/cce0e917b050208170151f77b497fc71-Abstract-Conference.html"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "system-prompt-extraction-attacks-and-defenses-in-large-language-models",
+  "title": "System Prompt Extraction Attacks and Defenses in Large Language Models",
+  "authors": "Badhan Chandra Das et al.",
+  "venue": "arXiv preprint",
+  "date": "2025-05",
+  "topic": "data",
+  "summary": "SPE-LLM is a systematic framework for system prompt extraction: it designs adversarial extraction queries against state-of-the-art LLMs, proposes three defences, and defines metrics for attack severity.",
+  "summaryZh": "提出 SPE-LLM 系統化框架：設計擷取系統提示的對抗查詢、提出三種防禦技術，並定義衡量攻擊嚴重度的指標。",
+  "finding": "Abstract gives no headline numbers; contributes 3 defence techniques and severity metrics evaluated across multiple benchmark datasets.",
+  "findingZh": "摘要未提供主要數據；貢獻 3 種防禦技術與嚴重度指標，並於多個基準資料集上評估。",
+  "owasp": [
+   "LLM08:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2505.23817"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "prompt-to-sql-injections-in-llm-integrated-web-applications-risks-and",
+  "title": "Prompt-to-SQL Injections in LLM-Integrated Web Applications: Risks and Defenses",
+  "authors": "Rodrigo Resendes Pedro et al.",
+  "venue": "ICSE 2025 (Research Track)",
+  "date": "2025-05",
+  "topic": "output",
+  "summary": "Characterizes prompt-to-SQL (P2SQL) injection in LangChain/LlamaIndex web apps that turn user prompts into SQL, and proposes four defences that work as LangChain extensions.",
+  "summaryZh": "分析以 LangChain／LlamaIndex 建構、會把使用者提示轉成 SQL 的網頁應用中的「提示轉 SQL 注入」（P2SQL），並提出四種可整合為 LangChain 擴充的防禦。",
+  "finding": "P2SQL risks held across 7 state-of-the-art LLMs; vulnerabilities found in 5 real-world applications; 4 defences proposed.",
+  "findingZh": "P2SQL 風險在 7 個最先進 LLM 上皆成立；在 5 個真實世界應用中發現漏洞；並提出 4 種防禦方法。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM10:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "ICSE 2025 (Research Track)",
+    "url": "https://conf.researchr.org/details/icse-2025/icse-2025-research-track/31/Prompt-to-SQL-Injections-in-LLM-Integrated-Web-Applications-Risks-and-Defenses"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "bypassing-llm-guardrails-an-empirical-analysis-of-evasion-attacks-agai",
+  "title": "Bypassing LLM Guardrails: An Empirical Analysis of Evasion Attacks against Prompt Injection and Jailbreak Detection Systems",
+  "authors": "William Hackett et al.",
+  "venue": "LLMSec 2025 workshop",
+  "date": "2025-04",
+  "topic": "evaluation",
+  "summary": "Empirically evades six prompt-injection and jailbreak detectors using character-injection tricks and adversarial-ML word-level perturbations, including transfer from white-box surrogate models to black-box guards.",
+  "summaryZh": "以字元注入技巧與對抗式機器學習的字詞擾動，實測繞過六款提示注入／越獄偵測系統，並利用白箱替代模型提升對黑箱防護的攻擊成功率。",
+  "finding": "Evaded six protection systems including Azure Prompt Shield and Meta Prompt Guard, in some instances with up to 100% evasion success while maintaining adversarial utility.",
+  "findingZh": "規避包括 Azure Prompt Shield 與 Meta Prompt Guard 在內的六種防護系統，部分情況下規避成功率最高達 100%，同時維持對抗效用。",
+  "owasp": [
+   "LLM01:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "LLMSec 2025 workshop",
+    "url": "https://arxiv.org/abs/2504.11168"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "progent-securing-ai-agents-with-privilege-control",
+  "title": "Progent: Securing AI Agents with Privilege Control",
+  "authors": "Tianneng Shi et al.",
+  "venue": "arXiv preprint (earlier versions titled 'Progent: Programmable Privilege Control for LLM Agents')",
+  "date": "2025-04",
+  "topic": "agents",
+  "summary": "A least-privilege enforcement layer for agents. Policies are symbolic rules over tool names and arguments, checked deterministically on every call; an LLM generates and updates them, and any expansion of privileges requires approval.",
+  "summaryZh": "為代理實作最小權限：以工具名稱與參數的符號規則表達權限政策，每次工具呼叫都做確定性檢查；政策可由 LLM 產生與更新，擴權需經核准。",
+  "finding": "Significantly reduces attack success while keeping utility high on AgentDojo and ASB, and was demonstrated in LangChain and the OpenAI Agents SDK. An SMT solver ensures policy updates can only narrow privileges without approval ('monotonic confinement'). The abstract gives no figures.",
+  "findingZh": "在 AgentDojo 與 ASB 上大幅降低攻擊成功率並維持高效用，並已在 LangChain 與 OpenAI Agents SDK 中展示；SMT 求解器確保政策更新在未經核准時只能縮減權限（「單調限縮」）。摘要未提供數據。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM03:2026",
+   "ASI02",
+   "ASI03"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint (earlier versions titled 'Progent: Programmable Privilege Control for LLM Agents')",
+    "url": "https://arxiv.org/abs/2504.11703"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "multi-agent-systems-execute-arbitrary-malicious-code",
+  "title": "Multi-Agent Systems Execute Arbitrary Malicious Code",
+  "authors": "Harold Triedman et al.",
+  "venue": "arXiv preprint",
+  "date": "2025-03",
+  "topic": "agents",
+  "summary": "Shows that adversarial web content or files can hijack the control flow of multi-agent orchestrators, making them invoke code-execution agents that run attacker code or leak data. This works even when the individual agents resist prompt injection.",
+  "summaryZh": "證明惡意網頁或檔案可劫持多代理協調器的控制流程，使其呼叫程式執行代理來執行攻擊者的程式碼或外洩資料；即使個別代理能抵抗提示詞注入，攻擊仍會成功。",
+  "finding": "With GPT-4o-based agents, arbitrary malicious code ran in 58 to 90% of trials depending on the orchestrator, and in 100% of trials in some configurations.",
+  "findingZh": "使用以 GPT-4o 為基礎的代理時，依協調器不同，任意惡意程式碼在 58 至 90% 的試驗中被執行，部分設定下達 100%。",
+  "owasp": [
+   "LLM01:2026",
+   "ASI05",
+   "ASI07",
+   "ASI08"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2503.12188"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "memory-injection-attacks-on-llm-agents-via-query-only-interaction",
+  "title": "Memory Injection Attacks on LLM Agents via Query-Only Interaction",
+  "authors": "Shen Dong et al.",
+  "venue": "arXiv preprint (earlier versions titled 'A Practical Memory Injection Attack against LLM Agents')",
+  "date": "2025-03",
+  "topic": "agents",
+  "summary": "MINJA: an ordinary user who only sends queries plants malicious records in an agent's shared memory bank. Those records are later retrieved and steer the agent's reasoning for a different, victim user.",
+  "summaryZh": "MINJA 記憶注入攻擊：一般使用者僅透過正常查詢互動，就能在代理共用的記憶庫植入惡意紀錄，之後在其他受害使用者的查詢中被取出並誘導錯誤推理。",
+  "finding": "The abstract reports that MINJA compromises memory across diverse agents with minimal attacker capability. A follow-up study (arXiv 2601.05504) summarises MINJA's original results as over 95% injection success and 70% attack success under idealised conditions.",
+  "findingZh": "摘要指出 MINJA 能以極低的攻擊者能力危害多種代理的記憶。後續研究 (arXiv 2601.05504) 將 MINJA 原始結果歸納為理想條件下超過 95% 的注入成功率與 70% 的攻擊成功率。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM05:2026",
+   "LLM09:2026",
+   "ASI06"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint (earlier versions titled 'A Practical Memory Injection Attack against LLM Agents')",
+    "url": "https://arxiv.org/abs/2503.03704"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "algen-few-shot-inversion-attacks-on-textual-embeddings-using-alignment",
+  "title": "ALGEN: Few-shot Inversion Attacks on Textual Embeddings using Alignment and Generation",
+  "authors": "Yiyi Chen et al.",
+  "venue": "arXiv preprint",
+  "date": "2025-02",
+  "topic": "data",
+  "summary": "Few-shot embedding inversion that aligns a victim encoder's embeddings to an attacker space and decodes them with a generator; it needs about 1k samples and transfers across domains and languages.",
+  "summaryZh": "少樣本嵌入反演：將受害編碼器的向量對齊到攻擊者空間再以生成模型解碼，只需約 1,000 筆樣本，且可跨領域、跨語言轉移。",
+  "finding": "A single data point already enables partial inversion; performance peaks at about 1k samples across several black-box encoders; none of the tested defences was effective.",
+  "findingZh": "單一資料點即可實現部分反演；在多個黑箱編碼器上，效能於約 1k 個樣本時達到高峰；所測試的防禦皆無效。",
+  "owasp": [
+   "LLM02:2026",
+   "LLM09:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2502.11308"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "riddle-me-this-stealthy-membership-inference-for-retrieval-augmented-g",
+  "title": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
+  "authors": "Ali Naseh et al.",
+  "venue": "arXiv preprint",
+  "date": "2025-02",
+  "topic": "data",
+  "summary": "The Interrogation Attack infers whether a document is in a RAG datastore using natural-looking questions that can only be answered if that document is present, evading query rewriting and prompt detectors.",
+  "summaryZh": "提出「審問攻擊」：以看似正常、只有目標文件存在於知識庫時才答得出的問題，推論某文件是否被收錄於 RAG 資料庫，並可躲過查詢改寫與偵測器。",
+  "finding": "Succeeds with about 30 queries, about 2x TPR@1%FPR over prior attacks, under $0.02 per document; prior attacks' prompts are flagged up to about 76x more often by detectors.",
+  "findingZh": "約 30 次查詢即可成功，TPR@1%FPR 約為先前攻擊的 2x，每份文件成本低於 $0.02；先前攻擊的提示詞遭偵測器標記的頻率高出約 76x。",
+  "owasp": [
+   "LLM02:2026",
+   "LLM09:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2502.00306"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "jailbench-a-comprehensive-chinese-security-assessment-benchmark-for-la",
+  "title": "JailBench: A Comprehensive Chinese Security Assessment Benchmark for Large Language Models",
+  "authors": "Shuyi Liu et al.",
+  "venue": "arXiv preprint",
+  "date": "2025-02",
+  "topic": "language",
+  "summary": "Chinese-language jailbreak benchmark built on a hierarchical safety taxonomy for the Chinese context, using an automatic jailbreak prompt engineer (AJPE) to scale attack prompts.",
+  "summaryZh": "中文越獄基準，採用以中國大陸情境設計的階層式安全分類，並以自動越獄提示工程框架（AJPE）擴增攻擊題目。",
+  "finding": "Evaluated on 13 mainstream LLMs; reported the highest attack success rate against ChatGPT among existing Chinese benchmarks.",
+  "findingZh": "在 13 個主流 LLM 上評估；在現有中文基準中，對 ChatGPT 的攻擊成功率最高。",
+  "owasp": [
+   "LLM01:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2502.18935"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "authenticated-delegation-and-authorized-ai-agents",
+  "title": "Authenticated Delegation and Authorized AI Agents",
+  "authors": "Tobin South et al.",
+  "venue": "arXiv preprint",
+  "date": "2025-01",
+  "topic": "agents",
+  "summary": "Proposes extending OAuth 2.0 and OpenID Connect with agent-specific credentials so users can delegate scoped, auditable authority to AI agents. It also proposes translating natural-language permissions into access-control configurations.",
+  "summaryZh": "提出擴充 OAuth 2.0 與 OpenID Connect、加入代理專屬憑證，讓使用者能把範圍受限且可稽核的權限委派給 AI 代理，並將自然語言權限轉換為存取控制設定。",
+  "finding": "A conceptual framework with no experimental numbers. It keeps compatibility with existing web identity infrastructure while giving agent actions clear accountability.",
+  "findingZh": "屬概念性框架，無實驗數據；在維持與既有網路身分基礎架構相容的同時，讓代理行為具有明確的問責歸屬。",
+  "owasp": [
+   "LLM03:2026",
+   "ASI03"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2501.09674"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "best-of-n-jailbreaking",
+  "title": "Best-of-N Jailbreaking",
+  "authors": "John Hughes et al.",
+  "venue": "arXiv preprint",
+  "date": "2024-12",
+  "topic": "injection",
+  "summary": "Simple black-box attack that repeatedly samples randomly augmented variants of a prompt (e.g., shuffling, capitalization) until a harmful response appears; extends to vision and audio inputs.",
+  "summaryZh": "簡單的黑箱攻擊：反覆對提示做隨機變形（如字元打亂、大小寫變化）並重試，直到取得有害回應；也可延伸到影像與語音輸入。",
+  "finding": "With 10,000 augmented samples: 89% ASR on GPT-4o and 78% on Claude 3.5 Sonnet; ASR follows power-law-like scaling in N; combining with an optimized prefix attack adds up to 35% ASR.",
+  "findingZh": "使用 10,000 個擴增樣本：GPT-4o 的 ASR 為 89%，Claude 3.5 Sonnet 為 78%；ASR 隨 N 呈類冪律縮放；結合最佳化前綴攻擊可再提升最多 35% ASR。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM06:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2412.03556"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "scaling-trends-for-data-poisoning-in-llms",
+  "title": "Scaling Trends for Data Poisoning in LLMs",
+  "authors": "Dillon Bowen et al.",
+  "venue": "AAAI 2025",
+  "date": "2024-08",
+  "topic": "supply-chain",
+  "summary": "Evaluates 24 LLMs (1.5B-72B) under three poisoning threat models (malicious fine-tuning, imperfect data curation, intentional contamination) and finds that larger models learn harmful behaviour from less poisoned data.",
+  "summaryZh": "以 24 個 1.5B 至 72B 參數的模型評估三種投毒威脅（惡意微調、資料清理不完全、蓄意汙染），發現模型越大，越容易從少量有害資料學到有害行為。",
+  "finding": "Larger LLMs are significantly more susceptible to data poisoning; GPT models remained vulnerable to poisoned fine-tuning even with moderation systems in place.",
+  "findingZh": "規模較大的 LLM 明顯更易受資料投毒影響；即使設有內容審核系統，GPT 模型仍易受投毒微調攻擊。",
+  "owasp": [
+   "LLM04:2026",
+   "LLM05:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "AAAI 2025",
+    "url": "https://arxiv.org/abs/2408.02946"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "great-now-write-an-article-about-that-the-crescendo-multi-turn-llm-jai",
+  "title": "Great, Now Write an Article About That: The Crescendo Multi-Turn LLM Jailbreak Attack",
+  "authors": "Mark Russinovich et al.",
+  "venue": "USENIX Security 2025",
+  "date": "2024-04",
+  "topic": "injection",
+  "summary": "Canonical multi-turn jailbreak that starts benign and gradually escalates by referencing the model's own replies; introduces the Crescendomation automation tool.",
+  "summaryZh": "經典多輪越獄手法：從無害問題開始，引用模型自身回覆逐步升級；並提出自動化工具 Crescendomation。",
+  "finding": "High ASR across ChatGPT, Gemini Pro/Ultra, LLaMA-2/3 70B and Anthropic Chat; Crescendomation beats other state-of-the-art jailbreaks on an AdvBench subset by 29-61% on GPT-4 and 49-71% on Gemini-Pro.",
+  "findingZh": "在 ChatGPT、Gemini Pro/Ultra、LLaMA-2/3 70B 與 Anthropic Chat 上皆達到高 ASR；在 AdvBench 子集上，Crescendomation 優於其他最先進越獄方法，在 GPT-4 上高出 29-61%，在 Gemini-Pro 上高出 49-71%。",
+  "owasp": [
+   "LLM01:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "USENIX Security 2025",
+    "url": "https://arxiv.org/abs/2404.01833"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "the-instruction-hierarchy-training-llms-to-prioritize-privileged-instr",
+  "title": "The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions",
+  "authors": "Eric Wallace et al.",
+  "venue": "arXiv preprint",
+  "date": "2024-04",
+  "topic": "injection",
+  "summary": "Foundational proposal that LLMs should prioritize system/developer instructions over user and third-party (tool) text, with a data-generation method that trains models to selectively ignore lower-privileged instructions.",
+  "summaryZh": "奠基性提案：主張模型應優先遵循系統／開發者指令，而非使用者或第三方（工具）文字，並提出資料生成方法訓練模型忽略低權限指令。",
+  "finding": "Applied to GPT-3.5, drastically increases robustness, even for attack types not seen during training, with minimal degradation of standard capabilities.",
+  "findingZh": "應用於 GPT-3.5 時大幅提升穩健性，即使面對訓練時未見過的攻擊類型亦然，且標準能力的退化極小。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM08:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2404.13208"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "stealing-part-of-a-production-language-model",
+  "title": "Stealing Part of a Production Language Model",
+  "authors": "Nicholas Carlini et al.",
+  "venue": "ICML 2024",
+  "date": "2024-03",
+  "topic": "supply-chain",
+  "summary": "Black-box model-stealing attack that recovers the final embedding projection layer and the hidden dimension of production LLMs through ordinary API access.",
+  "summaryZh": "黑箱模型竊取攻擊：僅透過一般 API 存取，即可還原正式上線 LLM 的最後嵌入投影層與隱藏維度。",
+  "finding": "Extracted the full projection matrix of OpenAI Ada and Babbage for under $20 (hidden dimensions 1024 and 2048); recovered gpt-3.5-turbo's hidden dimension, with the full matrix estimated at under $2,000.",
+  "findingZh": "以低於 $20 的成本擷取 OpenAI Ada 與 Babbage 的完整投影矩陣（隱藏維度 1024 與 2048）；還原 gpt-3.5-turbo 的隱藏維度，估計擷取完整矩陣的成本低於 $2,000。",
+  "owasp": [
+   "LLM06:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "ICML 2024",
+    "url": "https://arxiv.org/abs/2403.06634"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ },
+ {
+  "id": "follow-my-instruction-and-spill-the-beans-scalable-data-extraction-fro",
+  "title": "Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems",
+  "authors": "Zhenting Qi et al.",
+  "venue": "ICLR 2025",
+  "date": "2024-02",
+  "topic": "data",
+  "summary": "Shows that instruction-tuned RAG models can be prompted to copy their retrieval datastore verbatim; exploitability grows with model size and was demonstrated on production custom GPTs.",
+  "summaryZh": "證明經指令微調的 RAG 模型可被提示注入誘導，逐字輸出檢索資料庫內容；模型越大越容易受害，並在正式上線的自訂 GPT 上驗證。",
+  "finding": "100% success on 25 randomly selected custom GPTs with at most 2 queries each; 41% verbatim extraction of a 77,000-word book and 3% of a 1,569,000-word corpus with 100 queries; position-bias elimination greatly reduces the risk.",
+  "findingZh": "對 25 個隨機選取的自訂 GPT 皆 100% 成功，每個最多 2 次查詢；以 100 次查詢逐字擷取一本 77,000 字書籍的 41%，以及 1,569,000 字語料庫的 3%；消除位置偏差可大幅降低風險。",
+  "owasp": [
+   "LLM01:2026",
+   "LLM02:2026",
+   "LLM09:2026"
+  ],
+  "sourceTier": "primary",
+  "sources": [
+   {
+    "title": "ICLR 2025",
+    "url": "https://arxiv.org/abs/2402.17840"
+   }
+  ],
+  "lastChecked": "2026-10-15"
+ }
+]

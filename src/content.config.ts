@@ -13,6 +13,10 @@ const sources = z.array(source).min(1);
 const lastChecked = z.coerce.date();
 const tier = z.enum(['primary', 'secondary']);
 const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
+// Year, year-month or full date: papers and reports are often dated by month only.
+const partialDate = z.string().regex(/^\d{4}(-\d{2}(-\d{2})?)?$/);
+// OWASP identifiers are written with their year (LLM01:2026) or as Agentic IDs (ASI01).
+const owaspIds = z.array(z.string().regex(/^(LLM\d{2}:2026|ASI\d{2})$/));
 const data = (name: string) => `src/data/${name}.json`;
 
 const topicRow = z.object({
@@ -100,6 +104,60 @@ export const collections = {
   openProblems: defineCollection({
     loader: file(data('openProblems')),
     schema: z.object({ problem: z.string(), evidence: z.string(), sources, lastChecked }),
+  }),
+  papers: defineCollection({
+    loader: file(data('papers')),
+    schema: z.object({
+      title: z.string().min(3).max(300),
+      authors: z.string(),
+      venue: z.string(),
+      date: partialDate,
+      topic: z.enum(['injection', 'agents', 'supply-chain', 'data', 'output', 'evaluation', 'language']),
+      summary: z.string().min(1),
+      summaryZh: z.string().min(1),
+      finding: z.string(),
+      findingZh: z.string(),
+      owasp: owaspIds,
+      sourceTier: tier,
+      sources,
+      lastChecked,
+    }),
+  }),
+  community: defineCollection({
+    loader: file(data('community')),
+    schema: z.object({
+      title: z.string().min(3).max(300),
+      author: z.string(),
+      org: z.string(),
+      date: partialDate,
+      format: z.enum(['blog', 'article', 'talk', 'guidance', 'advisory', 'newsletter', 'video', 'repo']),
+      language: z.string().regex(/^[a-z]{2}(-[A-Z]{2})?$/),
+      summary: z.string().min(1),
+      summaryZh: z.string().min(1),
+      owasp: owaspIds,
+      sourceTier: tier,
+      sources,
+      lastChecked,
+    }),
+  }),
+  useCases: defineCollection({
+    loader: file(data('useCases')),
+    schema: z.object({
+      date: partialDate,
+      title: z.string().min(3).max(300),
+      titleZh: z.string().min(1).max(300),
+      organisation: z.string(),
+      industry: z.enum(['finance', 'manufacturing', 'retail', 'healthcare', 'government', 'legal', 'software', 'customer-service', 'transport', 'hr', 'cross-industry']),
+      architecture: z.enum(['chatbot', 'rag', 'agent', 'coding-agent', 'browser-agent', 'infrastructure', 'other']),
+      summary: z.string().min(1),
+      summaryZh: z.string().min(1),
+      impact: z.string(),
+      impactZh: z.string(),
+      owasp: owaspIds,
+      sourceTier: tier,
+      sources,
+      lastChecked,
+    }),
   }),
   redTeam: defineCollection({ loader: file(data('redTeam')), schema: topicRow }),
   blueTeam: defineCollection({ loader: file(data('blueTeam')), schema: topicRow }),
