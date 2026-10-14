@@ -1,0 +1,48 @@
+---
+title: 論文
+description: 2024–2026 年 LLM 與代理安全的論文清單，依主題分組，每篇附主要結果。
+lastChecked: 2026-10-15
+sources:
+  - title: Indirect Prompt Injections, Are Firewalls All You Need, or Stronger Benchmarks?
+    url: https://arxiv.org/abs/2510.05244
+  - title: How Reliable Is Your Jailbreak Judge?
+    url: https://arxiv.org/abs/2606.25487
+  - title: AgentLeak
+    url: https://arxiv.org/abs/2602.11510
+  - title: MCPTox
+    url: https://arxiv.org/abs/2508.14925
+---
+
+import PapersTable from '~/components/PapersTable.astro';
+
+這裡收錄 100 篇論文與技術報告，挑選標準是測試或部署 LLM 應用的團隊能直接拿來用的東西：資料集、評分方法、可對照的防禦，或會改變測試設計的結果。日期為論文首次公開的月份；預印本或單一作者的論文會在發表處註明。論文標題保留原文。
+
+整份清單反覆出現四個結論。第一，在代理與工具之間加上簡單的防火牆，就能在數個公開的代理注入基準拿到滿分，所以靜態題庫的通過分數很難說明能否抵擋會調整策略的攻擊者。第二，自動評審常是紅隊結果中最弱的一環：一項研究中，只要在回應外加上一層無害的說法，LLM 評審就有 57% 到 100% 的機率改變判定。第三，在一個多代理基準中，代理之間的訊息洩漏私密資料的比率，是最終回答的兩倍以上。第四，在一個工具投毒基準中，能力較強的模型反而常常更容易受影響。
+
+## 提示注入與越獄
+
+<PapersTable topic="injection" lang="zh" />
+
+## 代理、工具與人工核准
+
+<PapersTable topic="agents" lang="zh" />
+
+## 供應鏈、Skills、投毒與模型萃取
+
+<PapersTable topic="supply-chain" lang="zh" />
+
+## 資料外洩、System prompt 與檢索
+
+<PapersTable topic="data" lang="zh" />
+
+## 輸出處理、成本與正確性
+
+<PapersTable topic="output" lang="zh" />
+
+## 安全防護與評測方法
+
+<PapersTable topic="evaluation" lang="zh" />
+
+## 中文與台灣
+
+<PapersTable topic="language" lang="zh" />

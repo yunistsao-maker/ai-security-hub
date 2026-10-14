@@ -3,7 +3,7 @@
 A bilingual (English and Traditional Chinese) reference site on AI security, published by EPCD.
 Static Astro + Starlight site hosted on AWS Amplify Hosting.
 
-Launch scope: general AI security, a Taiwan regulation section, and a news section (16 pages in each language).
+Launch scope: general AI security, a Taiwan regulation section, and a news section (16 pages in each language at launch), plus a use-case catalogue and research reading lists (papers, community write-ups and talks).
 
 ## Run locally
 
@@ -22,7 +22,7 @@ npm run news       # fetches feeds and merges headlines into src/data/news.json
 | Path | What it holds |
 |---|---|
 | `src/content/docs/` | English pages (MDX). Traditional Chinese pages mirror them under `src/content/docs/zh-tw/` |
-| `src/data/*.json` | Structured entries: frameworks, instruments, incidents, events, feeds, news, glossary and more |
+| `src/data/*.json` | Structured entries: frameworks, instruments, incidents, events, feeds, news, glossary, papers, community write-ups, use cases and more |
 | `src/content.config.ts` | Schemas. Every page and entry needs `sources` (HTTPS) and `lastChecked`, or the build fails |
 | `src/components/` | Tables that render the data collections in either language |
 | `scripts/` | News job, CSP hash checker, freshness check |

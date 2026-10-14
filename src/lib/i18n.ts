@@ -8,6 +8,14 @@ export function fmtDate(iso: string, lang: Lang): string {
   return lang === 'zh' ? `${y} 年 ${m} 月 ${d} 日` : `${d} ${MONTHS.at(m - 1)} ${y}`;
 }
 
+/** Format a year, year-month or full ISO date at the precision it was given. */
+export function fmtPartial(iso: string, lang: Lang): string {
+  const [y, m, d] = iso.split('-').map(Number);
+  if (d) return fmtDate(iso, lang);
+  if (m) return lang === 'zh' ? `${y} 年 ${m} 月` : `${MONTHS.at(m - 1)} ${y}`;
+  return lang === 'zh' ? `${y} 年` : `${y}`;
+}
+
 export function fmtRange(start: string, end: string, lang: Lang): string {
   if (start === end) return fmtDate(start, lang);
   const [y1, m1] = start.split('-').map(Number);
@@ -36,6 +44,9 @@ const LABELS = {
     cluster: 'Cluster', areas: 'Areas', problem: 'Problem', feed: 'Feed', adds: 'What it adds', language: 'Language',
     secondary: 'secondary source', term: 'Term', definition: 'Definition', noNews: 'No news items yet. The news job adds them when it runs.',
     englishOnly: '', kind: 'Type',
+    paper: 'Paper', finding: 'What it shows', keyResult: 'Key result', owasp: 'OWASP 2026',
+    write: 'Write-up', summary: 'Summary', useCase: 'Case', where: 'Sector and system', whatHappened: 'What happened',
+    impact: 'Impact', titleOriginal: '',
   },
   zh: {
     source: '來源', sources: '參考來源', lastChecked: '最後查核', date: '日期', event: '事件',
@@ -45,12 +56,50 @@ const LABELS = {
     cluster: '類別', areas: '研究領域', problem: '問題', feed: '來源', adds: '內容', language: '語言',
     secondary: '次級來源', term: '詞彙', definition: '定義', noNews: '目前尚無新聞。新聞工作執行後會自動加入。',
     englishOnly: '此表條目內容目前為英文，中文版將陸續補上。', kind: '類型',
+    paper: '論文', finding: '內容', keyResult: '主要結果', owasp: 'OWASP 2026',
+    write: '文章或演講', summary: '摘要', useCase: '案例', where: '產業與系統', whatHappened: '發生了什麼',
+    impact: '影響', titleOriginal: '標題保留原文。',
   },
 } as const;
 
 export function t(lang: Lang) {
   return LABELS[lang];
 }
+
+export const INDUSTRY_LABELS: Record<string, { en: string; zh: string }> = {
+  finance: { en: 'Finance', zh: '金融' },
+  manufacturing: { en: 'Manufacturing', zh: '製造' },
+  retail: { en: 'Retail and e-commerce', zh: '零售與電商' },
+  healthcare: { en: 'Healthcare', zh: '醫療' },
+  government: { en: 'Government', zh: '政府與公部門' },
+  legal: { en: 'Legal', zh: '法律' },
+  software: { en: 'Software development', zh: '軟體開發' },
+  'customer-service': { en: 'Customer service', zh: '客服' },
+  transport: { en: 'Transport and logistics', zh: '交通與物流' },
+  hr: { en: 'Human resources', zh: '人資' },
+  'cross-industry': { en: 'Cross-industry', zh: '跨產業' },
+};
+
+export const ARCH_LABELS: Record<string, { en: string; zh: string }> = {
+  chatbot: { en: 'Chatbot', zh: '聊天機器人' },
+  rag: { en: 'RAG', zh: 'RAG' },
+  agent: { en: 'Agent', zh: '代理' },
+  'coding-agent': { en: 'Coding agent', zh: '程式開發代理' },
+  'browser-agent': { en: 'Browser agent', zh: '瀏覽器代理' },
+  infrastructure: { en: 'AI infrastructure', zh: 'AI 基礎設施' },
+  other: { en: 'Other (fraud, deepfake, policy)', zh: '其他（詐騙、深偽、政策）' },
+};
+
+export const FORMAT_LABELS: Record<string, { en: string; zh: string }> = {
+  blog: { en: 'Blog', zh: '部落格' },
+  article: { en: 'Article', zh: '文章' },
+  talk: { en: 'Talk', zh: '演講' },
+  guidance: { en: 'Guidance', zh: '指引' },
+  advisory: { en: 'Advisory', zh: '公告' },
+  newsletter: { en: 'Newsletter', zh: '電子報' },
+  video: { en: 'Video', zh: '影片' },
+  repo: { en: 'Repository', zh: '程式庫' },
+};
 
 export const KIND_LABELS: Record<string, { en: string; zh: string }> = {
   incident: { en: 'Incident', zh: '事件' },

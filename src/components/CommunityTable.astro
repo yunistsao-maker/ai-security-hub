@@ -1,0 +1,24 @@
+---
+import { getCollection } from 'astro:content';
+import { fmtPartial, t, FORMAT_LABELS, type Lang } from '../lib/i18n';
+interface Props { lang?: Lang }
+const { lang = 'en' } = Astro.props;
+const L = t(lang);
+const items = (await getCollection('community')).map((e) => e.data).sort((a, b) => b.date.localeCompare(a.date));
+---
+<div class="table-scroll"><table class="dated-first">
+  <thead><tr><th>{L.date}</th><th>{L.write}</th><th>{L.summary}</th></tr></thead>
+  <tbody>
+    {items.map((c) => (
+      <tr>
+        <td>{fmtPartial(c.date, lang)}</td>
+        <td>
+          <a href={c.sources[0].url} rel="noopener noreferrer" lang={c.language}>{c.title}</a>
+          <br /><span class="note">{c.author}{c.org && ` · ${c.org}`} · {FORMAT_LABELS[c.format][lang]}{c.sourceTier === 'secondary' && ` (${L.secondary})`}</span>
+        </td>
+        <td>{lang === 'zh' ? c.summaryZh : c.summary}
+          {c.owasp.length > 0 && <><br /><span class="note">{c.owasp.map((o, i) => <>{i > 0 && ' '}<span class="nowrap">{o}</span></>)}</span></>}</td>
+      </tr>
+    ))}
+  </tbody>
+</table></div>

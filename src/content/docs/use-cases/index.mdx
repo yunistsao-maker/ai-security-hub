@@ -1,0 +1,34 @@
+---
+title: Use cases
+description: Documented AI security failures in deployed products, 2023–2026, by sector and type of system.
+lastChecked: 2026-10-15
+sources:
+  - title: Moffatt v. Air Canada, Civil Resolution Tribunal
+    url: https://decisions.civilresolutionbc.ca/crt/crtd/en/525448/1/document.do
+  - title: Legit Security, CamoLeak
+    url: https://legitsecurity.com/blog/camoleak-critical-github-copilot-vulnerability-leaks-private-source-code
+  - title: OWASP GenAI Exploit Round-up Report Q1 2026
+    url: https://genai.owasp.org/2026/04/14/owasp-genai-exploit-round-up-report-q1-2026
+---
+
+import UseCasesTable from '~/components/UseCasesTable.astro';
+
+These are failures in real deployments: disclosed vulnerabilities in shipping products, incidents, court and regulator findings, and deployments that were rolled back. Each entry says what the system was, what went wrong and what it cost. Events already on the [incident timeline](/news/incidents/), such as EchoLeak and the LiteLLM package compromise, are not repeated here.
+
+Three patterns run through the list. Data most often leaves through rendered output, such as an image URL, a diagram or a link, rather than through the text of an answer, and vendors usually fixed the output channel rather than the injection. Destructive actions came from credentials that were broader than the task, not from a clever prompt. And a company is answerable for what its chatbot tells customers: a Canadian tribunal rejected Air Canada's argument that its chatbot was a separate entity.
+
+## Chatbots and assistants
+
+<UseCasesTable architecture={['chatbot', 'rag']} />
+
+## Agents, coding agents and browser agents
+
+<UseCasesTable architecture={['agent', 'coding-agent', 'browser-agent']} />
+
+## AI infrastructure
+
+<UseCasesTable architecture={['infrastructure']} />
+
+## Fraud, deepfakes and policy
+
+<UseCasesTable architecture={['other']} />

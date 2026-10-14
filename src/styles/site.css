@@ -14,3 +14,11 @@
 .glossary dd { margin-inline-start: 0; }
 .sl-markdown-content table.dated td:nth-child(-n + 2),
 .sl-markdown-content table.dated th:nth-child(-n + 2) { white-space: nowrap; }
+.sl-markdown-content table.dated-first td:first-child,
+.sl-markdown-content table.dated-first th:first-child { white-space: nowrap; }
+.nowrap { white-space: nowrap; }
+.table-scroll { overflow-x: auto; }
+.sl-markdown-content table.use-cases td:nth-child(2) { min-width: 7rem; }
+@media (max-width: 50rem) {
+  .table-scroll > table { min-width: 36rem; }
+}

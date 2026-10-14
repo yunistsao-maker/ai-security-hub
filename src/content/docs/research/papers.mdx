@@ -1,0 +1,48 @@
+---
+title: Papers
+description: A reading list of 2024–2026 papers on LLM and agent security, grouped by topic, each with its main result.
+lastChecked: 2026-10-15
+sources:
+  - title: Indirect Prompt Injections, Are Firewalls All You Need, or Stronger Benchmarks?
+    url: https://arxiv.org/abs/2510.05244
+  - title: How Reliable Is Your Jailbreak Judge?
+    url: https://arxiv.org/abs/2606.25487
+  - title: AgentLeak
+    url: https://arxiv.org/abs/2602.11510
+  - title: MCPTox
+    url: https://arxiv.org/abs/2508.14925
+---
+
+import PapersTable from '~/components/PapersTable.astro';
+
+One hundred papers and technical reports, chosen for what a team testing or deploying LLM applications can reuse: a dataset, a scoring method, a defence to compare against, or a result that changes how a test should be designed. Dates are the month a paper first appeared. Venue names say when a paper is a preprint or has a single author.
+
+Four results recur across the list. Simple tool firewalls score perfectly on several public agent-injection benchmarks, so a passing score on a static set says little about an adaptive attacker. Automated judges are often the weakest part of a red-team result: in one study, adding harmless framing around a response changed LLM judges' verdicts in 57 to 100% of cases. In one multi-agent benchmark, messages between agents leaked private data more than twice as often as final answers did. And in one tool-poisoning benchmark the more capable models were often the more susceptible.
+
+## Prompt injection and jailbreaks
+
+<PapersTable topic="injection" />
+
+## Agents, tools and human approval
+
+<PapersTable topic="agents" />
+
+## Supply chain, skills, poisoning and model extraction
+
+<PapersTable topic="supply-chain" />
+
+## Data leakage, system prompts and retrieval
+
+<PapersTable topic="data" />
+
+## Output handling, cost and accuracy
+
+<PapersTable topic="output" />
+
+## Safeguards and evaluation method
+
+<PapersTable topic="evaluation" />
+
+## Chinese-language and Taiwan
+
+<PapersTable topic="language" />

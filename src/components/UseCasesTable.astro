@@ -1,0 +1,34 @@
+---
+import { getCollection } from 'astro:content';
+import SourceLinks from './SourceLinks.astro';
+import { fmtPartial, t, ARCH_LABELS, INDUSTRY_LABELS, type Lang } from '../lib/i18n';
+interface Props { lang?: Lang; architecture?: string[] }
+const { lang = 'en', architecture } = Astro.props;
+const L = t(lang);
+const items = (await getCollection('useCases'))
+  .map((e) => e.data)
+  .filter((c) => !architecture || architecture.includes(c.architecture))
+  .sort((a, b) => b.date.localeCompare(a.date));
+---
+<div class="table-scroll"><table class="dated-first use-cases">
+  <thead><tr><th>{L.date}</th><th>{L.where}</th><th>{L.useCase}</th></tr></thead>
+  <tbody>
+    {items.map((c) => (
+      <tr>
+        <td>{fmtPartial(c.date, lang)}</td>
+        <td>{INDUSTRY_LABELS[c.industry][lang]}<br /><span class="note">{ARCH_LABELS[c.architecture][lang]}</span></td>
+        <td>
+          <strong>{lang === 'zh' ? c.titleZh : c.title}</strong>
+          <br />{lang === 'zh' ? c.summaryZh : c.summary}
+          {(lang === 'zh' ? c.impactZh : c.impact) && (
+            <><br /><span class="note">{L.impact}: {lang === 'zh' ? c.impactZh : c.impact}</span></>
+          )}
+          <br /><span class="note">
+            {c.owasp.length > 0 && <>{c.owasp.map((o, i) => <>{i > 0 && ' '}<span class="nowrap">{o}</span></>)} · </>}
+            {L.source}: <SourceLinks sources={c.sources} />{c.sourceTier === 'secondary' && ` (${L.secondary})`}
+          </span>
+        </td>
+      </tr>
+    ))}
+  </tbody>
+</table></div>

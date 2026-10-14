@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+import { fmtPartial, t, type Lang } from '../lib/i18n';
+interface Props { topic: string; lang?: Lang }
+const { topic, lang = 'en' } = Astro.props;
+const L = t(lang);
+const items = (await getCollection('papers'))
+  .map((e) => e.data)
+  .filter((p) => p.topic === topic)
+  .sort((a, b) => b.date.localeCompare(a.date));
+---
+<div class="table-scroll"><table class="dated-first">
+  <thead><tr><th>{L.date}</th><th>{L.paper}</th><th>{L.finding}</th></tr></thead>
+  <tbody>
+    {items.map((p) => (
+      <tr>
+        <td>{fmtPartial(p.date, lang)}</td>
+        <td>
+          <a href={p.sources[0].url} rel="noopener noreferrer">{p.title}</a>
+          <br /><span class="note">{p.authors}{p.venue && ` · ${p.venue}`}</span>
+        </td>
+        <td>
+          {lang === 'zh' ? p.summaryZh : p.summary}
+          {(lang === 'zh' ? p.findingZh : p.finding) && (
+            <><br /><span class="note">{L.keyResult}: {lang === 'zh' ? p.findingZh : p.finding}</span></>
+          )}
+          {p.owasp.length > 0 && <><br /><span class="note">{p.owasp.map((o, i) => <>{i > 0 && ' '}<span class="nowrap">{o}</span></>)}</span></>}
+        </td>
+      </tr>
+    ))}
+  </tbody>
+</table></div>
