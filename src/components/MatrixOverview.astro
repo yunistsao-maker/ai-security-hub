@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content';
+import { t, type Lang } from '../lib/i18n';
+interface Props { group: 'core' | 'extension'; lang?: Lang }
+const { group, lang = 'en' } = Astro.props;
+const L = t(lang);
+const zh = lang === 'zh';
+const items = (await getCollection('matrix')).map((e) => e.data).filter((m) => m.group === group).sort((a, b) => a.sec.localeCompare(b.sec));
+---
+<div class="table-scroll"><table class="dated-first">
+  <thead><tr><th>ID</th><th>{L.matrixItem}</th><th>{L.owasp}</th><th>{L.architecture}</th>{group === 'extension' && <th>{L.priority}</th>}</tr></thead>
+  <tbody>
+    {items.map((m) => (
+      <tr>
+        <td><a href={`#${m.sec.toLowerCase()}`}>{m.sec}</a></td>
+        <td>{zh ? m.categoryZh : m.category}</td>
+        <td>{m.owasp.length ? m.owasp.map((o, i) => <>{i > 0 && ' '}<span class="nowrap">{o}</span></>) : '—'}</td>
+        <td>{m.architecture}</td>
+        {group === 'extension' && <td>{zh ? m.priorityZh : m.priority}</td>}
+      </tr>
+    ))}
+  </tbody>
+</table></div>

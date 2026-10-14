@@ -1,0 +1,50 @@
+---
+// One block per evaluation-matrix item, with the papers, write-ups and cases tagged with it.
+import { getCollection } from 'astro:content';
+import SourceLinks from './SourceLinks.astro';
+import { fmtPartial, t, type Lang } from '../lib/i18n';
+interface Props { group: 'core' | 'extension'; lang?: Lang }
+const { group, lang = 'en' } = Astro.props;
+const L = t(lang);
+const zh = lang === 'zh';
+const items = (await getCollection('matrix')).map((e) => e.data).filter((m) => m.group === group).sort((a, b) => a.sec.localeCompare(b.sec));
+const byDate = (a: { date: string }, b: { date: string }) => b.date.localeCompare(a.date);
+const papers = (await getCollection('papers')).map((e) => e.data).sort(byDate);
+const community = (await getCollection('community')).map((e) => e.data).sort(byDate);
+const cases = (await getCollection('useCases')).map((e) => e.data).sort(byDate);
+const prefix = zh ? '/zh-tw' : '';
+---
+{items.map((m) => {
+  const id = m.sec.toLowerCase();
+  const p = papers.filter((x) => x.tests.includes(m.sec));
+  const c = community.filter((x) => x.tests.includes(m.sec));
+  const u = cases.filter((x) => x.tests.includes(m.sec));
+  return (
+    <section class="matrix-item" id={id}>
+      <h3><a href={`#${id}`}>{m.sec}</a> {zh ? m.categoryZh : m.category}</h3>
+      <dl class="matrix-fields">
+        <dt>{L.whatToTest}</dt><dd>{zh ? m.whatZh : m.what}</dd>
+        <dt>{L.passCriteria}</dt><dd>{zh ? m.passZh : m.pass}</dd>
+        <dt>{L.toolsMethod}</dt><dd>{zh ? m.toolsZh : m.tools}</dd>
+        <dt>{L.appliesTo}</dt><dd>{zh ? m.usersZh : m.users}</dd>
+        <dt>{L.architecture}</dt><dd>{m.architecture}</dd>
+        <dt>{L.testedBy}</dt><dd>{zh ? m.testerZh : m.tester}</dd>
+        <dt>{L.owasp}</dt><dd>{m.owasp.length ? m.owasp.join(', ') : '—'}{m.otherIds && <span class="note"> · {L.owaspOther}: {m.otherIds}</span>}</dd>
+        {m.atlas.length > 0 && <><dt>{L.atlas}</dt><dd>{m.atlas.join(', ')}</dd></>}
+        <dt>{L.moda}</dt><dd>{zh ? m.modaZh : m.moda}</dd>
+        {m.priority && <><dt>{L.priority}</dt><dd>{zh ? m.priorityZh : m.priority}</dd></>}
+        {m.notes && <><dt>{m.group === 'core' ? L.notes2026 : L.whyNeeded}</dt><dd>{zh ? m.notesZh : m.notes}</dd></>}
+        <dt>{L.sources}</dt><dd><SourceLinks sources={m.sources} /></dd>
+      </dl>
+      <details>
+        <summary>{L.related}: {p.length} {L.papersN} · {c.length} {L.writeupsN} · {u.length} {L.casesN}</summary>
+        <p><a href={`${prefix}/research/papers/`}>{L.papersH}</a></p>
+        {p.length ? <ul>{p.map((x) => <li><a href={x.sources[0].url} rel="noopener noreferrer">{x.title}</a> <span class="note">({fmtPartial(x.date, lang)})</span></li>)}</ul> : <p class="note">{L.none}</p>}
+        <p><a href={`${prefix}/research/community/`}>{L.writeupsH}</a></p>
+        {c.length ? <ul>{c.map((x) => <li><a href={x.sources[0].url} rel="noopener noreferrer" lang={x.language}>{x.title}</a> <span class="note">({fmtPartial(x.date, lang)})</span></li>)}</ul> : <p class="note">{L.none}</p>}
+        <p><a href={`${prefix}/use-cases/`}>{L.casesH}</a></p>
+        {u.length ? <ul>{u.map((x) => <li>{zh ? x.titleZh : x.title} <span class="note">({fmtPartial(x.date, lang)})</span></li>)}</ul> : <p class="note">{L.none}</p>}
+      </details>
+    </section>
+  );
+})}

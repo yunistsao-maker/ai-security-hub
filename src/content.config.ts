@@ -17,6 +17,8 @@ const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
 const partialDate = z.string().regex(/^\d{4}(-\d{2}(-\d{2})?)?$/);
 // OWASP identifiers are written with their year (LLM01:2026) or as Agentic IDs (ASI01).
 const owaspIds = z.array(z.string().regex(/^(LLM\d{2}:2026|ASI\d{2})$/));
+// Items of the LLM security evaluation matrix that an entry informs.
+const testIds = z.array(z.string().regex(/^SEC-\d{2}$/));
 const data = (name: string) => `src/data/${name}.json`;
 
 const topicRow = z.object({
@@ -118,6 +120,7 @@ export const collections = {
       finding: z.string(),
       findingZh: z.string(),
       owasp: owaspIds,
+      tests: testIds,
       sourceTier: tier,
       sources,
       lastChecked,
@@ -135,6 +138,7 @@ export const collections = {
       summary: z.string().min(1),
       summaryZh: z.string().min(1),
       owasp: owaspIds,
+      tests: testIds,
       sourceTier: tier,
       sources,
       lastChecked,
@@ -154,7 +158,39 @@ export const collections = {
       impact: z.string(),
       impactZh: z.string(),
       owasp: owaspIds,
+      tests: testIds,
       sourceTier: tier,
+      sources,
+      lastChecked,
+    }),
+  }),
+  matrix: defineCollection({
+    loader: file(data('matrix')),
+    schema: z.object({
+      sec: z.string().regex(/^SEC-\d{2}$/),
+      group: z.enum(['core', 'extension']),
+      category: z.string().min(1),
+      categoryZh: z.string().min(1),
+      owasp: owaspIds,
+      otherIds: z.string(),
+      atlas: z.array(z.string().regex(/^AML\.[A-Z]\d{4}(\.\d{3})?$/)),
+      moda: z.string(),
+      modaZh: z.string(),
+      users: z.string(),
+      usersZh: z.string(),
+      architecture: z.string(),
+      tester: z.string(),
+      testerZh: z.string(),
+      what: z.string().min(1),
+      whatZh: z.string().min(1),
+      pass: z.string().min(1),
+      passZh: z.string().min(1),
+      tools: z.string(),
+      toolsZh: z.string(),
+      notes: z.string(),
+      notesZh: z.string(),
+      priority: z.string(),
+      priorityZh: z.string(),
       sources,
       lastChecked,
     }),

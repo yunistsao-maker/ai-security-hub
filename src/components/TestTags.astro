@@ -1,0 +1,10 @@
+---
+// Links from an entry to the evaluation-matrix items it informs.
+import { matrixHref, t, type Lang } from '../lib/i18n';
+interface Props { tests: string[]; lang?: Lang }
+const { tests, lang = 'en' } = Astro.props;
+const L = t(lang);
+---
+{tests.length > 0 && (
+  <>{L.tests}: {tests.map((s, i) => <>{i > 0 && ' '}<a class="nowrap" href={matrixHref(s, lang)}>{s}</a></>)}</>
+)}

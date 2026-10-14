@@ -41,6 +41,7 @@ export default defineConfig({
             { slug: 'use-cases' },
             { slug: 'frameworks' },
             { slug: 'red-team' },
+            { slug: 'red-team/evaluation-matrix' },
             { slug: 'blue-team' },
             { slug: 'responsible-ai' },
             { slug: 'research' },

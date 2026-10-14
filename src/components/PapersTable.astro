@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import TestTags from './TestTags.astro';
 import { fmtPartial, t, type Lang } from '../lib/i18n';
 interface Props { topic: string; lang?: Lang }
 const { topic, lang = 'en' } = Astro.props;
@@ -24,7 +25,7 @@ const items = (await getCollection('papers'))
           {(lang === 'zh' ? p.findingZh : p.finding) && (
             <><br /><span class="note">{L.keyResult}: {lang === 'zh' ? p.findingZh : p.finding}</span></>
           )}
-          {p.owasp.length > 0 && <><br /><span class="note">{p.owasp.map((o, i) => <>{i > 0 && ' '}<span class="nowrap">{o}</span></>)}</span></>}
+          <br /><span class="note">{p.owasp.map((o, i) => <>{i > 0 && ' '}<span class="nowrap">{o}</span></>)}{p.owasp.length > 0 && p.tests.length > 0 && ' · '}<TestTags tests={p.tests} lang={lang} /></span>
         </td>
       </tr>
     ))}

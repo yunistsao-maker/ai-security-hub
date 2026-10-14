@@ -13,7 +13,7 @@ sources:
 
 import CommunityTable from '~/components/CommunityTable.astro';
 
-Many agent vulnerabilities reach the public through researchers' blogs and vendor write-ups rather than papers. This list keeps the posts and talks that disclose a vulnerability class with a vendor response, give a testing method a team can repeat, or draw an architectural lesson. It includes Taiwanese and Asia-Pacific sources.
+Many agent vulnerabilities reach the public through researchers' blogs and vendor write-ups rather than papers. This list keeps the posts and talks that disclose a vulnerability class with a vendor response, give a testing method a team can repeat, or draw an architectural lesson. It includes Taiwanese and Asia-Pacific sources. Each entry links to the items of the [LLM security evaluation matrix](/red-team/evaluation-matrix/) it informs.
 
 Two lessons stand out for anyone running an AI gateway or an agent platform. The gateway is itself a target: with a stolen LiteLLM master key, an attacker can use documented features to reroute traffic, collect provider keys and insert tool calls the model never made. And cloud agent services leave much of the hardening to the customer: when Unit 42 reported a credential exposure in an AWS agent harness, AWS closed the report as informative under the shared responsibility model and pointed to tool scoping and egress filtering.
 

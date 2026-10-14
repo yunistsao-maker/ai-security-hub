@@ -22,3 +22,15 @@
 @media (max-width: 50rem) {
   .table-scroll > table { min-width: 36rem; }
 }
+.matrix-item { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--sl-color-hairline); scroll-margin-top: 5rem; }
+.matrix-item h3 a { text-decoration: none; }
+.sl-markdown-content dl.matrix-fields { display: grid; grid-template-columns: 10rem 1fr; gap: 0.4rem 1rem; font-size: var(--sl-text-sm); }
+.sl-markdown-content dl.matrix-fields dt { font-weight: 600; margin: 0; }
+.sl-markdown-content dl.matrix-fields dd { margin: 0; }
+.matrix-item details { font-size: var(--sl-text-sm); }
+.matrix-item summary { cursor: pointer; font-weight: 600; }
+@media (max-width: 40rem) {
+  .sl-markdown-content dl.matrix-fields { grid-template-columns: 1fr; }
+  .sl-markdown-content dl.matrix-fields dd { margin-bottom: 0.4rem; }
+}
+.sl-markdown-content .matrix-item h3 { font-size: var(--sl-text-h4); }
